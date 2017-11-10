@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.App ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #333;
+}
+
+.App ul li {
+  display: inline-block;  
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.App ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.App .sub-nav {
+  background-color: #444;
+}
+
+.App img {
+  margin-top: 40px;
+  max-width: 600px;
+  max-height: 600px;
+}
