@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainNav {
+  background-color: #333;
+  color: #fff;
+}
+
+.nestedNav {
+  background-color: #666;
+  color: #fff;
+}
+
+.subNav {
+  color: #fff;
+}
+
+.nav-link--active {
+  color: #f93
+}
