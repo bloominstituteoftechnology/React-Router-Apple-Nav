@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.Nav-link {
+  padding: 0 2rem;
+  text-decoration: none;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial","sans-serif";
+  color: rgb(194, 194, 194);
+  font-size: .85rem
+}
+
+.Nav-link:hover {
+  color: rgb(119, 119, 119);
+}
+
+.Nav-item {
+  padding: .5rem 0 .25rem 0;
+  background-color: black;
+}
+
+.nav-link--active {
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+}
+
+.product-title {
+  padding-top: 71px;
+}
