@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+header>div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+section {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2E2F31;
+  height: 100px;
+}
+
+section>div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section h2 {
+  color: #fff;
+}
+
