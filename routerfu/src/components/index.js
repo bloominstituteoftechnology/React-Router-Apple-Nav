@@ -1,19 +1,19 @@
 import Home from './Home';
 import Mac from './Mac';
-import iPad from './iPad';
-import iPhone from './iPhone';
+import Ipad from './Ipad';
+import Iphone from './Iphone';
 import Watch from './Watch';
-import TV from './TV';
+import Tv from './Tv';
 import Music from './Music';
 import Support from './Support';
 
 export {
   Home,
   Mac,
-  iPad,
-  iPhone,
+  Ipad,
+  Iphone,
   Watch,
-  TV,
+  Tv,
   Music,
   Support,
 };

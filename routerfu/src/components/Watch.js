@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Home = () => <h1>Home</h1>;
+const Watch = () => <h1>Watch</h1>;
 
-export default Home;
+export default Watch;
