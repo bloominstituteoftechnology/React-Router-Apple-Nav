@@ -1,0 +1,8 @@
+.navBar {
+    display: inline;
+    font-size: 1.5em;
+}
+
+.activeLink {
+    font-weight: bold;
+}
