@@ -1,4 +1,19 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+
+import {
+  MainNav,
+  Home,
+  Mac,
+  /*
+  Ipad,
+  Iphone,
+  Watch,
+  Tv,
+  Music,
+  Support,
+  */
+} from './components';
 import './App.css';
 
 class App extends Component {
@@ -6,10 +21,20 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <MainNav />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        <Route exact path="/" component={Home}/>
+        <Route path="/mac" component={Mac}/>
+        {/*
+          <Route path="/ipad" component={Ipad}/>
+          <Route path="/iphone" component={Iphone}/>
+          <Route path="/watch" component={Watch}/>
+          <Route path="/tv" component={Tv}/>
+          <Route path="/music" component={Music}/>
+          <Route path="/support" component={Support}/>
+        */}
+
       </div>
     );
   }

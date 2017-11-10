@@ -1,0 +1,9 @@
+.main_nav {
+  display: flex;
+  justify-content: center;
+}
+.nav_link {
+  margin: 0 10px;
+  color: white;
+  text-decoration: #e5e5e5;
+}
