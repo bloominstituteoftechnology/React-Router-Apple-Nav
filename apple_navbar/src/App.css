@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+
+.Apple {
+  text-align: center;
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.MacProducts {
+  padding: 10px;
+}
+
+.Nav {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.Link {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+.linkStyle {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: white;
+}
