@@ -1,0 +1,10 @@
+1. What is the difference between _server side routing_ and _client side routing_?
+    The difference between server side and clientside routing is that server side routing first and foremost requires  a full page refresh. Client side routing will not require a full page refresh when changes are made by a user such as a comment or a like. For server side routing, the application lived 
+    completely on the server, the user would then request imformation to the server and would return the imformation back to the user or client with an entire html document. 
+1. Mention some advantages of using client side routing.
+    Client side routing allows you to initalize the entire webpage in the beginning of the sequence. Instead of getting back entire html documents, client recieves much simpler and smaller JSON file saving us from needing to reload entire webpages. This gives user the interactivity of a full desktop applciation on a browser. React especially will allow you to render only what you need to re render. 
+1. Which component is used to define a route and what _props_ are commonly added to it? 
+    A <Route> tag is often used to define a route and it specifically uses at least two props including path and component. Path defines the url which the component will rest at and the component is all the stuff that will be in that be in the specific url. Nagivation component also helps as it helps define how we will get to a certain Route which is by clicking on an item like a picture, text or a button.
+
+1. How can I make sure that the component associated with the _"/"_ route is not displayed for every other route?
+    One of the properties of the Route component is the path component which allows you to define the route. By adding the word 'exact' or adding the exact property, this will cause the Home page to not appear in every other associated route. 
