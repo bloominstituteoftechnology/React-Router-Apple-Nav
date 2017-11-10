@@ -6,3 +6,17 @@
 .activeLink {
     font-weight: bold;
 }
+
+.splashPage {
+    font-size: 2em;
+    text-align: center;
+}
+
+.home {
+    text-align: left;
+    padding-right: 30px;
+}
+
+.subLink{
+    font-size: 1.25;
+}
