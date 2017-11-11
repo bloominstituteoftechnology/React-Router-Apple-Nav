@@ -1,0 +1,4 @@
+1. Server side routing is when a new page request is sent to the server by clicking on a link. Moreover, it causes the whole page to refresh in due that a new GET request is sent to the server which is responded with a new document. Where as, client side routing is when the route is handled internally by JavaScript i.e. when ever the user clicks over a link the url changes but request to the server is prevented.
+2. The advantages of using client routing is that routing between views is faster and it allows to implement an easier and smooth transitions and animations between views.
+3. Routing component is usded to define a route. histoty, location, params, are the most commonly added props.
+4. By using exact param we can make sure that the component associated with the "/" is not displayed for every other route.
