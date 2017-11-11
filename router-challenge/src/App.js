@@ -4,6 +4,7 @@ import './App.css';
 
 import { Link, Route, Switch } from 'react-router-dom';
 import Category from './Components/Category';
+import Products from './Components/Product';
 
   /* Home Component */
   const Home = () => (
@@ -54,20 +55,13 @@ class App extends Component {
           <ul className="nav navbar-nav">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/Macs">Macs</Link></li>
-            <li><Link to="/Macs/MacBook">MacBook</Link></li>
-            <li><Link to="/Macs/MacBookAir">MacBook Air</Link></li>
-            <li><Link to="/Macs/MacBookPro">MacBook Pro</Link></li>
-            <li><Link to="/Macs/iMac">iMac</Link></li>
-            <li><Link to="/Macs/iMacPro">iMac Pro</Link></li>
           </ul>
         </nav>
-        <Route exact={true} path="/" component={Home}/>
-        <Route path="/Macs" component={Macs}/>
-        <Route path="/Macs/MacBook" component={MacBook}/>
-        <Route path="/Macs/MacBookAir" component={MacBookAir}/>
-        <Route path="/Macs/MacBookPro" component={MacBookPro}/>
-        <Route path="/Macs/iMac" component={iMac}/>
-        <Route path="/Macs/iMacPro" component={iMacPro}/>
+
+        <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/Macs" component={Category}/>
+        </Switch>
       </div>
     );
   }
