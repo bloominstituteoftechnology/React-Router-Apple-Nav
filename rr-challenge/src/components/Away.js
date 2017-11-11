@@ -8,7 +8,6 @@ const Away = () => {
     <div>
       <h1>Away</h1>
       <Link to="/Away/ForGood">For Good</Link>
-      <Route path="/Away/ForGood" component={ForGood} />
     </div>
   );
 };
