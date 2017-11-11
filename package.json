@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "i": "^0.3.6",
+    "jshint": "^2.9.5",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-router": "^4.2.0"
+  }
+}
