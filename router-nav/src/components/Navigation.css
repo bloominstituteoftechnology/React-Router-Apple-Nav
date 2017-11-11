@@ -1,0 +1,121 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+}
+
+hr {
+   height: 0;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+}
+
+
+
+
+
+
+.nav--mainNav {
+	background-color:#333;
+	height:48px;
+	line-height:48px;
+	margin-top:0;
+
+}
+
+.nav--mainNav ul {
+	text-align: center;
+
+}
+
+.nav--mainNav ul li {
+	vertical-align:middle;
+	line-height:normal;
+	margin-right: 45px;
+	display:inline-block;
+}
+
+.nav--mainNav a {
+	color:white;
+	font-size:14px;
+	text-decoration:none;
+}
+
+.nav--mainNav a:hover {
+	
+	text-decoration:initial;
+	color: LightGray;
+}
+
+
+
+
+
+
+
+
+.nav--subNav--Content {
+	background-color:#2d2d2d;
+	height:86px;
+}
+
+.nav--subNav--Content ul {
+	text-align:center;
+}
+
+.nav--subNav--Content ul li {
+	display: inline-block;
+	margin-right: 60px;
+	vertical-align:middle;
+}
+
+.nav--subNav--Content a {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	color:white;
+	text-decoration:none;
+	font-size:11px;
+}
+
+.nav--subNav--Content a:hover {
+	color:#6bf;
+}
+
+
+
+
+
+.nav--subNav--Content__light {
+	background-color:rgba(242,242,242,0.7);
+	height:86px;
+}
+
+.nav--subNav--Content__light ul {
+	text-align:center;
+}
+
+.nav--subNav--Content__light ul li {
+	display: inline-block;
+	margin-right: 60px;
+	vertical-align:middle;
+}
+
+.nav--subNav--Content__light a {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	color:#333;
+	text-decoration:none;
+	font-size:11px;
+}
+
+.nav--subNav--Content__light a:hover {
+	color:#0070c9;
+}
+
+
+
+
+
+
+.content--body {
+	margin-top:20px;
+}
