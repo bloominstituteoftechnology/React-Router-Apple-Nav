@@ -2,7 +2,7 @@ import React from 'react';
 import './SubNavItem.css';
 import mockData from '../../NavData';
 import { Redirect } from 'react-router-dom';
-
+let i = 0;
 class SubNavItem extends React.Component {
   constructor(props) {
     super(props);
