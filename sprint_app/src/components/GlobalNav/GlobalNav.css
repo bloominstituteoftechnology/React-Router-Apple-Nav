@@ -1,0 +1,29 @@
+.GlobalNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #323232;
+  margin-left: -2em;
+}
+
+.GlobalNav ul {
+  list-style-type: none;
+  margin-left: -1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  min-width: 600px;
+  margin: 0 auto;
+  height: 44px;
+  text-align: justify;
+  user-select: none;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.GlobalNav__NavLink {
+  text-decoration: none;
+  color: white;
+}

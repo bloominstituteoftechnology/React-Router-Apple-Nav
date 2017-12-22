@@ -1,0 +1,34 @@
+.ChapterNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #141414;
+  margin-left: -2em;
+}
+
+.ChapterNav ul {
+  list-style-type: none;
+  margin-left: -1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-width: 600px;
+  margin: 0 auto;
+  height: 44px;
+  text-align: justify;
+  user-select: none;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.ChapterNav li {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.ChapterNav__NavLink {
+  text-decoration: none;
+  color: white;
+}
