@@ -22,9 +22,4 @@ This example shows the sub-navigation for the `/mac` route.
 
 Your goal is to get the nested navigation working, no need to add animation or content to the components displayed other than some text to uniquely identify them.
 
-## Once you are finished - We have further reading for you and your weekend video/study materials.
-* Watch this first - [Node/Express - Lecture](https://youtu.be/K1RkG_irE9I) 
-* Study up on these topics before Monday 
-  - [Node/express Hello World - Study Guide](https://expressjs.com/en/starter/hello-world.html)
-  - [Basic Routing with Node](https://expressjs.com/en/starter/basic-routing.html)
-* Come prepared on Monday to discuss data structures. These weekend study guides and materials will help you become much stronger when the window of discussion opens up on these topics!
+Go build it!
