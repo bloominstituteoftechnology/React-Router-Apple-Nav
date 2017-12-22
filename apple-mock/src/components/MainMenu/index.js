@@ -9,7 +9,7 @@ class MainMenu extends Component {
     return(
       <div>
         <ul>
-          <Link to='/'
+         <Link to="/submenu/mac">Mac</Link>
         </ul>
       </div>
     )
