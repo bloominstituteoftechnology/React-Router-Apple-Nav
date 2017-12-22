@@ -1,0 +1,14 @@
+.link {
+    text-decoration: none;
+    padding: 16px;
+}
+
+.link--active {
+    color: grey;
+    font-weight: 700;
+}
+
+.container {
+    text-align: center;
+    padding-top: 10px;
+}
