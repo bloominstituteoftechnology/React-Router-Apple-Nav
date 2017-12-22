@@ -13,4 +13,5 @@
   the need for a server or Internet at all--such as a game or a choose-your-own adventure story.
 
 # Which component is used to define a route and what props are commonly added to it?
+  The React Router library has a component called `Route` that defines a route. 
   
