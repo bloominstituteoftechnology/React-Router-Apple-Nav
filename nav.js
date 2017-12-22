@@ -1,19 +1,19 @@
-<nav id="primary_nav">
-         
-    <ul>
-     
-        <li><a href="">Top</a></li>
-     
-        <li><a href="">Navigation</a></li>
-     
-        <li><a href="">Horizontal</a></li>
-     
-        <li><a href="">Bar</a></li>
-     
-        <li><a href="">Across</a></li>
-     
-        <li><a href="#home">Top</a></li>
-     
-    </ul>
- 
-</nav><!--end primary_nav-->
+<<nav>
+                <div class="container dropdown">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#" data-toggle="dropdown">Articles</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <li><a href="#">Nintendo</a></li>
+                                <li><a href="#">PlayStation</a></li>
+                                <li><a href="#">PC Gaming</a></li>
+                                <li><a href="#">Xbox</a></li>
+                            </ul></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+
