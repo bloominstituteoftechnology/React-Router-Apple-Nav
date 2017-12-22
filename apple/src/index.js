@@ -20,6 +20,7 @@ ReactDOM.render(
         <Route path='/tv' component={TV}/>
         <Route path='/watch' component={Watch}/>
         <Route path='/mac' component={Mac}/>
+        <Route path='/music' component={Music}/>
         </div>
     </Router>,
     document.getElementById('root'));

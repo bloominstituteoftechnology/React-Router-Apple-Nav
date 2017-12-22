@@ -24,26 +24,26 @@ class App extends Component {
         </li>
         <li>
           <Link to={'/iphone'} className='Link'>
-          iphone
+            iphone
           </Link>
         </li>
         <li>
-          <Link to={'/Watch'} className='Link'>
+          <Link to={'/watch'} className='Link'>
           Watch
           </Link>
         </li>
         <li>
-          <Link to={'/TV'} className='Link'>
+          <Link to={'/tv'} className='Link'>
           TV
           </Link>
         </li>
         <li>
-          <Link to={'/Music'} className='Link'>
-          Music
+          <Link to={'/music'} className='Link'>
+            Music
           </Link>
         </li>
         <li>
-          <Link to={'/Support'} className='Link'>
+          <Link to={'/support'} className='Link'>
           Support
           </Link>
         </li>
