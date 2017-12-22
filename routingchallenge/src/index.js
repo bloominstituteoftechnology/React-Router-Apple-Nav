@@ -1,8 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+const router = require('express').Router();
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const Component = require('../Component');
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+router.get('*', function(request, response) {
+    const props = { title: 'Apple Menu' };
+    const html = ReactDOMServer.renderToString(
+        React.createElement(Component, props)
+    );
+    response.send(html);
+});
+
+module.exports = router;

@@ -1,5 +1,5 @@
 const express = require('express');
-const app = express();
+const server = express();
 
 server.use(express.static('public'));
 server.use(require('./routes/index.jsx'));
