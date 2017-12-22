@@ -49,7 +49,7 @@ header {
     padding: 15px 20px;
 }
  
-        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        /*shorter clearfix https://weather.com/*/
         header:before,
         header:after {
             content:"";
