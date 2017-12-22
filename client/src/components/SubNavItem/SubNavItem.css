@@ -1,0 +1,7 @@
+.subNavItem {
+  padding: 50px 50px 50px 50px !important;
+  border: 1px solid #fff !important;
+  margin-bottom: 25px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+}
