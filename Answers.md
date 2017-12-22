@@ -12,4 +12,5 @@
   little web applets that can run entirely in the browser without the need for a server at all--such as a game
   or a choose-your-own adventure story.
 
+# Which component is used to define a route and what props are commonly added to it?
   
