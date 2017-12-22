@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 
 import '../styles/subnav.css'
 
-class subNav2 extends Component {
+class Music extends Component {
   render() {
     return (
       <div>
-        <p>test2</p>
+        <p>Apple's Music Services Continue to Rock...if You're Into That Sort of Thing...</p>
       </div>
     )
   }
 }
 
-export default subNav2;
+export default Music;

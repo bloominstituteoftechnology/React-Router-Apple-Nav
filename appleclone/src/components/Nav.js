@@ -9,11 +9,11 @@ class Nav extends Component {
     return (
       <div className = "navbar">
         <Link to="/">Home </Link>
-        <Link to="subNav1">subNav1  </Link>
-        <Link to="subNav2">subNav2  </Link>
-        <Link to="subNav3">subNav3  </Link>
-        <Link to="subNav4">subNav4  </Link>
-        <Link to="subNav5">subNav5  </Link>
+        <Link to="Mac">Mac1  </Link>
+        <Link to="iPad">iPad  </Link>
+        <Link to="Watch">Watch  </Link>
+        <Link to="TV">TV  </Link>
+        <Link to="Music">Music  </Link>
       </div>
     )
   }

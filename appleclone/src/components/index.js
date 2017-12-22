@@ -1,17 +1,17 @@
 import Home from './Home';
 import Nav from './Nav';
-import subNav1 from './SubNav1';
-import subNav2 from './SubNav2';
-import subNav3 from './SubNav3';
-import subNav4 from './SubNav4';
-import subNav5 from './SubNav5';
+import Mac from './Mac';
+import iPad from './iPad';
+import Watch from './Watch';
+import TV from './TV';
+import Music from './Music';
 
 export {
   Home,
   Nav,
-  subNav1,
-  subNav2,
-  subNav3,
-  subNav4,
-  subNav5,
+  Mac,
+  iPad,
+  Watch,
+  TV,
+  Music,
 }

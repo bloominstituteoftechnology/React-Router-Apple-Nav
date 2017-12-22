@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 
 import '../styles/subnav.css'
 
-class subNav1 extends Component {
+class iPad extends Component {
   render() {
     return (
       <div>
-        <p>test1</p>
+        <p>The New iPad is Here!</p>
       </div>
     )
   }
 }
 
-export default subNav1;
+export default iPad;

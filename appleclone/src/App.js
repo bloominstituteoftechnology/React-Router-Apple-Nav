@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import { Home, Nav, subNav1, subNav2, subNav3, subNav4, subNav5 } from './components';
+import { Home, Nav, Mac, iPad, Watch, TV, Music } from './components';
 import './App.css';
 
 class App extends Component {
@@ -11,11 +11,11 @@ class App extends Component {
         <Nav />
         <div className="subpage">
           <Route exact={true} path="/" component={Home}/>
-          <Route path="/subNav1" component={subNav1} />
-          <Route path="/subNav2" component={subNav2} />
-          <Route path="/subNav3" component={subNav3} />
-          <Route path="/subNav4" component={subNav4} />
-          <Route path="/subNav5" component={subNav5} />
+          <Route path="/Mac" component={Mac} />
+          <Route path="/iPad" component={iPad} />
+          <Route path="/Watch" component={Watch} />
+          <Route path="/TV" component={TV} />
+          <Route path="/Music" component={Music} />
         </div>
       </div>
     );

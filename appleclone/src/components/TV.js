@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 
 import '../styles/subnav.css'
 
-class subNav4 extends Component {
+class TV extends Component {
   render() {
     return (
       <div>
-        <p>test4</p>
+        <p>Apple TV is Here and Won't Go Away!</p>
       </div>
     )
   }
 }
 
-export default subNav4;
+export default TV;

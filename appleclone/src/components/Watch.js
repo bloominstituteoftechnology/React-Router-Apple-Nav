@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import '../styles/subnav.css'
 
-class subNav5 extends Component {
+class Watch extends Component {
   render() {
     return (
       <div>
-        <p>test5</p>
+        <p>The New Apple Watch is Here!</p>
       </div>
     )
   }
 }
 
-export default subNav5;
+export default Watch;
