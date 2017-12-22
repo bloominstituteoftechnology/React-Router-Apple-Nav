@@ -17,4 +17,4 @@
   `component` are most commonly added to it.
 
 # How can I make sure that the component associated with the "/" route is not displayed for every other route?
-  
+  By using the keyword `exact`.
