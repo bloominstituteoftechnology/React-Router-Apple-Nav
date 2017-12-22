@@ -2,7 +2,8 @@
   Just like the name(s) imply, server-side routing takes place in the server while
   client-side routing takes place in the client, or on the user end of the interaction.
   A single-page application with client routing is a great example of this. Older style websites 
-  have the routing done on the server.
+  have the routing done on the server. In summary, client-side routing is essentially the same
+  as server-side routing, except that it is done in the browser.
 
 # Mention some advantages of using client-side routing
   
