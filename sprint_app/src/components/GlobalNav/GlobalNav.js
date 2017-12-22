@@ -20,7 +20,9 @@ class GlobalNav extends Component {
             <NavLink to='/mac' className='GlobalNav__NavLink'>Mac</NavLink>
           </li>
           <li>
-            iPad
+            <NavLink to='/ipad' className='GlobalNav__NavLink'>
+              iPad
+            </NavLink>
           </li>
           <li>
             iPhone

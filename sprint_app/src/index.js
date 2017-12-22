@@ -11,6 +11,9 @@ import Home from './components/Home/Home';
 import Mac from './components/Mac/Mac';
 import MacBook from './components/Mac/MacBook';
 import MacBook_Air from './components/Mac/MacBook_Air';
+import Ipad from './components/Ipad/Ipad';
+import IpadMini from './components/Ipad/IpadMini';
+import IpadPro from './components/Ipad/IpadPro';
 
 ReactDOM.render(
   <BrowserRouter >
@@ -21,6 +24,10 @@ ReactDOM.render(
 
       <Route path='/macbook' component={MacBook} />
       <Route path='/macbook-air' component={MacBook_Air} />
+
+      <Route path='/ipad' component={Ipad} />
+      <Route path='/ipad-pro' component={IpadPro} />
+      <Route path='/ipad-mini' component={IpadMini} />
     </div>
   </BrowserRouter>, document.getElementById('root'));
 registerServiceWorker();

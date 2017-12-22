@@ -29,6 +29,19 @@ class ChapterNav extends Component {
           </div>
         );
         break;
+      case 'ipad':
+        return (
+          <div className='ChapterNav'>
+            <ul>
+              <li>
+                <NavLink to='/ipad-pro' className='ChapterNav__NavLink'>iPad Pro</NavLink>
+              </li>
+              <li>
+                <NavLink to='/ipad-mini' className='ChapterNav__NavLink'>iPad Mini</NavLink>
+              </li>
+            </ul>
+          </div>
+        );
       default:
         return (
           <div>ERROR</div>
