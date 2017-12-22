@@ -8,7 +8,7 @@
 # Mention some advantages of using client-side routing
   A single-page web app using client-side routing allows the user to for the most part nagivate through the 
   entire website without having to wait for a response from the server, which eliminates the need to refresh
-  the page. I look forward to eventually masteringthis concept and the ability to implement it--I'd love to use
+  the page. I look forward to eventually mastering this concept and the ability to implement it--I'd love to use
   React in new creative ways, such as making little web applets that can run entirely in the browser without
   the need for a server or Internet at all--such as a game or a choose-your-own adventure story.
 
