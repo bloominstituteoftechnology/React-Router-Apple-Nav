@@ -1,0 +1,18 @@
+.substyles {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  font-size: 12px;
+}
+
+.substyle {
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.pagestyle {
+  text-align: center;
+  padding: 30px;
+  background-color: darkgray;
+}
