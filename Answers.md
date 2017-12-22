@@ -1,0 +1,4 @@
+1. A client-side route happens when the route is handled internally by the JavaScript that is loaded on the page. When a user clicks on a link, the URL changes but the request to the server is prevented. In a server-side routing the adjustment of the URL will cause a request of a new page from the server.
+2. advantages of client side routing is that because less data is processed routing between views is genrally faster. This in turn makes animations and transitions between views are easier to implement.
+3. A React router component defines a route and a path prop is commonly added to it.
+4. By adding the exact prop to the router.
