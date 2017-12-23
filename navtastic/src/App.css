@@ -7,8 +7,6 @@ html {
 
 ul {
   margin-bottom: 0;
-  border-top: 4px solid #13304B;
-  border-bottom: 4px solid #13304B;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -50,9 +48,7 @@ h1 {
   padding: 8px;
   background-color: #7BAEB1;
 }
-.Nav ul {
-  border-top: 0px solid transparent;
-}
+
 .Nav li {
   background-color: #532940;
   color: #C8CED4;
