@@ -1,5 +1,24 @@
-.Reac {
+.ProductLine {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.ProductLine__item {
+	margin-top: 35px;
+	margin-bottom: 350px;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ProductLine__item p {
+	margin: 0;
+}
+
+hr {
+	width: 100%;
 }

@@ -8,13 +8,16 @@ export default class ReacNav extends React.Component {
 	render() {
 		return(
 			<div className="ProductBar">
-				<NavLink exact to="/reacbook" className="ProductBar__item" activeClassName="NavLink--selected">ReacBook</NavLink>
-				<div className="ProductBar__item">iPad</div>
-				<div className="ProductBar__item">iPhone</div>
-				<div className="ProductBar__item">Watch</div>
-				<div className="ProductBar__item">TV</div>
-				<div className="ProductBar__item">Music</div>
-				<div className="ProductBar__item">Search</div>
+				<NavLink exact to="/reacbook" className="ProductBar__item">ReacBook</NavLink>
+				<NavLink exact to="/reacbook-air" className="ProductBar__item">ReacBook Air</NavLink>
+				<div className="ProductBar__item">ReacBook Pro</div>
+				<div className="ProductBar__item">iReac</div>
+				<div className="ProductBar__item">iReac Pro</div>
+				<div className="ProductBar__item">Reac Pro</div>
+				<div className="ProductBar__item">Reac mini</div>
+				<div className="ProductBar__item">Raccessories</div>
+				<div className="ProductBar__item">Righ Rierra</div>
+				<div className="ProductBar__item">Rompare</div>
 			</div>
 		)
 	}
