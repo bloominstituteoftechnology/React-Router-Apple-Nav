@@ -1,0 +1,19 @@
+.sub-styles {
+  text-align: center;
+  padding: 30px;
+  background-color: #141414;;
+  font-size: 20px;
+}
+
+.sub-style {
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.pages {
+  text-align: center;
+  padding: 30px;
+  background-color: #141414;
+  color: white;
+}
