@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.linkstyles {
+  text-align: center;
+  padding: 20px;
+  background-color: grey;
+}
+
+.linkstyle {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
