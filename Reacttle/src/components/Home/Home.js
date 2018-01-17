@@ -8,7 +8,7 @@ export default class Home extends React.Component {
 		return(
 			<div className="Home">
 				<h2>iReact X</h2>
-				<p>Ray rello to the Reacture.</p>
+				<p>Ray rhello to the Reacture.</p>
 			</div>
 		)
 	}

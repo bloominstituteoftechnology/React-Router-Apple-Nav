@@ -9,10 +9,10 @@ import Home from './components/Home/Home';
 import Reac from './components/Reac/Reac';
 import ReacBook from './components/ReacBook/ReacBook';
 import ReacBookAir from './components/ReacBookAir/ReacBookAir';
+import ReacBookPro from './components/ReacBookPro/ReacBookPro';
 
 import IRact from './components/IRact/IRact';
 import IRactPro from './components/IRactPro/IRactPro';
-
 
 import './index.css';
 
@@ -22,13 +22,15 @@ ReactDOM.render(
 			<div className="Index">
 				<Header />
 				<NavBar />
+
 			</div>
 
 			<Route exact path="/" component={Home} />
 			
-			<Route path="/reac" component={Reac} />
-			<Route path="/reacbook" component={ReacBook} />
-			<Route path="/reacbook-air" component={ReacBookAir} />
+			<Route exact path="/reac" component={Reac} />
+			<Route path="/reac/reacbook" component={ReacBook} />
+			<Route path="/reac/reacbook-air" component={ReacBookAir} />
+			<Route path="/reac/reacbook-pro" component={ReacBookPro} />
 
 			<Route path="/iract" component={IRact} />
 			<Route path="/iract-pro" component={IRactPro} />

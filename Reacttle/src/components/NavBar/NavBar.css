@@ -36,5 +36,6 @@
 
 .NavLink--selected {
 	text-decoration: none;
+	/*color: yellow;*/
 	color: #d3d3d3;
 }

@@ -1,16 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
+
+import ReacBook from './../ReacBook/ReacBook';
 
 import './ReacNav.css';
 
 export default class ReacNav extends React.Component {
-
 	render() {
+		console.log(this.props);
 		return(
 			<div className="ProductBar">
-				<NavLink exact to="/reacbook" className="ProductBar__item">ReacBook</NavLink>
-				<NavLink exact to="/reacbook-air" className="ProductBar__item">ReacBook Air</NavLink>
-				<div className="ProductBar__item">ReacBook Pro</div>
+				<NavLink to="/reac/reacbook" className="ProductBar__item">ReacBook</NavLink>
+				<NavLink to="/reac/reacbook-air" className="ProductBar__item">ReacBook Air</NavLink>
+				<NavLink to="/reac/reacbook-pro" className="ProductBar__item">ReacBook Pro</NavLink>
 				<div className="ProductBar__item">iReac</div>
 				<div className="ProductBar__item">iReac Pro</div>
 				<div className="ProductBar__item">Reac Pro</div>
@@ -18,6 +20,8 @@ export default class ReacNav extends React.Component {
 				<div className="ProductBar__item">Raccessories</div>
 				<div className="ProductBar__item">Righ Rierra</div>
 				<div className="ProductBar__item">Rompare</div>
+
+				<Route path="/reac/reacbook" component={ReacBook} />
 			</div>
 		)
 	}

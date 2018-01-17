@@ -8,7 +8,7 @@ export default class ReacBook extends React.Component {
 		return(
 			<div className="Product">
 				<h2>ReacBook</h2>
-				<h1>Reac. Years ahead.</h1>
+				<h1>Reac. Rears rahead.</h1>
 			</div>
 		)
 	}
