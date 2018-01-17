@@ -1,0 +1,21 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    color:white;
+    height: 60px; 
+    opacity: 0.5;
+    padding: 0px 100px;
+  }
+  
+  li {
+      list-style-type: none;
+  }
+  
+  .Link {
+    text-decoration: none;
+    color: white;
+  }
