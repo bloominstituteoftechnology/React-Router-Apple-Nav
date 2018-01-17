@@ -13,4 +13,4 @@
 
 > (4) How can I make sure that the component associated with the _"/"_ route is not displayed for every other route?
 
-*Use an `exact to` to ensure `/` is not displayed on every other route such as `<Route exact to="/" component={} />`.*
+*Use an `exact path` to ensure `/` is not displayed on every other route such as `<Route exact path="/" component={} />`.*
