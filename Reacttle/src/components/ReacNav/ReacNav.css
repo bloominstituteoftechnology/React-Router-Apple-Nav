@@ -1,0 +1,18 @@
+.ProductBar {
+	width: 100%;
+	padding: 10px;
+
+	background-color: #6e6e6e;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.ProductBar__item {
+	margin: 5px;
+
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+}

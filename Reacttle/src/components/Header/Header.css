@@ -1,0 +1,29 @@
+.Header {
+  text-align: center;
+  width: 100%;
+}
+
+.Header-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Header-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Header-title {
+  font-size: 1.5em;
+}
+
+.Header-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,36 @@
+.NavBar {
+	width: 100%;
+	padding: 10px;
+
+	background-color: #484848;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.NavBar__item {
+	margin: 5px;
+
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.NavBar__item--logo {
+	width: 19px;
+	height: 19px;
+	padding: 0;
+	margin: 0;
+
+	object-fit: contain;
+
+	display: flex;
+	justify-content: center;
+}
+
+.NavLink--selected {
+	text-decoration: none;
+	color: #d3d3d3;
+}
