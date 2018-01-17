@@ -1,0 +1,38 @@
+.MainNav {
+  background-color: #222;
+}
+.MainNav__wrapper {
+  max-width: 1250px;
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Icon {
+  width: 35px;
+  height: 35px;
+  background-position: center center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.Icon__logo {
+  background-image: url('../../images/apple_logo.svg');
+}
+.Icon__search {
+  background-image: url('../../images/icon_search.svg');
+}
+.Icon__shop {
+  background-image: url('../../images/icon_shop.svg');
+}
+
+.MainNav__link {
+  color: #fff;
+  padding: 0px 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
