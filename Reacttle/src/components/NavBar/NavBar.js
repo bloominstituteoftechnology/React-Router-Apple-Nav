@@ -1,19 +1,41 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
 import logo from './../../logo.svg';
 
 import './NavBar.css';
 
-export default class NavBar extends React.Component {
-
+class NavBar extends React.Component {
 	render() {
+		console.log(this.props)
+
+		const checkReac = () => {
+			const currentPath = this.props.location.pathname;
+			const reacPaths = [
+				'/reac',
+				'/reacbook',
+				'/reacbook-air',
+				'/reacbook-pro',
+				'/ireac',
+				'/ireac-pro',
+				'/reac-pro',
+				'/reac-mini',
+				'/shop/reac/reac-acessories',
+				'/reacos/high-rierra',
+				'/reac/compare',
+			];
+
+
+			return reacPaths.includes(currentPath)
+		}
+
 		return(
 			<div className="NavBar">
-				<NavLink exact to="/" className="NavBar__item--logo" activeClassName="NavLink--selected"><img src={logo} alt="logo" /></NavLink>
-				<NavLink to="/reac" className="NavBar__item" activeClassName="NavLink--selected">Reac</NavLink>
-				<NavLink exact to="/iract" className="NavBar__item" activeClassName="NavLink--selected">iRact</NavLink>
-				<div className="NavBar__item">iReact</div>
+				<NavLink to="/" className="NavBar__item--logo"><img src={logo} alt="logo" /></NavLink>
+				<NavLink to="/reac" isActive={checkReac} className="NavBar__item" activeClassName="NavLink--selected">Reac</NavLink>
+				<NavLink to="/iract" isActive={this.checkRender} className="NavBar__item" activeClassName="NavLink--selected">iRact</NavLink>
+				<NavLink to="/ireact" isActive={this.checkRender} className="NavBar__item" activeClassName="NavLink--selected">iReact</NavLink>
 				<div className="NavBar__item">iWeact</div>
 				<div className="NavBar__item">iRT</div>
 				<div className="NavBar__item">Rusic</div>
@@ -24,3 +46,5 @@ export default class NavBar extends React.Component {
 		)
 	}
 }
+
+export default withRouter(NavBar);

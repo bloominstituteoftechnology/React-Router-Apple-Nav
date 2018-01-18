@@ -11,7 +11,7 @@ export default class IRactPro extends React.Component {
 					<h2>iRact Pro</h2>
 					<p>
 						Anything you can Ract,<br />
-						Ract can do better.
+						React can do better.
 					</p>
 				</div>
 			</div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 
 import Reac from './components/Reac/Reac';
 import ReacBook from './components/ReacBook/ReacBook';
@@ -22,18 +23,18 @@ ReactDOM.render(
 			<div className="Index">
 				<Header />
 				<NavBar />
-
 			</div>
 
-			<Route exact path="/" component={Home} />
-			
-			<Route exact path="/reac" component={Reac} />
-			<Route path="/reac/reacbook" component={ReacBook} />
-			<Route path="/reac/reacbook-air" component={ReacBookAir} />
-			<Route path="/reac/reacbook-pro" component={ReacBookPro} />
-
-			<Route path="/iract" component={IRact} />
-			<Route path="/iract-pro" component={IRactPro} />
+			<Switch>
+				<Route exact path="/reacbook" component={ReacBook} />
+				<Route exact path="/reacbook-air" component={ReacBookAir} />
+				<Route exact path="/reacbook-pro" component={ReacBookPro} />
+				<Route exact path="/reac" component={Reac} />
+				<Route exact path="/iract/iract-pro" component={IRactPro} />
+				<Route exact path="/iract" component={IRact} />
+				<Route exact path="/" component={Home} />
+				<Route component={NotFound} />
+			</Switch>
 		</div>
 	</Router>,
 	document.getElementById('root')

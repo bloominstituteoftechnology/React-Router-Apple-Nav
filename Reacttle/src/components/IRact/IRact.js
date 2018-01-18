@@ -1,6 +1,7 @@
 import React from 'react';
 
 import IRactNav from './../IRactNav/IRactNav';
+import IRactPro from './../IRactPro/IRactPro';
 
 import './IRact.css';
 
@@ -11,13 +12,7 @@ export default class IRact extends React.Component {
 			<div className="ProductLine">
 				<IRactNav />
 
-				<div className="ProductLine__item">
-					<h2>iRact Pro</h2>
-					<p>
-						Anything you can Ract,<br />
-						Ract can do better.
-					</p>
-				</div>
+				<IRactPro />
 
 				<hr/>
 
