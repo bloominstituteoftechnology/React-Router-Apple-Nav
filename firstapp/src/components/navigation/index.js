@@ -4,36 +4,16 @@ import { Link } from 'react-router-dom';
 const navigation = [{
       title: "Mac",
       sub: [
-        {
-          title: "Macbook"
-        },
-        {
-          title: "Macbook Air"
-        },
-        {
-          title: "Macbook Pro"
-        },
-        {
-          title: "iMac"
-        },
-        {
-          title: "iMac Pro"
-        },
-        {
-          title: "Mac pro"
-        }, 
-        {
-            title: "Mac Mini"
-        },
-        {
-            title: "Acessories"
-        },
-        {
-            title: "High Sierra"
-        }, 
-        {
-            title: "Compare"
-        }
+        { title: "Macbook" },
+        { title: "Macbook Air" },
+        { title: "Macbook Pro" },
+        { title: "iMac" },
+        { title: "iMac Pro" },
+        { title: "Mac pro" }, 
+        { title: "Mac Mini" },
+        { title: "Acessories" },
+        { title: "High Sierra" }, 
+        { title: "Compare" }
       ]
     }, 
     {
