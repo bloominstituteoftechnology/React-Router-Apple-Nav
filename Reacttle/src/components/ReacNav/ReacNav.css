@@ -17,3 +17,7 @@
 	font-size: 12px;
 	text-decoration: none;
 }
+
+.ProductBar__item:hover {
+	text-decoration: underline;
+}

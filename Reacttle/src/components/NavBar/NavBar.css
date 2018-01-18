@@ -22,6 +22,10 @@
 	align-items: center;
 }
 
+.NavBar__item:hover {
+	text-decoration: underline;
+}
+
 .NavBar__item--logo {
 	width: 19px;
 	height: 19px;
@@ -32,6 +36,11 @@
 
 	display: flex;
 	justify-content: center;
+}
+
+.NavBar__item--logo img {
+	width: 19px;
+	height: 19px;
 }
 
 .NavLink--selected {
