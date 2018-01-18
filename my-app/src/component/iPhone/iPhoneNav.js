@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const iPhoneNav = () => {
     return (
@@ -10,28 +11,28 @@ const iPhoneNav = () => {
             <Navbar.Collapse>
                 <Nav>
                     <NavItem eventKey={1} href="#">
-                        iPhone X
+                        <NavLink to="/iphone-x">iPhone X</NavLink>
                     </NavItem>
                     <NavItem eventKey={2} href="#">
-                        iPhone 8
+                        <NavLink to="/iphone-8">iPhone 8</NavLink>
                     </NavItem>
                     <NavItem eventKey={3} href="#">
-                        iPhone 7
+                        <NavLink to="/iphone-7">iPhone 7</NavLink>
                     </NavItem>
                     <NavItem eventKey={4} href="#">
-                        iPhone 6s
+                        <NavLink to="/iphone-6s">iPhone 6s</NavLink>
                     </NavItem>
                     <NavItem eventKey={5} href="#">
-                        iPhone SE
+                        <NavLink to="/iphone-se">iPhone SE</NavLink>
                     </NavItem>
                     <NavItem eventKey={6} href="#">
-                        iOS 11
+                        <NavLink to="/iphone-ios">iOS 11</NavLink>
                     </NavItem>
                     <NavItem eventKey={7} href="#">
-                        Accessories
+                        <NavLink to="/iphone-accessories">Accessories</NavLink>
                     </NavItem>
                     <NavItem eventKey={8} href="#">
-                        Compare
+                        <NavLink to="/iphone-accessories">Compare</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar.Collapse>

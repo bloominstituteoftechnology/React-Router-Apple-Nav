@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const iPadNav = () => {
     return (
@@ -10,22 +11,22 @@ const iPadNav = () => {
             <Navbar.Collapse>
                 <Nav>
                     <NavItem eventKey={1} href="#">
-                        iPad Pro
+                        <NavLink to="/ipad-pro">iPad Pro</NavLink>
                     </NavItem>
                     <NavItem eventKey={2} href="#">
-                        iPad
+                        <NavLink to="/ipad-9.7">iPad</NavLink>
                     </NavItem>
                     <NavItem eventKey={3} href="#">
-                        iPad mini 4
+                        <NavLink to="/ipad-mini-4">iPad mini 4</NavLink>
                     </NavItem>
                     <NavItem eventKey={4} href="#">
-                        iOS 11
+                        <NavLink to="/ios-11">iOS 11</NavLink>
                     </NavItem>
                     <NavItem eventKey={5} href="#">
-                        Accessories
+                        <NavLink to="ipad-accessories"k>Accessories</NavLink>
                     </NavItem>
                     <NavItem eventKey={6} href="#">
-                        Compare
+                        <NavLink to="/ipad-compare">Compare</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar.Collapse>

@@ -34,7 +34,7 @@ const Navigation = () => {
                         <NavLink to="/music">Music</NavLink>
                     </NavItem>
                     <NavItem eventKey={7} href="#">
-                        Support
+                        <NavLink to="/support">Support</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar.Collapse>
