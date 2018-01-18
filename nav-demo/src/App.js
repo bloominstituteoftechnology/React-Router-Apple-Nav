@@ -2,39 +2,75 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
-import MacNav from './components/Mac';
-import IpadNav from './components/Ipad';
-import IphoneNav from './components/Iphone';
-import WatchNav from './components/Watch';
-import TvNav from './components/Tv';
-import MusicNav from './components/Music';
+import MacNav from './components/MacNav';
+import IpadNav from './components/IpadNav';
+import IphoneNav from './components/IphoneNav';
+import WatchNav from './components/WatchNav';
+import TvNav from './components/TvNav';
+import MusicNav from './components/MusicNav';
 
 function Home(props) {
-  return <h2>Home</h2>
+  return <h2>Home page content...</h2>
 }
 
 function Mac(props) {
-  return <MacNav />;
+  return <MacNav path={props.match.path} />;
 }
 
 function Ipad(props) {
-  return <IpadNav />;
+  return <IpadNav path={props.match.path} />;
 }
 
 function Iphone(props) {
-  return <IphoneNav />;
+  return <IphoneNav path={props.match.path} />;
 }
 
 function Watch(props) {
-  return <WatchNav />;
+  return <WatchNav path={props.match.path} />;
 }
 
 function Tv(props) {
-  return <TvNav />;
+  return <TvNav path={props.match.path} />;
 }
 
 function Music(props) {
-  return <MusicNav />;
+  return <MusicNav path={props.match.path} />;
+}
+
+function MacBook(props) {
+  return <h2>MacBook content...</h2>;
+}
+
+function MacBookAir(props) {
+  return <h2>MacBook Air content...</h2>;
+}
+
+function MacBookPro(props) {
+  return <h2>MacBook Pro content...</h2>;
+}
+
+function Imac(props) {
+  return <h2>iMac content...</h2>;
+}
+
+function ImacPro(props) {
+  return <h2>iMac Pro content...</h2>;
+}
+
+function MacPro(props) {
+  return <h2>Mac Pro content...</h2>;
+}
+
+function MacMini(props) {
+  return <h2>Mac Mini content...</h2>;
+}
+
+function MacAccessories(props) {
+  return <h2>Mac Accessories content...</h2>;
+}
+
+function MacHighSierra(props) {
+  return <h2>Mac High Sierra content...</h2>;
 }
 
 class App extends Component {
@@ -52,6 +88,17 @@ class App extends Component {
         <Route path="/watch" component={Watch} />
         <Route path="/tv" component={Tv} />
         <Route path="/music" component={Music} />
+
+        <Route path="/mac/macbook" component={MacBook} />
+        <Route path="/mac/macbook-air" component={MacBookAir} />
+        <Route path="/mac/macbook-pro" component={MacBookPro} />
+        <Route path="/mac/imac" component={Imac} />
+        <Route path="/mac/imac-pro" component={ImacPro} />
+        <Route path="/mac/mac-pro" component={MacPro} />
+        <Route path="/mac/mac-mini" component={MacMini} />
+        <Route path="/mac/accessories" component={MacAccessories} />
+        <Route path="/mac/high-sierra" component={MacHighSierra} />
+        
       </div>
     );
   }
