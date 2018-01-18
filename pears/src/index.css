@@ -3,3 +3,40 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.Navbar {
+	display: flex;
+	justify-content: center;
+	/*position: absolute;*/
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.79);
+	border-color: rgba(231, 231, 231, 0.45);
+}
+
+.Navbar__nav {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	padding: 5px;
+	width: 50%;
+}
+
+.Navbar a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.Navbar a:visited {
+	color: #ffffff;
+}
+
+.Navlink--selected {
+	color: red;
+	text-decoration: underline;
+}
+
+
+/*.NavLink {
+	color: #ffffff;
+	text-decoration: none;
+}*/

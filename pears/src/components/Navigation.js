@@ -3,20 +3,20 @@ import { NavLink } from 'react-router-dom';
 
 function Navigation() {
 	return (
-		<div>
-			<ul>
-				<li className="navLink">
-					<NavLink to="/" activeClassName="navlink--selected" exact>
+		<div className="Navbar">
+			<ul className="Navbar__nav">
+				<li className="NavLink">
+					<NavLink to="/" activeClassName="Navlink--selected" exact>
 						Home
 					</NavLink>
 				</li>
-				<li>
-					<NavLink to="/ipad" activeClassName="navlink--selected">
+				<li className="NavLink">
+					<NavLink to="/ipad" activeClassName="Navlink--selected">
 						IPad
 					</NavLink>
 				</li>
-				<li>
-					<NavLink to="/iphone" activeClassName="navlink--selected">
+				<li className="NavLink">
+					<NavLink to="/iphone" activeClassName="Navlink--selected">
 						IPhone
 					</NavLink>
 				</li>
