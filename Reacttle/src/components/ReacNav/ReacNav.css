@@ -1,0 +1,23 @@
+.ProductBar {
+	width: 100%;
+	padding: 10px;
+
+	background-color: #6e6e6e;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.ProductBar__item {
+	margin-left: 12px;
+	margin-right: 12px;
+
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.ProductBar__item:hover {
+	text-decoration: underline;
+}

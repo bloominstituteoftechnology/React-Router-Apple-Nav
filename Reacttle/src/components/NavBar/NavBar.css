@@ -1,0 +1,52 @@
+.NavBar {
+	width: 100%;
+	padding: 10px;
+
+	background-color: #484848;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.NavBar__item {
+	margin-left: 25px;
+	margin-right: 25px;
+
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
+}
+
+.NavBar__item:hover {
+	text-decoration: underline;
+}
+
+.NavBar__item--logo {
+	animation: App-logo-spin infinite 10s linear;
+
+	width: 19px;
+	height: 19px;
+	padding: 0;
+	margin: 0;
+
+	object-fit: contain;
+
+	display: flex;
+	justify-content: center;
+}
+
+.NavBar__item--logo img {
+	width: 19px;
+	height: 19px;
+}
+
+.NavLink--selected {
+	text-decoration: none;
+	/*color: yellow;*/
+	color: #adadad;
+}
