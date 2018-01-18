@@ -20,7 +20,7 @@ import IRT11 from './components/IRT11/IRT11'
 
 import IRact from './components/IRact/IRact';
 import IRactPro from './components/IRactPro/IRactPro';
-import IRact_1_0 from './components/IRact_1_0/IRact_1_0';
+import IRact_1 from './components/IRact_1/IRact_1';
 
 import IReact from './components/IReact/IReact';
 import IReactX from './components/IReactX/IReactX';
@@ -48,7 +48,7 @@ ReactDOM.render(
 				<Route exact path="/irt/irt-11" component={IRT11} />
 
 				<Route exact path="/iract-pro" component={IRactPro} />
-				<Route exact path="/iract-1.0" component={IRact_1_0} />
+				<Route exact path="/iract-1.0" component={IRact_1} />
 				<Route exact path="/iract" component={IRact} />
 				
 				<Route exact path="/ireact-x" component={IReactX} />
