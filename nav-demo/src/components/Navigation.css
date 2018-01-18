@@ -1,0 +1,13 @@
+.subNav {
+  text-align: center;
+}
+
+.categories {
+  display: inline-block;
+  padding: 5px 25px;
+}
+
+.subCategories {
+  display: inline-block;
+  padding: 2px 10px;
+}
