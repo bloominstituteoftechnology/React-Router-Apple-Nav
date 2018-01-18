@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const TVNav = () => {
     return (
@@ -10,19 +11,19 @@ const TVNav = () => {
             <Navbar.Collapse>
                 <Nav>
                     <NavItem eventKey={1} href="#">
-                        Apple TV 4K
+                        <NavLink to="/apple-tv-4k">Apple TV 4K</NavLink>
                     </NavItem>
                     <NavItem eventKey={2} href="#">
-                        Apple TV
+                        <NavLink to="/apple-tv">Apple TV</NavLink>
                     </NavItem>
                     <NavItem eventKey={3} href="#">
-                        TV App
+                        <NavLink to="/tv-app">TV App</NavLink>
                     </NavItem>
                     <NavItem eventKey={4} href="#">
-                        Accessories
+                        <NavLink to="/tv-accessories">Accessories</NavLink>
                     </NavItem>
                     <NavItem eventKey={5} href="#">
-                        Compare
+                        <NavLink to="/tv-compare">Compare</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar.Collapse>

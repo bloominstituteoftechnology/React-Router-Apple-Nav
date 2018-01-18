@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const WatchNav = () => {
     return (
@@ -10,31 +11,31 @@ const WatchNav = () => {
             <Navbar.Collapse>
                 <Nav>
                     <NavItem eventKey={1} href="#">
-                        Apple Watch Series 3
+                        <NavLink to="/watch-series-3">Apple Watch Series 3</NavLink>
                     </NavItem>
                     <NavItem eventKey={2} href="#">
-                        Apple Watch Nike+
+                        <NavLink to="/watch-nike+">Apple Watch Nike+</NavLink>
                     </NavItem>
                     <NavItem eventKey={3} href="#">
-                        Apple Watch Hermes
+                        <NavLink to="/watch-hermes">Apple Watch Hermes</NavLink>
                     </NavItem>
                     <NavItem eventKey={4} href="#">
-                        Apple Watch Edition
+                        <NavLink to="/watch-edition">Apple Watch Edition</NavLink>
                     </NavItem>
                     <NavItem eventKey={5} href="#">
-                        Apple Watch Series 1
+                        <NavLink to="/watch-series-1">Apple Watch Series 1</NavLink>
                     </NavItem>
                     <NavItem eventKey={6} href="#">
-                        watchOS
+                        <NavLink to="/watch-os">watchOS</NavLink>
                     </NavItem>
                     <NavItem eventKey={7} href="#">
-                        Brands
+                        <NavLink to="/watch-brands">Brands</NavLink>
                     </NavItem>
                     <NavItem eventKey={8} href="#">
-                        Accessories
+                        <NavLink to="/watch-accessories">Accessories</NavLink>
                     </NavItem>
                     <NavItem eventKey={9} href="#">
-                        Compare
+                        <NavLink to="/watch-compare">Compare</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar.Collapse>

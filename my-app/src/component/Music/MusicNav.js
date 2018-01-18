@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const MusicNav = () => {
     return (
@@ -10,22 +11,22 @@ const MusicNav = () => {
             <Navbar.Collapse>
                 <Nav>
                     <NavItem eventKey={1} href="#">
-                        Apple Music
+                        <NavLink to="/apple-music">Apple Music</NavLink>
                     </NavItem>
                     <NavItem eventKey={2} href="#">
-                        iTunes
+                        <NavLink to="/itunes">iTunes</NavLink>
                     </NavItem>
                     <NavItem eventKey={3} href="#">
-                        HomePod
+                        <NavLink to="/homepod">HomePod</NavLink>
                     </NavItem>
                     <NavItem eventKey={4} href="#">
-                        iPod Touch
+                        <NavLink to="/ipod-touch">iPod Touch</NavLink>
                     </NavItem>
                     <NavItem eventKey={5} href="#">
-                        Music Accessories
+                        <NavLink to="/music-accessories">Music Accessories</NavLink>
                     </NavItem>
                     <NavItem eventKey={6} href="#">
-                        Gift Cards
+                        <NavLink to="/gift-cards">Gift Cards</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar.Collapse>
