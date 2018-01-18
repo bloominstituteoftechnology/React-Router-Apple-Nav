@@ -1,7 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import IRactNav from './../IRactNav/IRactNav';
-import IRactPro from './../IRactPro/IRactPro';
 
 import './IRact.css';
 
@@ -12,13 +12,22 @@ export default class IRact extends React.Component {
 			<div className="ProductLine">
 				<IRactNav />
 
-				<IRactPro />
+				<div className="IRactPage--IRactPro">
+					<div className="ProductLine__item">
+						<h2>iRact Pro</h2>
+						<p>
+							Anything you can Ract,<br />
+							React can do better.
+						</p>
 
-				<hr/>
+						<br />
 
-				<div className="ProductLine__item">
-					<h2>iRact</h2>
-					<p>Flat-out Ract</p>
+						<div className="LinkContainer">
+							<NavLink to="/iract-pro" className="Link">Learn more</NavLink>
+						<div className="Link--carot"> ></div>
+					</div>
+
+					</div>
 				</div>
 			</div>
 		)

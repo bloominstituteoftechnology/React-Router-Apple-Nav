@@ -8,12 +8,12 @@ export default class iRactNav extends React.Component {
 	render() {
 		return(
 			<div className="ProductBar">
-				<NavLink to="/iract/iract-pro" className="ProductBar__item">iRact Pro</NavLink>
-				<div className="ProductBar__item">iRact</div>
-				<div className="ProductBar__item">iRact mini</div>
-				<div className="ProductBar__item">iRT 11</div>
-				<div className="ProductBar__item">Raccessories</div>
-				<div className="ProductBar__item">Rompare</div>
+				<NavLink to="/iract-pro" className="ProductBar__item">iRact Pro</NavLink>
+				<NavLink to="/iract-1.0" className="ProductBar__item">iRact</NavLink>
+				<div to="/iract-mini" className="ProductBar__item">iRact mini</div>
+				<NavLink to="/iRT/iRT-11" className="ProductBar__item">iRT 11</NavLink>
+				<div to="/shop/iract/iract-accessories" className="ProductBar__item">Accessories</div>
+				<div to="/iract/compare" className="ProductBar__item">Compare</div>
 			</div>
 		)
 	}

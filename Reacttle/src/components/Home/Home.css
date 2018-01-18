@@ -3,3 +3,36 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.HomePage__ireactx {
+	display: inherit;
+	flex-direction: inherit;
+	align-items: inherit;
+
+	margin-bottom: 10px;
+	width: 100%;
+	height: 500px;
+
+	background-color: #e0fff7;
+
+	text-decoration: none;
+	color: black;
+}
+
+.HomePage__ireact8 {
+	display: inherit;
+	flex-direction: inherit;
+	align-items: inherit;
+
+	width: 100%;
+	height: 500px;
+
+	background-color: #ffdae0;
+
+	text-decoration: none;
+	color: black;
+}
+
+.reduceMarginsHeader {
+	margin-bottom: 0;
+}

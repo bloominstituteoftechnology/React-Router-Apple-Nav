@@ -1,24 +1,27 @@
-.ProductLine {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.ProductLine__item {
-	margin-top: 35px;
-	margin-bottom: 350px;
-
-	text-align: center;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.ProductLine__item p {
-	margin: 0;
-}
-
-hr {
+.ReacPage__IReacPro {
 	width: 100%;
+	background-color: #1A1A1A;
+}
+
+.ReacPage__IReacPro__text {
+	color: white;
+}
+
+.LinkContainer {
+	display: inline;
+}
+
+.Link {
+	display: inline;
+	color: #00bfff;
+	text-decoration: none
+}
+
+.Link:hover {
+	text-decoration: underline;
+}
+
+.Link--carot {
+	display: inline;
+	color: #00bfff;
 }

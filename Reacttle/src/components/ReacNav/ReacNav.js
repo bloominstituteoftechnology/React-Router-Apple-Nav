@@ -11,12 +11,12 @@ export default class ReacNav extends React.Component {
 				<NavLink to="/reacbook-air" path="/reac/reacbook-air" className="ProductBar__item">ReacBook Air</NavLink>
 				<NavLink to="/reacbook-pro" className="ProductBar__item">ReacBook Pro</NavLink>
 				<NavLink to="/ireac" className="ProductBar__item">iReac</NavLink>
-				<NavLink to="/ireac-pro"className="ProductBar__item">iReac Pro</NavLink>
-				<NavLink to="/reac-pro"className="ProductBar__item">Reac Pro</NavLink>
-				<NavLink to="/reac-mini"className="ProductBar__item">Reac mini</NavLink>
-				<NavLink to="/shop/reac/reac-acessories"className="ProductBar__item">Accessories</NavLink>
-				<NavLink to="/reacos/high-rierra"className="ProductBar__item">High Rierra</NavLink>
-				<NavLink to="/reac/compare"className="ProductBar__item">Compare</NavLink>
+				<NavLink to="/ireac-pro" className="ProductBar__item">iReac Pro</NavLink>
+				<NavLink to="/reac-pro" className="ProductBar__item">Reac Pro</NavLink>
+				<NavLink to="/reac-mini" className="ProductBar__item">Reac mini</NavLink>
+				<div to="/shop/reac/reac-acessories" className="ProductBar__item">Accessories</div>
+				<div to="/reacos/high-rierra"className="ProductBar__item">High Rierra</div>
+				<div to="/reac/compare" className="ProductBar__item">Compare</div>
 			</div>
 		)
 	}
