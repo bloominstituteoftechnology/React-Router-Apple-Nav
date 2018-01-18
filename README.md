@@ -7,9 +7,13 @@
 ## Start by forking and cloning this repository.
 ## Questions
 1. What is the difference between _server side routing_ and _client side routing_?
+  * Client side routing will dynamically load in content from the server based on the current route. Server side routing will redirect you to an entirely new page.
 1. Mention some advantages of using client side routing.
+  * The page doesn't have to completely reload and a SPA feels more responsive.
 1. Which component is used to define a route and what _props_ are commonly added to it?
+  * <Route to={route to go to} component={component to render}>
 1. How can I make sure that the component associated with the _"/"_ route is not displayed for every other route?
+  * Use the 'exact' attribute on the root route component.
 
 ## Project
 1. Use *create-react-app* to make an application, name it anything you want.
