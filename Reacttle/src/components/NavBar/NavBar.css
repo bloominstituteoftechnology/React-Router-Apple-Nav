@@ -27,6 +27,8 @@
 }
 
 .NavBar__item--logo {
+	animation: App-logo-spin infinite 10s linear;
+
 	width: 19px;
 	height: 19px;
 	padding: 0;

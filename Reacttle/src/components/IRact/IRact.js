@@ -6,7 +6,6 @@ import IRactNav from './../IRactNav/IRactNav';
 import './IRact.css';
 
 export default class IRact extends React.Component {
-
 	render() {
 		return (
 			<div className="ProductLine">
@@ -23,13 +22,14 @@ export default class IRact extends React.Component {
 						<br />
 
 						<div className="LinkContainer">
-							<NavLink to="/iract-pro" className="Link">Learn more</NavLink>
-						<div className="Link--carot"> ></div>
-					</div>
-
+							<NavLink to="/iract-pro" className="Link">
+								Learn more
+							</NavLink>
+							<div className="Link--carot"> ></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		)
+		);
 	}
 }
