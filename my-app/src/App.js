@@ -19,6 +19,9 @@ import { AppleMusic, iTunes, HomePod, iPodTouch, MusicAccessories, GiftCards } f
 
 
 import Switch from 'react-router-dom/Switch';
+const Home = () => {
+  return <h1>Home Page</h1>
+}
 
 class App extends Component {
   render() {
@@ -26,6 +29,7 @@ class App extends Component {
       <div className="App">
         <Route path="/" component={Navigation} />
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route path="/mac" component={MacNav} />
           <Route path="/ipad" component={iPadNav} />
           <Route path="/iphone" component={iPhoneNav} />
