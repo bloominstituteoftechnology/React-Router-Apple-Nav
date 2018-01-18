@@ -1,0 +1,12 @@
+.navbar-nav {
+    padding-left: 100px;
+}
+
+.navbar {
+    padding: 0;
+    margin: -1.5px;
+}
+
+a {
+    color: inherit;
+}
