@@ -22,9 +22,15 @@ class App extends Component {
     <Route path="/tv" component={ Tv }/>
     <Route path="/music" component={ Music }/>
     <Route path="/support" component={ Support }/>
-    <Route path='/macbook' component={Randomcomponent}/>
-    <Route path='/macbook-air' component={Randomcomponent}/>
-
+    <Route path='/macbook' component={random}/>
+    <Route path='/macbook-air' component={random}/>
+    <Route path='/imac' component={random}/>
+    <Route path='/imac-pro' component={random}/>
+    <Route path='/mac-pro' component={random}/>
+    <Route path='/mac-mini' component={random}/>
+    <Route path='/accessroies' component={random}/>
+    <Route path='/high-sierra' component={random}/>
+    <Route path='/compare' component={random}/>
     </div>
     )
   }
