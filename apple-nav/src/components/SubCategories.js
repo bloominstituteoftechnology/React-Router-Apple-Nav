@@ -53,7 +53,7 @@ const watches = [
     'Compare'
 ];
 
-const music =  [
+const musics =  [
     'Apple Music',
     'iTunes',
     'HomePad',
@@ -102,7 +102,7 @@ const Ipads = () => {
 
 
 const Iphone = ({ match }) => {
-    return <div className="">Ipad{match.params.name}</div>;
+    return <div className="">iPhone{match.params.name}</div>;
 };
 const Iphones = () => {
     return (
@@ -119,7 +119,60 @@ const Iphones = () => {
     );
 };
 
+// Watch
+const Watch = ({ match }) => {
+    return <div className="">Watch{match.params.name}</div>;
+};
+const Watches = () => {
+    return (
+        <div className="">
+            {watches.map(product => {
+                return (
+                    <Link className="" to={`/watches/${product}`} key={product}>
+                        {" "}
+                        {product}{" "}
+                    </Link>
+                );
+            })}
+        </div>
+    );
+};
 
+//TV
+const TV = ({ match }) => {
+    return <div className="">TVs{match.params.name}</div>;
+};
+const TVS = () => {
+    return (
+        <div className="">
+            {tvs.map(product => {
+                return (
+                    <Link className="" to={`/tvs/${product}`} key={product}>
+                        {" "}
+                        {product}{" "}
+                    </Link>
+                );
+            })}
+        </div>
+    );
+};
 
-
-export {Macs, Mac, Ipads, Ipad, Iphones, Iphone};
+//musics
+const Music = ({match}) => {
+  return <div>Music{match.params.name}</div>
+};
+const Musics = () => {
+    return (
+        <div className="">
+            {musics.map(product => {
+                return (
+                    <Link className="" to={`/musics/${product}`} key={product}>
+                        {" "}
+                        {product}{" "}
+                    </Link>
+                );
+            })}
+        </div>
+    );
+};
+export {Macs, Mac, Ipads, Ipad, Iphones, Iphone, Watches,Watch, TVS, TV, Musics, Music};
