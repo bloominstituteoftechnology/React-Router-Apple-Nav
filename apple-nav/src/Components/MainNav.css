@@ -1,0 +1,36 @@
+.nav {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #333;
+    font-size: 14px;
+    max-height: 44px;
+    min-width: 1024px;
+}
+
+.nav__links-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 1024px;
+    max-width: 980px;
+    max-height: 44px;
+    margin: 0 auto;    
+}
+
+.nav__links {    
+padding: 0 22px;
+}
+
+.subNav {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #333;
+    font-size: 14px;
+    max-height: 44px;
+    min-width: 1024px;
+}
