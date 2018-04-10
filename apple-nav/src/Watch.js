@@ -18,7 +18,7 @@ return (
     <Link to="/apple-watch-edition">Apple Watch Edition</Link>
         </li>
         <li>
-    <Link to="/apple-watchos">watch OS</Link>
+    <Link to="/apple-watches">watch OS</Link>
         </li>
         <li>
     <Link to="/bands">Bands</Link>

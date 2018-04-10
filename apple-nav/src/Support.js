@@ -15,4 +15,4 @@ return (
     </div>
 )
 }
-export default Ipad;
+export default Support;

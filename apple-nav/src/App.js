@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import { BrowserRouter as Router,
+  Route
+  } from 'react-router-dom';
 import Ipad from './Ipad';
 import Iphone from './Iphone';
 import Mac from './Mac';
@@ -14,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Navigation/>
     <Route exact path="/" component={ Navigation } />
     <Route path ="/mac" component={ Mac } />
     <Route path="/ipad" component={ Ipad }/>
@@ -31,6 +35,27 @@ class App extends Component {
     <Route path='/accessroies' component={random}/>
     <Route path='/high-sierra' component={random}/>
     <Route path='/compare' component={random}/>
+    <Route path='/ipad-pro' component={random}/>
+    <Route path='/ipad' component={random}/>
+    <Route path='/ipad-mini' component={random}/>
+    <Route path='/ios' component={random}/>
+    <Route path='/accesroies' component={random}/>
+    <Route path='/compare' component={random}/>
+    <Route path='/apple-watch-3' component={random}/>
+    <Route path='/apple-watch-nike' component={random}/>
+    <Route path='/apple-watch-hermes' component={random}/>
+    <Route path='/apple-watch-edition' component={random}/>
+    <Route path='/apple-watches' component={random}/>
+    <Route path='/accessroies' component={random}/>
+    <Route path='/compare' component={random}/>
+    <Route path='/apple-music' component={random}/>
+    <Route path='/itunes' component={random}/>
+    <Route path='/homepod' component={random}/>
+    <Route path='/ipod-touch' component={random}/>
+    <Route path='/accessroies' component={random}/>
+    <Route path='/gift-cards' component={random}/>
+    <Route path='/contact' component={random}/>
+    <Route path='/support' component={random}/>
     </div>
     )
   }

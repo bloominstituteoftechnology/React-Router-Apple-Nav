@@ -7,3 +7,4 @@ function random() {
         </div>
     )
 }
+export default random;
