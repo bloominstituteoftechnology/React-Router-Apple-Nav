@@ -4,15 +4,15 @@ import Submenu from './Submenu';
 
 function Mac({ match }) {
   const items = [
-    { path: 'macbook', title: 'MacBook' },
-    { path: 'macbook-air', title: 'Macbook Air' },
-    { path: 'imac', title: 'iMac' },
-    { path: 'imac-pro', title: 'iMac Pro' },
-    { path: 'mac-pro', title: 'Mac Pro' },
-    { path: 'mac-mini', title: 'Mac Mini' },
-    { path: 'accessories', title: 'Accessories' },
-    { path: 'high-sierra', title: 'High Sierra' },
-    { path: 'compare', title: 'Compare' },
+    { path: 'macbook', title: 'MacBook', glyph: '' },
+    { path: 'macbook-air', title: 'Macbook Air', glyph: '' },
+    { path: 'imac', title: 'iMac', glyph: '' },
+    { path: 'imac-pro', title: 'iMac Pro', glyph: '' },
+    { path: 'mac-pro', title: 'Mac Pro', glyph: '' },
+    { path: 'mac-mini', title: 'Mac Mini', glyph: '' },
+    { path: 'accessories', title: 'Accessories', glyph: '' },
+    { path: 'high-sierra', title: 'High Sierra', glyph: '' },
+    { path: 'compare', title: 'Compare', glyph: '' },
   ];
   
   return <Submenu match={match} items={items} />
