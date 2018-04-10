@@ -26,3 +26,22 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.nav-styles{
+  margin:0 auto;
+  display:flex;
+padding-left:300px;
+padding-right: 300px;
+  justify-content: space-around;
+  background:black;
+  color:white;
+  text-decoration: none;
+  font-size: 12px;
+  height:30px
+}
+.navText-style{
+  color:white;
+}
+.navText-style:hover{
+  color:gray;
+  text-decoration: none;
+}
