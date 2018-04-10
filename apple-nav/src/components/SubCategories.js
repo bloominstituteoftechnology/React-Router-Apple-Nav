@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import './SubCategories.css'
 const macs = [
     'MacBook',
      'MacBook Air',
@@ -68,10 +69,10 @@ const Mac = ({ match }) => {
 };
 const Macs = () => {
     return (
-        <div className="substyles">
+        <div className="submenu">
             {macs.map(product => {
                 return (
-                    <Link className="substyle" to={`/mac/${product}`} key={product}>
+                    <Link className="submenu" to={`/mac/${product}`} key={product}>
                         {" "}
                         {product}{" "}
                     </Link>
@@ -87,10 +88,10 @@ const Ipad = ({ match }) => {
 };
 const Ipads = () => {
     return (
-        <div className="">
+        <div className="submenu">
             {ipads.map(product => {
                 return (
-                    <Link className="" to={`/ipads/${product}`} key={product}>
+                    <Link className="submenu" to={`/ipads/${product}`} key={product}>
                         {" "}
                         {product}{" "}
                     </Link>
@@ -102,14 +103,14 @@ const Ipads = () => {
 
 
 const Iphone = ({ match }) => {
-    return <div className="">iPhone{match.params.name}</div>;
+    return <div className="submenu">iPhone{match.params.name}</div>;
 };
 const Iphones = () => {
     return (
-        <div className="">
+        <div className="submenu">
             {iphones.map(product => {
                 return (
-                    <Link className="" to={`/iphones/${product}`} key={product}>
+                    <Link  className="submenu" to={`/iphones/${product}`} key={product} >
                         {" "}
                         {product}{" "}
                     </Link>
@@ -125,10 +126,10 @@ const Watch = ({ match }) => {
 };
 const Watches = () => {
     return (
-        <div className="">
+        <div className="submenu">
             {watches.map(product => {
                 return (
-                    <Link className="" to={`/watches/${product}`} key={product}>
+                    <Link className="submenu" to={`/watches/${product}`} key={product}>
                         {" "}
                         {product}{" "}
                     </Link>
@@ -144,10 +145,10 @@ const TV = ({ match }) => {
 };
 const TVS = () => {
     return (
-        <div className="">
+        <div className="submenu">
             {tvs.map(product => {
                 return (
-                    <Link className="" to={`/tvs/${product}`} key={product}>
+                    <Link className="submenu" to={`/tvs/${product}`} key={product}>
                         {" "}
                         {product}{" "}
                     </Link>
@@ -163,10 +164,10 @@ const Music = ({match}) => {
 };
 const Musics = () => {
     return (
-        <div className="">
+        <div className="submenu">
             {musics.map(product => {
                 return (
-                    <Link className="" to={`/musics/${product}`} key={product}>
+                    <Link className="submenu" to={`/musics/${product}`} key={product}>
                         {" "}
                         {product}{" "}
                     </Link>
