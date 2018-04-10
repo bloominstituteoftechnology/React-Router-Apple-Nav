@@ -10,6 +10,7 @@
 .Nav--item {
   text-decoration: none;
   grid-area: content;
+  color: white;
 }
 
 .Nav--item:visited {

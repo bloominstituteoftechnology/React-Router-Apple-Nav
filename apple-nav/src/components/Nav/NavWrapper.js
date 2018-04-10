@@ -23,7 +23,7 @@ const Nav = ({ menuItems }) => {
     <div className="Nav">
       {menuItems.map(menuVal => {
         return (
-          <Link className="Nav--item" to={`/${menuVal}`}>
+          <Link className="Nav--item" to={`/${menuVal.toLowerCase()}`}>
             {menuVal}
           </Link>
         ) // eventually will be a pretty component
