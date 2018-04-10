@@ -1,0 +1,19 @@
+.NavBar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+  color: rgba(255, 255, 255, 0);
+  margin: 0;
+}
+
+.MenuIcons {
+  width: 25px;
+  height: 25px;
+}
+
+.links {
+  color: white;
+  font-weight: normal;
+}

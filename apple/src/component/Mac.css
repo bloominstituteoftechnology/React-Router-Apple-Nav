@@ -1,0 +1,19 @@
+.subNavBar {
+  background-color: rgb(92, 82, 82);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+  color: rgba(255, 255, 255, 0);
+  margin: 0;
+}
+
+.subMenuIcons {
+  width: 75px;
+  height: 75px;
+}
+
+.links {
+  color: white;
+  font-weight: normal;
+}
