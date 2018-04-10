@@ -1,0 +1,8 @@
+.navContainer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  width: 1000px;
+  margin: 0 auto;
+}
