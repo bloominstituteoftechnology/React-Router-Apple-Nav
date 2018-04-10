@@ -1,0 +1,13 @@
+.NavHeader {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    padding: 0 5rem;
+}
+
+.NavHeader div {
+    margin: auto;
+}
