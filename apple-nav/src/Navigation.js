@@ -1,34 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
        <div className="NavBar">
-        <Link to='/'>Home</Link>
+        <NavLink to='/'>Home</NavLink>
         <ul>
           <li>
-            <Link to='/mac'>Mac</Link>
+            <NavLink to='/mac'>Mac</NavLink>
           </li>
           <li>
-            <Link to='/ipad'>Ipad</Link>
+            <NavLink to='/ipad'>Ipad</NavLink>
           </li>
           <li>
-            <Link to='/iphone'>Iphone</Link>
+            <NavLink to='/iphone'>Iphone</NavLink>
           </li>
           <li>
-            <Link to='/watch'>Watch</Link>
+            <NavLink to='/watch'>Watch</NavLink>
           </li>
           <li>
-            <Link to='/tv'>Tv</Link>
+            <NavLink to='/tv'>Tv</NavLink>
           </li>
           <li>
-            <Link to='/music'>Music</Link>
+            <NavLink to='/music'>Music</NavLink>
           </li>
           <li>
-            <Link to='/support'>Support</Link>
+            <NavLink to='/support'>Support</NavLink>
           </li>
           <li>
-            <Link to='/search'>Search</Link>
+            <NavLink to='/search'>Search</NavLink>
           </li>
         </ul>
     </div>

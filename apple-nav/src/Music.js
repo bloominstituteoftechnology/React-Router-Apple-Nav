@@ -1,27 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Music() {
 return (
     <div className="Submenu">
     <ul>
         <li>
-    <Link to="/apple-music">Apple Music</Link>
+    <NavLink to="/apple-music">Apple Music</NavLink>
         </li>
         <li>
-    <Link to="/itunes">iTunes</Link>
+    <NavLink to="/itunes">iTunes</NavLink>
         </li>
         <li>
-    <Link to="/homepod">HomePod</Link>
+    <NavLink to="/homepod">HomePod</NavLink>
         </li>
         <li>
-    <Link to="/ipod-touch">iPod touch</Link>
+    <NavLink to="/ipod-touch">iPod touch</NavLink>
         </li>
         <li>
-    <Link to="/accessroies"> Music Accessories</Link>
+    <NavLink to="/accessroies"> Music Accessories</NavLink>
         </li>
         <li>
-    <Link to="/gift-cards">Gift Cards</Link>
+    <NavLink to="/gift-cards">Gift Cards</NavLink>
         </li>
     </ul>
     </div>

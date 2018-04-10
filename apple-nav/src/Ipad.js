@@ -1,27 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Ipad() {
 return (
     <div className="Submenu">
     <ul>
         <li>
-    <Link to="/ipad-pro">Ipad-Pro</Link>
+    <NavLink to="/ipad-pro">Ipad-Pro</NavLink>
         </li>
         <li>
-    <Link to="/ipad">Ipad</Link>
+    <NavLink to="/ipad">Ipad</NavLink>
         </li>
         <li>
-    <Link to="/ipad-mini">Ipad-Mini 4</Link>
+    <NavLink to="/ipad-mini">Ipad-Mini 4</NavLink>
         </li>
         <li>
-    <Link to="/ios">iOS 11</Link>
+    <NavLink to="/ios">iOS 11</NavLink>
         </li>
         <li>
-    <Link to="/accessroies">Accessories</Link>
+    <NavLink to="/accessroies">Accessories</NavLink>
         </li>
         <li>
-    <Link to="/compare">Compare</Link>
+    <NavLink to="/compare">Compare</NavLink>
         </li>
     </ul>
     </div>

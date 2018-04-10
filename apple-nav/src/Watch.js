@@ -1,33 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Watch() {
 return (
     <div className="Submenu">
     <ul>
         <li>
-    <Link to="/apple-watch-3">Apple Watch Series 3</Link>
+    <NavLink to="/apple-watch-3">Apple Watch Series 3</NavLink>
         </li>
         <li>
-    <Link to="/apple-watch-nike">Apple Watch Nike+</Link>
+    <NavLink to="/apple-watch-nike">Apple Watch Nike+</NavLink>
         </li>
         <li>
-    <Link to="/apple-watch-hermes">Apple Watch Hermes</Link>
+    <NavLink to="/apple-watch-hermes">Apple Watch Hermes</NavLink>
         </li>
         <li>
-    <Link to="/apple-watch-edition">Apple Watch Edition</Link>
+    <NavLink to="/apple-watch-edition">Apple Watch Edition</NavLink>
         </li>
         <li>
-    <Link to="/apple-watches">watch OS</Link>
+    <NavLink to="/apple-watches">watch OS</NavLink>
         </li>
         <li>
-    <Link to="/bands">Bands</Link>
+    <NavLink to="/bands">Bands</NavLink>
         </li>
         <li>
-    <Link to="/accessroies">Accessories</Link>
+    <NavLink to="/accessroies">Accessories</NavLink>
         </li>
         <li>
-    <Link to="/compare">Compare</Link>
+    <NavLink to="/compare">Compare</NavLink>
         </li>
     </ul>
     </div>

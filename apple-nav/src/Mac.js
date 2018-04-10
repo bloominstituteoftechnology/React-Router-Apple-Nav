@@ -1,36 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Mac() {
 return (
     <div className="Submenu">
     <ul>
         <li>
-    <Link to="/macbook">MacBook</Link>
+    <NavLink to="/macbook">MacBook</NavLink>
         </li>
         <li>
-    <Link to="/macbook-air">MacBook Air</Link>
+    <NavLink to="/macbook-air">MacBook Air</NavLink>
         </li>
         <li>
-    <Link to="/imac">iMac</Link>
+    <NavLink to="/imac">iMac</NavLink>
         </li>
         <li>
-    <Link to="/imac-pro">iMac Pro</Link>
+    <NavLink to="/imac-pro">iMac Pro</NavLink>
         </li>
         <li>
-    <Link to="/mac-pro">Mac Pro</Link>
+    <NavLink to="/mac-pro">Mac Pro</NavLink>
         </li>
         <li>
-    <Link to="/mac-mini">Mac mini</Link>
+    <NavLink to="/mac-mini">Mac mini</NavLink>
         </li>
         <li>
-    <Link to="/accessroies">Accessories</Link>
+    <NavLink to="/accessroies">Accessories</NavLink>
         </li>
         <li>
-    <Link to="/high-sierra">High Sierra</Link>
+    <NavLink to="/high-sierra">High Sierra</NavLink>
         </li>
         <li>
-    <Link to="/compare">Compare</Link>
+    <NavLink to="/compare">Compare</NavLink>
         </li>
     </ul>
     </div>

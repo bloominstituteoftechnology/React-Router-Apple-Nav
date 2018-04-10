@@ -1,24 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Tv() {
 return (
     <div className="Submenu">
     <ul>
         <li>
-    <Link to="/apple-tv-4k">Apple TV 4k</Link>
+    <NavLink to="/apple-tv-4k">Apple TV 4k</NavLink>
         </li>
         <li>
-    <Link to="/apple-tv">Apple TV</Link>
+    <NavLink to="/apple-tv">Apple TV</NavLink>
         </li>
         <li>
-    <Link to="/tv-app">Ipad-Mini 4</Link>
+    <NavLink to="/tv-app">Ipad-Mini 4</NavLink>
         </li>
         <li>
-    <Link to="/accessroies">Accessories</Link>
+    <NavLink to="/accessroies">Accessories</NavLink>
         </li>
         <li>
-    <Link to="/compare">Compare</Link>
+    <NavLink to="/compare">Compare</NavLink>
         </li>
     </ul>
     </div>
