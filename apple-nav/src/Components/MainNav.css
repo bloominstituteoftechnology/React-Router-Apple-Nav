@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    background-color: #333;
+    background-color: #000;
     font-size: 14px;
     max-height: 44px;
     min-width: 1024px;
@@ -29,8 +29,9 @@ padding: 0 22px;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    background-color: #333;
+    background-color: #141414;
     font-size: 14px;
-    max-height: 44px;
+    padding: 12px 0;
+    max-height: 86px;
     min-width: 1024px;
 }

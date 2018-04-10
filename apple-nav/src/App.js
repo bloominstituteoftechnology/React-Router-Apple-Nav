@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import dummyData from './dummyData';
 
 import MainNav from './Components/MainNav';
-import SubNav from './Components/SubNav';
 import './App.css';
 
 

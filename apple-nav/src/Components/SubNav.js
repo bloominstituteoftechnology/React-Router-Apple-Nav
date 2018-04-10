@@ -1,27 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import dummyData from '../dummyData';
 import './MainNav.css';
 
-// class SubNav  extends Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             subdata: []
-//         }
-//     }
-
-//     componentDidMount() {
-//         this.setState({ dummyData })
-//     }
-
-
-//     render() {
-//         return (
-//             <h1> Sub Nav here </h1>
-//         );
-//     }
-// };
+const styled = {
+    textDecoration: 'none',
+    color: 'white'
+};
 
 const getSub = (mainID) => {
     const data = dummyData;
@@ -39,13 +24,18 @@ const SubNav = props => {
     const subData = getSub(list);
     console.log(subData)
     console.log(props)
+    if(subData.sub.length === 0) return null;
     return (
-        <div className="nav__links-Container">
-            {subData.sub.map((data, index) => (
-                <div key={data.name + index} className="nav__links">
-                    {data.name}
-                </div>
-            ))}
+        <div className="subNav">
+            <div className="nav__links-Container">
+                {subData.sub.map((data, index) => (
+                    <div key={data.name + index} className="nav__links">
+                        <Link to={`/${data.name}`} style={styled}>
+                            {data.name}
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </div>
 
     );
