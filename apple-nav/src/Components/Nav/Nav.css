@@ -1,0 +1,16 @@
+.navItem{
+  color: white;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  outline: 0;
+  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+}
+.navItem:hover{
+  color: rgb(201, 201, 201);
+}
+.font-25{
+  font-size: 25px;
+}
