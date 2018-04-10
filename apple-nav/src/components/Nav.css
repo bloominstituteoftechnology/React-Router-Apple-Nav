@@ -1,0 +1,26 @@
+.NavAll {
+    height: 50px;
+    display: flex;
+    margin: 0px auto;
+    background-color: #333333;
+    align-items: center;
+}
+
+.Nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.NavItems {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.NavHome {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
