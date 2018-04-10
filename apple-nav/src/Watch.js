@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Submenu from './Submenu';
 
 function Watch({ match }) {
   const items = [
@@ -12,6 +13,6 @@ function Watch({ match }) {
     { path: 'accessories', title: 'Accessories' },
     { path: 'compare', title: 'Compare' },
   ]
-  return <SubMenu match={match} items={items} />
+  return <Submenu match={match} items={items} />
 }
 export default Watch;
