@@ -1,16 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Submenu from './Submenu'
 
-function Tv() {
-  return (
-    <div className="Submenu">
-      <NavLink to="/apple-tv-4k">Apple TV 4k</NavLink>
-      <NavLink to="/apple-tv">Apple TV</NavLink>
-      <NavLink to="/tv-app">Ipad-Mini 4</NavLink>
-      <NavLink to="/accessroies">Accessories</NavLink>      
-      <NavLink to="/compare">Compare</NavLink>
-    </div>
-  )
+function Tv({ match }) {
+  const items = [
+    { path: 'apple-tv-4k', title: 'Apple TV 4k' },
+    { path: 'apple-tv', title: 'Apple TV' },
+    { path: 'tv-app', title: 'Ipad-Mini 4' },
+    { path: 'accessories', title: 'Accessories' },
+    { path: 'compare', title: 'Compare' },
+  ]  
+  return <Submenu match={match} items={items} />
 }
 
 export default Tv;
