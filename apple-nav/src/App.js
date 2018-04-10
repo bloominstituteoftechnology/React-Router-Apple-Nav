@@ -18,41 +18,41 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <Route path ="/mac" component={ Mac } />
+        <Route path="/mac" component={ Mac } />
         <Route path="/ipad" component={ Ipad }/>
         <Route path="/iphone" component={ Iphone }/>
         <Route path="/watch" component={ Watch }/>
         <Route path="/tv" component={ Tv }/>
         <Route path="/music" component={ Music }/>
         <Route path="/support" component={ Support }/>
-        <Route path='/macbook' component={random}/>
-        <Route path='/macbook-air' component={random}/>
-        <Route path='/imac' component={random}/>
-        <Route path='/imac-pro' component={random}/>
-        <Route path='/mac-pro' component={random}/>
-        <Route path='/mac-mini' component={random}/>
-        <Route path='/accessroies' component={random}/>
-        <Route path='/high-sierra' component={random}/>
+        <Route path='/mac/macbook' component={random}/>
+        <Route path='/mac/macbook-air' component={random}/>
+        <Route path='/mac/imac' component={random}/>
+        <Route path='/mac/imac-pro' component={random}/>
+        <Route path='/mac/mac-pro' component={random}/>
+        <Route path='/mac/mac-mini' component={random}/>
+        <Route path='/mac/accessories' component={random}/>
+        <Route path='/mac/high-sierra' component={random}/>
         <Route path='/compare' component={random}/>
-        <Route path='/ipad-pro' component={random}/>
-        <Route path='/ipad' component={random}/>
-        <Route path='/ipad-mini' component={random}/>
-        <Route path='/ios' component={random}/>
-        <Route path='/apple-watch-3' component={random}/>
-        <Route path='/apple-watch-nike' component={random}/>
-        <Route path='/apple-watch-hermes' component={random}/>
-        <Route path='/apple-watch-edition' component={random}/>
-        <Route path='/apple-watches' component={random}/>
-        <Route path='/apple-music' component={random}/>
-        <Route path='/itunes' component={random}/>
-        <Route path='/homepod' component={random}/>
-        <Route path='/ipod-touch' component={random}/>
-        <Route path='/gift-cards' component={random}/>
-        <Route path='/contact' component={random}/>
-        <Route path='/support' component={random}/>
-        <Route path='/apple-tv-4k' component={random}/>
-        <Route path='/apple-tv' component={random}/>
-        <Route path='/tv-app' component={random}/>
+        <Route path='/ipad/ipad-pro' component={random}/>
+        <Route path='/ipad/ipad' component={random}/>
+        <Route path='/ipad/ipad-mini' component={random}/>
+        <Route path='/ipad/ios' component={random}/>
+        <Route path='/watch/apple-watch-3' component={random}/>
+        <Route path='/watch/apple-watch-nike' component={random}/>
+        <Route path='/watch/apple-watch-hermes' component={random}/>
+        <Route path='/watch/apple-watch-edition' component={random}/>
+        <Route path='/watch/apple-watches' component={random}/>
+        <Route path='/music/apple-music' component={random}/>
+        <Route path='/music/itunes' component={random}/>
+        <Route path='/music/homepod' component={random}/>
+        <Route path='/music/ipod-touch' component={random}/>
+        <Route path='/music/gift-cards' component={random}/>
+        <Route path='/support/contact' component={random}/>
+        <Route path='/support/support' component={random}/>
+        <Route path='/tv/apple-tv-4k' component={random}/>
+        <Route path='/tv/apple-tv' component={random}/>
+        <Route path='/tv/tv-app' component={random}/>
       </div>
     )
   }
