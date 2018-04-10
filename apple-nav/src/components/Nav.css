@@ -1,0 +1,25 @@
+.Nav {
+    background-color: black;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.Nav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+}
+
+.NavLink {
+    color:white;
+    text-decoration: none;
+}
+
+.Icon {
+    font-size: 25px;
+}
