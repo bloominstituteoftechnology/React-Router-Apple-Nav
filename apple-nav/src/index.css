@@ -3,3 +3,39 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.topNav {
+  background-color: #141414;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-item :hover {
+  color: #ABABAB;
+}
+
+.productOptions {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  color: #fff;
+  font-size: 11px;
+  margin: 3% 0;
+}
