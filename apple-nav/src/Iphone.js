@@ -1,19 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Submenu from './Submenu';
 
-function Iphone() {
-  return (
-    <div className="Submenu">
-      <NavLink to="/iphone-x">iPhone X</NavLink>
-      <NavLink to="/iphone-8">iPhone 8</NavLink>
-      <NavLink to="/iphone-7">iPhone 7</NavLink>
-      <NavLink to="/iphone-6">iPhone 6</NavLink>
-      <NavLink to="/iphone-se">iPhone SE</NavLink>
-      <NavLink to="/ios">iOS 11</NavLink>
-      <NavLink to="/accessroies">Accessories</NavLink>
-      <NavLink to="/compare">Compare</NavLink>
-    </div>
-  )
+function Iphone({ match }) {
+  const items = [
+    { path: 'iphone-x', title: 'iPhone X' },
+    { path: 'iphone-8', title: 'iPhone 8' },
+    { path: 'iphone-7', title: 'iPhone 7' },
+    { path: 'iphone-6', title: 'iPhone 6' },
+    { path: 'iphone-se', title: 'iPhone SE' },
+    { path: 'ios', title: 'iOS 11' },
+    { path: 'accessories', title: 'Accessories' },
+    { path: 'compare', title: 'Compare' }
+  ]
+
+  return <Submenu match={match} items={items} />
 }
 
 export default Iphone;

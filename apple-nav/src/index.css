@@ -16,3 +16,15 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.Submenu {
+  display: flex;
+  justify-content: center;
+  background-color: dimgray;
+}
+
+.Submenu a {
+  color: white;
+  padding: 25px 20px;
+  text-decoration: none;
+}

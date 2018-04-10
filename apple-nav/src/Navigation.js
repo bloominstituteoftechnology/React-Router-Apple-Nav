@@ -2,17 +2,21 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
+  const items = [
+    { path: '', title: 'Home' },
+    { path: 'mac', title: 'Mac' },
+    { path: 'ipad', title: 'iPad' },
+    { path: 'iphone', title: 'iPhone' },
+    { path: 'watch', title: 'Watch' },
+    { path: 'tv', title: 'TV' },
+    { path: 'music', title: 'Music' },
+    { path: 'support', title: 'Support' },
+    { path: 'search', title: 'Search' },
+  ]
+
   return (
     <div className="NavBar">
-      <NavLink activeClassName="NavBar--active" to='/'>Home</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/mac'>Mac</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/ipad'>Ipad</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/iphone'>Iphone</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/watch'>Watch</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/tv'>Tv</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/music'>Music</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/support'>Support</NavLink>
-      <NavLink activeClassName="NavBar--active" to='/search'>Search</NavLink>
+      {items.map((item) => <NavLink activeClassName="NavBar--active" to={`/${item.path}`}>{item.title}</NavLink>)}
     </div>
   );
 };
