@@ -39,23 +39,21 @@ class App extends Component {
     <Route path='/ipad' component={random}/>
     <Route path='/ipad-mini' component={random}/>
     <Route path='/ios' component={random}/>
-    <Route path='/accesroies' component={random}/>
-    <Route path='/compare' component={random}/>
     <Route path='/apple-watch-3' component={random}/>
     <Route path='/apple-watch-nike' component={random}/>
     <Route path='/apple-watch-hermes' component={random}/>
     <Route path='/apple-watch-edition' component={random}/>
     <Route path='/apple-watches' component={random}/>
-    <Route path='/accessroies' component={random}/>
-    <Route path='/compare' component={random}/>
     <Route path='/apple-music' component={random}/>
     <Route path='/itunes' component={random}/>
     <Route path='/homepod' component={random}/>
     <Route path='/ipod-touch' component={random}/>
-    <Route path='/accessroies' component={random}/>
     <Route path='/gift-cards' component={random}/>
     <Route path='/contact' component={random}/>
     <Route path='/support' component={random}/>
+    <Route path='/apple-tv-4k' component={random}/>
+    <Route path='/apple-tv' component={random}/>
+    <Route path='/tv-app' component={random}/>
     </div>
     )
   }
