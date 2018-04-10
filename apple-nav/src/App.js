@@ -38,26 +38,26 @@ class App extends Component {
 
 const Navigation = () => {
     return (
-        <div className="">
-            <Link className="" to="/mac">
+        <div className="mainmenu">
+            <Link className="mainmenu"   to="/mac" style={{ textDecoration: 'none' }}>
                 Mac
             </Link>
-            <Link className="" to="/ipad">
+            <Link className="mainmenu" to="/ipad" >
                 ipad
             </Link>
-            <Link className="" to="/iphone">
+            <Link className="mainmenu" to="/iphone">
                 iPhone
             </Link>
-            <Link className="" to="/watch">
+            <Link className="mainmenu" to="/watch">
                 Watch
             </Link>
-            <Link className="" to="/tv">
+            <Link className="mainmenu" to="/tv">
                 TV
             </Link>
-            <Link className="" to="/music">
+            <Link className="mainmenu" to="/music">
                 Music
             </Link>
-            <Link className="" to="/support">
+            <Link className="mainmenu" to="/support">
                 Support
             </Link>
         </div>

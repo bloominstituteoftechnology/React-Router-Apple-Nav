@@ -26,3 +26,18 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/*Harrison Brock Editon*/
+.mainmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000000;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.mainmenu Link {
+  text-decoration: none;
+}
