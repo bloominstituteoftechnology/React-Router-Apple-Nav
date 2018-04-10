@@ -3,34 +3,16 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-       <div className="NavBar">
-        <NavLink to='/'>Home</NavLink>
-        <ul>
-          <li>
-            <NavLink to='/mac'>Mac</NavLink>
-          </li>
-          <li>
-            <NavLink to='/ipad'>Ipad</NavLink>
-          </li>
-          <li>
-            <NavLink to='/iphone'>Iphone</NavLink>
-          </li>
-          <li>
-            <NavLink to='/watch'>Watch</NavLink>
-          </li>
-          <li>
-            <NavLink to='/tv'>Tv</NavLink>
-          </li>
-          <li>
-            <NavLink to='/music'>Music</NavLink>
-          </li>
-          <li>
-            <NavLink to='/support'>Support</NavLink>
-          </li>
-          <li>
-            <NavLink to='/search'>Search</NavLink>
-          </li>
-        </ul>
+    <div className="NavBar">
+      <NavLink activeClassName="NavBar--active" to='/'>Home</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/mac'>Mac</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/ipad'>Ipad</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/iphone'>Iphone</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/watch'>Watch</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/tv'>Tv</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/music'>Music</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/support'>Support</NavLink>
+      <NavLink activeClassName="NavBar--active" to='/search'>Search</NavLink>
     </div>
   );
 };
