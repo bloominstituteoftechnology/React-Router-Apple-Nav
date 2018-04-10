@@ -1,0 +1,21 @@
+.mainNav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.mainNav a {
+  color: white;
+  text-decoration: none;
+}
+
+.dark {
+  background-color: black;
+  width: 100%;
+}
+
+img {
+  width: 20px;
+}
