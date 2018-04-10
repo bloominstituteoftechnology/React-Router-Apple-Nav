@@ -23,8 +23,8 @@ render() {
             <li><NavLink to='/tv' className='NavLink'>TV</NavLink></li>
             <li><NavLink to='/music' className='NavLink'>Music</NavLink></li>
             <li><NavLink to='/support' className='NavLink'>Support</NavLink></li>
-            <li><NavLink to='/' className='NavLink'><i class="fas fa-search"></i></NavLink></li>
-            <li><NavLink to='/' className='NavLink'><i class="fas fa-shopping-bag"></i></NavLink></li>
+            <li><NavLink to='/' className='NavLink Icon'><i class="fas fa-search"></i></NavLink></li>
+            <li><NavLink to='/' className='NavLink Icon'><i class="fas fa-shopping-bag"></i></NavLink></li>
             </ul>
         </nav>
     );
