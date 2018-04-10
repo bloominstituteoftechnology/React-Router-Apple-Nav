@@ -9,7 +9,7 @@ return(
 
 
 <div className="nav-styles">
-    <Link className="navText-style" to="/">(<</Link>
+    <Link className="navText-style" to="/">A</Link>
     <Link className="navText-style" to="/mac">Mac</Link>
     <Link className="navText-style" to="/iphone">IPhone</Link>
     <Link className="navText-style" to="/watch">Watch</Link>
@@ -19,6 +19,7 @@ return(
     <Link className="navText-style" to="/support">Support</Link> 
     <Link className="navText-style" to="/search">O-</Link>
     <Link className="navText-style" to="/shoppingbag">BAG</Link>
+
 </div>
 /* <div>
 <Nav className="nav-styles">
