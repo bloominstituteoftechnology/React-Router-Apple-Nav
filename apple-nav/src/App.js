@@ -18,7 +18,6 @@ class App extends Component {
     return (
       <div>
         <Navigation/>
-    <Route exact path="/" component={ Navigation } />
     <Route path ="/mac" component={ Mac } />
     <Route path="/ipad" component={ Ipad }/>
     <Route path="/iphone" component={ Iphone }/>
