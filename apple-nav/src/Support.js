@@ -2,17 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Support() {
-return (
+  return (
     <div className="Submenu">
-    <ul>
-        <li>
-    <NavLink to="/contact">Contact Support</NavLink>
-        </li>
-        <li>
-    <NavLink to="/support">Support</NavLink>
-        </li>
-        </ul>
+      <NavLink to="/contact">Contact Support</NavLink>
+      <NavLink to="/support">Support</NavLink>
     </div>
-)
+  )
 }
 export default Support;
