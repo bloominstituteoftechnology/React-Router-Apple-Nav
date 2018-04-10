@@ -23,6 +23,10 @@ body {
   background-color: dimgray;
 }
 
+.Submenu-enter{
+  background-color: cyan;
+}
+
 .Submenu a {
   color: white;
   padding: 25px 20px;
