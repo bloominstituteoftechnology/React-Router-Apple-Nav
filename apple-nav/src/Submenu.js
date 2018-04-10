@@ -24,9 +24,14 @@ const Submenu = ({ match, items }) => {
               ...defaultStyle,
               ...transitionStyles[state]
             }}>
-            {items.map((item) => {
-              return <NavLink to={`${match.url}/${item.path}`}>{item.title}</NavLink>
-            })}
+            {items.map((item) => (
+              <NavLink
+                to={`${match.url}/${item.path}`}
+                className='Submenu__link'>
+                {item.glyph || ''}
+                {item.title}
+              </NavLink>
+            ))}
           </div>)
         }}
       </Transition>

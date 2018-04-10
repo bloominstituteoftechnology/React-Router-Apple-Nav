@@ -27,8 +27,11 @@ body {
   background-color: cyan;
 }
 
-.Submenu a {
+.Submenu__link {
   color: white;
   padding: 25px 20px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
