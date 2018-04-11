@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Nav, NavItem, NavLink } from '../../node_modules/reactstrap/lib';
 
 import FaApple from '../../node_modules/react-icons/lib/fa/apple';
@@ -15,7 +15,7 @@ export const HeaderNav = () => {
           <NavLink href="#"><FaApple /></NavLink>
         </NavItem>
         {primaryOptions.map(element => (
-          <NavItem key={element}>
+          <NavItem key={element} product={element}>
             <NavLink href="#">{element}</NavLink>
           </NavItem>
         ))}

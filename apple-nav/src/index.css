@@ -5,7 +5,7 @@ body {
 }
 
 .topNav {
-  background-color: #141414;
+  background-color: #404040;
 }
 
 .nav {
@@ -23,7 +23,7 @@ body {
 }
 
 .productOptions {
-  background-color: #000;
+  background-color: #2E2E2E;
   display: flex;
   justify-content: space-around;
   align-items: center;
