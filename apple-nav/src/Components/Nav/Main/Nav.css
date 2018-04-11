@@ -1,9 +1,11 @@
 .navContainer{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  min-width: 300px;
   min-height: 44px;
 }
 .navItem{
