@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
+import './SubNav.css';
 
 const macs = [
     'MacBook', 
@@ -68,7 +69,7 @@ const Mac = ({ match }) => {
 
 const Macs = () => {
     return (
-        <div>{macs.map(product =>{
+        <div className='subNav'>{macs.map(product =>{
             return(
                 <Link className="subLinks" to={`/${product}`} key={product}>{product}</Link>
             );
@@ -83,7 +84,7 @@ const Ipad = ({ match }) => {
 
 const Ipads = () => {
     return (
-        <div>{ipads.map(product =>{
+        <div className='subNav'>{ipads.map(product =>{
             return(
                 <Link className="subLinks" to={`/${product}`} key={product}>{product}</Link>
             );
@@ -97,7 +98,7 @@ const Iphone = ({ match }) => {
 
 const Iphones = () => {
     return (
-        <div>{iphone.map(product =>{
+        <div className='subNav'>{iphone.map(product =>{
             return(
                 <Link className="subLinks" to={`/${product}`} key={product}>{product}</Link>
             );
@@ -111,7 +112,7 @@ const Watch = ({ match }) => {
 
 const Watches = () => {
     return (
-        <div>{watches.map(product =>{
+        <div className='subNav'>{watches.map(product =>{
             return(
                 <Link className="subLinks" to={`/${product}`} key={product}>{product}</Link>
             );
@@ -125,7 +126,7 @@ const Tv = ({ match }) => {
 
 const Tvs = () => {
     return (
-        <div>{tvs.map(product =>{
+        <div className='subNav'>{tvs.map(product =>{
             return(
                 <Link className="subLinks" to={`/${product}`} key={product}>{product}</Link>
             );
@@ -140,7 +141,7 @@ const Music = ({ match }) => {
 
 const Musics = () => {
     return (
-        <div>{musics.map(product =>{
+        <div className='subNav'>{musics.map(product =>{
             return(
                 <Link className="subLinks" to={`/${product}`} key={product}>{product}</Link>
             );
