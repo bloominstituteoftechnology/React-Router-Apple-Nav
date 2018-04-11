@@ -12,10 +12,16 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .nav-link {
   color: #fff;
+  font-size: .8rem;
+}
+
+.icon {
+  font-size: 0.9rem;
 }
 
 .nav-item :hover {
@@ -39,4 +45,12 @@ body {
   color: #fff;
   font-size: 11px;
   margin: 3% 0;
+}
+
+.ipadProducts {
+  background-color: #f2f2f2b3;
+}
+
+.ipad {
+  color: black;
 }
