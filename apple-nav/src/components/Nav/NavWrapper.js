@@ -6,41 +6,44 @@ class NavWrapper extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      menuItems: []
+      menuItems: [],
+      isSub: false
     }
   }
 
   componentDidMount () {
-    this.setState({ menuItems: [...this.props.menuItems] }) // this step ensures state remains immutable since arrays are 'by reference' types
+    this.setState({
+      menuItems: [...this.props.menuItems],
+      isSub: this.props.isSub
+    }) // this step ensures state remains immutable since arrays are 'by reference' types
   }
 
   render () {
-    return <Nav menuItems={this.state.menuItems} />
+    return <Nav isSub={this.state.isSub} menuItems={this.state.menuItems} />
   }
 }
 
 // defining types, i believe, is good practice -Axhon
 NavWrapper.propTypes = {
-  menuItems: PropTypes.array.isRequired
+  menuItems: PropTypes.array.isRequired,
+  isSub: PropTypes.bool
 }
 
-const Nav = ({ menuItems }) => {
-  return (
-    <div className='Nav'>
-      {menuItems.map(menuVal => {
-        return (
-          <Link className='Nav--item' to={`/${menuVal.toLowerCase()}`}>
-            {menuVal}
-          </Link>
-        ) // eventually will be a pretty component
-      })}
-    </div>
-  )
-}
+const Nav = ({ menuItems, isSub }) => (
+  <div className={isSub === 'true' ? 'Nav SubNav' : 'Nav'}>
+    {menuItems.map(menuVal => (
+      <Link className='Nav--item' to={`/${menuVal.toLowerCase()}`}>
+        {menuVal}
+      </Link>
+    )) // eventually will be a pretty component
+    }
+  </div>
+)
 
 // this is not how this should work
 Nav.propTypes = {
-  menuItems: PropTypes.array
+  menuItems: PropTypes.array,
+  isSub: PropTypes.bool
 }
 
 export default NavWrapper

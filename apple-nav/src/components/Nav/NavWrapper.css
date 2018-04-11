@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.SubNav {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .Nav--item {
   text-decoration: none;
   grid-area: content;

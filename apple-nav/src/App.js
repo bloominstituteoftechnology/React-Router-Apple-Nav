@@ -2,33 +2,8 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import './App.css'
 import NavWrapper from './components/Nav'
+import Dictionary, { SubMenus as arr } from './Dictionary'
 
-const arr = [
-  '🍎',
-  'Mac',
-  'iPad',
-  'iPhone',
-  'Watch',
-  'TV',
-  'Music',
-  'Support',
-  '🔍'
-]
-
-const dictionary = {}
-arr.map(val => Object.assign(dictionary, { [val]: '' }))
-dictionary['Mac'] = [
-  'MacBook',
-  'MacBook Air',
-  'MacBook Pro',
-  'iMac',
-  'iMac Pro',
-  'Mac Pro',
-  'Mac mini',
-  'Accessories',
-  'High Sierra',
-  'Compare'
-]
 class App extends Component {
   render () {
     return (
@@ -38,7 +13,9 @@ class App extends Component {
           <Route
             exact
             path={`/${location}`}
-            render={() => <NavWrapper menuItems={dictionary[location]} />}
+            render={() => (
+              <NavWrapper isSub='true' menuItems={Dictionary[location]} />
+            )}
           />
         ))}
       </div>
