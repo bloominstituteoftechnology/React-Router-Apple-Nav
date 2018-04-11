@@ -12,12 +12,7 @@ render(){
 <Navigation />
 <Switch>
     <Route exact path='/' />
-    <Route path='/mac' />
-    <Route path='/ipad' />
-    <Route path='/watch' />
-    <Route path='/tv' />
-    <Route path='/music' />
-    <Route path='/support' />
+    <Route path='/:name' component={SubNav}  />
     <Route component={FourZeroFour} />
 
 </Switch>
