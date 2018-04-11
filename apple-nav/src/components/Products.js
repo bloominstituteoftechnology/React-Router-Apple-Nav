@@ -1,6 +1,5 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 import macbook from '../AppleIcons/macbook_dark_large.svg';
 import macbookair from '../AppleIcons/macbookair_dark_large.svg';
@@ -17,17 +16,15 @@ const productTitles = ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "iMac Pr
 
 export const Products = () => {
   return (
-    <Link to="/mac">
-      <Nav className="productOptions">
-        {macProducts.map((product, index) => (
-          <NavItem key={product} className="product">
-            <NavLink href="#">
-              <img src={product} alt="temp" />
-              <div className="productName">{productTitles[index]}</div>
-            </NavLink>
-          </NavItem>
-        ))}
-      </Nav>
-    </Link>
+    <Nav className="productOptions">
+      {macProducts.map((product, index) => (
+        <NavItem key={product} className="product">
+          <NavLink href="#">
+            <img src={product} alt="temp" />
+            <div className="productName">{productTitles[index]}</div>
+          </NavLink>
+        </NavItem>
+      ))}
+    </Nav>
   )
 }
