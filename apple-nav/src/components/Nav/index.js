@@ -1,4 +1,4 @@
-import NavWrapper from "./NavWrapper"
-import "./NavWrapper.css"
+import NavWrapper from './NavWrapper'
+import './NavWrapper.css'
 
 export default NavWrapper
