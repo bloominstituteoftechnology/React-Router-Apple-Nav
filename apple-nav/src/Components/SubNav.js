@@ -3,9 +3,14 @@ import { Link } from 'react-router-dom';
 import dummyData from '../dummyData';
 import './MainNav.css';
 
-const styled = {
+const styledD = {
     textDecoration: 'none',
     color: 'white'
+};
+
+const styledL = {
+    textDecoration: 'none',
+    color: 'black'
 };
 
 const getSub = (mainID) => {
@@ -26,12 +31,15 @@ const SubNav = props => {
     console.log(props)
     if(subData.sub.length === 0) return null;
     return (
-        <div className="subNav">
+        <div className={`subNav ${subData.bg}`}>
             <div className="nav__links-Container">
                 {subData.sub.map((data, index) => (
                     <div key={data.name + index} className="nav__links">
-                        <Link to={`/${data.name}`} style={styled}>
-                            {data.name}
+                        <Link to={`/${data.name}`} style={subData.bg === 'dark' ? styledD : styledL}> 
+                            <div className="nav__links-item">
+                                <img src={data.img} alt={data.name}/>
+                                {data.name}
+                            </div>
                         </Link>
                     </div>
                 ))}

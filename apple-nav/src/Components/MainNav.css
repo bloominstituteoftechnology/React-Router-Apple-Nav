@@ -21,17 +21,34 @@
 }
 
 .nav__links {    
-padding: 0 22px;
+    padding: 0 22px;
+    min-height: 32px;
 }
+
+.dark {
+    background-color: #141414;
+    color: white;
+}
+
+.light {
+    background:rgba(242,242,242,0.7);
+    color: black;
+}
+
+
 
 .subNav {
     display: block;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    background-color: #141414;
     font-size: 14px;
+    line-height: 12px;
     padding: 12px 0;
     max-height: 86px;
     min-width: 1024px;
+}
+
+.nav__links-item {
+    margin-bottom: 10px;
 }

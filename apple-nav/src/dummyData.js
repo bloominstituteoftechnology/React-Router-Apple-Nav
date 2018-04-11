@@ -1,13 +1,18 @@
+import macBook from './Components/Images/macbook_dark_large.svg';
+import macBookAir from './Components/Images/macbookair_dark_large.svg';
 const dummyData = [
     {
         id: 0,
         name: 'Mac',
+        bg: 'dark',
         sub: [
             {
-                name: 'MacBook'
+                name: 'MacBook',
+                img: macBook
             },
             {
-                name: 'MacBook Air'
+                name: 'MacBook Air',
+                img: macBookAir
             },
             {
                 name: 'MacBook Pro'
@@ -38,6 +43,7 @@ const dummyData = [
     {
         id: 1,
         name: 'iPad',
+        bg: 'light',
         sub: [
             {
                 name: 'iPad Pro'
@@ -62,6 +68,7 @@ const dummyData = [
     {
         id: 2,
         name: 'iPhone',
+        bg: 'light',
         sub: [
             {
                 name: 'iPhone X'
@@ -92,6 +99,7 @@ const dummyData = [
     {
         id: 3,
         name: 'Watch',
+        bg: 'light',
         sub: [
             {
                 name: 'Apple Watch Series 3'
@@ -125,6 +133,7 @@ const dummyData = [
     {
         id: 4,
         name: 'TV',
+        bg: 'light',
         sub: [
             {
                 name: 'Apple TV 4K'
@@ -146,6 +155,7 @@ const dummyData = [
     {
         id: 5,
         name: 'Music',
+        bg: 'light',
         sub: [
             {
                 name: 'Apply Music'
@@ -170,6 +180,7 @@ const dummyData = [
     {
         id: 6,
         name: 'Support',
+        bg: 'light',
         sub: []
     }
 ]

@@ -37,10 +37,10 @@ class MainNav extends Component {
                         </div>
                     ))}
                 </div>
-                    <Route
-                        path="/:mainID"
-                        render={(props) => <SubNav {...props} />}
-                    />
+                <Route
+                    path="/:mainID"
+                    render={(props) => <SubNav {...props} />}
+                />
             </div>
         );
     }
