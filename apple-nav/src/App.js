@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Route} from 'react-router-dom'
-import Navigation from './component/Nav.js'
-const App =() =>(
-    <div>
-  <Navigation />
-  </div>
-    );
-  
+import NavWrapper from './component/NavWrapper.js'
 
+class App extends Component{
+render(){
+  return(
+  <NavWrapper />
+  )
+   
+  }
+  }
 
 export default App;
