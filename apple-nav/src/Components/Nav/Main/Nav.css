@@ -1,3 +1,11 @@
+.navContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 44px;
+}
 .navItem{
   color: white;
   font-weight: lighter;

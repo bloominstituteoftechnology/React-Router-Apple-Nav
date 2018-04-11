@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Nav from './Components/Nav/Nav'
+import Nav from './Components/Nav/Main/Nav'
 import {Route, Switch} from 'react-router-dom';
 import Page from './Components/Page/Page';
 import Missing from './Components/404/Missing';
