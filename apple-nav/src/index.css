@@ -25,13 +25,14 @@ body {
 .productOptions {
   background-color: #2E2E2E;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  margin: 0 1px;
 }
 
 .productName {
