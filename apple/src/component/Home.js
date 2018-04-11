@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="HomeContainer">
       <h1 className="Homeh1">iPhone 7.</h1>
-      <h2 className="Homeh2">The futurue is now.</h2>
+      <h2 className="Homeh2">The future is now.</h2>
       {/* <h3 className="Homeh3">Difference in the eye of the beholder</h3> */}
       <div>
         <div>
