@@ -1,26 +1,21 @@
-.Nav {
-    background-color: #515151;
+.SubNav {
+    background-color: lightgray;
     height: 45px;
     display: flex;
-    align-items: center;
+    align-content: center;
 }
 
-.Nav__ul {
+.SubNav__ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
     margin: 0 auto;
     padding: 0;
     color: white;
+    font-size: .8em;
 }
 
-.NavLink {
-    color:white;
-    text-decoration: none;
-}
-
-.Icon {
-    font-size: 25px;
+.SubNav__ul li {
+    padding: 0 10px;
 }

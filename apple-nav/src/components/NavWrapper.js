@@ -16,12 +16,7 @@ export default class NavWrapper extends Component {
                 <Nav />
                 <Switch>
                     <Route exact path='/' />
-                    <Route path='/mac' component={SubNav} />
-                    <Route path='/ipad' component={SubNav} />
-                    <Route path='/iphone' component={SubNav} />
-                    <Route path='/watch' component={SubNav} />
-                    <Route path='/tv' component={SubNav} />
-                    <Route path='/music' component={SubNav} />
+                    <Route path='/:device' render={props => <SubNav {...props}/>} />
                     <Route component={FourOhFour} />
                 </Switch>
             </div>
@@ -29,7 +24,7 @@ export default class NavWrapper extends Component {
     }
 }
 
-const FourOhFour = () => (
+export const FourOhFour = () => (
     <div className='FourOhFour'>
         <i class="far fa-frown"></i>
         <h3>404: Art thou lost????</h3>

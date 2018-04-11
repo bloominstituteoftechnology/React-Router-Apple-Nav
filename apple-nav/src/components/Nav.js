@@ -12,7 +12,7 @@ export default class Nav extends Component {
         return(
             <nav className='Nav'>
                 <ul className='Nav__ul'>
-                    <li><NavLink to='/' className='NavLink Icon'><i class="fab fa-apple"></i></NavLink></li>
+                    <li><NavLink to='/' className='NavLink Icon'><i className="fab fa-apple"></i></NavLink></li>
                     <li><NavLink to='/mac' className='NavLink'>Mac</NavLink></li>
                     <li><NavLink to='/ipad' className='NavLink'>iPad</NavLink></li>
                     <li><NavLink to='/iphone' className='NavLink'>iPhone</NavLink></li>
@@ -20,8 +20,8 @@ export default class Nav extends Component {
                     <li><NavLink to='/tv' className='NavLink'>TV</NavLink></li>
                     <li><NavLink to='/music' className='NavLink'>Music</NavLink></li>
                     <li><NavLink to='/support' className='NavLink'>Support</NavLink></li>
-                    <li><i class="fas fa-search"></i></li>
-                    <li><i class="fas fa-shopping-bag"></i></li>
+                    <li><i className="fas fa-search"></i></li>
+                    <li><i className="fas fa-shopping-bag"></i></li>
                 </ul>
             </nav>
         );
