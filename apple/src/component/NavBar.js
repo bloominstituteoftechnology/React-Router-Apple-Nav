@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Nav, NavItem } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 import "./NavBar.css";
 
@@ -9,72 +8,72 @@ const NavBar = () => {
     <div>
       <Nav className="NavBar">
         <NavItem>
-          <Link to="/">
+          <NavLink className="NavStyle" href="/">
             <img
-              className="MenuIcons"
+              className="AppleIcon"
               src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white.svg"
             />
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/Mac">
+          <NavLink className="NavStyle" href="/Mac">
             <h4 className="links">Mac</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/iPad">
+          <NavLink className="NavStyle" href="/iPad">
             <h4 className="links">iPad</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/iPhone">
+          <NavLink className="NavStyle" href="/iPhone">
             <h4 className="links">iPhone</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link  to="/Watch">
+          <NavLink className="NavStyle" href="/Watch">
             <h4 className="links">Watch</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/TV">
+          <NavLink className="NavStyle" href="/TV">
             <h4 className="links">TV</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/Music">
+          <NavLink className="NavStyle" href="/Music">
             <h4 className="links">Music</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/Support">
+          <NavLink className="NavStyle" href="/Support">
             <h4 className="links">Support</h4>
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/Search">
+          <NavLink className="NavStyle" href="/Search">
             <img
               className="MenuIcons"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/2000px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png"
             />
-          </Link>
+          </NavLink>
         </NavItem>
 
         <NavItem>
-          <Link to="/ShoppingBag">
+          <NavLink className="NavStyle" href="/ShoppingBag">
           <img
               className="MenuIcons"
               src="http://icon-park.com/imagefiles/paperbag_white.png"
             />
-          </Link>
+          </NavLink>
         </NavItem>
       </Nav>
     </div>

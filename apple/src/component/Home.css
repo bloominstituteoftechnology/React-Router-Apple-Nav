@@ -1,0 +1,59 @@
+.HomeContainer {
+  height: 725px;
+  background: rgb(65, 195, 255);
+}
+
+.Homeh1 {
+  padding-top: 50px;
+  font-size: 35px;
+  color: black;
+  margin: 0;
+}
+
+.Homeh2 {
+  font-size: 50px;
+  color: black;
+  margin: 0;
+}
+
+
+.subHomeContainer {
+  margin-top: 18px;
+  width: 100%;
+  background: #080609;
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textConatiner {
+margin-left: 80px;
+}
+
+.HomeImage-2 {
+  display: inline-block;
+  width: 100%;
+
+  margin-right: 30px;
+}
+
+.Homeh3 {
+  font-size: 27px;
+  color: rgb(218, 213, 213);
+  margin: 0;
+  text-align: left;
+}
+
+.Homeh4 {
+  font-size: 70px;
+  color: rgb(218, 213, 213);
+  margin: 0;
+  text-align: left;
+}
+
+.Homeh5 {
+  font-size: 20px;
+  color: black;
+  margin: 0;
+}

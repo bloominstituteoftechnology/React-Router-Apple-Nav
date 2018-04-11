@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 
 import Home from "./component/Home";
 import Mac from "./component/Mac";
+import Construction from "./component/Construction"
 
 
 
@@ -15,14 +16,14 @@ class App extends Component {
         <NavBar />
         <Route exact path="/" component={Home} />
         <Route path="/Mac" component={Mac} />
-        <Route path="/iPad" />
-        <Route path="/iPhone" />
-        <Route path="/Watch" />
-        <Route path="/TV" />
-        <Route path="Music" />
-        <Route path="Support" />
-        <Route path="Search" />
-        <Route path="ShoppingBag" />
+        <Route path="/iPad" component={Construction} />
+        <Route path="/iPhone" component={Construction} />
+        <Route path="/Watch" component={Construction} />
+        <Route path="/TV" component={Construction} />
+        <Route path="/Music" component={Construction} />
+        <Route path="/Support" component={Construction} />
+        <Route path="/Search" component={Construction} />
+        <Route path="/ShoppingBag" component={Construction} />
       </div>
     );
   }

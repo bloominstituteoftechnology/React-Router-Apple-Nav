@@ -3,9 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15%;
+  padding: 10px 15%;
   color: rgba(255, 255, 255, 0);
   margin: 0;
+}
+
+.AppleIcon {
+  width: 20px;
+  height: 25px;
 }
 
 .MenuIcons {
@@ -14,6 +19,13 @@
 }
 
 .links {
+  font-size: 14px;
   color: white;
+  margin: 0;
   font-weight: normal;
+}
+
+.NavStyle {
+  color: rgba(0, 0, 0, 0);
+  text-decoration: none;
 }
