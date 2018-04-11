@@ -1,11 +1,11 @@
-import React,{Componnet} from 'react'
-import{ Link } from 'react-router-dom'
-import Navigation from './nav.js';
+import React,{Component} from 'react'
+import{ Link, Switch, Route } from 'react-router-dom'
+import Navigation from './Nav.js';
 
 
 class NavWrapper extends Component{
     
-}
+
 render(){
     return(
 <div>
@@ -17,7 +17,8 @@ render(){
     <Route path='/watch' />
     <Route path='/tv' />
     <Route path='/music' />
-    <Route component={fourZeroFour} />
+    <Route path='/support' />
+    <Route component={FourZeroFour} />
 
 </Switch>
 
@@ -25,9 +26,15 @@ render(){
 
     )
 }
-const fourZeroFour = () =>(
-    <div className='forZeroFour'>
-    <h3>OOOOOOH~!, you fucked uuuuup<h3>
-)
-
 }
+const FourZeroFour = () =>{
+    return(
+    <div className='forZeroFour'>
+    <h3>Haha, Nerd!</h3>
+    </div>
+    )
+}
+
+
+
+export default NavWrapper;
