@@ -13,7 +13,7 @@ export const HeaderNav = () => {
     <div className="topNav">
       <Nav>
         <NavItem>
-          <NavLink href="#"><FaApple /></NavLink>
+          <Link to="/" className="nav-link"><FaApple /></Link>
         </NavItem>
         <NavItem>
           <Link to="/mac" className="nav-link">Mac</Link>
