@@ -1,10 +1,12 @@
 import React from 'react'
+import HeaderBar from './HeaderBar'
 
-const HeaderWrapper = () => {
+const Header = () => {
     return (
         <div className="container">
+            <HeaderBar />
         </div>
     );
 }
 
-export default HeaderWrapper;
+export default Header;
