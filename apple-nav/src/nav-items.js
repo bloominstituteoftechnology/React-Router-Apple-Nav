@@ -1,7 +1,7 @@
 const navItems = [
     {
         "category": "Mac",
-        "sub-categories": [
+        "subCategories": [
             {
                 "name": "MacBook",
                 "src": "",
@@ -56,7 +56,7 @@ const navItems = [
     },
     {
         "category": "iPad",
-        "sub-categories": [
+        "subCategories": [
             {
                 "name": "iPad Pro",
                 "src": "",
@@ -91,7 +91,7 @@ const navItems = [
     },
     {
         "category": "iPhone",
-        "sub-categories": [
+        "subCategories": [
             {
                 "name": "iPhone X",
                 "src": "",
@@ -136,7 +136,7 @@ const navItems = [
     },
     {
         "category": "Watch",
-        "sub-categories": [
+        "subCategories": [
             {
                 "name": "Apple Watch Series 3",
                 "src": "",
@@ -186,7 +186,7 @@ const navItems = [
     },
     {
         "category": "TV",
-        "sub-categories": [
+        "subCategories": [
             {
                 "name": "Apple TV 4K",
                 "src": "",
@@ -216,7 +216,7 @@ const navItems = [
     },
     {
         "category": "Music",
-        "sub-categories": [
+        "subCategories": [
             {
                 "name": "Apple Music",
                 "src": "",
@@ -251,7 +251,7 @@ const navItems = [
     },
     {
         "category": "Support",
-        "sub-categories": null
+        "subCategories": []
     }
 ];
 

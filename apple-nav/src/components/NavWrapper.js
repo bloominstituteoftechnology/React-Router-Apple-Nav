@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
-import navItems from '../nav-items';
+import { Route } from 'react-router-dom';
 
-class NavWrapper extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-            currentNav: null,
-            currentSubNav: null
-        }
-    }
+const NavWrapper = (props) => {
 
-    componentDidMount() {
-        this.setState({data: navItems});
-    }
+    return (
+        <div className="navbar">
+            {props.navItems.map(navItem => {
+                return (
+                    // <Route 
+                    //     path={`/${navItem.category}`} 
+                    //     key={navItem.category}
+                    //     render={props => <Nav {...props} nav={navItem}/>}>
+                    // </Route>
+                    <Nav nav={navItem}/>
+                )
+            })}    
+        </div>
+    )
 
-    render() {
-        return (
-            <div>
-                <Nav />
-            </div>
-        )
-    }
 }
  
 export default NavWrapper;
