@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-class Macs extends Component {
+class Support extends Component {
     constructor() {
         super();
     }
@@ -9,10 +9,10 @@ class Macs extends Component {
     render() {
         return(
             <div>
-                {this.props.macs.map(mac => <Link to={`/macs/${mac}`} key={mac}>{mac}</Link>)}
+                <h1>Support Page</h1>
             </div>
         )
     }
 };
 
-export default Macs;
+export default Support;
