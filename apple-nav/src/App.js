@@ -21,7 +21,6 @@ console.log(this.props.path)
       <div className="App">
         <Route path="/" component={NavWrapper} />
         <Route path="/:id" component={Nav}  />
-        <Route path="/:id/:id" render={(props) => ( <SubNav {...props} fetchNav={this.fetchNav} />)}/>
       </div>
     );
   }
