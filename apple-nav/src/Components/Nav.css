@@ -1,0 +1,18 @@
+.alogo {
+    height: 22px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    height: 44px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: justify;
+    margin: auto;
+}

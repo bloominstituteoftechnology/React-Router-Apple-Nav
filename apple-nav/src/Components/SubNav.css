@@ -1,0 +1,14 @@
+.subNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(48, 47, 47);
+    height: 44px;
+}
+
+.subLinks {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    text-align: justify;
+    margin: auto;
+}
