@@ -25,10 +25,10 @@ class NavWrapper extends Component {
     return(
       <div className="nav-wrapper">
         <div className="nav-upper flex justify-around items-center">
-          <Link className="link no-underline white" to="/"><i className="fab fa-apple fa-lg"></i></Link>
+          <Link className="link no-underline white pl6" to="/"><i className="fab fa-apple fa-lg"></i></Link>
           { this.generateNavLinks(headings) }
           <i className="fas fa-search fa-sm"></i>
-          <i className="fas fa-shopping-bag fa-sm"></i>
+          <i className="fas fa-shopping-bag fa-sm pr6"></i>
         </div>
         <Route path="/:product" render={(props) => <SubNav headings={headings} {...props} />} />
         <Route path="/" component={Home} />
