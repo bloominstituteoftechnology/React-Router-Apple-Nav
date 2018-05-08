@@ -3,7 +3,7 @@ import React from 'react';
 const Content = (props) => {
   return(
     <div>
-      {props.match.params.id}{props.match.params.contentId}
+      All about {props.menuData[props.match.params.id].items[props.match.params.contentId]}: 
     </div>
   );
 }

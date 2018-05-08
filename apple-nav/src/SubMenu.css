@@ -7,12 +7,16 @@
 }
 
 .sub-menu-item {
-  color: white;
   display: flex;
   align-items: center;
 
-  text-decoration: none;
+  height: 80px;
+  width: 80px;
   padding: 8px;
   margin: 4px;
-  background: #666666;
+}
+
+.sub-menu-link {
+  text-decoration: none;
+  color: white;
 }
