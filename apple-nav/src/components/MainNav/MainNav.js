@@ -31,7 +31,9 @@ export default class MainNav extends React.Component {
       <div>
         <Navbar color="light" light expand="md">
           <NavbarToggler onClick={this.toggle} />
-          <NavbarBrand href="/">Mac-icon</NavbarBrand>
+          <Link to="/" >
+            <NavbarBrand>Mac-icon</NavbarBrand>
+          </Link>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 {/* (section, i) => (<Link to={`/${section}/`}> {section} </Link>) */}
