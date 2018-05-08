@@ -14,11 +14,10 @@ import { CustomLink, CustomModal } from '../../components';
 export default class MainNav extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      sections: ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support']
+      // sections: ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support']
     };
   }
   toggle() {
@@ -37,7 +36,7 @@ export default class MainNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 {/* (section, i) => (<Link to={`/${section}/`}> {section} </Link>) */}
-                {this.state.sections.map(
+                {this.props.sections.map(
                     (section, i) => (<CustomLink key={i} text={section} />)
                 )}
 
