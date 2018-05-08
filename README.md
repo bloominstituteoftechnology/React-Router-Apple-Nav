@@ -8,8 +8,7 @@
 * The idea here is to build out a replica of Apple's navigation.
 * Build out a menu similar to the one on https://www.apple.com with a top level navigation.
 
-## Project
-
+## Projec
 * Use _create-react-app_ to make an application, name it `apple-nav`.
 * You'll need to build out a few components here. Some variation of a `NavWrapper` component which will be your navigation header.
 * You'll need a reusable `Nav` component that you can turn into a navigation link for each parent category.
