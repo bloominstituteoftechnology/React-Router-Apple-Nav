@@ -1,5 +1,6 @@
-import NavBar from './Navbar.js';
+import Navbar from './Navbar.js';
 import ProductNav from './ProductNav';
 import Home from './Home';
+import Macs from './Macs';
 
-export { NavBar, ProductNav, Home };
+export { Navbar, ProductNav, Home, Macs };
