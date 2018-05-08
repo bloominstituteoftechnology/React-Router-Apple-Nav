@@ -3,7 +3,7 @@ import HeaderBar from './HeaderBar'
 
 const Header = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <HeaderBar />
         </div>
     );
