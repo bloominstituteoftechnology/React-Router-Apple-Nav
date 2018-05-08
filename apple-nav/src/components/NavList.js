@@ -12,7 +12,11 @@ class NavList extends Component {
     render() {
        const styles= {
             display: "flex",
-            justifyContent: "space-around"
+            justifyContent: "space-around", 
+            alignItems: "center",
+            backgroundColor: "darkgray",
+            height: "50px",
+            color: "white"
         }
         return (
             <div style={styles}>
