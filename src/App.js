@@ -3,6 +3,7 @@ import Header from './components/HeaderWrapper'
 import HeaderSlide from './components/HeaderSlideOut'
 import './App.css';
 import { Route } from 'react-router-dom'
+import home from './components/home'
 
 class App extends Component {
   constructor(props) {
@@ -45,10 +46,10 @@ class App extends Component {
       <div className="App">
         <Header className="App-header">
         </Header>
-        <Route exact path="/" render={() => <h1>JAJAAJAJ</h1>} />
         <Route path="/mac" render={(props) => <HeaderSlide {...props} props={this.state.Mac} />} />
         <Route path="/iphone" render={(props) => <HeaderSlide {...props} props={this.state.iPhone} />} />
         <Route path="/ipad" render={(props) => <HeaderSlide {...props} props={this.state.iPad} />} />
+        <Route path="/" component={home} />
       </div>
 
     );
