@@ -5,8 +5,8 @@ class NavWrapper extends Component {
   render() {
     return (
       <div>
-        {this.props.navs.map(nav => 
-          <Nav nav={nav} handleClick={() => this.props.handleClick(nav)}/>
+        {this.props.categories.map(category => 
+          <Nav key={category} category={category}/>
         )}
       </div>
     );

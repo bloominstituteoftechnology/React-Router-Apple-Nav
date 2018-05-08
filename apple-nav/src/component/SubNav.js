@@ -4,6 +4,7 @@ class SubNav extends Component {
   render() {
     return (
       <div>
+        {this.props.match.params.category}
       </div>
     );
   }
