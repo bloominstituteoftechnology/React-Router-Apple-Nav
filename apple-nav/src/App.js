@@ -25,7 +25,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <MainNav sections={this.state.sections} />
-        
+        <Route path="/:section" component={SubNav} />
       </div>
     );
   }
