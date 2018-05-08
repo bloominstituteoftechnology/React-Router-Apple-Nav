@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import Nav from './Nav';
 
 
@@ -16,7 +17,9 @@ class NavList extends Component {
             alignItems: "center",
             backgroundColor: "darkgray",
             height: "50px",
-            color: "white"
+            color: "white",
+            paddingRight: "100px",
+            paddingLeft: "100px"
         }
         return (
             <div style={styles}>
