@@ -10,9 +10,12 @@ class NavList extends Component {
         }
     }
     render() {
+       const styles= {
+            display: "flex",
+            justifyContent: "space-around"
+        }
         return (
-            <div>
-                <div>NavList</div>
+            <div style={styles}>
                 {this.state.navItem.map((item, index) => { return <Nav key={item + index} item={item} />})}
             </div>
         )
