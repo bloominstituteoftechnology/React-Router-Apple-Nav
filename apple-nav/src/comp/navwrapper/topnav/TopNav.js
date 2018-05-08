@@ -1,38 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { navLinks } from './navigationData';
+
 const TopNav = props => {
-  const navLinks = [
-    {
-      content: 'Mac',
-      url    : '/mac'
-    },
-    {
-      content: 'iPad',
-      url    : '/ipad'
-    },
-    {
-      content: 'iPhone',
-      url    : 'iphone'
-    },
-    {
-      content: 'Watch',
-      url    : '/watch'
-    },
-    {
-      content: 'TV',
-      url    : '/tv'
-    },
-    {
-      content: 'Music',
-      url    : '/music'
-    },
-    {
-      content: 'Support',
-      url    : '/support'
-    },
-  ];
-  
   return (
     <React.Fragment>
       <button>[APPLE]</button>
