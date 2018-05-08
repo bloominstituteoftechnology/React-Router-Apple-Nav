@@ -49,17 +49,23 @@ class SubNav extends Component {
         this.toggle = this.toggle.bind(this);
     }
     componentDidMount() {
-        const section = this.props.match.params.section;
-        console.log('section',section);
-        console.log('sectionContent', this.state.sectionContent.Mac.icon);
+        // const section = this.props.match.params.section;
+        // console.log('section',section);
+        // console.log('sectionContent', this.state.sectionContent.Mac.icon);
+        // console.log('sectionContent', this.state.sectionContent[section]);
+        // const toRender = this.state.sectionContent[section];
+        // this.setState({ [toRender]: toRender });
+        // console.log(this.state.toRender);
     }
     
     render() {
+        const section = this.props.match.params.section;
+        const toRender = this.state.sectionContent[section];
         return (
             <div>
                 <Button color="primary" onClick={this.toggle}>Toggle Fade</Button>
                 <Fade in={this.state.fadeIn} tag="h5" className="mt-3">
-                    This content will fade in and out as the button is pressed
+                    {toRender.icon}
                 </Fade>
             </div>
         );
