@@ -1,9 +1,11 @@
 import React from 'react';
 import './SubMenu.css';
 
-const SubMenu = () => {
+const SubMenu = (props) => {
   return (
-    <p>test</p>
+    <div className="sub-menu">
+      {props.match.params.id}
+    </div>
   );
 }
 

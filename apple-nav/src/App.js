@@ -25,8 +25,8 @@ class App extends Component {
           <TopMenu menuData={this.state.menuData} />
         )} />
 
-        <Route path="/categories/:id" render={() => (
-          <SubMenu menuData={this.state.menuData} />
+        <Route path="/categories/:id" render={(props) => (
+          <SubMenu {...props} menuData={this.state.menuData} />
         )} />
 
 
