@@ -1,9 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Nav = props => {
+    const navStyles = {
+        color: "white",
+        textDecoration: "none"
+    }
     return (
-        <div>{props.item}</div>
+        <Link style={navStyles} to="">{props.item}</Link>
     )
 }
 
