@@ -1,7 +1,9 @@
+{/*I created this document since the README says I should*/}
+
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
+{/*I figured this was the easiest way to make the basic nav bar. Like, I thought making a component and then making links for each item would work, and it did! */}
 class Nav extends Component {
   render () {
     return (
