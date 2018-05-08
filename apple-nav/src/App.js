@@ -3,6 +3,7 @@ import {  Route, Link } from "react-router-dom";
 import './App.css';
 import NavWrapper from "./components/navWrapper/NavWrapper";
 import Nav from "./components/nav/Nav";
+import SubNav from "./components/subNav/SubNav";
 
 class App extends Component {
   constructor() {
@@ -10,25 +11,46 @@ class App extends Component {
     this.state = {
       navs: [
         {
-          device: "Mac"
+          device: {
+          name: "Mac",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         },
-        {
-          device: "IPad"
+         {
+          device: {
+          name: "IPad",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         },
-        {
-          device: "IPhone"
+         {
+          device: {
+          name: "Iphone",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         },
-        {
-          device: "Watch"
+         {
+          device: {
+          name: "Watch",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         },
-        {
-          device: "TV"
+         {
+          device: {
+          name: "TV",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         },
-        {
-          device: "Music"
+         {
+          device: {
+          name: "Music",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         },
-        {
-          device: "Support"
+         {
+          device: {
+          name: "Support",
+          items: ["Mac Book", "Mac Book Air"]
+          }
         }
       ]
     };
@@ -38,8 +60,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route path="/" render={(props) => <NavWrapper {...props} navs={this.state.navs} />} />
+        <Route path="/" render={(props) => <NavWrapper
+          {...props}
+          navs={this.state.navs}
+          items={this.state.navs}
+          />} />
         <Route path="/nav/:device" component={Nav} />
+        <Route path="/nav/:device/:items" component={SubNav} />
       </div>
     );
   }
