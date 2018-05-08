@@ -11,6 +11,7 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
+import './App.css';
 
     export default class MacBar extends React.Component {
         constructor(props) {
@@ -29,8 +30,8 @@ import {
         render() {
           return (
             <div>
-              <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
+              <Navbar color="dark" light expand="lg">
+                <NavbarBrand className="Nav" href="/">MacBar</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto" navbar>
