@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+html {
+  background-color: #C8CED4;
+}
+
+ul {
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  background-color: #532940;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+}
+li {
+  border: 4px solid #13304B;
+  padding: 20px;
+  border-radius: 10%;
+  transition: all .2s;
+  background-color: #6F677E;
+}
+li:hover {
+  transform: scale(1.3);
+  background-color: #7BAEB1;
+  color: #C8CED4;
+}
+.link {
+  color: #C8CED4;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #6F677E;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-variant: small-caps;
+  text-decoration: underline #7BAEB1;
+  
+  text-align: center;
+
+}
+.Nav {
+  margin: 0 !important;
+  padding: 8px;
+  background-color: #7BAEB1;
+}
+
+.Nav li {
+  background-color: #532940;
+  color: #C8CED4;
+}
