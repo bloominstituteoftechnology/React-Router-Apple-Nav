@@ -7,5 +7,6 @@ import Watch from './Watch';
 import TV from './TV';
 import Music from './Music';
 import Support from './Support';
+import FourOFour from './FourOFour';
 
-export { NavWrapper, Macs, Home, IPads, IPhones, Watch, TV, Music, Support };
+export { NavWrapper, Macs, Home, IPads, IPhones, Watch, TV, Music, Support, FourOFour};

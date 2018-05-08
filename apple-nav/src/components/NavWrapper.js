@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Home, Macs, IPads, IPhones, Watch, TV, Music, Support} from './index';
+import {Home, Macs, IPads, IPhones, Watch, TV, Music, Support, FourOFour} from './index';
 
 import {Route, Link, Switch} from 'react-router-dom';
 
@@ -28,14 +28,17 @@ class NavWrapper extends Component {
                 <Link to="/tvs">TV</Link>
                 <Link to="/music">Music</Link>
                 <Link to="/support">Support</Link>
-                <Route exact path="/" component={Home} />
-                <Route path="/macs" render={(props) => <Macs {...props} macs={this.state.mac} />} />
-                <Route path="/ipads" render={(props) => <IPads {...props} ipads={this.state.iPad} />} />
-                <Route path="/iphones" render={(props) => <IPhones {...props} iphones={this.state.iPhone} />} />
-                <Route path="/watches" render={(props) => <Watch {...props} watches={this.state.watch} />} />
-                <Route path="/tvs" render={(props) => <TV {...props} tvs={this.state.TV} />} />
-                <Route path="/music" render={(props) => <Music {...props} musics={this.state.music} />} />
-                <Route exact path="/support" component={Support} />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/macs" render={(props) => <Macs {...props} macs={this.state.mac} />} />
+                    <Route path="/ipads" render={(props) => <IPads {...props} ipads={this.state.iPad} />} />
+                    <Route path="/iphones" render={(props) => <IPhones {...props} iphones={this.state.iPhone} />} />
+                    <Route path="/watches" render={(props) => <Watch {...props} watches={this.state.watch} />} />
+                    <Route path="/tvs" render={(props) => <TV {...props} tvs={this.state.TV} />} />
+                    <Route path="/music" render={(props) => <Music {...props} musics={this.state.music} />} />
+                    <Route path="/support" component={Support} />
+                    <Route component={FourOFour} />
+                </Switch>
             </div>
         )
     }
