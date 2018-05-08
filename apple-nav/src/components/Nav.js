@@ -10,42 +10,42 @@ const myTV = ['Apple TV 4K', 'Apple TV', 'TV App', 'Accessories', 'Compare']
 const myMusic = ['Apple Music', 'iTunes', 'HomePod', 'iPod touch', 'Music Accessories', 'Gift Cards']
 
 const styles = {
-    textAlign: 'center',
+    textAspangn: 'center',
 };
 
-const linkStyles = {
+const spannkStyles = {
     padding: '2rem',
     textDecoration: 'none'
 }
 const Mac = props => {
     return (
-    <div>
-          {myMac.map(nav => <div key={nav + myMac.indexOf(nav)}> <NavLink to={`/mac/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
-        <Route exact path={`/mac/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myMac.indexOf(nav) + nav}/> </div> )}
+    <div className={styles}>
+          {myMac.map(nav => <span key={nav + myMac.indexOf(nav)}> <NavLink to={`/mac/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={spannkStyles}>{nav}</NavLink>
+        <Route exact path={`/mac/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myMac.indexOf(nav) + nav}/> </span> )}
     </div>
     )
 }
 const IPad = props => {
     return (
     <div>
-        {myiPad.map(nav => <div key={nav + myiPad.indexOf(nav)}><NavLink to={`/ipad/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
-        <Route exact path={`/ipad/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myiPad.indexOf(nav) + nav}/> </div>)}
+        {myiPad.map(nav => <span key={nav + myiPad.indexOf(nav)}><NavLink to={`/ipad/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={spannkStyles}>{nav}</NavLink>
+        <Route exact path={`/ipad/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myiPad.indexOf(nav) + nav}/> </span>)}
     </div>
     )
 }
 const IPhone = props => {
     return (
     <div>
-        {myiPhone.map(nav => <div key={nav + myiPhone.indexOf(nav)}><NavLink to={`/iphone/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
-        <Route exact path={`/iphone/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myiPhone.indexOf(nav) + nav}/></div> )}
+        {myiPhone.map(nav => <span key={nav + myiPhone.indexOf(nav)}><NavLink to={`/iphone/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={spannkStyles}>{nav}</NavLink>
+        <Route exact path={`/iphone/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myiPhone.indexOf(nav) + nav}/></span> )}
     </div>
     )
 }
 const Watch = props => {
     return (
     <div>
-    {myWatch.map(nav => <div key={nav + myWatch.indexOf(nav)}><NavLink to={`/watch/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
-        <Route exact path={`/watch/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myWatch.indexOf(nav) + nav}/></div>)}
+    {myWatch.map(nav => <span key={nav + myWatch.indexOf(nav)}><NavLink to={`/watch/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={spannkStyles}>{nav}</NavLink>
+        <Route exact path={`/watch/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myWatch.indexOf(nav) + nav}/></span>)}
     </div>
     )
 }
@@ -53,8 +53,8 @@ const Watch = props => {
 const TV = props => {
     return (
     <div>
-         {myTV.map(nav => <div key={nav + myTV.indexOf(nav)}><NavLink to={`/tv/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
-        <Route exact path={`/tv/${nav.toLowerCase().split(' ').join('')}`} key={nav} components={SubNav} key={myTV.indexOf(nav) + nav}/></div>)}
+         {myTV.map(nav => <span key={nav + myTV.indexOf(nav)}><NavLink to={`/tv/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={spannkStyles}>{nav}</NavLink>
+        <Route exact path={`/tv/${nav.toLowerCase().split(' ').join('')}`} key={nav} components={SubNav} key={myTV.indexOf(nav) + nav}/></span>)}
     </div>
     )
 }        
@@ -62,8 +62,8 @@ const TV = props => {
 const Music = props => {
     return (
     <div>
-        {myMusic.map(nav => <div key={nav + myMusic.indexOf(nav)}><NavLink to={`/music/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
-        <Route exact path={`/music/${nav.toLowerCase().split(' ').join('')}`} components={SubNav} key={myMusic.indexOf(nav) + nav}/></div>)}
+        {myMusic.map(nav => <span key={nav + myMusic.indexOf(nav)}><NavLink to={`/music/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={spannkStyles}>{nav}</NavLink>
+        <Route exact path={`/music/${nav.toLowerCase().split(' ').join('')}`} components={SubNav} key={myMusic.indexOf(nav) + nav}/></span>)}
     </div>
     )
 } 
