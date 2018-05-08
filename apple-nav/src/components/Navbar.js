@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Home, Macs } from './index';
+import { Home, Apple, AppleI, AppleII, AppleIII, AppleIV, AppleV } from './index';
 
 class Navbar extends Component {
     constructor() {
@@ -25,12 +25,12 @@ class Navbar extends Component {
                 <Link to="/tvs">TV</Link>
                 <Link to="/musics">Music</Link>
                 <Route exact path="/" component={Home} />
-                <Route path="/macs" render={(props) => <Macs {...props} macs={this.state.macs} />} />
-                <Route path="/ipads" render={(props) => <Macs {...props} macs={this.state.ipads} />} />
-                <Route path="/iphones" render={(props) => <Macs {...props} macs={this.state.iphones} />} />
-                <Route path="/watchs" render={(props) => <Macs {...props} macs={this.state.watchs} />} />
-                <Route path="/tvs" render={(props) => <Macs {...props} macs={this.state.tvs} />} />
-                <Route path="/musics" render={(props) => <Macs {...props} macs={this.state.musics} />} />
+                <Route path="/macs" render={(props) => <Apple {...props} macs={this.state.macs} />} />
+                <Route path="/ipads" render={(props) => <AppleI {...props} ipads={this.state.ipads} />} />
+                <Route path="/iphones" render={(props) => <AppleII {...props} iphones={this.state.iphones} />} />
+                <Route path="/watchs" render={(props) => <AppleIII {...props} watchs={this.state.watchs} />} />
+                <Route path="/tvs" render={(props) => <AppleIV {...props} tvs={this.state.tvs} />} />
+                <Route path="/musics" render={(props) => <AppleV {...props} musics={this.state.musics} />} />
             </div>
         )
     }
