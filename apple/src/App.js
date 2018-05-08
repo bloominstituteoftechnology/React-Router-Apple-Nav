@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import MacBar from './MacBar';
 
-export default class App extends Component {
+class App extends Component {
   constructor(){
     super();
     this.state = {
@@ -10,7 +11,13 @@ export default class App extends Component {
     };
   }
 
-  
+  render(){
+    return (
+      <div>
+        <MacBar />
+      </div>
+    );
+  }
 }
 
 export default App;
