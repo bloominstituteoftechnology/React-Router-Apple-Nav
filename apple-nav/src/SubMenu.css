@@ -1,0 +1,18 @@
+.sub-menu {
+  display: flex;
+  justify-content: space-around;
+  background: #5a5a5a;
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+.sub-menu-item {
+  color: white;
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  padding: 8px;
+  margin: 4px;
+  background: #666666;
+}

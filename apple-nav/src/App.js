@@ -10,13 +10,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      menuData: []
+      menuData: dummyData
     };
   }
 
-  componentDidMount() {
-    this.setState({menuData: dummyData});
-  }
 
   render() {
     return (

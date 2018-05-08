@@ -1,45 +1,54 @@
 const dummyData = [
   {
     name: "Detwiler",
-    categories: {
-
-    }
+    items: [
+      "DetBook",
+      "DetBook Air",
+      "DetBook Pro",
+      "gDet",
+      "gDet Pro",
+      "Det Pro",
+      "Det Mini",
+      "Accessories",
+      "New Hope",
+      "Compare"
+    ]
   },
   {
     name: "gPad",
-    categories: {
+    items: [
 
-    }
+    ]
   },
   {
     name: "gPhone",
-    categories: {
+    items: [
 
-    }
+    ]
   },
   {
     name: "Guatch",
-    categories: {
+    items: [
 
-    }
+    ]
   },
   {
     name: "Guava TV",
-    categories: {
+    items: [
 
-    }
+    ]
   },
   {
     name: "Pure Guava",
-    categories: {
+    items: [
 
-    }
+    ]
   },
   {
     name: "Support",
-    categories: {
+    items: [
 
-    }
+    ]
   }
 ];
 
