@@ -9,7 +9,7 @@ const SubMenu = (props) => {
     <div className="sub-menu">
       {subCat.items.map((item, index) => {
         return (
-          <NavLink to={`/categories/${props.match.params.id}/${index}`} key={index} className="sub-menu-item"> {item} </NavLink>
+          <NavLink to={`/categories/${props.match.params.id}/content/${index}`} key={index} className="sub-menu-item"> {item} </NavLink>
         );
       })}
     </div>
