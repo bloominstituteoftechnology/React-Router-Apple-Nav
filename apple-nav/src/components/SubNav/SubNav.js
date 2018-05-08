@@ -1,54 +1,70 @@
 import React, { Component } from 'react';
-import { Button, Fade } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Button, Fade, Nav } from 'reactstrap';
+import { SubNavItem } from '../../components';
 
 class SubNav extends Component {
     constructor(props) {
         super(props);
         this.state = {
             fadeIn: true,
-            sectionContent: {
-                'Mac': {
-                    'icon': 'iconUrl',
-                    'subSection': 'sub',
-                    'new': false
-                    },
-                'iPad': {
-                    'icon': 'iconUrl',
-                    'subSection': 'sub',
-                    'new': false
-                    },
-                'iPhone': {
-                    'icon': 'iconUrl',
-                    'subSection': 'sub',
-                    'new': false
-                    },
-                'Watch': {
-                    'icon': 'iconUrl',
-                    'subSection': 'sub',
-                    'new': false
-                    },
-                'TV': {
-                    'icon': 'iconUrl',
-                    'subSection': 'sub',
-                    'new': false
-                    },
-                'Music': {
-                    'icon': 'iconUrl',
-                    'subSection': 'sub',
-                    'new': false
-                    },
-                'Support':
+            subSectionContent: {
+                'Mac': [
                     {
                     'icon': 'iconUrl',
-                    'subSection': 'sub',
+                    'name': 'sub',
                     'new': false
                     }
-            },
+                ],
+                'iPad': [
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'sub',
+                    'new': false
+                    }
+                ],
+                'iPhone': [
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'sub',
+                    'new': false
+                    }
+                ],
+                'Watch': [
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'sub',
+                    'new': false
+                    }
+                ],
+                'TV': [
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'sub',
+                    'new': false
+                    }
+                ],
+                'Music': [
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'sub',
+                    'new': false
+                    }
+                ],
+                'Support': [
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'sub',
+                    'new': false
+                    }
+                ]
+            }, // [ {icon, name, new} ]
             toRender: {}
         };
         this.toggle = this.toggle.bind(this);
     }
     componentDidMount() {
+        // this.toggle();
         // const section = this.props.match.params.section;
         // console.log('section',section);
         // console.log('sectionContent', this.state.sectionContent.Mac.icon);
@@ -59,19 +75,20 @@ class SubNav extends Component {
     }
     
     render() {
+        // if ( this.props.match.params.section ) {console.log('test',true) }
         const section = this.props.match.params.section;
-        const toRender = this.state.sectionContent[section];
+        const toRender = this.state.subSectionContent[section];
         return (
-            <div>
-                <Button color="primary" onClick={this.toggle}>Toggle Fade</Button>
-                <Fade in={this.state.fadeIn} tag="h5" className="mt-3">
-                    {toRender.icon}
-                </Fade>
-            </div>
+            <Nav>
+                {toRender.map(
+                    (subSection, i) => (<Link to={`${this.props.match.url}${subSection.name}`} > <SubNavItem  key={i} toRender={subSection} /> </Link>)
+                )}
+            </Nav>
         );
     }
 
     toggle() {
+        // if ( this.props.match.param.section ) {console.log(true) }
         this.setState({
             fadeIn: !this.state.fadeIn
         });
