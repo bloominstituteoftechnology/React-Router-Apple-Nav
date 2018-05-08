@@ -1,18 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {  Route, Link } from "react-router-dom";
 import './App.css';
+import NavWrapper from "./components/navWrapper/NavWrapper";
+import Nav from "./components/nav/Nav";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      navs: [
+        {
+          device: "Mac"
+        },
+        {
+          device: "IPad"
+        },
+        {
+          device: "IPhone"
+        },
+        {
+          device: "Watch"
+        },
+        {
+          device: "TV"
+        },
+        {
+          device: "Music"
+        },
+        {
+          device: "Support"
+        }
+      ]
+    };
+
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Route path="/" render={(props) => <NavWrapper {...props} navs={this.state.navs} />} />
+        <Route path="/nav/:device" component={Nav} />
       </div>
     );
   }
