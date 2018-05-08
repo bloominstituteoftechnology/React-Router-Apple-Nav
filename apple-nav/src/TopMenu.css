@@ -1,0 +1,25 @@
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #444444;
+
+}
+
+.guava-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.top-link {
+  color: white;
+  text-decoration: none;
+}
+
+.top-link:hover {
+  text-decoration: underline;
+}
+
+.selected-link {
+  background: gray;
+}
