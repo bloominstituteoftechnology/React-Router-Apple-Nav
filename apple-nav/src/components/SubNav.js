@@ -4,7 +4,7 @@ import React from 'react'
 const SubNav = props => {
     return (
     <div>
-        return <h4>{props.match.params.nav}</h4>;
+        <h1> Hello </h1>
     </div>
     )
 }

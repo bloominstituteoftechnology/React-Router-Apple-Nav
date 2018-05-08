@@ -17,23 +17,55 @@ const linkStyles = {
     padding: '2rem',
     textDecoration: 'none'
 }
-const Nav = props => {
+const Mac = props => {
     return (
-        <div>
-        {myMac.map(nav => <div><NavLink to={`/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles} onClick={this.fetchNav}>{nav}</NavLink>
-        <Route path="/mac/{`{${nav}`}" component={SubNav}/></div>)}
-        {myiPad.map(nav => <div><NavLink to={`/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles} onClick={this.fetchNav}>{nav}</NavLink>
-        <Route path="/ipad/{`{${nav}`}" component={SubNav}/></div>)}
-        {myiPhone.map(nav => <div><NavLink to={`/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles} onClick={this.fetchNav}>{nav}</NavLink>
-        <Route path="/iphone/{`{${nav}`}" component={SubNav}/></div>)}
-        {myWatch.map(nav => <div><NavLink to={`/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles} onClick={this.fetchNav}>{nav}</NavLink>
-        <Route path="/watch/{`{${nav}`}" component={SubNav}/></div>)}
-        {myTV.map(nav => <div><NavLink to={`/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles} onClick={this.fetchNav}>{nav}</NavLink>
-        <Route path="/tv/{`{${nav}`}" component={SubNav}/></div>)}
-        {myMusic.map(nav => <div><NavLink to={`/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles} onClick={this.fetchNav}>{nav}</NavLink>
-        <Route path="/music/{`{${nav}`}" component={SubNav}/></div>)}
-        </div>
+    <div>
+          {myMac.map(nav => <div key={nav + myMac.indexOf(nav)}> <NavLink to={`/mac/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
+        <Route exact path={`/mac/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myMac.indexOf(nav) + nav}/> </div> )}
+    </div>
     )
 }
+const IPad = props => {
+    return (
+    <div>
+        {myiPad.map(nav => <div key={nav + myiPad.indexOf(nav)}><NavLink to={`/ipad/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
+        <Route exact path={`/ipad/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myiPad.indexOf(nav) + nav}/> </div>)}
+    </div>
+    )
+}
+const IPhone = props => {
+    return (
+    <div>
+        {myiPhone.map(nav => <div key={nav + myiPhone.indexOf(nav)}><NavLink to={`/iphone/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
+        <Route exact path={`/iphone/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myiPhone.indexOf(nav) + nav}/></div> )}
+    </div>
+    )
+}
+const Watch = props => {
+    return (
+    <div>
+    {myWatch.map(nav => <div key={nav + myWatch.indexOf(nav)}><NavLink to={`/watch/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
+        <Route exact path={`/watch/${nav.toLowerCase().split(' ').join('')}`} component={SubNav} key={myWatch.indexOf(nav) + nav}/></div>)}
+    </div>
+    )
+}
+        
+const TV = props => {
+    return (
+    <div>
+         {myTV.map(nav => <div key={nav + myTV.indexOf(nav)}><NavLink to={`/tv/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
+        <Route exact path={`/tv/${nav.toLowerCase().split(' ').join('')}`} key={nav} components={SubNav} key={myTV.indexOf(nav) + nav}/></div>)}
+    </div>
+    )
+}        
+        
+const Music = props => {
+    return (
+    <div>
+        {myMusic.map(nav => <div key={nav + myMusic.indexOf(nav)}><NavLink to={`/music/${nav.toLowerCase().split(' ').join('')}`} key={nav} style={linkStyles}>{nav}</NavLink>
+        <Route exact path={`/music/${nav.toLowerCase().split(' ').join('')}`} components={SubNav} key={myMusic.indexOf(nav) + nav}/></div>)}
+    </div>
+    )
+} 
 
-export default Nav
+export { Mac, IPad, IPhone, Watch, TV, Music }
