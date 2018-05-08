@@ -3,7 +3,7 @@ import './App.css';
 import { Route } from 'react-router-dom';
 import TopMenu from './TopMenu.js';
 import dummyData from './dummy-data';
-
+import SubMenu from './SubMenu.js';
 
 class App extends Component {
 
@@ -24,6 +24,13 @@ class App extends Component {
         <Route path="/" render={() => (
           <TopMenu menuData={this.state.menuData} />
         )} />
+
+        <Route path="/categories/:id" render={() => (
+          <SubMenu menuData={this.state.menuData} />
+        )} />
+
+
+
       </div>
     );
   }
