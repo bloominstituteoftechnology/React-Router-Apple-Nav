@@ -10,11 +10,12 @@ export default class Nav extends Component {
   render() {
     return (
         <div >
-          <Link to={this.props.href}>
+           {console.log("My Path inside Nav", this.props.path)}
+          <Link to={this.props.path.toLowerCase()}>
             <div className="SubNav-item">
               <img src={this.props.src} alt=""/>
               <p>
-                {this.props.linkText}
+                {this.props.name}
               </p>
             </div>
           </Link>      

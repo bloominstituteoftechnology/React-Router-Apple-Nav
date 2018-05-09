@@ -3,13 +3,12 @@ import Nav from './Nav';
 
 
 
-const NavWrapper = () => (
+const NavWrapper = (props) => (
     <div>
+        {console.log("where is my match in NavWrapper", props.match.path)}
         <div className="Nav-header">
-            <Nav href="/" src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_large.svg"/>
-            <Nav href="/mac" linkText="Mac"/>
-            <Nav href="/ipad" linkText="Ipad"/>
-            <Nav href="/Watch" linkText="Watch"/>
+            {props.menuData.map((menu, index) => 
+                <Nav key={index} path={menu.name} name={menu.name} src={menu.src}/> )}
         </div>
     </div>
 )
