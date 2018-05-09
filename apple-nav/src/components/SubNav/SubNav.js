@@ -85,6 +85,7 @@ class SubNav extends Component {
                )
            }
            console.log(aux);
+           this.setState({ [subSectionContent[item]]: aux  });
        }
     }
     
