@@ -1,0 +1,12 @@
+.macMenu {
+    background-color: black;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    
+    font-size: 0.7rem;
+}
+.macMenu a {
+    color: white;
+}
