@@ -28,7 +28,7 @@ const navigation = [
     },
     {
         title: "Support",
-        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+        sub: ["Macbook"]
     }
 ];
 
