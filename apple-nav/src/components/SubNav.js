@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom';
 const navigation = [
     {
         title: "Mac",
-        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+        sub: ["Macbook ", "Macbook Air ","Macbook Pro ","iMac ","iMac Pro ","Mac Mini ","Accessories ","High Sierra ","Compare "]
     },
     {
         title: "iPad",
-        sub: ["iPad Pro", "iPad","iPad Mini 4","iOS 11","Accessories","Mac Mini","Compare"]
+        sub: ["iPad Pro ", "iPad ","iPad Mini 4 ","iOS 11 ","Accessories ","Mac Mini ","Compare "]
     },
     {
         title: "iPhone",
-        sub: ["iPhone X", "iPhone 8","iPhone 7","iPhone 6s","iPhone SE","iOS 11", "Accessories", "Compare"]
+        sub: ["iPhone X ", "iPhone 8 ","iPhone 7 ","iPhone 6s ","iPhone SE ","iOS 11 ", "Accessories ", "Compare "]
     },
     {
         title: "Watch",
-        sub: ["Apple Watch Series 3", "Apple Watch Nike+","Apple Watch Hermès","Apple Watch Series 1","Watch OS","Bands","Accessories","Compare"]
+        sub: ["Apple Watch Series 3 ", "Apple Watch Nike+ ","Apple Watch Hermès ","Apple Watch Series 1 ","Watch OS ","Bands ","Accessories ","Compare "]
     },
     {
         title: "TV",
-        sub: ["Apple TV 4K", "Apple TV", "TV App", "Accessories","Compare"]
+        sub: ["Apple TV 4K ", "Apple TV ", "TV App ", "Accessories ","Compare "]
     },
     {
         title: "Music",
-        sub: ["Apple Music", "iTunes","HomePod","iPod Touch","Music Accessories","Gift Cards"]
+        sub: ["Apple Music ", "iTunes ","HomePod ","iPod Touch ","Music Accessories ","Gift Cards "]
     },
     {
         title: "Support",
