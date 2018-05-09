@@ -8,11 +8,16 @@ class SubNav extends Component {
         super(props);
         this.state = {
             fadeIn: true,
-            subSectionContent: {
+            subSectionContent: { // 
                 'Mac': [
                     {
                     'icon': 'iconUrl',
-                    'name': 'sub',
+                    'name': 'MAc-1',
+                    'new': true
+                    },
+                    {
+                    'icon': 'iconUrl',
+                    'name': 'MAc-2',
                     'new': false
                     }
                 ],
@@ -58,20 +63,29 @@ class SubNav extends Component {
                     'new': false
                     }
                 ]
-            }, // [ {icon, name, new} ]
+            }, //  {[{icon, name, new},{icon, name, new}]} 
             toRender: {}
         };
         this.toggle = this.toggle.bind(this);
     }
     componentDidMount() {
-        // this.toggle();
-        // const section = this.props.match.params.section;
-        // console.log('section',section);
-        // console.log('sectionContent', this.state.sectionContent.Mac.icon);
-        // console.log('sectionContent', this.state.sectionContent[section]);
-        // const toRender = this.state.sectionContent[section];
-        // this.setState({ [toRender]: toRender });
-        // console.log(this.state.toRender);
+       const subSectionContent =  this.state.subSectionContent;
+       console.log(subSectionContent);
+       for (let item in subSectionContent ) {
+           console.log(subSectionContent[item]);
+           let aux = subSectionContent[item];
+           for (let i = 0; i < 6; ++i) {
+               console.log(i);
+               aux.push(
+                   {
+                    'icon': 'iconUrl',
+                    'name': `${item}.${i}`,
+                    'new': Math.random() > 0.5 ? true: false
+                   }
+               )
+           }
+           console.log(aux);
+       }
     }
     
     render() {
