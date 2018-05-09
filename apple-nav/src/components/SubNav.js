@@ -13,6 +13,22 @@ const navigation = [
     {
         title: "iPhone",
         sub: ["iPhone X", "iPhone 8","iPhone 7","iPhone 6s","iPhone SE","iOS 11", "Accessories", "Compare"]
+    },
+    {
+        title: "Watch",
+        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+    },
+    {
+        title: "TV",
+        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+    },
+    {
+        title: "Music",
+        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+    },
+    {
+        title: "Support",
+        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
     }
 ];
 
