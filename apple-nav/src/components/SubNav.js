@@ -16,15 +16,15 @@ const navigation = [
     },
     {
         title: "Watch",
-        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+        sub: ["Apple Watch Series 3", "Apple Watch Nike+","Apple Watch Hermès","Apple Watch Series 1","Watch OS","Bands","Accessories","Compare"]
     },
     {
         title: "TV",
-        sub: ["Apple TV 4K", "Apple TV"]
+        sub: ["Apple TV 4K", "Apple TV", "TV App", "Accessories","Compare"]
     },
     {
         title: "Music",
-        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+        sub: ["Apple Music", "iTunes","HomePod","iPod Touch","Music Accessories","Gift Cards"]
     },
     {
         title: "Support",
