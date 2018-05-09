@@ -19,3 +19,5 @@ class SubNav extends Component {
 }
 
 export default SubNav;
+
+// I think in order to make this work I might need to create variables or arrays that contain all the info for each nav item and then link them together. I ran out of time on this. As it is right now, when you click on links in the Nav it drops down with the name of the product and "SubNav goes here" so I guess that's the framework for it.

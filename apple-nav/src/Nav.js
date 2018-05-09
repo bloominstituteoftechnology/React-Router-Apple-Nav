@@ -3,7 +3,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-{/*I figured this was the easiest way to make the basic nav bar. Like, I thought making a component and then making links for each item would work, and it did! */}
+{/*I figured this was the easiest way to make the basic nav bar. Like, I thought making a component and then making links for each item would work, and it did! I might need to change this if I ever want to get the subnav working, though. Like, maybe put all of this info into a variable/array somewhere and call it. */}
+
 class Nav extends Component {
   render () {
     return (

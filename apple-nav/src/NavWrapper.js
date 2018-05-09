@@ -10,7 +10,7 @@ class NavWrapper extends Component {
     return (
       <div>
 	<Nav />
-	<Route path = "/:product" component={SubNav} />{/* I got this line from what we did yesterday */}
+	<Route path = "/:product" component={SubNav} />{/* I got this line from what we did in class yesterday */}
       </div>
 
     );
