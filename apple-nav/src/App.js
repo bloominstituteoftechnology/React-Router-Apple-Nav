@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import SubNav from './components/SubNav';
@@ -66,16 +65,13 @@ const navigation = [{
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/mac" component={Home} />
-            <Route path="/ipad" component={Home} />
-            <Route path="/iphone" component={Home} />
-          </Switch>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+
+            <Route path="/" component={Home} />
+            <Route path="/:product" component={SubNav} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
