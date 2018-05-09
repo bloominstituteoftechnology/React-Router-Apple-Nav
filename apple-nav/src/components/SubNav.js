@@ -1,34 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const navigation = [{
-    title: "Mac",
-    sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
-// ,
-// {
-//     title: 'iPad',
-//     sub: [
-//         { title: 'iPad Pro' },
-//         { title: 'iPad' },
-//         { title: 'iPad Mini 4' },
-//         { title: 'iOS 11' },
-//         { title: 'Accessories' },
-//         { title: 'Compare' }
-//     ]
-// }, 
-// {
-//     title: 'iPhone',
-//     sub: [
-//         {title: 'iPhone X'},
-//         {title: 'iPhone 8'},
-//         {title: 'iPhone 7'},
-//         {title: 'iPhone 6s'},
-//         {title: 'iPhone SE'},
-//         { title: 'iOS 11' },
-//         { title: 'Accessories' },
-//         { title: 'Compare' }
-//     ]
-}
+const navigation = [
+    {
+        title: "Mac",
+        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+    },
+    {
+        title: "iPad",
+        sub: ["iPad Pro", "iPad","iPad Mini 4","iOS 11","Accessories","Mac Mini","Compare"]
+    },
+    {
+        title: "iPhone",
+        sub: ["iPhone X", "iPhone 8","iPhone 7","iPhone 6s","iPhone SE","iOS 11", "Accessories", "Compare"]
+    }
 ];
 
 const SubNav = props => {
