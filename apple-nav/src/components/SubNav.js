@@ -28,7 +28,7 @@ const navigation = [
     },
     {
         title: "Support",
-        sub: ["Macbook"]
+        sub: ["Please schedule an appointment at your nearest Apple Store."]
     }
 ];
 
