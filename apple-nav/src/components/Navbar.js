@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
-import { Home, Apple, AppleI, AppleII, AppleIII, AppleIV, AppleV } from './index';
+import { Route, Link, Switch } from 'react-router-dom';
+import { Home, Apple, AppleI, AppleII, AppleIII, AppleIV, AppleV, PageNotFound } from './index';
 
 class Navbar extends Component {
     constructor() {
@@ -16,7 +16,7 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/macs">Macs</Link>
                 <Link to="/ipads">iPads</Link>
@@ -24,13 +24,16 @@ class Navbar extends Component {
                 <Link to="/watchs">Watch</Link>
                 <Link to="/tvs">TV</Link>
                 <Link to="/musics">Music</Link>
-                <Route exact path="/" component={Home} />
-                <Route path="/macs" render={(props) => <Apple {...props} macs={this.state.macs} />} />
-                <Route path="/ipads" render={(props) => <AppleI {...props} ipads={this.state.ipads} />} />
-                <Route path="/iphones" render={(props) => <AppleII {...props} iphones={this.state.iphones} />} />
-                <Route path="/watchs" render={(props) => <AppleIII {...props} watchs={this.state.watchs} />} />
-                <Route path="/tvs" render={(props) => <AppleIV {...props} tvs={this.state.tvs} />} />
-                <Route path="/musics" render={(props) => <AppleV {...props} musics={this.state.musics} />} />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/macs" render={(props) => <Apple {...props} macs={this.state.macs} />} />
+                    <Route path="/ipads" render={(props) => <AppleI {...props} ipads={this.state.ipads} />} />
+                    <Route path="/iphones" render={(props) => <AppleII {...props} iphones={this.state.iphones} />} />
+                    <Route path="/watchs" render={(props) => <AppleIII {...props} watchs={this.state.watchs} />} />
+                    <Route path="/tvs" render={(props) => <AppleIV {...props} tvs={this.state.tvs} />} />
+                    <Route path="/musics" render={(props) => <AppleV {...props} musics={this.state.musics} />} />
+                    <Route component={PageNotFound}/>
+                </Switch>
             </div>
         )
     }
