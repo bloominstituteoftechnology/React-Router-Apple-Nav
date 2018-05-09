@@ -20,7 +20,7 @@ const navigation = [
     },
     {
         title: "TV",
-        sub: ["Macbook", "Macbook Air","Macbook Pro","iMac","iMac Pro","Mac Mini","Accessories","High Sierra","Compare"]
+        sub: ["Apple TV 4K", "Apple TV"]
     },
     {
         title: "Music",
