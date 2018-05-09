@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import { Home, Apple, AppleI, AppleII, AppleIII, AppleIV, AppleV, PageNotFound } from './index';
+// import { Categories, Products } from './ApplData';
 
 class Navbar extends Component {
     constructor() {
