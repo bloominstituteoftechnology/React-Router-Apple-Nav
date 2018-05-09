@@ -56,6 +56,32 @@ const navigation = [{
         { title: 'Accessories' },
         { title: 'Compare' }
     ]
+},
+{
+    title: 'iPhone',
+    sub: [
+        {title: 'iPhone X'},
+        {title: 'iPhone 8'},
+        {title: 'iPhone 7'},
+        {title: 'iPhone 6s'},
+        {title: 'iPhone SE'},
+        { title: 'iOS 11' },
+        { title: 'Accessories' },
+        { title: 'Compare' }
+    ]
+},
+{
+    title: 'iPhone',
+    sub: [
+        {title: 'iPhone X'},
+        {title: 'iPhone 8'},
+        {title: 'iPhone 7'},
+        {title: 'iPhone 6s'},
+        {title: 'iPhone SE'},
+        { title: 'iOS 11' },
+        { title: 'Accessories' },
+        { title: 'Compare' }
+    ]
 }];
 
 const MainNav = props => {
