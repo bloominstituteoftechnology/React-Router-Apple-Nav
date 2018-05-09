@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Home, Mac, iPad, iPhone, Watch, TV, Music, Support, Search, Shop } from './components';
+import { Home, Mac, iPad, iPhone, Watch, TV, Music, Support, Search, Shop, MacSubItem } from './components';
 import { Container, Row, Col } from 'reactstrap';
 import './App.css';
 
@@ -32,7 +32,8 @@ class App extends Component {
         <br /><br />< br/>
 
         <Route exact path='/' component={Home}></Route>
-        <Route path='/Mac' component={Mac}></Route>
+        <Route path='/mac/' component={Mac}></Route>
+        <Route path='/mac/:macSubMenu' component={MacSubItem}></Route>
         <Route path='/ipad' component={iPad}></Route>
         <Route path='/iphone' component={iPhone}></Route>
         <Route path='/watch' component={Watch}></Route>

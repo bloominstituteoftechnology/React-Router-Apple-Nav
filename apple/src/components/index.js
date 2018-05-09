@@ -9,6 +9,7 @@ import Music from './Music';
 import Support from './Support';
 import Search from './Search';
 import Shop from './Shop';
+import MacSubItem from './MacSubItem';
 
 export {
     Home,
@@ -20,5 +21,6 @@ export {
     Music,
     Support,
     Search,
-    Shop
+    Shop,
+    MacSubItem
 };
