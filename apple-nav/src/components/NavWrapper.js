@@ -8,14 +8,17 @@ const styles = {
 };
 
 const linkStyles = {
-    padding: '2rem',
-    textDecoration: 'none'
+    padding: '3rem',
+    textDecoration: 'none',
+    color: 'white',
 }
 const NavWrapper = props => {
     return (
     <div style={{styles, linkStyles}}>
-        <NavLink to="/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/170px-Apple_logo_black.svg.png" style={{height: "1.5rem", marginTop: "-.5rem", marginRight:"2.5rem"}} alt="Apple"></img> </NavLink>
-        {myNav.map(nav => <NavLink to={`/${nav.toLowerCase()}`} key={nav} style={linkStyles}>{nav}</NavLink>)} <NavLink to="/search"> <i style={linkStyles} className="fas fa-search"></i></NavLink><NavLink to="/shopping"><i style={linkStyles} className="fas fa-shopping-bag"></i></NavLink>
+    <div style={{padding: '0 15rem', backgroundColor: 'black', color: 'white'}} className="row">
+        <NavLink to="/"> <i className="fab fa-apple" style={{marginTop: '2.5rem', marginRight:"2.5rem", color: 'white'}}/> </NavLink>
+        {myNav.map(nav => <NavLink to={`/${nav.toLowerCase()}`} key={nav} style={{color: 'white', padding: '3rem', textDecoration: 'none'}} className="col-1 mx-auto">{nav}</NavLink>)} <NavLink to="/search" className="col-1 mx-auto"> <i style={{padding: '3rem', color: 'white'}} className="fas fa-search"></i></NavLink><NavLink to="/shopping" style={{color: 'white'}} className="col-1 mx-auto"><i style={linkStyles} className="fas fa-shopping-bag"></i></NavLink>
+        </div>
         <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/mac" component={Mac}/>

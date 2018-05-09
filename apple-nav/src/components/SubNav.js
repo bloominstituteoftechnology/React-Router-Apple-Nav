@@ -4,7 +4,7 @@ import React from 'react'
 const SubNav = props => {
     return (
     <div>
-        <h1> Hello </h1>
+        <h1> {console.log(props)} </h1>
     </div>
     )
 }
