@@ -10,16 +10,16 @@ const data = [
 
         subNavs: [
             {
-                name: "Mac1",
-                src: ""
+                name: "MacBook",
+                src: "https://www.apple.com/v/iphone/home/w/images/chapternav/iphone8_large.svg"
             },
             {
-                name: "Mac2",
-                src: ""
+                name: "MacBook Air",
+                src: "https://www.apple.com/v/iphone/home/w/images/chapternav/iphonese_large.svg"
             },
             {
-                name: "Mac3",
-                src: ""
+                name: "MacBook Pro",
+                src: "https://www.apple.com/v/watch/home/i/images/watch_nav_nike_large.svg"
             }
         ]
     },
@@ -29,7 +29,6 @@ const data = [
         subNavs: [
             {
                 name: "iPad1",
-                href:"",
                 src: ""
             },
             {

@@ -10,10 +10,7 @@ export default class SubNavContainer extends Component {
   render() {
     return (
         <div className="SubNav-container">
-              {console.log("Path inside SubNavContainer ", this.props.match.path)}
-            <Nav path={`${this.props.match.path}macbook`} name="MacBook" src="https://www.apple.com/v/iphone/home/w/images/chapternav/iphone8_large.svg" />
-            <Nav path={`${this.props.match.path}macbook-air`} name="MacBook Air" src="https://www.apple.com/v/iphone/home/w/images/chapternav/iphonese_large.svg"/>
-            <Nav path={`${this.props.match.path}macbook-pro`} name="MacBook Pro" src="https://www.apple.com/v/watch/home/i/images/watch_nav_nike_large.svg"/>
+              {this.props.menuData.map((menu, index) => <Nav key={index} path={`${this.props.match.path}${menu.name}`} name={menu.name} src={menu.src}/>)}
         </div>
     );
   }
