@@ -9,7 +9,7 @@ class SubNav extends Component {
         {products.map(product => {
           if (product.category === currentCategory) {
             return (
-              <div key={product.category}>{product.products}</div>
+              <div key={product}>{product.products}</div>
             )
           }
         })}

@@ -8,7 +8,7 @@ const Categories = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support'];
 const Products = [
   {
     category: 'mac',
-    products: 'Mac products'
+    products: 'Mac products' // ['img1', 'img2']
   }, 
   {
     category: 'ipad',
@@ -45,11 +45,9 @@ class App extends Component {
       <div>
         <Route path='/' 
           render={props => 
-            <NavWrapper {...props} categories={Categories}
-            />
+            <NavWrapper {...props} categories={Categories} />
           }
         />
-        {/* <Route path='/' render={props => <NavWrapper {...props} myName={this.state.something}/> } /> */}
         <Route path='/:category'
           render={props =>
             <SubNav {...props} products={Products} />
