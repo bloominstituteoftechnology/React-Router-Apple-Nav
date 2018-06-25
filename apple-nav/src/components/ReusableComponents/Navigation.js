@@ -1,4 +1,4 @@
-import { Navbar, Nav } from 'reactstrap';
+import { Navbar, NavbarBrand } from 'reactstrap';
 import styled from 'styled-components';
 
 export const Header = styled.div`
@@ -11,6 +11,10 @@ export const StyledNavBar = styled(Navbar)`
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 22px;
+`
+
+export const StyledNavBrand = styled(NavbarBrand)`
+    margin: 0;
 `
 
 export const NavContent = styled.ul`
