@@ -19,9 +19,7 @@ const NavigationItems = () => {
                 </Link>
             })}
 
-            <NavItem>
-                <AppleNames>Support</AppleNames>
-            </NavItem>
+            <AppleNames>Support</AppleNames>
 
             <NavItem>
                 <SearchIcon className="fas fa-search"></SearchIcon>
