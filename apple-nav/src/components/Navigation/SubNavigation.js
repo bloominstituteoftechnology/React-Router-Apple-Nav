@@ -32,12 +32,7 @@ class SubNavigation extends React.Component {
         }
     }
 
-
     render() {
-        if (!this.state.icon) {
-            return <div>Loading icon information...</div>;
-        }
-
         return (
             <SubNavigationWrapper>
 
