@@ -11,7 +11,7 @@ class App extends Component {
 
         <Navigation />
 
-        <Route path='/:name' render={props => <SubNavigation {...props} />} />
+        <Route path='/:name' component={SubNavigation} />
 
       </div>
     );
