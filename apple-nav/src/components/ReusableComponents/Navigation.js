@@ -36,6 +36,7 @@ export const AppleIcon = styled.i`
 export const AppleNames = styled.li`
     color: white;
     font-size: 14px;
+    cursor: pointer;
 `
 
 export const SearchIcon = styled.i`

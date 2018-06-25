@@ -3,7 +3,7 @@ import { NavItem } from 'reactstrap';
 import { AppleIcon, AppleNames, SearchIcon, ClipBoardIcon, StyledNavBrand } from '../ReusableComponents/Navigation';
 import { Link } from 'react-router-dom';
 
-const NavNames = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support'];
+const NavNames = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music'];
 
 const NavigationItems = () => {
     return (
@@ -18,6 +18,10 @@ const NavigationItems = () => {
                     <AppleNames>{name}</AppleNames>
                 </Link>
             })}
+
+            <NavItem>
+                <AppleNames>Support</AppleNames>
+            </NavItem>
 
             <NavItem>
                 <SearchIcon className="fas fa-search"></SearchIcon>
