@@ -1,6 +1,7 @@
 import React from 'react';
 import { SubNavigationWrapper, SubNavigationContent } from '../ReusableComponents/SubNavigation';
 import AppleIcons from '../../AppleIcons';
+import SubNavigationItems from './SubNavigationItems';
 
 class SubNavigation extends React.Component {
     constructor(props) {
@@ -33,13 +34,15 @@ class SubNavigation extends React.Component {
     }
 
     render() {
+        if (!this.state.icon) {
+            return <div>Loading icon information...</div>;
+        }
+
         return (
             <SubNavigationWrapper>
 
                 <SubNavigationContent>
-                    {this.state.icon.name}
-
-
+                    <SubNavigationItems icons={this.state.icon}/>
                 </SubNavigationContent>
 
             </SubNavigationWrapper>
