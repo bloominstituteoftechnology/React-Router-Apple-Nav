@@ -27,7 +27,6 @@ const NavigationItems = () => {
                 <ClipBoardIcon className="far fa-clipboard"></ClipBoardIcon>
             </NavItem>
 
-
         </React.Fragment>
     );
 
