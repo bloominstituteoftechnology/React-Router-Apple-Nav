@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navigation from './components/Navigation/Navigation';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      hi
+
+        <Navigation />
+        
       </div>
     );
   }
