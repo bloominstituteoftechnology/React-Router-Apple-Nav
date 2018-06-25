@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavbarBrand } from 'reactstrap';
-import { AppleIcon, AppleNames } from '../ReusableComponents/Navigation';
+import { NavbarBrand, NavItem } from 'reactstrap';
+import { AppleIcon, AppleNames, SearchIcon, ClipBoardIcon } from '../ReusableComponents/Navigation';
 import { Link } from 'react-router-dom';
 
 const NavNames = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support'];
@@ -8,6 +8,7 @@ const NavNames = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support'];
 const NavigationItems = () => {
     return (
         <React.Fragment>
+
             <NavbarBrand>
                 <AppleIcon className="fab fa-apple"></AppleIcon>
             </NavbarBrand>
@@ -17,6 +18,16 @@ const NavigationItems = () => {
                     <AppleNames>{name}</AppleNames>
                 </Link>
             })}
+
+            <NavItem>
+                <SearchIcon className="fas fa-search"></SearchIcon>
+            </NavItem>
+
+            <NavItem>
+                <ClipBoardIcon className="far fa-clipboard"></ClipBoardIcon>
+            </NavItem>
+
+
         </React.Fragment>
     );
 

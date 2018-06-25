@@ -20,6 +20,7 @@ export const NavContent = styled.ul`
     align-items: center;
     max-width: 1000px;
     width: 100%;
+    height: 44px;
     padding: 0;
     margin: 0;
 `
@@ -31,4 +32,12 @@ export const AppleIcon = styled.i`
 export const AppleNames = styled.li`
     color: white;
     font-size: 14px;
+`
+
+export const SearchIcon = styled.i`
+    color: white;
+`
+
+export const ClipBoardIcon = styled.i`
+    color: white;
 `
