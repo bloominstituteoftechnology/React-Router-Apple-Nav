@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavbarBrand, Nav, NavItem } from 'reactstrap';
-import { Header, StyledNavBar } from '../ReusableComponents/Navigation';
+import { Header, StyledNavBar, AppleIcon, NavContent, AppleNames } from '../ReusableComponents/Navigation';
+import { Link } from 'react-router-dom';
+
+const NavNames = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'Support'];
 
 const Navigation = () => {
     return (
@@ -8,12 +11,20 @@ const Navigation = () => {
 
             <StyledNavBar>
 
-                <NavbarBrand>
-                <i class="fab fa-apple"></i>
+                <NavContent>
+
+                    <NavbarBrand>
+                        <AppleIcon className="fab fa-apple"></AppleIcon>
+                    </NavbarBrand>
+
+                    {NavNames.map(name => {
+                        return <Link key={name} to={`/${name.toLowerCase()}`}>
+                            <AppleNames>{name}</AppleNames>
+                        </Link>
+                    })}
 
 
-                    
-                </NavbarBrand>
+                </NavContent>
 
             </StyledNavBar>
 
