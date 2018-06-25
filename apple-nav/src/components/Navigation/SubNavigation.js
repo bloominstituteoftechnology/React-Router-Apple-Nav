@@ -42,7 +42,7 @@ class SubNavigation extends React.Component {
             <SubNavigationWrapper>
 
                 <SubNavigationContent>
-                    <SubNavigationItems icons={this.state.icon}/>
+                    <SubNavigationItems icons={this.state.icon} />
                 </SubNavigationContent>
 
             </SubNavigationWrapper>

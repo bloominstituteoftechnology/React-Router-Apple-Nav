@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const SubNavigationWrapper = styled.div`
     background: #141414;
     padding: 12px 0;
+    max-height: 116px;
 `
 
 export const SubNavigationContent = styled.ul`
@@ -26,5 +27,10 @@ export const StyledIconWrapper = styled.li`
     span {
         display: block;
         font-size: 11px;
+        max-width: 7em;
     }
+`
+
+export const MacIconWrapper = styled.li`
+    
 `

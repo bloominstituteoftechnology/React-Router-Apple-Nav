@@ -10,28 +10,30 @@ const NavigationItems = () => {
         <React.Fragment>
 
             <StyledNavBrand>
-                <AppleIcon className="fab fa-apple"></AppleIcon>
-            </StyledNavBrand>
-
-            {NavNames.map(name => {
-                return <Link key={name} to={`/${name.toLowerCase()}`}>
-                    <AppleNames>{name}</AppleNames>
+                <Link to='/'>
+                    <AppleIcon className="fab fa-apple"></AppleIcon>
                 </Link>
-            })}
+            </StyledNavBrand>
+    
+            {NavNames.map(name => {
+                    return <Link key={name} to={`/${name.toLowerCase()}`}>
+                        <AppleNames>{name}</AppleNames>
+                    </Link>
+                })}
 
-            <AppleNames>Support</AppleNames>
+                <AppleNames>Support</AppleNames>
 
-            <NavItem>
-                <SearchIcon className="fas fa-search"></SearchIcon>
-            </NavItem>
+                <NavItem>
+                    <SearchIcon className="fas fa-search"></SearchIcon>
+                </NavItem>
 
-            <NavItem>
-                <ClipBoardIcon className="far fa-clipboard"></ClipBoardIcon>
-            </NavItem>
+                <NavItem>
+                    <ClipBoardIcon className="far fa-clipboard"></ClipBoardIcon>
+                </NavItem>
 
         </React.Fragment>
-    );
-
-}
-
+            );
+        
+        }
+        
 export default NavigationItems;
