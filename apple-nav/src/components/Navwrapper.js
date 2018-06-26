@@ -7,15 +7,14 @@ class NavWrapper extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: Data
-            // categories: Data
+            data: Data,
         }
     }
     render() { 
         return (
             <div>
                 <Nav data={this.state.data} />
-                <Subnav />
+                <Subnav data={this.state.data} />
             </div>
           )
     }
