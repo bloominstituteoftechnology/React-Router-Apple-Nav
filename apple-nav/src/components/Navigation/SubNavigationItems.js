@@ -8,7 +8,7 @@ const SubNavigationItems = props => {
             
             {props.icons.icons.map(icon => {
                 return <StyledIconWrapper className={icon.class} key={icon.text}>
-                    <SubNavIcon src={icon.icon}></SubNavIcon>
+                    <img src={icon.icon}></img>
                     <span>{icon.text}</span>
                 </StyledIconWrapper>
             })}

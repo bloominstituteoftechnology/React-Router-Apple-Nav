@@ -16,10 +16,6 @@ export const SubNavigationContent = styled.ul`
     overflow-y: hidden;
 `
 
-export const SubNavIcon = styled.img`
-    font-size: 2rem;
-`
-
 export const StyledIconWrapper = styled.li`
     display: inline-block;
     padding: 0 18px;
