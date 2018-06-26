@@ -3,7 +3,7 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import NavLink from './NavLink';
 
-class NavWrapper extends Component {
+class SubNav extends Component {
   state = {
     link: null
   }
@@ -15,10 +15,10 @@ class NavWrapper extends Component {
   render() {
     return (
       <div>
-        {'stuff'}
+        {this.state.link.subNav.map(link => <NavLink key={Math.random()} link={link} />)}
       </div>
     );
   }
 }
 
-export default NavWrapper;
+export default SubNav;

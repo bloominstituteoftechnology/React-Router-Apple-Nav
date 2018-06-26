@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import NavWrapper from './components/NavWrapper';
-import Nav from './components/Nav';
+import SubNav from './components/SubNav';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Route exact path="/" component={NavWrapper} />
+        <NavWrapper />
         <Route path="/:name" render={props =>
-          <Nav {...props} />
+          <SubNav {...props} />
         } />
       </div>
     );
