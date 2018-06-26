@@ -114,39 +114,39 @@ const appleIcons = [
         name: 'watch',
         icons: [
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_series_2_large.svg',
                 text: 'Apple Watch Series 3'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_nike_large.svg',
                 text: 'Apple Watch Nike+'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_hermes_large.svg',
                 text: 'Apple Watch Hermes'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_edition_large.svg',
                 text: 'Apple Watch Edition'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_series_1_large.svg',
                 text: 'Apple Watch Series 1'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_watch_os_large.svg',
                 text: 'watchOS'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_bands_large.svg',
                 text: 'Bands'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_accessories_large.svg',
                 text: 'Accessories'
             },
             {
-                icon: 'fas fa-clock',
+                icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_compare_large.svg',
                 text: 'Compare'
             }
         ]
