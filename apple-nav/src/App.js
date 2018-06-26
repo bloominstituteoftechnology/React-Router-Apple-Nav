@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import MainNavigation from './Components/MainNavigation';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
-        
+        <Route exact path="/" component={MainNavigation} />
       </div>
+      </Router>
     );
   }
 }
