@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Menu from './data';
+import Menu from './Menu';
 import NavWrapper from './components/Nav/NavWrapper';
 
 
@@ -9,16 +9,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      menu: Menu,
+      menu: [],
     }
   }
- 
-  
+componentDidMount() {
+  this.setState({menu: Menu});
+}
+
   render() {
     return (
-      <div className="App">
-      <Route exact path = '/' render={props=> (
-        <NavWrapper {...props} />
+      <div>
+    <Route exact path = '/' render={props=> (
+        <NavWrapper {...props} menu = {this.state.menu} />
       )} />
       </div>
     );

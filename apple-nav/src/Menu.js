@@ -1,5 +1,6 @@
-let Data = {
-    'mac': [
+export default [
+    {'title': 'mac', 
+    'type':[
         'macbook',
         'Macbook Air',
         'macbook Pro',
@@ -8,16 +9,22 @@ let Data = {
         'Accessories',
         'High Sierra',
         'Compare',
-    ],
-    'iPad': [
+    ]
+},
+    {
+        'title': 'iPad',
+        'type': [
         'iPad Pro',
         'iPad',
         'Ipad mini 4',
         'iOS 11',
         'Accessories',
         'Compare',
-    ],
-    'iPhone': [
+    ]
+},
+    {
+        'title': 'iPhone',
+        'type': [
         'iPhone X',
         'iPhone 8',
         'iPhone 7',
@@ -25,6 +32,6 @@ let Data = {
         'iOS 11',
         'Accessories',
         'Compare',
-    ],
-    
-}
+    ]
+},
+]
