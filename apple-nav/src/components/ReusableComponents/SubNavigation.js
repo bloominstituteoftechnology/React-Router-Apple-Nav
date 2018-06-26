@@ -10,7 +10,7 @@ export const SubNavigationContent = styled.ul`
     margin: 0 34px;
     padding-left: 0;
     padding-bottom: 49px;
-    line-height: 24px;
+    
 `
 
 export const SubNavIcon = styled.img`
@@ -26,8 +26,4 @@ export const StyledIconWrapper = styled.li`
         font-size: 11px;
         max-width: 7em;
     }
-`
-
-export const MacIconWrapper = styled.li`
-    
 `
