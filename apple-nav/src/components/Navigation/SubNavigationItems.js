@@ -4,6 +4,7 @@ import { SubNavIcon, StyledIconWrapper } from '../ReusableComponents/SubNavigati
 const SubNavigationItems = props => {
     return (
         <React.Fragment>
+            
             {props.icons.icons.map(icon => {
                 return <StyledIconWrapper key={icon.text}>
                     <SubNavIcon className={icon.icon}></SubNavIcon>

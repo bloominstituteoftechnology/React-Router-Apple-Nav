@@ -41,8 +41,10 @@ export const AppleNames = styled.li`
 
 export const SearchIcon = styled.i`
     color: white;
+    cursor: pointer;
 `
 
 export const ClipBoardIcon = styled.i`
     color: white;
+    cursor: pointer;
 `
