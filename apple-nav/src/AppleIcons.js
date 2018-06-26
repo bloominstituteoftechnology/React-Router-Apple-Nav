@@ -155,23 +155,23 @@ const appleIcons = [
         name: 'tv',
         icons: [
             {
-                icon: 'fas fa-gamepad',
+                icon: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
                 text: 'Apple TV 4k'
             },
             {
-                icon: 'fas fa-gamepad',
+                icon: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
                 text: 'Apple TV'
             },
             {
-                icon: 'fas fa-gamepad',
+                icon: 'https://www.apple.com/v/tv/home/d/images/home/tvapp_dark_large.svg',
                 text: 'TV App'
             },
             {
-                icon: 'fas fa-gamepad',
+                icon: 'https://www.apple.com/v/tv/home/d/images/home/accessories_dark_large.svg',
                 text: 'Accessories'
             },
             {
-                icon: 'fas fa-gamepad',
+                icon: 'https://www.apple.com/v/tv/home/d/images/home/compare_dark_large.svg',
                 text: 'Compare'
             }
         ]
