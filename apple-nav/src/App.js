@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import dummyData from './dummyData';
 import MainNav from './Components/MainNav';
 
 const PageNotFound = () => <h1>Sorry Page Not Found</h1>
