@@ -207,27 +207,33 @@ const appleIcons = [
         icons: [
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/apple_music_large.svg',
-                text: 'Apple Music'
+                text: 'Apple Music',
+                class: 'apple-music'
             },
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/itunes_large.svg',
-                text: 'iTunes'
+                text: 'iTunes',
+                class: 'itunes'
             },
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/homepod_icon_large.svg',
-                text: 'HomePod'
+                text: 'HomePod',
+                class: 'homepod'
             },
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/ipod_touch_light_large.svg',
-                text: 'iPod touch'
+                text: 'iPod touch',
+                class: 'ipod-touch'
             },
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/accessories_large.svg',
-                text: 'Music Accessories'
+                text: 'Music Accessories',
+                class: 'music-accessories'
             },
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/gift_cards_large.svg',
-                text: 'Gift Cards'
+                text: 'Gift Cards',
+                class: 'music-gift-cards'
             }
         ]
     }
