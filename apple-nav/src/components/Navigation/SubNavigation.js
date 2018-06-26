@@ -39,10 +39,10 @@ class SubNavigation extends React.Component {
         }
 
         return (
-            <SubNavigationWrapper>
+            <SubNavigationWrapper style={{ background: this.state.icon.background, color: this.state.icon.color }}>
 
                 <SubNavigationContent>
-                    <SubNavigationItems icons={this.state.icon}/>
+                    <SubNavigationItems icons={this.state.icon} />
                 </SubNavigationContent>
 
             </SubNavigationWrapper>

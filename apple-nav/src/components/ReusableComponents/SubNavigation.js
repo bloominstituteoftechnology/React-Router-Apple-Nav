@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SubNavigationWrapper = styled.div`
-    background: #141414;
     padding: 12px 0;
     max-height: 116px;
 `
@@ -21,7 +20,6 @@ export const SubNavIcon = styled.img`
 export const StyledIconWrapper = styled.li`
     display: inline-block;
     padding: 0 18px;
-    color: white;
 
     span {
         display: block;

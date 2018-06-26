@@ -1,6 +1,8 @@
 const appleIcons = [
     {
         name: 'mac',
+        background: '#141414',
+        color: 'rgb(255, 255, 255)',  
         icons: [
             {
                 icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbook_dark_large.svg',
@@ -46,6 +48,8 @@ const appleIcons = [
     },
     {
         name: 'ipad',
+        background: 'rgba(242, 242, 242, 0.7)',
+        color: 'rgb(17, 17, 17)',
         icons: [
             {
                 icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadpro_light_large.svg',
@@ -75,6 +79,8 @@ const appleIcons = [
     },
     {
         name: 'iphone',
+        background: 'rgba(242, 242, 242, 0.7)',
+        color: 'rgb(17, 17, 17)',
         icons: [
             {
                 icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphonex_large.svg',
@@ -112,6 +118,8 @@ const appleIcons = [
     },
     {
         name: 'watch',
+        background: 'rgba(255, 255, 255, 0.7)',
+        color: 'rgb(17, 17, 17)',
         icons: [
             {
                 icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_series_2_large.svg',
@@ -153,6 +161,8 @@ const appleIcons = [
     },
     {
         name: 'tv',
+        background: 'rgb(20, 20, 20)',
+        color: 'rgb(255, 255, 255)',
         icons: [
             {
                 icon: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
@@ -178,6 +188,8 @@ const appleIcons = [
     },
     {
         name: 'music',
+        background: 'rgba(242, 242, 242, 0.7)',
+        color: 'rgb(17, 17, 17)',
         icons: [
             {
                 icon: 'https://www.apple.com/v/music/g/images/overview/icons/apple_music_large.svg',
