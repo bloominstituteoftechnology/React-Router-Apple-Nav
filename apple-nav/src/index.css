@@ -47,10 +47,21 @@ table {
 	border-spacing: 0;
 }
 
+/* Fonts */
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:400;
+	src: url('https://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.woff') format('woff');
+}
+
 /* Custom styles */
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
+  font-family: 'SF Pro Display','Helvetica Neue','Helvetica'.'Arial',sans-serif;
+  color: #333;
 }
+
