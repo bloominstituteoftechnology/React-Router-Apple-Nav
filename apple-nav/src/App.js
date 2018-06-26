@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import dummyData from './dummyData';
+import MainNav from './Components/MainNav';
 
-const MainNav = () => <h1>Main Nav</h1>
 const PageNotFound = () => <h1>Sorry Page Not Found</h1>
 
 class App extends Component {
