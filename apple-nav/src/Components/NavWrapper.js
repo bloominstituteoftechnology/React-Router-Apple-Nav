@@ -10,16 +10,15 @@ class NavWrapper extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            data: Data
+            data: Data,
+            selected:"mac"
          }
     }
     render() { 
         return ( 
             <div>
-                <p>NavWrapper</p>
                 <Nav data={this.state.data} />
-                <SubNav />
-             
+                <SubNav data={this.state.data}/>
             </div>
          )
     }
