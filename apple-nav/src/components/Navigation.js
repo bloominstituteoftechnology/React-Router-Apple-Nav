@@ -12,6 +12,7 @@ class Navigation extends React.Component{
     render() {
     return (
         <div>
+            {console.log(this.state.sublinks)}
     {this.state.sublinks.map(sublink => {
     return <SubNav sublink={sublink}/>
     })};

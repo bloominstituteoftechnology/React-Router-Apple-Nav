@@ -11,14 +11,14 @@ class NavWrapper extends React.Component {
     }
   
     componentDidMount() {
-      this.setState({navlinks: navData})
+      this.setState({navlinks: navData});
     }
 
     render() {
       return (
         <div>
-          {this.state.navlinks.map(link => {
-              return <Navigation links={link}/>
+          {this.state.navlinks.map(item => {
+              return <div><Navigation links={item.links} />{item.name}</div>
           })}
         </div>
       );

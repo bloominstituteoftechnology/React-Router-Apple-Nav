@@ -1,7 +1,11 @@
 import React from 'react';
 
 const SubNav = props => {
-    return props.sublink;
+    return (
+        <div>
+            {props.sublink.name}
+            </div>
+    )
 }
 
 export default SubNav;

@@ -1,5 +1,6 @@
 const navData = [
-  { 'Mac':
+  { name: 'Mac',
+  links:
     [
       'MacBook',
       'MacBook Air',
@@ -14,7 +15,8 @@ const navData = [
     ]
   },
   {
-    'iPad':
+    name: 'iPad',
+    links:
     [
       'iPad Pro',
       'iPad',
@@ -25,7 +27,8 @@ const navData = [
     ]
   },
   {
-    'iPhone':
+    name: 'iPhone',
+    links: 
     [
       'iPhone X',
       'iPhone 8',
@@ -38,7 +41,8 @@ const navData = [
     ]
   },
   {
-    'Watch':
+    name: 'Watch',
+    links: 
     [
       'Apple Watch Series 3',
       'Apple Watch Nike+',
@@ -52,7 +56,8 @@ const navData = [
     ]
   },
   {
-    'TV':
+    name: 'TV',
+    links:
     [
       'Apple TV 4K',
       'Apple TV',
@@ -62,7 +67,8 @@ const navData = [
     ]
   },
   {
-    'Music':
+    name: 'Music',
+    links: 
     [
       'Apple Music',
       'iTunes',
