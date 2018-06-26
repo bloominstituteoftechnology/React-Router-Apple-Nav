@@ -1,5 +1,6 @@
 import { Navbar, NavbarBrand } from 'reactstrap';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Header = styled.div`
     position: sticky;
@@ -11,6 +12,13 @@ export const StyledNavBar = styled(Navbar)`
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 22px;
+`
+
+export const StyledAppleLink = styled(Link)`
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
 `
 
 export const StyledNavBrand = styled(NavbarBrand)`
