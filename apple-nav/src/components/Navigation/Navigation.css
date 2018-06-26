@@ -1,45 +1,83 @@
 .series-3 {
+    padding-left: 0;
+    padding-right: 9px;
+}
+
+.series-3 img {
     width: 25px;
     height: 54px;
 }
 
 .nike {
+    padding: 0 9px;
+}
+
+.nike img {
     width: 25px;
     height: 54px;
 }
 
 .hermes {
+    padding: 0 9px;
+}
+
+.hermes img{
     width: 37px;
     height: 54px;
 }
 
 .watch-edition {
+    padding: 0 9px;
+}
+
+.watch-edition img {
     width: 25px;
     height: 54px;
 }
 
 .series-1 {
+    padding: 0 9px;
+}
+
+.series-1 img {
     width: 25px;
     height: 54px;
 }
 
 .watchos {
+    padding: 0 26px;
+}
+
+.watchos img {
     width: 44px;
     height: 54px;
     background-size: 44px 54px;
 }
 
 .bands {
+    padding: 0 15px;
+}
+
+.bands img {
     width: 17px;
     height: 54px;
 }
 
 .accessories {
+    padding: 0 26px;
+}
+
+.accessories img {
     width: 52px;
     height: 54px;
 }
 
 .compare {
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.compare img {
     width: 71px;
     height: 54px;
 }

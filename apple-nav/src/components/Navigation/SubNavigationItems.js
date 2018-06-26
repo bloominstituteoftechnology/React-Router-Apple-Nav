@@ -7,8 +7,8 @@ const SubNavigationItems = props => {
         <React.Fragment>
             
             {props.icons.icons.map(icon => {
-                return <StyledIconWrapper key={icon.text}>
-                    <SubNavIcon className={icon.class} src={icon.icon}></SubNavIcon>
+                return <StyledIconWrapper className={icon.class} key={icon.text}>
+                    <SubNavIcon src={icon.icon}></SubNavIcon>
                     <span>{icon.text}</span>
                 </StyledIconWrapper>
             })}
