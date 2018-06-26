@@ -30,10 +30,8 @@ export const StyledIconWrapper = styled.li`
         max-width: 7em;
         margin-top: 3px;
     }
-`
 
-export const StyledSpan = styled.span`
     &:hover {
-        
+        color: #6bf;   
     }
 `

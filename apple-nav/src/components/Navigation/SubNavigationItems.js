@@ -1,5 +1,5 @@
 import React from 'react';
-import { SubNavIcon, StyledIconWrapper, StyledSpan } from '../ReusableComponents/SubNavigation';
+import { SubNavIcon, StyledIconWrapper } from '../ReusableComponents/SubNavigation';
 import './Navigation.css';
 
 const SubNavigationItems = props => {
@@ -9,7 +9,7 @@ const SubNavigationItems = props => {
             {props.icons.icons.map(icon => {
                 return <StyledIconWrapper className={icon.class} key={icon.text}>
                     <SubNavIcon src={icon.icon}></SubNavIcon>
-                    <StyledSpan>{icon.text}</StyledSpan>
+                    <span>{icon.text}</span>
                 </StyledIconWrapper>
             })}
 

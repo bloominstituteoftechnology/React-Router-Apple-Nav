@@ -15,6 +15,7 @@ class SubNavigation extends React.Component {
 
     componentDidMount() {
         let { name } = this.props.match.params;
+        console.log(name);
         this.getIcons(name);
     }
 
@@ -26,7 +27,7 @@ class SubNavigation extends React.Component {
 
     getIcons = name => {
         for (let i = 0; i < this.state.appleIcons.length; i++) {
-            if (this.state.appleIcons[i].name === name) {
+            if (this.state.appleIcons[i].name.toLowerCase() === name) {
                 this.setState({ icon: this.state.appleIcons[i] });
                 return;
             }

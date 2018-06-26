@@ -1,6 +1,6 @@
 const appleIcons = [
     {
-        name: 'mac',
+        name: 'Mac',
         background: '#141414',
         color: 'rgb(255, 255, 255)',  
         icons: [
@@ -47,7 +47,7 @@ const appleIcons = [
         ]
     },
     {
-        name: 'ipad',
+        name: 'iPad',
         background: 'rgba(242, 242, 242, 0.7)',
         color: 'rgb(17, 17, 17)',
         icons: [
@@ -78,7 +78,7 @@ const appleIcons = [
         ]
     },
     {
-        name: 'iphone',
+        name: 'iPhone',
         background: 'rgba(242, 242, 242, 0.7)',
         color: 'rgb(17, 17, 17)',
         icons: [
@@ -117,7 +117,7 @@ const appleIcons = [
         ]
     },
     {
-        name: 'watch',
+        name: 'Watch',
         background: 'rgba(255, 255, 255, 0.7)',
         color: 'rgb(17, 17, 17)',
         icons: [
@@ -169,7 +169,7 @@ const appleIcons = [
         ]
     },
     {
-        name: 'tv',
+        name: 'TV',
         background: 'rgb(20, 20, 20)',
         color: 'rgb(255, 255, 255)',
         icons: [
@@ -201,7 +201,7 @@ const appleIcons = [
         ]
     },
     {
-        name: 'music',
+        name: 'Music',
         background: 'rgba(242, 242, 242, 0.7)',
         color: 'rgb(17, 17, 17)',
         icons: [
