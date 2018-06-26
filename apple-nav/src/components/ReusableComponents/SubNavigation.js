@@ -15,7 +15,7 @@ export const SubNavigationContent = styled.ul`
     padding-left: 0;
 `
 
-export const SubNavIcon = styled.i`
+export const SubNavIcon = styled.img`
     font-size: 2rem;
 `
 

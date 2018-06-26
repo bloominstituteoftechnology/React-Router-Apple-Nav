@@ -3,43 +3,43 @@ const appleIcons = [
         name: 'mac',
         icons: [
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbook_dark_large.svg',
                 text: 'MacBook'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookair_dark_large.svg',
                 text: 'MacBook Air'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookpro_dark_large.svg',
                 text: 'MacBook Pro'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_dark_large.svg',
                 text: 'iMac'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_pro_dark_large.svg',
                 text: 'iMac Pro'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macpro_dark_large.svg',
                 text: 'Mac Pro'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macmini_dark_large.svg',
                 text: 'Mac mini'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_acc_dark_large.svg',
                 text: 'Accessories'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_osx_dark_large.svg',
                 text: 'High Sierra'
             },
             {
-                icon: 'fas fa-desktop',
+                icon: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_comp_dark_large.svg',
                 text: 'Compare'
             }
         ]
