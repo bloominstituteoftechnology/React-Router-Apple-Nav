@@ -3,12 +3,12 @@ import { NavItem } from 'reactstrap';
 import { AppleIcon, AppleNames, SearchIcon, ClipBoardIcon, StyledAppleLink, StyledNamesLink } from '../ReusableComponents/Navigation';
 import AppleIcons from '../../AppleIcons';
 
-const NavigationItems = () => {
+const NavigationItems = props => {
     return (
         <React.Fragment>
 
             <StyledAppleLink to='/'>
-                    <AppleIcon className="fab fa-apple"></AppleIcon>
+                <AppleIcon onClick={() => props.changeBackground('rgba(0,0,0,0.8)')} className="fab fa-apple"></AppleIcon>
             </StyledAppleLink>
 
             {AppleIcons.map(name => {

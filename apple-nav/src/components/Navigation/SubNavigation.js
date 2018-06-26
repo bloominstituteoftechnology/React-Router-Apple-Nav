@@ -26,6 +26,7 @@ class SubNavigation extends React.Component {
 
     getIcons = name => {
         for (let i = 0; i < this.state.appleIcons.length; i++) {
+            console.log(name);
             if (this.state.appleIcons[i].name.toLowerCase() === name) {
                 this.setState({ icon: this.state.appleIcons[i] });
                 this.props.changeBackground(this.state.appleIcons[i].headerBackground);

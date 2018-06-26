@@ -25,7 +25,7 @@ class Navigation extends React.Component {
                     <StyledNavBar>
 
                         <NavContent>
-                            <NavigationItems />
+                            <NavigationItems changeBackground={this.changeBackground}/>
                         </NavContent>
 
                     </StyledNavBar>
