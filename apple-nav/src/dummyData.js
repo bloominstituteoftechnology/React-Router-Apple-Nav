@@ -5,6 +5,10 @@ import iMac from './Components/Images/imac_dark_large.svg';
 import iMacPro from './Components/Images/imac_pro_dark_large.svg';
 import macPro from './Components/Images/macpro_dark_large.svg';
 import macMini from './Components/Images/macmini_dark_large.svg';
+import macOS from './Components/Images/mac_osx_dark_large.svg';
+import macComp from './Components/Images/mac_comp_dark_large.svg';
+import macAcc from './Components/Images/mac_acc_dark_large.svg';
+
 const dummyData = [
     {
         id: 0,
@@ -40,13 +44,16 @@ const dummyData = [
                 img: macMini
             },
             {
-                name: 'Accessories'
+                name: 'Accessories',
+                img: macAcc
             },
             {
-                name: 'High Sierra'
+                name: 'High Sierra',
+                img: macOS
             },
             {
-                name: 'Compare'
+                name: 'Compare',
+                img: macComp
             }
         ]
     },
