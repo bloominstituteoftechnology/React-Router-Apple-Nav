@@ -159,12 +159,12 @@ const appleIcons = [
             {
                 icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_accessories_large.svg',
                 text: 'Accessories',
-                class: 'accessories'
+                class: 'watch-accessories'
             },
             {
                 icon: 'https://www.apple.com/v/watch/home/i/images/watch_nav_compare_large.svg',
                 text: 'Compare',
-                class: 'compare'
+                class: 'watch-compare'
             }
         ]
     },
