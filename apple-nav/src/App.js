@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import NavWrapper from './Nav/NavWrapper';
 import './App.css';
-import {Route} from 'react-router-dom';
-
 
 class App extends Component {
+	constructor() {
+   	super();
+
+  }
+
+
+
+
+
   render() {
     return (
-      <div className="App">
+      <div>
+	<NavWrapper />
       </div>
     );
   }
