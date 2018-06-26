@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path='/' component={NavWrapper} />
+          <Route path='/' component={NavWrapper} />
         </Switch>
       </div>
     );
