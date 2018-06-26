@@ -6,7 +6,7 @@ export const Header = styled.div`
     position: sticky;
     top: 0;
     z-index: 3;
-    background: black;
+    background: rgba(0,0,0,0.8);
 `
 export const StyledNavBar = styled(Navbar)`
     max-width: 1024px;

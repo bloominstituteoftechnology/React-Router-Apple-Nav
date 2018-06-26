@@ -1,21 +1,42 @@
 import React from 'react';
 import { Header, StyledNavBar, NavContent } from '../ReusableComponents/Navigation';
 import NavigationItems from './NavigationItems';
+import { Route } from 'react-router-dom';
+import SubNavigation from './SubNavigation';
+class Navigation extends React.Component {
+    constructor() {
+        super();
 
-const Navigation = () => {
-    return (
-        <Header>
+        this.state = {
+            background: ''
+        }
+    }
 
-            <StyledNavBar>
+    changeBackground = background => {
+        this.setState({ background });
+    }
 
-                <NavContent>
-                    <NavigationItems />
-                </NavContent>
+    render() {
+        return (
+            <React.Fragment>
 
-            </StyledNavBar>
+                <Header style={{ background: this.state.background }}>
 
-        </Header>
-    );
+                    <StyledNavBar>
+
+                        <NavContent>
+                            <NavigationItems />
+                        </NavContent>
+
+                    </StyledNavBar>
+
+                </Header>
+
+                <Route path='/:name' render={props => <SubNavigation {...props} changeBackground={this.changeBackground} />} />
+
+            </React.Fragment >
+        );
+    }
 }
 
 

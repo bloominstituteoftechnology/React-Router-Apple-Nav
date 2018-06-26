@@ -23,7 +23,8 @@ export const SubNavIcon = styled.img`
 export const StyledIconWrapper = styled.li`
     display: inline-block;
     padding: 0 18px;
-
+    cursor: pointer;
+    
     span {
         display: block;
         font-size: 11px;

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
-import { Route } from 'react-router-dom';
-import SubNavigation from './components/Navigation/SubNavigation';
+
+
 
 class App extends Component {
   render() {
@@ -10,8 +10,6 @@ class App extends Component {
       <div className="App">
 
         <Navigation />
-
-        <Route path='/:name' component={SubNavigation} />
 
       </div>
     );

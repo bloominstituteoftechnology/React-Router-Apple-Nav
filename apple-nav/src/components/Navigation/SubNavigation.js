@@ -15,7 +15,6 @@ class SubNavigation extends React.Component {
 
     componentDidMount() {
         let { name } = this.props.match.params;
-        console.log(name);
         this.getIcons(name);
     }
 
@@ -29,16 +28,15 @@ class SubNavigation extends React.Component {
         for (let i = 0; i < this.state.appleIcons.length; i++) {
             if (this.state.appleIcons[i].name.toLowerCase() === name) {
                 this.setState({ icon: this.state.appleIcons[i] });
-                return;
+                this.props.changeBackground(this.state.appleIcons[i].headerBackground);
             }
         }
     }
 
     render() {
         if (!this.state.icon) {
-            return <div>Loading icon information...</div>;
+            return <div>Error</div>;
         }
-
         return (
             <SubNavigationWrapper style={{ background: this.state.icon.background, color: this.state.icon.color }}>
 
