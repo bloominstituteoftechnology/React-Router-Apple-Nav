@@ -77,35 +77,35 @@ const appleIcons = [
         name: 'iphone',
         icons: [
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphonex_large.svg',
                 text: 'iPhone X'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone8_large.svg',
                 text: 'iPhone 8'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone7_large.svg',
                 text: 'iPhone 7'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone6s_large.svg',
                 text: 'iPhone 6s'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphonese_large.svg',
                 text: 'iPhone SE'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_ios_large.svg',
                 text: 'iOS 11'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_acc_large.svg',
                 text: 'Accessories'
             },
             {
-                icon: 'fas fa-mobile-alt',
+                icon: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_comp_large.svg',
                 text: 'Compare'
             }         
         ]
