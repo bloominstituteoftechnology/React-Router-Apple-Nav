@@ -180,27 +180,27 @@ const appleIcons = [
         name: 'music',
         icons: [
             {
-                icon: 'fas fa-music',
+                icon: 'https://www.apple.com/v/music/g/images/overview/icons/apple_music_large.svg',
                 text: 'Apple Music'
             },
             {
-                icon: 'fas fa-music',
+                icon: 'https://www.apple.com/v/music/g/images/overview/icons/itunes_large.svg',
                 text: 'iTunes'
             },
             {
-                icon: 'fas fa-music',
+                icon: 'https://www.apple.com/v/music/g/images/overview/icons/homepod_icon_large.svg',
                 text: 'HomePod'
             },
             {
-                icon: 'fas fa-music',
+                icon: 'https://www.apple.com/v/music/g/images/overview/icons/ipod_touch_light_large.svg',
                 text: 'iPod touch'
             },
             {
-                icon: 'fas fa-music',
+                icon: 'https://www.apple.com/v/music/g/images/overview/icons/accessories_large.svg',
                 text: 'Music Accessories'
             },
             {
-                icon: 'fas fa-music',
+                icon: 'https://www.apple.com/v/music/g/images/overview/icons/gift_cards_large.svg',
                 text: 'Gift Cards'
             }
         ]
