@@ -18,7 +18,14 @@ export const StyledAppleLink = styled(Link)`
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
-}
+`
+
+export const StyledNamesLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
 `
 
 export const StyledNavBrand = styled(NavbarBrand)`
@@ -39,20 +46,36 @@ export const NavContent = styled.ul`
 
 export const AppleIcon = styled.i`
     color: white;
+
+    &:hover {
+        opacity: .7;
+    }
 `
 
 export const AppleNames = styled.li`
     color: white;
     font-size: 14px;
     cursor: pointer;
+
+    &:hover {
+        opacity: .7;
+    }
 `
 
 export const SearchIcon = styled.i`
     color: white;
     cursor: pointer;
+
+    &:hover {
+        opacity: .7;
+    }
 `
 
 export const ClipBoardIcon = styled.i`
     color: white;
     cursor: pointer;
+
+    &:hover {
+        opacity: .7;
+    }
 `

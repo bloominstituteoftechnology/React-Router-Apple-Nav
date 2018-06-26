@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavItem } from 'reactstrap';
-import { AppleIcon, AppleNames, SearchIcon, ClipBoardIcon, StyledAppleLink } from '../ReusableComponents/Navigation';
-import { Link } from 'react-router-dom';
+import { AppleIcon, AppleNames, SearchIcon, ClipBoardIcon, StyledAppleLink, StyledNamesLink } from '../ReusableComponents/Navigation';
 
 const NavNames = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music'];
 
@@ -14,9 +13,9 @@ const NavigationItems = () => {
             </StyledAppleLink>
 
             {NavNames.map(name => {
-                return <Link key={name} to={`/${name.toLowerCase()}`}>
+                return <StyledNamesLink key={name} to={`/${name.toLowerCase()}`}>
                     <AppleNames>{name}</AppleNames>
-                </Link>
+                </StyledNamesLink>
             })}
 
             <AppleNames>Support</AppleNames>
