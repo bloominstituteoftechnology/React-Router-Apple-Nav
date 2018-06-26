@@ -48,7 +48,7 @@ export const AppleIcon = styled.i`
     color: white;
 
     &:hover {
-        opacity: .7;
+        opacity: .65;
     }
 `
 
@@ -56,9 +56,9 @@ export const AppleNames = styled.li`
     color: white;
     font-size: 14px;
     cursor: pointer;
-
+    opacity: .7;
     &:hover {
-        opacity: .7;
+        opacity: .65;
     }
 `
 
@@ -67,7 +67,7 @@ export const SearchIcon = styled.i`
     cursor: pointer;
 
     &:hover {
-        opacity: .7;
+        opacity: .65;
     }
 `
 
@@ -76,6 +76,6 @@ export const ClipBoardIcon = styled.i`
     cursor: pointer;
 
     &:hover {
-        opacity: .7;
+        opacity: .65;
     }
 `
