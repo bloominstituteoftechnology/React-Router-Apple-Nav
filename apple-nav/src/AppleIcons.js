@@ -48,27 +48,27 @@ const appleIcons = [
         name: 'ipad',
         icons: [
             {
-                icon: 'fas fa-tablet',
+                icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadpro_light_large.svg',
                 text: 'iPad Pro'
             },
             {
-                icon: 'fas fa-tablet',
+                icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_large.svg',
                 text: 'iPad'
             },
             {
-                icon: 'fas fa-tablet',
+                icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadmini_large.svg',
                 text: 'iPad mini 4'
             },
             {
-                icon: 'fas fa-tablet',
+                icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_ios10_large.svg',
                 text: 'iOS 11'
             },
             {
-                icon: 'fas fa-tablet',
+                icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_acc_large.svg',
                 text: 'Accessories'
             },
             {
-                icon: 'fas fa-tablet',
+                icon: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_comp_large.svg',
                 text: 'Compare'
             }
         ]
