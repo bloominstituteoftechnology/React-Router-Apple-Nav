@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+
+const MainNav = () => <h1>Main Nav</h1>
+const SubNav = () => <h1>Sub Nav</h1>
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <MainNav />
+        <Switch>
+          <Route path="/:mainID/:subID" render={(props) => <SubNav {...props} /> } />
+        </Switch>
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
