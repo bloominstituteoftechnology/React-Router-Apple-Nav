@@ -175,23 +175,28 @@ const appleIcons = [
         icons: [
             {
                 icon: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
-                text: 'Apple TV 4k'
+                text: 'Apple TV 4k',
+                class: 'apple-4k'
             },
             {
                 icon: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
-                text: 'Apple TV'
+                text: 'Apple TV',
+                class: 'apple-tv'
             },
             {
                 icon: 'https://www.apple.com/v/tv/home/d/images/home/tvapp_dark_large.svg',
-                text: 'TV App'
+                text: 'TV App',
+                class: 'tv-app'
             },
             {
                 icon: 'https://www.apple.com/v/tv/home/d/images/home/accessories_dark_large.svg',
-                text: 'Accessories'
+                text: 'Accessories',
+                class: 'tv-accessories'
             },
             {
                 icon: 'https://www.apple.com/v/tv/home/d/images/home/compare_dark_large.svg',
-                text: 'Compare'
+                text: 'Compare',
+                class: 'tv-compare'
             }
         ]
     },

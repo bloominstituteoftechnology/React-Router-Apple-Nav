@@ -28,5 +28,6 @@ export const StyledIconWrapper = styled.li`
         display: block;
         font-size: 11px;
         max-width: 7em;
+        margin-top: 3px;
     }
 `

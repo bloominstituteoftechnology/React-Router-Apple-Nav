@@ -1,6 +1,7 @@
 .series-3 {
     padding-left: 0;
     padding-right: 9px;
+    line-height: 1.2;
 }
 
 .series-3 img {
@@ -10,6 +11,7 @@
 
 .nike {
     padding: 0 9px;
+    line-height: 1.2;
 }
 
 .nike img {
@@ -19,6 +21,7 @@
 
 .hermes {
     padding: 0 9px;
+    line-height: 1.2;
 }
 
 .hermes img{
@@ -28,6 +31,7 @@
 
 .watch-edition {
     padding: 0 9px;
+    line-height: 1.2;
 }
 
 .watch-edition img {
@@ -37,6 +41,7 @@
 
 .series-1 {
     padding: 0 9px;
+    line-height: 1.2;
 }
 
 .series-1 img {
@@ -46,6 +51,7 @@
 
 .watchos {
     padding: 0 26px;
+    line-height: 1.2;
 }
 
 .watchos img {
@@ -56,6 +62,7 @@
 
 .bands {
     padding: 0 15px;
+    line-height: 1.2;
 }
 
 .bands img {
@@ -65,6 +72,7 @@
 
 .watch-accessories {
     padding: 0 26px;
+    line-height: 1.2;
 }
 
 .watch-accessories img {
@@ -75,9 +83,34 @@
 .watch-compare {
     padding-right: 0;
     padding-left: 5px;
+    line-height: 1.2;
 }
 
 .watch-compare img {
     width: 71px;
     height: 54px;
+}
+
+/* END OF WATCHES */
+
+.apple-4k {
+    padding-left: 4px;
+    padding-right: 20px;
+}
+
+.apple-tv {
+    padding: 0 20px;
+}
+
+.tv-app {
+    padding: 0 20px;
+}
+
+.tv-accessories {
+    padding: 0 20px;
+}
+
+.tv-compare {
+    padding-left: 20px;
+    padding-right: 4px;
 }
