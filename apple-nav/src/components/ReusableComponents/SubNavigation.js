@@ -7,12 +7,11 @@ export const SubNavigationWrapper = styled.div`
 `
 
 export const SubNavigationContent = styled.ul`
-    display: flex;
-    justify-content: center;
-    align-items: center;
     list-style-type: none;
-    margin: 20px 34px;
+    margin: 0 34px;
     padding-left: 0;
+    padding-bottom: 49px;
+    line-height: 24px;
 `
 
 export const SubNavIcon = styled.img`
