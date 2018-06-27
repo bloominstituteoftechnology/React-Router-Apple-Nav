@@ -3,22 +3,15 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import NavLink from './NavLink';
 
-class SubNav extends Component {
-  state = {
-    link: null
-  }
-
-  componentWillMount() {
-    this.setState({ link: this.props.link });
-  }
-
-  render() {
-    return (
-      <div>
-        {this.state.link.subNav.map(link => <NavLink key={Math.random()} link={link} />)}
-      </div>
-    );
-  }
+const SubNav = props => {
+  console.log("SubNav", props);
+  return (
+    <div>
+      {props.subNav.map(subNavItem => (
+        <div>{subNavItem}</div>
+      ))}
+    </div>
+  );
 }
 
 export default SubNav;
