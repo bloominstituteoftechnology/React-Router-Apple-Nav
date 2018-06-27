@@ -1,17 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
-import { Link } from 'react-router-dom';
-import NavLink from './NavLink';
+import navLinks from '../data';
 
-const SubNav = props => {
-  console.log("SubNav", props);
-  return (
-    <div>
-      {props.subNav.map(subNavItem => (
-        <div>{subNavItem}</div>
-      ))}
-    </div>
-  );
+class SubNav extends React.Component {
+  state = {
+    subNav: []
+  }
+
+  componentWillMount() {
+    const subNav = navLinks.find(x => x.name === this.props.match.params.name);
+    this.setState({ subNav: subNav.subNav });
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.subNav.map(item => (
+          <div key={Math.random()}>{item}</div>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default SubNav;

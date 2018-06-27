@@ -15,7 +15,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.links);
     return (
       <div className="container">
         <NavWrapper links={this.state.links}/>
