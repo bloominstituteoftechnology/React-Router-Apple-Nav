@@ -6,7 +6,7 @@ const NavWrapperDiv = styled.div`
     height: 48px;
     background: #323232;
     color: white;
-`;
+`
 
 const NavContent = styled.ul`
     height: 100%;
@@ -19,9 +19,9 @@ const NavContent = styled.ul`
     font-size: 14px;
     letter-spaceing: -0.1em;
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-`;
+`
 
-const StyledLink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     color: white;
     &:hover{
@@ -38,111 +38,30 @@ const LiApple = styled.li`
     bacground-position: center center;
 `
 
-class NavWrapper extends React.Component {
-    constructor() {
-        super();
-        this.navLinks = [
-            {
-                'Mac':
-                    [
-                        'MacBook',
-                        'MacBook Air',
-                        'MacBook Pro',
-                        'iMac',
-                        'iMac Pro',
-                        'Mac Pro',
-                        'Mac mini',
-                        'Accessories',
-                        'High Sierra',
-                        'Compare'
-                    ]
-            },
-            {
-                'iPad':
-                    [
-                        'iPad Pro',
-                        'iPad',
-                        'iPad mini 4',
-                        'iOS 11',
-                        'Accessories',
-                        'Compare'
-                    ]
-            },
-            {
-                'iPhone':
-                    [
-                        'iPhone X',
-                        'iPhone 8',
-                        'iPhone 7',
-                        'iPhone 6s',
-                        'iPhone SE',
-                        'iOS 11',
-                        'Accessories',
-                        'Compare'
-                    ]
-            },
-            {
-                'Watch':
-                    [
-                        'Apple Watch Series 3',
-                        'Apple Watch Nike+',
-                        'Apple Watch Hermes',
-                        'Apple Watch Edition',
-                        'Apple Watch Series 1',
-                        'watchOS',
-                        'Bands',
-                        'Accessories',
-                        'Compare'
-                    ]
-            },
-            {
-                'TV':
-                    [
-                        'Apple TV 4K',
-                        'Apple TV',
-                        'TV App',
-                        'Accessories',
-                        'Compare'
-                    ]
-            },
-            {
-                'Music':
-                    [
-                        'Apple Music',
-                        'iTunes',
-                        'HomePod',
-                        'Music Accessories',
-                        'Gift Cards'
-                    ]
-            }
-        ];
-    }
-
-    render() {
-        return (
-            <NavWrapperDiv>
-                <NavContent>
-                    <li>
-                        <StyledLink to='/'>Apple</StyledLink>
-                    </li>
-                    {this.navLinks.map(link => {
-                        const category = Object.keys(link)[0];
-                        return (
-                            <li>
-                                <StyledLink to={`/${category}`} activeStyle={{ 'color': 'darkgray' }}>{category}</StyledLink>
-                            </li>
-                        )
-                    })}
-                    <li>
-                        <StyledLink to='/'>Search</StyledLink>
-                    </li>
-                    <li>
-                        <StyledLink to='/'>Cart</StyledLink>
-                    </li>
-                </NavContent>
-            </NavWrapperDiv >
-        )
-    }
+const NavWrapper = (props) => {
+    return (
+        <NavWrapperDiv>
+            <NavContent>
+                <li>
+                    <StyledNavLink to='/'>Apple</StyledNavLink>
+                </li>
+                {props.navLinks.map(link => {
+                    const category = Object.keys(link)[0];
+                    return (
+                        <li key={category}>
+                            <StyledNavLink to={`/${category}`} activeStyle={{ 'color': 'darkgray' }}>{category}</StyledNavLink>
+                        </li>
+                    )
+                })}
+                <li>
+                    <StyledNavLink to='/'>Search</StyledNavLink>
+                </li>
+                <li>
+                    <StyledNavLink to='/'>Cart</StyledNavLink>
+                </li>
+            </NavContent>
+        </NavWrapperDiv >
+    )
 };
 
 export default NavWrapper;
