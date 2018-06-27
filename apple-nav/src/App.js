@@ -19,7 +19,7 @@ componentDidMount() {
   render() {
     return (
       <div>
-    <Route exact path = '/' render={props=> (
+    <Route path = '/' render={props=> (
         <NavWrapper {...props} menu = {this.state.menu} />
       )} />
       </div>

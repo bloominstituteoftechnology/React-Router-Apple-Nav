@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SubCategory = () => {
+const SubCategory = ({match}, props) => {
+   
     return (
         <div>
-            <Link> test item </Link>
+           
+<Link to='/'> test items </Link>
+      
+            
         </div>
     );
 };

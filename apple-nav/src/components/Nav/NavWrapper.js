@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import TopMenuItem from './TopMenuItem';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
+import SubCategory from './SubCategory';
 
 let FlexDiv = styled.div`
 display: flex;
@@ -15,12 +16,21 @@ align-items: center;
 `
 
 const NavWrapper = (props) => {
+    
     return (
+        <div>
         <FlexDiv>
             {props.menu.map((topMenuItem, index) => {
-               return <Link to='/'> <TopMenuItem {...props} id={index} key={Math.random()} item = {topMenuItem.title}/> </Link>
+               return <TopMenuItem {...props} id={index} item = {topMenuItem.title}/>
             })}
         </FlexDiv>
+        <FlexDiv>
+      <Route path={`/products/:title`} render={(routeProps) => (
+          <SubCategory {...props} {...routeProps} /> 
+          )}/>
+       </FlexDiv>
+        </div>
+ 
     );
 };
 
