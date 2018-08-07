@@ -14,7 +14,7 @@ const iPad = (props) => {
     return (
         <div className="sub-header">
             <SubNav list={ipadLinks} width={'50vw'} />
-            <h1>iPad</h1>
+            <img src="/img/ipad.png" alt=""/>
         </div>
     )
 }

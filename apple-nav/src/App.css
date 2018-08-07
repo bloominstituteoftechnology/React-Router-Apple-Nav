@@ -28,7 +28,7 @@
 }
 
 .header-bg {
-  height: 45px;
+  height: 50px;
   background-color: #323232;
   color: rgb(210, 210, 210);
   width: 100vw;
@@ -39,7 +39,7 @@
 }
 
 .header {
-  height: 45px;
+  height: 50px;
   background-color: #323232;
   color: rgb(210, 210, 210);
   width: 70vw;
@@ -49,6 +49,12 @@
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+}
+
+.header a {
+  padding-bottom: 5px;
 }
 
 .nav-link {

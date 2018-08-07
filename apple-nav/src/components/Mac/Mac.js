@@ -19,6 +19,7 @@ const Mac = (props) => {
         <div className="sub-header">
             <SubNav list={macLinks} width={'70vw'} />
             <h1>Mac</h1>
+            <img src="/img/mac.png" alt=""/>
         </div>
     )
 }
