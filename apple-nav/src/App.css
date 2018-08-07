@@ -59,3 +59,27 @@
 .nav-link a:hover {
   color: white;
 }
+
+.subnav-bg {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.subnav {
+  height: 100px;
+  width: 80vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subnav a {
+  color: black;
+}
+
+.subnav a:hover {
+  color: darkgray;
+}

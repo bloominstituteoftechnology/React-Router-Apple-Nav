@@ -3,17 +3,17 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import NavWrapper from './components/NavWrapper';
 import Home from './components/Home';
-import Mac from './components/Mac';
-import iPad from './components/iPad';
-import iPhone from './components/iPhone';
-import Watch from './components/Watch';
-import TV from './components/TV';
-import Music from './components/Music';
+import Mac from './components/Mac/Mac';
+import iPad from './components/iPad/iPad';
+import iPhone from './components/iPhone/iPhone';
+import Watch from './components/Watch/Watch';
+import TV from './components/TV/TV';
+import Music from './components/Music/Music';
 import Support from './components/Support';
 
 
 
-let parentLinks = [
+const parentLinks = [
   {name: '\uf8ff', url: '/'},
   {name: 'Mac', url: '/mac'},
   {name: 'iPad', url: '/ipad'},
