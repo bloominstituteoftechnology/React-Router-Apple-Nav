@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import logo from './logo.svg';
+import {Route, Link} from 'react-router-dom'; 
+
 import './App.css';
 import HomeNav from './components/HomeNav';
 
@@ -8,7 +9,7 @@ class App extends Component {
     return (
       
       <Fragment>
-          <HomeNav />
+          <Route path='/' component={HomeNav} />
       </Fragment>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom';
+import {Route, Link, NavLink} from 'react-router-dom';
 import styled from 'styled-components'; 
 
 const navTags = ["Mac", "iPad", "iPhone", "Watch", "TV", "Music", "Support"];
@@ -36,7 +36,7 @@ class HomeNav extends React.Component{
             <NavHeader>
                 <NavBox>
                     <i class="fab fa-apple"></i>
-                    {navTags.map( tag => <div>{tag}</div>)}
+                    {navTags.map( tag => <NavLink to ={`/${tag.toLowerCase()}`}>{tag}</NavLink>)}
                     <i class="fas fa-search"></i>
                     <i class="far fa-clipboard"></i>
                 </NavBox>
