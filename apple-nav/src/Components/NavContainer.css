@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: black;
     color: white;
     max-width: 960px;
@@ -20,11 +21,16 @@
     text-decoration: none;
     color: white;
     padding: 14px 0;
+    font-size: 14px;
 }
 
 .main-nav a:hover {
     color: #B3B3B3;
     transition: color 0.5s;
+}
+
+.main-nav .icon {
+    font-size: 24px;
 }
 
 .subnav {
@@ -41,5 +47,22 @@
 .subnav a {
     text-decoration: none;
     color: white;
-    padding: 14px 0;
+    padding: 0;
+    display: block;
+}
+
+.subnav a:hover {
+    color: #579CD3;
+}
+
+.subnavElement {
+    width: 70px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    text-align: center;
 }

@@ -5,6 +5,11 @@ import { Route } from 'react-router-dom';
 import SubNav from './Components/SubNav';
 import Home from './Components/Home';
 import Product from './Components/Product';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fas, fab);
 
 class App extends Component {
   render() {
