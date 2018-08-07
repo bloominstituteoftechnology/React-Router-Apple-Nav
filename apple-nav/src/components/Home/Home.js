@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import './home.css'
+
+export default class Home extends Component {
 
 
-class Home extends Component {
-
-    render(){
+render(){
   return(
     <div className="home">
-        <div><h1>iPhone X</h1></div>
-        <div><h4>Say hello to the future</h4></div> 
-        <div><img src="./images/iphonex.jpg" alt="iphone pic"/></div>
-        
+        <p><h1>iPhone X</h1></p>
+        <p><h4>Say hello to the future</h4></p> 
+        <img src="C:\Documents\Code\React-Router-Apple-Nav\apple-nav\src\images\iphonex.jpg" alt="iphone pic"/>
+        {console.log('what am i missing?')}
     </div>
   );
 }
 };
 
-export default Home;
+

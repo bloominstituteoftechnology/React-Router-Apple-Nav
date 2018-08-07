@@ -3,8 +3,9 @@ import {NavLink, Route} from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import dummyData from './data';
+import Mac from './components/Mac/Mac';
 
-class App extends Component {
+export default class App extends Component {
   constructor(){
     super();
     this.state= {
@@ -16,7 +17,7 @@ class App extends Component {
     return (
       <div className="app">
         <div className="navbar">
-            <NavLink className="navlink" exact to="/home"><i class="fab fa-apple"></i></NavLink>
+            <NavLink className="navlink" to="/home"><i className="fab fa-apple"></i></NavLink>
             <NavLink className="navlink" to="/mac">Mac</NavLink>
             <NavLink className="navlink" to="/ipad">iPad</NavLink>
             <NavLink className="navlink" to="/iphone">iPhone</NavLink>
@@ -24,13 +25,13 @@ class App extends Component {
             <NavLink className="navlink" to="/tv">TV</NavLink>
             <NavLink className="navlink" to="/music">Music</NavLink>
             <NavLink className="navlink" to="/support">Support</NavLink>
-            <NavLink className="navlink" to="/search"><i class="fas fa-search"></i></NavLink>
-            <NavLink className="navlink" to="/cart"><i class="fas fa-shopping-bag"></i></NavLink>
+            <NavLink className="navlink" to="/search"><i className="fas fa-search"></i></NavLink>
+            <NavLink className="navlink" to="/cart"><i className="fas fa-shopping-bag"></i></NavLink>
        </div>
-          <Route path="/home" Component={Home}/>
+          <Route path="/home" component={Home}/>
+          <Route path="/mac" component={Mac}/>
       </div>
     );
   }
 }
 
-export default App;
