@@ -5,11 +5,13 @@ const data = [
     },
     {
         id: 2,
-        name: 'Mac'
+        name: 'Mac',
+        products: ['MacBook', 'MacBook Air', 'MacBook Pro', 'iMac', 'iMac Pro New', 'Mac Pro', 'Mac Mini', 'Accesories', 'High Sierra', 'Compare']
     },
     {
         id: 3,
-        name: 'iPad'
+        name: 'iPad',
+        // products:['iPad Pro', 'iPad', 'iPad mini 4', 'iOS 11', 'Accessories', 'Compare']
     },
     {
         id: 4,
@@ -41,7 +43,7 @@ const data = [
     },
     {
         id: 11,
-        name: 'AppStore'
+        name: 'Store'
     }
 ]
 
