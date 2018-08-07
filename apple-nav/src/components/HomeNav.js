@@ -13,6 +13,10 @@ const NavHeader = styled.div`
     z-index: 1;
     height: 50px;
     justify-content: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 `;
 
 const NavBox = styled.div`
@@ -35,8 +39,8 @@ class HomeNav extends React.Component{
         return (
             <NavHeader>
                 <NavBox>
-                    <i class="fab fa-apple"></i>
-                    {navTags.map( tag => <NavLink to ={`/${tag.toLowerCase()}`}>{tag}</NavLink>)}
+                    <NavLink to = '/' activeStyle ={{color: 'white'}}><i class="fab fa-apple"></i></NavLink>
+                    {navTags.map( tag => <NavLink to ={`/${tag.toLowerCase()}`} activeStyle ={{color: 'gray', textDecoration: 'none'}}>{tag}</NavLink>)}
                     <i class="fas fa-search"></i>
                     <i class="far fa-clipboard"></i>
                 </NavBox>
