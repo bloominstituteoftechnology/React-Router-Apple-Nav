@@ -21,6 +21,8 @@ const NavList = styled.ul`
   &>li>a{
     text-decoration: none;
     color: #FFF;
+    font-size: 1.4rem;
+    font-weight: lighter;
   }
 `;
 

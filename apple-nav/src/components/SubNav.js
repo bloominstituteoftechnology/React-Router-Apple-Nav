@@ -22,6 +22,8 @@ const SubNavigation = styled.div`
     & > li > a{
       text-decoration: none;
       color: #FFF;
+      font-size: 1.4rem;
+      font-weight: lighter;
     }
   }
 `;
