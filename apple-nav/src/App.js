@@ -3,6 +3,7 @@ import {Route, Link} from 'react-router-dom';
 
 import './App.css';
 import HomeNav from './components/HomeNav';
+import Chosen from './components/Chosen';
 
 class App extends Component {
   render() {
@@ -10,6 +11,8 @@ class App extends Component {
       
       <Fragment>
           <Route path='/' component={HomeNav} />
+          <Route path='/:id' component={Chosen} />
+          
       </Fragment>
     );
   }
