@@ -1,18 +1,74 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {Route} from 'react-router-dom';
 import './App.css';
+import NavWrapper from './components/NavWrapper';
+import Subnav from './components/subnav';
+import Subnavmenu from './components/subnavmenu';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav: [
+          {subnav: 'Mac',
+           navitems:  [
+             'MacBook',
+             'MacBook Air',
+             'MacBook Pro',
+             'iMac',
+             'iMac Pro',
+             'Mac Pro',
+             'Mac mini',
+             'Accessories',
+             'High Sierra',
+             'Compare',
+            ]
+          },
+          {subnav: 'iPad',
+          navitems:  [
+            'iPad Pro',
+            'iPad',
+            'iPad mini 4',
+            'iOS 11',
+            'Accessories',
+            'Compare'
+          ]},
+          {subnav: 'iPhone',
+          navitems:  [
+            'iPad Pro',
+            'iPad',
+            'iPad mini 4',
+            'iOS 11',
+            'Accessories',
+            'Compare'
+          ]},
+          {subnav: 'Watch',
+          navitems:  [
+            'watchstuff',
+          
+          ]},
+          {subnav: 'TV',
+          navitems:  [
+            'tv stuff',
+           
+          ]},
+          {subnav: 'Music',
+          navitems:  [
+            'musicalstuff',
+            
+          ]},
+          {subnav: 'Support',
+          navitems:  [
+            'stuff',
+          ]},
+      ]
+    };
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+       <NavWrapper nav={this.state.nav}/>
+        <Route path='/nav/:subnav' render={(props) => <Subnav {...props} nav={this.state.nav}/>}/>
       </div>
     );
   }
