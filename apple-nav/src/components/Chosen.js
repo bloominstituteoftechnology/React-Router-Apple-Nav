@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
 import styled from 'styled-components'; 
 
 
 
 import NavBox from './HomeNav.js';
+import Item from './Item.js';
 
 const navTags = ["Mac", "iPad", "iPhone", "Watch", "TV", "Music"];
 const choices = {"Mac":["MacBook", "MacBook Air", "MacBook Pro", "iMac", "iMac Pro", "Mac Pro", "Mac mini", "Accessories", "High Sierra", "Compare"],
@@ -61,9 +62,12 @@ class Chosen extends React.Component {
         return(
             <NewSection> 
                 <AddedSection> 
-                    {choices[choice].map((cho, i) => <Link to ={`/${toPath}/${cho.toLowerCase().split(' ').join('')}`}><SectionDiv key = {i}>{cho}</SectionDiv></Link>)}
+                    {choices[choice].map((cho, i) => <Link key={i} to ={`/${toPath}/${cho.toLowerCase().split(' ').join('')}`}><SectionDiv key = {i}>{cho}</SectionDiv></Link>)}
                 </AddedSection>
+                <Route path ={`/${toPath}/:itemId`} render = {(props) => <Item {...props} />}/>
+                
             </NewSection>
+
         );
     }
 }
