@@ -6,6 +6,7 @@ const icons = [
     {
         id: '1',
         name: 'Mac',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_dark_large.svg'
     },
     {
         id: '2',
@@ -37,7 +38,10 @@ const icons = [
 const SubNav = props => {
     return (
         <div>
-            <header className="SubNav-header">something</header>
+            <header className="SubNav-header">something
+            <img src={icons[0].img} alt="computer"/>
+            </header>
+            
         </div>
     );
 };

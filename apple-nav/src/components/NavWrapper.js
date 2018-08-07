@@ -51,7 +51,7 @@ const NavWrapper = props => {
         <div>
             <header className="Nav-header">
                 <div>
-                    <i className="fa fa-apple fa-2x" aria-hidden="true"></i>
+                    <i className="fa fa-apple " aria-hidden="true"></i>
                 </div>
                 {products.map(product => (
                     <div key={product.id}>
@@ -61,10 +61,10 @@ const NavWrapper = props => {
                     </div>
                 ))}
                 <div>
-                    <i className="fa fa-search fa-2x" aria-hidden="true"></i>
+                    <i className="fa fa-search " aria-hidden="true"></i>
                 </div>
                 <div>
-                    <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                    <i className="fa fa-shopping-cart " aria-hidden="true"></i>
                 </div>
             </header>
             <Route
