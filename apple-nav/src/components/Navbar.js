@@ -8,7 +8,7 @@ const NavWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(20, 20, 20);
 `;
 
 const Nav = styled.div`
