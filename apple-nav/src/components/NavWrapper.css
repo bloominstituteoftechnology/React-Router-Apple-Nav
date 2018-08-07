@@ -1,0 +1,22 @@
+.Nav-header {
+    background-color: 	#282828;
+    height: 50px;
+    padding: 20px;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  .Nav-header> div > a {
+    color: white;
+    text-decoration: none;
+    padding: 24px;
+    height: 16px;
+  }
+
+  .Nav-header> div > a.activeNavButton {
+    color: gray;
+  }
