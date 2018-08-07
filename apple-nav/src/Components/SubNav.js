@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavContainer.css';
+import { Link } from 'react-router-dom';
 
 const subNavElements = {
     mac: ['MacBook', 'MacBook Air', 'MacBook Pro', 'iMac', 'iMac Pro', 'Mac Pro', 'Mac mini', 'Accessories', 'High Sierra', 'Compare'],
@@ -12,10 +13,11 @@ const subNavElements = {
 };
 
 const SubNav = (props) => {
-    const currentElement = subNavElements[props.match.params.product];
+    const currentProductClass = props.match.params.productClass
+    const currentElement = subNavElements[currentProductClass];
     return (
         <div className="subnav">
-            {currentElement.map(el => <p key={el}>{el}</p>)}
+            {currentElement.map(el => <Link to={`/${currentProductClass}/${el}`} key={el}>{el}</Link>)}
         </div>
     )
 }

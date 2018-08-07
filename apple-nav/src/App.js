@@ -3,6 +3,8 @@ import './App.css';
 import NavContainer from './Components/NavContainer';
 import { Route } from 'react-router-dom';
 import SubNav from './Components/SubNav';
+import Home from './Components/Home';
+import Product from './Components/Product';
 
 class App extends Component {
   render() {
@@ -11,19 +13,12 @@ class App extends Component {
         <NavContainer />
         <div className="app-container">
           <Route exact path="/" component={Home} />
-          <Route exact path="/:product" component={SubNav} />
+          <Route path="/:productClass" component={SubNav} />
+          <Route path="/:productClass/:product" component={Product} />
         </div>
       </div>
     );
   }
-}
-
-function Home() {
-  return (
-    <div className="home">
-      <h1>Explore our products!</h1>
-    </div>
-  )
 }
 
 export default App;

@@ -22,6 +22,10 @@
     padding: 14px 0;
 }
 
+.main-nav a:hover {
+    color: #B3B3B3;
+    transition: color 0.5s;
+}
 
 .subnav {
     width: 100%;
@@ -32,4 +36,10 @@
     max-width: 960px;
     margin: 0 auto;
     font-size: 12px;
+}
+
+.subnav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 0;
 }
