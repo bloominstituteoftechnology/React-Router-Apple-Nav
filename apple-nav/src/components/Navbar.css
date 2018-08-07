@@ -1,0 +1,15 @@
+.navbarContainer{
+  display:flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: black;
+  color:white;
+}
+
+a{
+  text-decoration: none !important;
+  color:white;
+}
+.active{
+color: grey !important;
+}
