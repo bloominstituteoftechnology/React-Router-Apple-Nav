@@ -1,4 +1,5 @@
 import React from 'react';
+import './NavContainer.css';
 
 const subNavElements = {
     mac: ['MacBook', 'MacBook Air', 'MacBook Pro', 'iMac', 'iMac Pro', 'Mac Pro', 'Mac mini', 'Accessories', 'High Sierra', 'Compare'],
