@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../assets/image_large.svg";
 
@@ -19,7 +19,7 @@ const Nav = styled.div`
   width: 980px;
   max-width: 980px;
 `;
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   color: white;
   text-decoration: none;
   font-weight: 300;
@@ -34,7 +34,7 @@ const Navbar = props => {
           <img src={Logo} />
         </Link>
         {props.links.map(link => (
-          <StyledLink to={`/${link.name}`}>{link.name}</StyledLink>
+          <StyledLink to={`/${link.name}`} activeStyle={{color: 'rgb(211,211,211)'}}>{link.name}</StyledLink>
         ))}
       </Nav>
     </NavWrapper>

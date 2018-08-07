@@ -2,27 +2,75 @@ const DummyData = [
   {
     name: 'Mac', 
     subLinks: [
-      {name: 'MacBook'},
-      {name: 'MacBook Air'},
-      {name: 'MacBook Pro'},
-      {name: 'iMac'},
-      {name: 'iMac Pro'},
-      {name: 'Mac Pro'},
-      {name: 'Mac mini'},
-      {name: 'Accessories'},
-      {name: 'High Sierra'},
-      {name: 'compare'},
+      {
+        name: 'MacBook',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbook_dark_large.svg'
+    },
+      {
+        name: 'MacBook Air',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookair_dark_large.svg'
+      },
+      {
+        name: 'MacBook Pro',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookpro_dark_large.svg'
+      },
+      {
+        name: 'iMac',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_dark_large.svg'
+      },
+      {
+        name: 'iMac Pro',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_pro_dark_large.svg'
+      },
+      {
+        name: 'Mac Pro',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macpro_dark_large.svg'
+      },
+      {
+        name: 'Mac mini',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macmini_dark_large.svg'
+      },
+      {
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_acc_dark_large.svg'
+      },
+      {
+        name: 'High Sierra',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_osx_dark_large.svg'
+      },
+      {
+        name: 'compare',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_comp_dark_large.svg'
+      },
     ]
   },
   {
     name: 'iPad', 
     subLinks: [
-      {name: 'iPad Pro'},
-      {name: 'iPad'},
-      {name: 'iPad mini 4'},
-      {name: 'iOS 11'},
-      {name: 'Accessories'},
-      {name: 'compare'},
+      {
+        name: 'iPad Pro',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadpro_light_large.svg'
+      },
+      {
+        name: 'iPad',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_large.svg'
+      },
+      {
+        name: 'iPad mini 4',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadmini_large.svg'
+      },
+      {
+        name: 'iOS 11',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_ios10_large.svg'
+      },
+      {
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_acc_large.svg'
+      },
+      {
+        name: 'compare',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_comp_large.svg'
+      },
     ]
   },
   {
