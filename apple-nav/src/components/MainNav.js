@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link, Route} from 'react-router-dom';
 
 class MainNav extends Component {
     constructor(props) {
@@ -19,9 +20,28 @@ class MainNav extends Component {
   }
 
     
-    render() { 
+    render() {
+        if (!this.state.mainNav) {
+            return <div>Loading data....</div>
+        }
         return ( 
-
+            <div className="nav">
+                <div className="nav-links">
+                    <Link to="/" ><img src="" alt="logo"/></Link>
+                    {this.state.mainNav.map((link, index) => (
+                        <div className="navigation-links" key={index}>
+                            <Link to={`/${link.name}`} >
+                            {link.name}
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+                <div className="nav">
+                    <Route
+                        
+                    />
+                </div>
+            </div>
          );
     }
 }
