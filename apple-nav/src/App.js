@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import {NavLink} from 'react-router-dom';
+import {Route, NavLink} from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
 import Nav from './Nav.js';
-
+import Subnav from './Subnav.js';
 const NavWrapper=styled.ul`
   max-width: 800px;
   width: 100%;
@@ -18,14 +18,30 @@ const NavWrapper=styled.ul`
   list-style-type: none;
 `;
 const NavArr=[
-  'Mac',
-  'iPad',
-  'iPhone',
-  'Watch',
-  'TV',
-  'Music', 
-  'Support'
-  
+  {item: 'Mac',
+  icon1:'fas fa-laptop',
+  icon2:'fas fa-laptop-code'
+  },
+  {item:'iPad',
+  icon1:'fas fa-tablet',
+  icon2: 'fas fa-tablet-alt'
+},
+ {item:'iPhone',
+ icon1:'fas fa-mobile-alt',
+ icon2:'fas fa-mobile'
+},
+  {item:'Watch',
+  icon1: 'fas fa-clock',
+  icon2: 'far fa-clock'
+},
+  {item:'TV',
+  icon1:'fas fa-tv',
+  icon2: 'fas fa-video'
+},
+  {item: 'Music',
+  icon1:'fas fa-music',
+  icon2:'fas fa-headphones'
+}
 ]
 class App extends Component {
   render() {
@@ -33,16 +49,21 @@ class App extends Component {
       <div className="App">
        <NavWrapper>
          <li>
-           <NavLink exact activeClassName='activeNavLink' to="/"><i className="fab fa-apple"></i></NavLink>
+           <NavLink to="/"><i className="fab fa-apple"></i></NavLink>
          </li>
-         {NavArr.map(e=><Nav data={e}/>)}
+         {NavArr.map(e=><Nav data={e} key={e.item}/>)}
          <li>
-           <i class="fas fa-search"></i>
+           Support
          </li>
          <li>
-           <i class="fas fa-shopping-bag"></i>
+           <i className="fas fa-search"></i>
+         </li>
+         <li>
+           <i className="fas fa-shopping-bag"></i>
          </li>
        </NavWrapper>
+       <Route path='/:item'
+       render={props=>(<Subnav {...props} items={NavArr}></Subnav>)}></Route>
       </div>
     );
   }
