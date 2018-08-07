@@ -7,7 +7,7 @@ export default class Mac extends Component {
   render() {
     return (
       <div>
-        <SubNav />
+        <SubNav data={macSubNavData} />
         <p>Mac</p>
       </div>
     );

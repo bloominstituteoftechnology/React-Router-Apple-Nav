@@ -1,5 +1,9 @@
+.subNavWrapper {
+  color: white;
+  background: black;
+}
 .subNavWrapper ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
