@@ -14,7 +14,10 @@ const navItems = [
 export function NavContainer (props) {
     return (
         <ul className="navbar">
-            {navItems.map(item => <li key={item.id}><NavLink to={`/${item.val.toLowerCase()}`}> {item.val} </NavLink> </li>)}
+        <div className="fab fa-apple"></div>
+        {navItems.map(item => <li key={item.id}><NavLink to={`/${item.val.toLowerCase()}`} > {item.val} </NavLink> </li>)}
+        <div class="fas fa-search"></div>
+        <div class="fas fa-shopping-bag"></div>
         </ul>
     )
 }
