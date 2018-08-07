@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Nav = props => {
-  return(
-    <div>something </div>
-  );
+    const { id, text } = props;
+    return (
+      <div>{text}</div>
+    );
 }
 
 export default Nav;

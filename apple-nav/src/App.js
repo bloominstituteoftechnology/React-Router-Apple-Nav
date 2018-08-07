@@ -14,7 +14,7 @@ class App extends Component {
   }
   render() {
     return (
-      <NavWrapper />
+      <NavWrapper navigation={this.state.navigation}/>
     );
   }
 }
