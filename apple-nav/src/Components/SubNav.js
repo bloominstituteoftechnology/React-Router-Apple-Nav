@@ -1,7 +1,6 @@
 import React from 'react';
 import './NavContainer.css';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from 'react-router-dom';
 
 const subNavElements = {
     mac: ['MacBook', 'MacBook Air', 'MacBook Pro', 'iMac', 'iMac Pro', 'Mac Pro', 'Mac mini', 'Accessories', 'High Sierra', 'Compare'],
@@ -18,7 +17,7 @@ const SubNav = (props) => {
     const currentElement = subNavElements[currentProductClass];
     return (
         <div className="subnav">       
-            {currentElement.map(el => <div className="subnavElement" key={el}><Link to={`/${currentProductClass}/${el}`}>{el}</Link></div>)}   
+            {currentElement.map(el => <div className="subnavElement" key={el}><NavLink to={`/${currentProductClass}/${el}`} activeClassName="selected">{el}</NavLink></div>)}   
         </div>
     )
 }

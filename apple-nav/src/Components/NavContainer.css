@@ -55,6 +55,10 @@
     color: #579CD3;
 }
 
+.subnav .subnavElement .selected {
+    color: #579CD3;
+}
+
 .subnavElement {
     width: 70px;
     height: 54px;
