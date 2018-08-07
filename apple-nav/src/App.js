@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavWrapper from './components/NavWrapper';
+import NavWrapper from './components/navwrapper';
+import { BrowserRouter as Router, Route,  NavLink} from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavWrapper />
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Route path="/" component={NavWrapper} />
       </div>
     );
   }
