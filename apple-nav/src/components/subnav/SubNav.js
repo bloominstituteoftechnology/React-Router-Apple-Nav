@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import "./SubNav.css";
 
 export default class SubNav extends Component {
@@ -15,10 +15,10 @@ export default class SubNav extends Component {
       <div className="subNavWrapper">
         <ul>
           {this.state.data.map(product => (
-            <div className="productCardSubLink">
+            <Link className="productCardSubLink" to={product.url}>
+              <img src={product.imgUrl} />
               <li>{product.productName}</li>
-              <li>{product.img}</li>
-            </div>
+            </Link>
           ))}
         </ul>
       </div>

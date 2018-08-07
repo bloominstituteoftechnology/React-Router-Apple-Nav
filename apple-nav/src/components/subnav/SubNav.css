@@ -7,3 +7,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
+.productCardSubLink a {
+  text-align: center;
+}
