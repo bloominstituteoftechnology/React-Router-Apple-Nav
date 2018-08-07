@@ -9,15 +9,15 @@ class MainNav extends Component {
     }
 
     componentDidMount () {
-        fetch ("")
-          .then(response => response.json())
-          .then((data) => {
-            this.setState ({
-              mainNav: data
-            })
-          })
-      }
-    
+    fetch ("https://raw.githubusercontent.com/DasGMA/React-Router-Apple-Nav/master/apple-nav/src/main_nav.json")
+      .then(response => response.json())
+      .then((data) => {
+        this.setState ({
+          mainNav: data
+        })
+      })
+  }
+
     
     render() { 
         return ( 
