@@ -16,7 +16,7 @@ class Canvas extends Component {
         this.state = {
             paintLayers:[]
         }
-        console.log(props.cnv.id);
+        console.log(props);
         
     }
 

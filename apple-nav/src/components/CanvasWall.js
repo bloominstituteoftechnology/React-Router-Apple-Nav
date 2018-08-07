@@ -19,14 +19,16 @@ class CanvasWall extends Component {
         this.state = {
             canvasData: CanvasData,
         }
+        console.log(props);
+        
     }
 
     render() {
         return (
             <CanvasWallContainer>
                 {
-                    this.state.canvasData.map((cnv)=>{
-                        return <Canvas cnv={cnv}/>
+                    this.props.data.map((cnv)=>{
+                        return <Canvas getId={this.props.getId} cnv={cnv}/>
                     })
                 }
             </CanvasWallContainer>

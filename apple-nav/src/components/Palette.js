@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // import './App.css';
 import Swatch from './Swatch.js';
 import SwatchData from '../SwatchData.js';
+import CanvasData from '../CanvasData.js';
 
 const PaletteContainer = styled.div`
     width:900px;
@@ -18,9 +19,32 @@ class Palette extends Component {
         super(props);
         this.state = {
             swatchData: SwatchData,
+            activeId: null,
         }
+        console.log("palette ",props.match.params);
     }
 
+    componentDidMount(){
+        let active =  this.props.match.params.id;
+        console.log("active", active);
+        this.setState({
+            activeId: active,
+        });
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        console.log(prevState.activeId);
+        
+        
+        console.log("active state", this.props.match.params.id);
+        let active = this.props.match.params.id;
+        if (active !== prevState.activeId){
+            this.setState({
+                activeId: active,
+            });
+        }
+    }
+     
     render() {
         return (
             <PaletteContainer>
