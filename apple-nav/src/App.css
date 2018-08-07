@@ -28,3 +28,8 @@
 .App .nav-bar .nav-container li .nav-text:hover {
   color: #C9C9C9;
 }
+
+.App .nav-bar .nav-container li .active-component {
+  color: #C9C9C9;
+}
+
