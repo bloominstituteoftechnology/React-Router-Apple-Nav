@@ -6,7 +6,9 @@ import Nav from './components/NavBar/Nav';
 class App extends Component {
   render() {
     return (
-      <Nav />
+      <NavLink>
+        <Nav />
+      </NavLink>
     );
   }
 }
