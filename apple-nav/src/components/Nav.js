@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Nav = props => {
+  const { id, text } = props;
   return(
-    <div> Temp Div (Nav) </div>
+    <div>{text}</div>
   );
 }
 
