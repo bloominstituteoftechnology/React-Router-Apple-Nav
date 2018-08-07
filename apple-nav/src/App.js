@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Route, NavLink } from "react-router-dom";
 
-import Home from "./components/Home/Home";
-import Mac from "./components/Mac/Mac";
-import IPad from "./components/IPad/IPad";
-import IPhone from "./components/IPhone/IPhone";
+import Home from "./components/home/Home";
+import Mac from "./components/mac/Mac";
+import IPad from "./components/ipad/IPad";
+import IPhone from "./components/iphone/IPhone";
 import "./App.css";
 
 class App extends Component {
@@ -18,17 +18,17 @@ class App extends Component {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activeNavButton" to="/Mac">
+            <NavLink activeClassName="activeNavButton" to="/mac">
               Mac
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activeNavButton" to="/IPhone">
+            <NavLink activeClassName="activeNavButton" to="/iphone">
               IPhone
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activeNavButton" to="/IPad">
+            <NavLink activeClassName="activeNavButton" to="/ipad">
               IPad
             </NavLink>
           </li>
@@ -36,9 +36,9 @@ class App extends Component {
         {/* End navWrapper */}
 
         <Route exact path="/" component={Home} />
-        <Route exact path="/" component={Mac} />
-        <Route exact path="/" component={IPhone} />
-        <Route exact path="/" component={IPad} />
+        <Route path="/mac" component={Mac} />
+        <Route path="/iphone" component={IPhone} />
+        <Route path="/ipad" component={IPad} />
       </div>
     );
   }
