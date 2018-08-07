@@ -26,3 +26,38 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.tabs {
+  background-color: #222;
+  height: 80px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabs a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.tabs a:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+.sublinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sublinks a {
+  color: #222;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sublinks a:hover {
+  text-decoration: underline;
+  color: lightgray;
+}
