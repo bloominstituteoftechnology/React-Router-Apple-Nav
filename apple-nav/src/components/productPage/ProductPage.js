@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 
 export default class ProductPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      product: props
+    };
+  }
   render() {
+    console.log("Props", this.state.product);
     return (
       <div>
         <h2>IPOD</h2>

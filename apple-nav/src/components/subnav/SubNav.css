@@ -1,6 +1,6 @@
 .subNavWrapper {
-  color: white;
-  background: black;
+  color: black;
+  background: grey;
 }
 .subNavWrapper ul {
   display: flex;
@@ -10,4 +10,8 @@
 
 .productCardSubLink a {
   text-align: center;
+}
+
+.productCardSubLink li {
+  color: white;
 }

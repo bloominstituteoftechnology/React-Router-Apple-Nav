@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import "./SubNav.css";
 import ProductPage from "../productPage/ProductPage";
 
@@ -23,7 +23,7 @@ export default class SubNav extends Component {
                 .split(" ")
                 .join("-")}`}
             >
-              <img src={product.imgUrl} />
+              <img src={product.imgUrl} alt={this.state.data.productName} />
               <li>{product.productName}</li>
             </Link>
           ))}

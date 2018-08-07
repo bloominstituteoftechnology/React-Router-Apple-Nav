@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Mac from "./components/mac/Mac";
 import IPad from "./components/ipad/IPad";
 import IPhone from "./components/iphone/IPhone";
+import ProductPage from "./components/productPage/ProductPage";
 import "./App.css";
 
 class App extends Component {
@@ -25,12 +26,12 @@ class App extends Component {
             </li>
             <li>
               <NavLink activeClassName="activeNavButton" to="/iphone">
-                IPhone
+                iPhone
               </NavLink>
             </li>
             <li>
               <NavLink activeClassName="activeNavButton" to="/ipad">
-                IPad
+                iPad
               </NavLink>
             </li>
           </ul>
@@ -40,6 +41,7 @@ class App extends Component {
         <Route path="/mac" component={Mac} />
         <Route path="/iphone" component={IPhone} />
         <Route path="/ipad" component={IPad} />
+        <Route path="/productPage/:productName" component={ProductPage} />
       </div>
     );
   }
