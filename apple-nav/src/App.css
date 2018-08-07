@@ -3,3 +3,28 @@
   text-align: center;
 }
 
+.App .nav-bar {
+  padding: 10px 0;
+  margin: 0;
+  background: #333333;
+}
+
+.App .nav-bar .nav-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 auto;;
+}
+
+.App .nav-bar .nav-container li .nav-text {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
+.App .nav-bar .nav-container li .nav-text:hover {
+  color: #C9C9C9;
+}
