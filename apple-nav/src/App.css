@@ -1,0 +1,21 @@
+.header{
+  width:100%; 
+  height: 43px; 
+}
+.nav-bar{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center;
+  width: 880px; 
+  margin: auto; 
+}
+.item{
+  text-decoration: none;
+  color: black;  
+  padding: 24px;
+  height: 16px;
+}
+
+
+
