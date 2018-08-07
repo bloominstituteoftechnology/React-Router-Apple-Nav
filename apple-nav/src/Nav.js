@@ -3,32 +3,25 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NavContainer = styled.nav`
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-`;
-
-const StyledNavLink = styled(NavLink)`
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.4rem;
-`;
+import { StyledNavLink, NavContainer, ListItems } from './styles';
 
 const Nav = ({ links }) => {
   return (
     <NavContainer>
       {links.map(link => (
-        <li key={link}>
-          <StyledNavLink to={`/${link}`}>{link}</StyledNavLink>
-        </li>
+        <ListItems key={link.text}>
+          <StyledNavLink to={`/${link.href}`}>{link.text}</StyledNavLink>
+        </ListItems>
       ))}
     </NavContainer>
   );
 };
 
 Nav.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.string).isRequired
+  links: PropTypes.shape({
+    href: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default Nav;
