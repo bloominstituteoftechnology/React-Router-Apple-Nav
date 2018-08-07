@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
+import NavWrapper from './components/NavWrapper';
+import data from './data'
 
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      navigation: data
+    }
+  }
   render() {
     return (
-      <div className="App">
-      
-      </div>
+      <NavWrapper />
     );
   }
 }

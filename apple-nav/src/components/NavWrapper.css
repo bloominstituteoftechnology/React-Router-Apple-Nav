@@ -1,0 +1,17 @@
+.Nav {
+    display: grid;
+    height: 48px;
+    background: rgba(0,0,0,0.8);
+    width: 100vw;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.Nav-Container {
+    max-width: 980px;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+}
