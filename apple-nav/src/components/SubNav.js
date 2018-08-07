@@ -7,8 +7,7 @@ import DummyPage from './DummyPage';
 const SubNavigation = styled.div`
   width: 100%;
   height: 100px;
-  background: #141414;
-  color: white;
+  background: ${props => props.theme.background};
 
   & > ul{
     max-width: 1000px;
@@ -21,7 +20,7 @@ const SubNavigation = styled.div`
 
     & > li > a{
       text-decoration: none;
-      color: #FFF;
+      color: ${props => props.theme.color};
       font-size: 1.4rem;
       font-weight: lighter;
     }
@@ -34,7 +33,7 @@ const SubNav = props => {
   return(
     <div>
       { currentSubNav.SubNavs.length ?
-      <SubNavigation>
+      <SubNavigation theme={filteredSubNav[0].theme}>
         <ul>
           {currentSubNav.SubNavs.map(nav => <li><Link to={`/${props.match.params.nav}/${nav.text}`}>{nav.text}</Link></li>)}
         </ul>

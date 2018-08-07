@@ -3,6 +3,7 @@ const dummyData = [
     id: 0,
     text: 'Mac',
     content: 'This is the dummy page for the Mac product line',
+    theme: {background: `#141414`, color: `#EFEFEF`},
     SubNavs: [
       {
         id: 0,
@@ -55,6 +56,7 @@ const dummyData = [
     id: 1,
     text: 'iPad',
     content: 'This is the dummy page for the iPad product line',
+    theme: {background: `#F6F6F6`, color: `#333` },
     SubNavs: [
       {
         id: 0,
@@ -92,6 +94,7 @@ const dummyData = [
     id: 2,
     text: 'iPhone',
     content: 'This is the dummy page for the iPhone product line',
+    theme: {background: `#F6F6F6`, color: `#333` },
     SubNavs: [
       {
         id: 0,
@@ -139,6 +142,7 @@ const dummyData = [
     id: 3,
     text: 'Watch',
     content: 'This is the dummy page for the Watch product line',
+    theme: {background: `#FAFAFA`, color: `#333`},
     SubNavs: [
       {
         id: 0,
@@ -186,6 +190,7 @@ const dummyData = [
     id: 4,
     text: 'TV',
     content: 'This is the dummy page for the TV product line',
+    theme: {background: `#141414`, color: `#EFEFEF`},
     SubNavs: [
       {
         id: 0,
@@ -218,6 +223,7 @@ const dummyData = [
     id: 0,
     text: 'Music',
     content: 'This is the dummy page for the Music product line',
+    theme: {background: `#F6F6F6`, color: `#333`},
     SubNavs: [
       {
         id: 0,
