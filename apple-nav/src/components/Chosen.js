@@ -60,13 +60,16 @@ class Chosen extends React.Component {
         const toPath = this.props.match.params.id; 
         
         return(
+            <div>
             <NewSection> 
                 <AddedSection> 
                     {choices[choice].map((cho, i) => <Link key={i} to ={`/${toPath}/${cho.toLowerCase().split(' ').join('')}`}><SectionDiv key = {i}>{cho}</SectionDiv></Link>)}
                 </AddedSection>
-                <Route path ={`/${toPath}/:itemId`} render = {(props) => <Item {...props} />}/>
+                
                 
             </NewSection>
+            <Route path ={`/${toPath}/:itemId`} render = {(props) => <Item {...props} />}/>
+            </div>
 
         );
     }

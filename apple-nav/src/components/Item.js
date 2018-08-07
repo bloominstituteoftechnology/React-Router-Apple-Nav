@@ -1,13 +1,22 @@
 import React from 'react' 
+import styled from 'styled-components'; 
+
+const ItemName = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; 
+    margin-top: 20px;
+`;
 
 function Item ({match}) { 
     console.log(match);
         return (
 
-            <div>
+            <ItemName>
                 <div>{match.params.itemId.toUpperCase()}</div>
                 
-            </div>
+            </ItemName>
 
 
         ); 
