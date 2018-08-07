@@ -1,0 +1,10 @@
+@font-face {
+  font-family: SFProText;
+  src: url(/src/assets/SF-Pro-Text-Regular.otf)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: SFProText, sans-serif;
+}
