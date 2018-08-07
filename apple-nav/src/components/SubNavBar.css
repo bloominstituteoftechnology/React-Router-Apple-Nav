@@ -1,0 +1,11 @@
+.subnavbarContainer{
+  background-color: grey;
+  display:flex;
+  justify-content: space-around;
+  padding: 20px;
+  color:white;
+}
+
+.subactive{
+  color: black !important;
+  }
