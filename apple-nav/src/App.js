@@ -12,6 +12,24 @@ import { AnimatedSwitch } from 'react-router-transition';
 
 library.add(fas, fab);
 
+const fadeTransition = {
+  atEnter: {
+    opacity: 0
+  },
+  atLeave: {
+    opacity: 0
+  },
+  atActive: {
+    opacity: 1
+  }
+}
+
+function mapStyles(styles) {
+  return {
+    opacity: styles.opacity
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -25,7 +43,15 @@ class App extends Component {
             className="switch-wrapper"
           >
             <Route exact path="/" component={Home} />
-            <Route path="/:productClass" component={SubNav} />
+            <Route path="/:productClass" component={SubNav} /> 
+          </AnimatedSwitch>
+          <AnimatedSwitch
+            atEnter={ fadeTransition.atEnter }
+            atLeave={ fadeTransition.atLeave }
+            atActive={ fadeTransition.atActive }
+            className="switch-wrapper"
+            mapStyles={mapStyles}
+          >
             <Route path="/:productClass/:product" component={Product} />
           </AnimatedSwitch>
         </div>
