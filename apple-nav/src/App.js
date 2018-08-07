@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
+import appleData from './appleData';
+import Header from './components/Header';
 
 class App extends Component {
+  state = {
+    links: [],
+  };
+
+  componentDidMount() {
+    let links = JSON.parse(JSON.stringify(appleData));
+    this.setState({
+      links: links,
+    });
+  }
+  
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+       <Header links={this.state.links} />
       </div>
     );
   }
