@@ -19,22 +19,27 @@ const products = [
   { name: 'watch', id: 4},
   { name: 'TV', id: 5},
   { name: 'music', id: 6},
-]
+];
 
 function Products() {
   return (
     <ul>
       {products.map(product => (
-        <li key = {product.id} >
-        <h4> {product.name}</h4>
+        <li key = {product.id}>
+          <Link to ={`/products/${product.id}`} >
+          <h4>{product.name}</h4>
+          </Link>
         </li>
       ))}
     </ul>
   );
 }
 
-function Product() {
-  return <h1>product</h1>
+function Product (props) {
+  console.log(props.match.params.productParam);
+  const param = props.match.params.id;
+  const product = products.find(product => product.id===param);
+  return <h1>product</h1>;
 }
 
 
@@ -43,11 +48,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-      </div>
-      <div>
         <Link to = '/products'>Products</Link>
         <Route path = '/people' component={Products} />
-        <Route path = '/people/:id' component={Product} />
+        <Route path = '/people/:productParam' component={Product} />
       </div>   
 
     );
