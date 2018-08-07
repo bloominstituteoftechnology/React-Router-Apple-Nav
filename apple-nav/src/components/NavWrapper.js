@@ -54,8 +54,8 @@ const NavWrapper = props => {
                     <i className="fa fa-apple fa-2x" aria-hidden="true"></i>
                 </div>
                 {products.map(product => (
-                    <div>
-                        <NavLink key={product.id} exact activeClassName="activeNavButton" to={`/${product.id}`}>
+                    <div key={product.id}>
+                        <NavLink exact activeClassName="activeNavButton" to={`/${product.id}`}>
                             {product.name}
                         </NavLink>
                     </div>
@@ -68,8 +68,7 @@ const NavWrapper = props => {
                 </div>
             </header>
             <Route
-                exact
-                path="/1"
+                path="/:id"
                 render={props => <SubNav {...props} products={products} />}
             />
         </div>
