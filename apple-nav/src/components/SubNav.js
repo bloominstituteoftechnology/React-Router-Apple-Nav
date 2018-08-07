@@ -31,11 +31,12 @@ const SubNav = props => {
   const currentSubNav = filteredSubNav[0];
   return(
     <div>
+      { currentSubNav.SubNavs.length ?
       <SubNavigation>
         <ul>
           {currentSubNav.SubNavs.map(nav => <li><Link to={`/${props.match.params.nav}/${nav.text}`}>{nav.text}</Link></li>)}
         </ul>
-      </SubNavigation>
+      </SubNavigation> : null }
       <DummyPage content={currentSubNav.content} />
     </div>
   );
