@@ -1,8 +1,9 @@
 import React from 'react';
+import './nav.css';
 
 const Nav = () => {
     return (
-        <div>
+        <div className="nav-buttons">
             nav
         </div>
     );
