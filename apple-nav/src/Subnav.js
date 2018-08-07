@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import {NavLink} from 'react-router-dom';
 const SubNavWrapper=styled.div`
-max-width: 800px;
+max-width: 840px;
 width: 100%;
 height: 100px;
 margin: 0 auto;
@@ -16,8 +17,8 @@ const Subnav=prop=>{
     const item=prop.items.find(item=>item.item===prop.match.params.item)
     return(
     <SubNavWrapper>
-        <i className={`${item.icon1}`}></i>
-        <i className={`${item.icon2}`}></i>
+        <NavLink to='/'><i className={`${item.icon1}`}></i></NavLink>
+        <NavLink to='/'><i className={`${item.icon2}`}></i></NavLink>
     </SubNavWrapper>
     )
 }
