@@ -1,6 +1,7 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
-// import styled from 'styled-components'; 
+import {Link} from 'react-router-dom';
+import styled from 'styled-components'; 
+
 
 
 import NavBox from './HomeNav.js';
@@ -12,7 +13,40 @@ const choices = {"Mac":["MacBook", "MacBook Air", "MacBook Pro", "iMac", "iMac P
    "Watch": ["Apple Watch Series 3", "Apple Watch Nike+", "Apple Watch Hermes", "Apple Watch Edition", "Apple Watch Series 1", "watchOS", "Bands", "Accessories", "Compare"],
     "TV":["Apple TV 4K", "Apple TV", "TV App", "Accessories", "Compare"],
      "Music": ["Apple Music", "iTunes", "HomePod", "iPod touch", "Music Accessories", "Gift Cards"] }
+const NewSection = styled.div`
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    
+    background: black; 
+    color: white;
+    a {
+        text-decoration: none; 
+        color: white; 
+    }
+    a:hover{
+        color: blue; 
+    }
 
+`;
+const AddedSection = styled.div`
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 900px;
+    color: white;
+    margin-left: 250px;
+    margin-right: 250px; 
+
+`;
+
+const SectionDiv = styled.div`
+    display: flex;
+    align-items: center;
+    height: 50px; 
+    word-wrap: break-word; 
+    font-size: 10px; 
+`;
 
 class Chosen extends React.Component {
     constructor(props){
@@ -21,16 +55,15 @@ class Chosen extends React.Component {
     }
 
     render(){
-        console.log(this.props);
         const choice = navTags.find( cho => cho.toLowerCase() === this.props.match.params.id);
-        console.log(choice); 
-        console.log(choices[choice])
+        const toPath = this.props.match.params.id; 
+        
         return(
-            <div> 
-                {choices[choice].map((cho, i) => <div key = {i}>{cho}</div>)}
-                <div>something on the page</div>
-                <div>something on the page</div>
-            </div>
+            <NewSection> 
+                <AddedSection> 
+                    {choices[choice].map((cho, i) => <Link to ={`/${toPath}/${cho.toLowerCase().split(' ').join('')}`}><SectionDiv key = {i}>{cho}</SectionDiv></Link>)}
+                </AddedSection>
+            </NewSection>
         );
     }
 }

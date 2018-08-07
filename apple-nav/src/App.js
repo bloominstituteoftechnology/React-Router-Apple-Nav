@@ -9,11 +9,11 @@ class App extends Component {
   render() {
     return (
       
-      <Fragment>
+      <div>
           <Route path='/' component={HomeNav} />
           <Route path='/:id' component={Chosen} />
           
-      </Fragment>
+      </div>
     );
   }
 }
