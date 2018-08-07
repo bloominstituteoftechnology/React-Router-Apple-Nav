@@ -2,12 +2,12 @@ import React from 'react';
 import SubNav from '../SubNav';
 
 const ipadLinks = [
-    {name: 'iPad Pro', url: '/ipad-pro'},
-    {name: 'iPad', url: '/ipad-9.7'},
-    {name: 'iPad mini 4', url: '/ipad-mini-4'},
-    {name: 'iOS 11', url: '/ios11'},
-    {name: 'Accessories', url: '/ipad-accessories'},
-    {name: 'Compare', url: '/ipad-compare'}
+    {name: 'iPad Pro', url: '/ipad-pro', img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadpro_light_large.svg'},
+    {name: 'iPad', url: '/ipad-9.7', img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_large.svg'},
+    {name: 'iPad mini 4', url: '/ipad-mini-4', img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadmini_large.svg'},
+    {name: 'iOS 11', url: '/ios11', img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_ios10_large.svg'},
+    {name: 'Accessories', url: '/ipad-accessories', img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_acc_large.svg'},
+    {name: 'Compare', url: '/ipad-compare', img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_comp_large.svg'}
 ]
 
 const iPad = (props) => {

@@ -51,6 +51,12 @@
   align-items: center;
 }
 
+.nav-link {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
 .nav-link a {
   color: rgb(210, 210, 210);
   text-decoration: none;
