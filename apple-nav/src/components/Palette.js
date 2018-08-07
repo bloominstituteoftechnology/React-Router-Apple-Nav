@@ -3,11 +3,11 @@ import { Link, NavLink, Route } from 'react-router-dom';
 import styled from 'styled-components';
 // import './App.css';
 import Swatch from './Swatch.js';
+import SwatchData from '../SwatchData.js';
 
 const PaletteContainer = styled.div`
     width:900px;
     height:200px;
-    border:solid 1px blue;
     display:flex;
     flex-flow: row;
     justify-content:space-between;
@@ -17,20 +17,18 @@ class Palette extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            swatches: 7,
+            swatchData: SwatchData,
         }
     }
 
     render() {
         return (
             <PaletteContainer>
-                <Swatch />
-                <Swatch />
-                <Swatch />
-                <Swatch />
-                <Swatch />
-                <Swatch />
-                <Swatch />
+                {
+                    this.state.swatchData.map((swatch)=>{
+                        return <Swatch key={swatch.color} swatch={swatch} />
+                    })
+                }
             </PaletteContainer>
         )
     }

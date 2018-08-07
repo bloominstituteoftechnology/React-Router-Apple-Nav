@@ -7,24 +7,26 @@ import styled from 'styled-components';
 const SwatchContainer = styled.div`
     width:120px;
     height:196px;
-    border:solid 1px purple;
-    ${'' /* display:flex;
-    flex-flow: row;
-    justify-content:space-between; */}
 `;
 
 class Swatch extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            background: '',
         }
+    }
+
+    componentDidMount(){
+        this.setState({
+            background: this.props.swatch.background,
+        });
     }
 
     render() {
         return (
-            <SwatchContainer>
-               Swatch
+            <SwatchContainer style={{background: this.state.background}}>
+        
             </SwatchContainer>
         )
     }

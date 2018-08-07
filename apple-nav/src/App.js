@@ -8,7 +8,7 @@ import Palette from './components/Palette.js';
 const AppContainer = styled.div`
   width:900px;
   height:400px;
-  background:#fff;
+  ${'' /* background:#fff; */}
   margin: 4% auto;
   
 `;

@@ -1,24 +1,44 @@
 import React, { Component } from 'react';
 import { Link, NavLink, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import ColorPanel from './ColorPanel.js';
 // import './App.css';
 
-const CanvasContainer = styled.div`
-    width:200px;
-    height:200px;
-    border:solid 1px gray;
-`;
+const CanvasStyles = {
+    width:'24%',
+    height:'200px',
+    background:'#fff',
+};
 
 class Canvas extends Component {
     constructor(props){
         super(props);
         this.state = {
-
+            paintLayers:[]
         }
+        console.log(props.cnv.id);
+        
+    }
+
+    pushPaintLayers = (layer) => {
+
     }
 
     render(){
-        return <CanvasContainer>Canvas</CanvasContainer>
+        // return <div style={CanvasStyles}>Canvas</div>
+        return <NavLink 
+            to={`/${this.props.cnv.id}`}
+                style={CanvasStyles}
+                activeStyle={{
+                    border: 'solid 2px white'
+                }}>
+                
+                {
+                    this.state.paintLayers.map((panel)=>{
+                        return <ColorPanel panel={panel}/>
+                    })
+                }
+                </NavLink>
     }
 }
 
