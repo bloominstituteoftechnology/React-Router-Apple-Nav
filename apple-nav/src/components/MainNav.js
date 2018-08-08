@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {Link, Route} from 'react-router-dom';
 import styled from 'styled-components';
+import NavigationData from '../main_nav';
+import SubNav from './SubNav';
 
 
 const Nav = styled.div`
 ;
-    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -15,6 +16,7 @@ const Nav = styled.div`
     max-height: 48px;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
+    padding: 0 22px;
 
 `
 
@@ -25,16 +27,27 @@ const LinkWrap = styled.div`
     max-width: 980px;
     max-height: 44px;
     margin: 0 auto;
+
+    > a {
+        >img {
+            width: 16px;
+        }
+    }
+    
 `
 
 const NavigationLinks = styled.div`
 
     > a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         font-weight: 400;
         font-size: 1.4rem;
-
+        letter-spacing: -.01em;
+        line-height: 3.14286;
+        padding: 0 10px;
+        white-space: nowrap;
+        height: 44px;
     }
 
 `
@@ -44,30 +57,26 @@ class MainNav extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            mainNav: []
+            NavigationData: []
          }
     }
 
     componentDidMount () {
-    fetch ("https://raw.githubusercontent.com/DasGMA/React-Router-Apple-Nav/master/apple-nav/src/main_nav.json")
-      .then(response => response.json())
-      .then((data) => {
         this.setState ({
-          mainNav: data
-        })
-      })
+            NavigationData
+        });
   }
 
     
     render() {
-        if (!this.state.mainNav) {
+        if (!this.state.NavigationData) {
             return <div>Loading data....</div>
         }
         return ( 
             <Nav>
                 <LinkWrap>
-                    <Link to="/" ><img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjVj5TOjNzcAhUPUK0KHVzpAJgQjRx6BAgBEAU&url=http%3A%2F%2Fwww.clker.com%2Fclipart-apple-logo-white-1.html&psig=AOvVaw1OYWAQnaaH9xpqg2Q1Jx0N&ust=1533771061566624" alt="logo"/></Link>
-                    {this.state.mainNav.map((link, index) => (
+                    <Link to="/" ><img src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white-md.png" alt="logo"/></Link>
+                    {this.state.NavigationData.map((link, index) => (
                         <NavigationLinks key={index}>
                             <Link to={`/${link.name}`} >
                             {link.name}
@@ -75,11 +84,12 @@ class MainNav extends Component {
                         </NavigationLinks>
                     ))}
                 </LinkWrap>
-                <Nav>
+                
                     <Route
-                        
+                        path="/:ID"
+                        render={(props) => <SubNav {...props} />}
                     />
-                </Nav>
+                
             </Nav>
          );
     }

@@ -1,4 +1,4 @@
- [
+const NavigationData = [
     {
         "id": 0,
         "name": "Mac",
@@ -173,3 +173,4 @@
         "sub": []
     }
 ]
+export default NavigationData;

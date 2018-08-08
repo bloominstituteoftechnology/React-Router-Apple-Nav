@@ -16,6 +16,7 @@ main, article, aside, figure, footer, header, nav, section, details, summary {di
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 *,
