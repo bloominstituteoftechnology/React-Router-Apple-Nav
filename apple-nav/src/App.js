@@ -12,17 +12,33 @@ class App extends Component {
       nav: [
           {subnav: 'Mac',
            navitems:  [
-             'MacBook',
-             'MacBook Air',
-             'MacBook Pro',
-             'iMac',
-             'iMac Pro',
-             'Mac Pro',
-             'Mac mini',
-             'Accessories',
-             'High Sierra',
-             'Compare',
-            ]
+             {img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macbook_dark_large.svg",
+             name: 'MacBook'},
+             {img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookair_dark_large.svg",
+              name:'MacBook Air'},
+            {name: "MacBook Pro",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookpro_dark_large.svg"},
+            {name: "iMac",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_dark_large.svg"},
+            {name: "iMac Pro",
+             img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_pro_dark_large.svg"
+            },
+            {name: "Mac Pro",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macpro_dark_large.svg"
+            },
+            {name: "Mac mini",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macmini_dark_large.svg"
+            },
+            {name: "Accessories",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_acc_dark_large.svg"
+            },
+            {name: "High Sierra",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_osx_dark_large.svg"
+            },
+            {name: "Compare",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_comp_dark_large.svg"
+            }
+           ]
           },
           {subnav: 'iPad',
           navitems:  [

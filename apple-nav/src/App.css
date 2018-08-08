@@ -20,11 +20,13 @@
 }
 
 img {
-  background: #333333;
+  background: #33333300;
 }
 
 .homebtn {
   background: #333333;
+  height: 40px;
   border: none;
+  margin-top: 15%;
 }
 
