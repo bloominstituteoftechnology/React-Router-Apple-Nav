@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import Home from './Home';
-import iPadMain from './components/iPad/iPadMain';
-import iPhoneMain from './components/iPhone/iPhoneMain';
 import MacMain from './components/mac/MacMain';
-import MusicMain from './components/music/MusicMain';
-import TvMain from './components/tv/TvMain';
+import IPadMain from './components/iPad/IPadMain';
+import IPhoneMain from './components/iPhone/IPhoneMain';
 import WatchMain from './components/watch/WatchMain';
+import TvMain from './components/tv/TvMain';
+import MusicMain from './components/music/MusicMain';
+import data from './data'
 import './App.css';
 import {Route, NavLink} from 'react-router-dom';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      someData: {}
+    }
+  }
+
+  componentDidMount() {
+    this.setState({someData: data })
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,13 +34,13 @@ class App extends Component {
           <NavLink activeClassName="selected" to="/tv">TV</NavLink>
           <NavLink activeClassName="selected" to="/music">Music</NavLink>
         </nav>
-        <Route exact path="/" component={Home}/>
-        <Route path="/mac" component={MacMain}/>
-        <Route path="/ipad" component={iPadMain}/>
-        <Route path="/iphone" component={iPhoneMain}/>
-        <Route path="/watch" component={WatchMain}/>
-        <Route path="/tv" component={TvMain}/>
-        <Route path="/Music" component={MusicMain}/>
+        <Route exact path="/" render={props => <Home {...props} data={this.state.someData} />} />
+        <Route path="/mac" render={props => <MacMain {...props} data={this.state.someData} />} />
+        <Route path="/ipad" render={props => <IPadMain {...props} data={this.state.someData} />} />
+        <Route path="/iphone" render={props => <IPhoneMain {...props} data={this.state.someData} />} />
+        <Route path="/watch" render={props => <WatchMain {...props} data={this.state.someData} />} />
+        <Route path="/tv" render={props => <TvMain {...props} data={this.state.someData} />} />
+        <Route path="/Music" render={props => <MusicMain {...props} data={this.state.someData} />} />
       </div>
     );
   }
