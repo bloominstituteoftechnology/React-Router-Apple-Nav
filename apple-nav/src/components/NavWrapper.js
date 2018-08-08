@@ -3,10 +3,11 @@ import Nav from './nav';
 import { BrowserRouter as Router, NavLink} from "react-router-dom";
 import '../App.css';
 
-const NavWrapper = () => {
+
+const NavWrapper = (props) => {
     return ( 
         <div className="navbar-container">
-           <Nav />
+           <Nav appleitems={props.appleitems}/>
         </div>        
     );
 }

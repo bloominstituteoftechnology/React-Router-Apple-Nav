@@ -33,6 +33,11 @@
 }
 
 .navbar {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbartabs {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -42,7 +47,7 @@
   padding: 0;
 }
 
-.navbar li a{
+.navbartabs a{
   text-decoration: none;  
   color: #fff;
   font-size: 14px;

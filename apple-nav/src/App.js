@@ -3,11 +3,13 @@ import './App.css';
 import NavWrapper from './components/navwrapper';
 import { BrowserRouter as Router, Route,  NavLink} from "react-router-dom";
 
+import appleitems from "./data/appleitems";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route path="/" component={NavWrapper} />
+        <Route path="/" render={props => <NavWrapper {...props} appleitems={appleitems} />} />
       </div>
     );
   }
