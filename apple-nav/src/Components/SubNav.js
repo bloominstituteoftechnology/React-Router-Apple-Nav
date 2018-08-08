@@ -1,5 +1,7 @@
 import React from 'react'; 
 import { NavLink } from 'react-router-dom'; 
+import './macbook.svg'; 
+import Product from './Product'; 
 
 const subNavItems = {
     mac: ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "iMac Pro", "Mac Pro", "Mac mini", "Accessories", "High Sierra", "Compare"], 
@@ -12,10 +14,17 @@ const subNavItems = {
 }
 
 const SubNav = props => {
+    const navGroup = props.match.params.name;
     const navElement = subNavItems[props.match.params.name]; 
     return (
         <div className =  "sub-navigation">
-            {navElement.map((element, index) => <p key = {index} >{element}</p>)}
+            {navElement.map((element, index) => {
+              return(
+                <div className = "sub-nav-item">
+                    <NavLink activeClassName = "sub-selected" key = {index} to = {`/${navGroup}/${element.toLowerCase().split(' ').join('')}`}>{element}</NavLink>
+              </div> 
+            )}
+            )}
         </div>
     )
 }

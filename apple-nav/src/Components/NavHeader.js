@@ -1,7 +1,7 @@
 import React from 'react'; 
 import Nav from './Nav'; 
 
-const navItems = ["Mac", "Ipad", "Iphone", "Watch", "TV", "Music", "Support" ]
+const navItems = ["Mac","Ipad", "Iphone", "Watch", "TV", "Music", "Support" ]
 
 const NavHeader = props => {
     return(

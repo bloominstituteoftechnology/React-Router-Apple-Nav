@@ -3,16 +3,16 @@ import './App.css';
 import NavHeader from './Components/NavHeader';
 import {Route} from 'react-router-dom'; 
 import SubNav from './Components/SubNav'; 
+import Product from './Components/Product'; 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className = 'navbar'>
-          <NavHeader />
-        </div>
+        <NavHeader />
         <Route exact path = "/" component = {Home}/>
-        <Route path = "/:name" component = {SubNav}  />
+        <Route path = "/:name" component = {SubNav}/>
+        <Route path = "/:name/:product" component = {Product} />
       </div>
     );
   }
