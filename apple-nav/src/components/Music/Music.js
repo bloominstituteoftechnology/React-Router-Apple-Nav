@@ -15,6 +15,7 @@ const Music = (props) => {
         <div className="sub-header">
             <SubNav list={musicLinks} width={'55vw'}/>
             <h1>{`\uf8ff`} Music</h1>
+            <img src="img/music.png" alt=""/>
         </div>
     )
 }

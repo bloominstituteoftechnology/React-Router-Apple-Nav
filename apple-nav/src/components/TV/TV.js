@@ -14,6 +14,7 @@ const TV = (props) => {
         <div className="sub-header">
             <SubNav list={tvLinks} width={'50vw'}/>
             <h1>{`\uf8ff`} TV</h1>
+            <img src="img/tv.png" alt="" />
         </div>
     )
 }

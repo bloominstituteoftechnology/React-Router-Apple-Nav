@@ -18,6 +18,7 @@ const Watch = (props) => {
         <div className="sub-header">
             <SubNav list={watchLinks} />
             <h1>{`\uf8ff`} Watch</h1>
+            <img src="img/watch.png" alt="" />
         </div>
     )
 }
