@@ -1,0 +1,29 @@
+.tv-nav-container {
+    background: #333333;
+}
+
+.tv-nav-container ul{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.tv-nav-container ul li {
+    color: black;
+    list-style-type: none;
+
+}
+
+.tv-nav-container ul li .tv-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.tv-nav-container ul li .tv-link:hover {
+    color: #66BBFF;
+}

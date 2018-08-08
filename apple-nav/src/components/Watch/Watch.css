@@ -1,0 +1,28 @@
+.watch-nav-container {
+    background: #F6F6F6;
+}
+
+.watch-nav-container ul{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.watch-nav-container ul li {
+    color: black;
+    list-style-type: none;
+}
+
+.watch-nav-container ul li .watch-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: black;
+}
+
+.watch-nav-container ul li .watch-link:hover {
+    color: #66BBFF;
+}

@@ -27,13 +27,13 @@ class App extends Component {
         <ul className="nav-bar">
           <div className="nav-container">
             <li><NavLink exact to="/" className="nav-text" activeClassName="active-component">Home</NavLink></li>
-            <li><NavLink to="/mac" className="nav-text" activeClassName="active-component">Mac</NavLink></li>
-            <li><NavLink to="/ipad" className="nav-text" activeClassName="active-component">iPad</NavLink></li>
-            <li><NavLink to="/iphone" className="nav-text" activeClassName="active-component">iPhone</NavLink></li>
-            <li><NavLink to="/watch" className="nav-text" activeClassName="active-component">Watch</NavLink></li>
-            <li><NavLink to="/tv" className="nav-text" activeClassName="active-component">TV</NavLink></li>
-            <li><NavLink to="/music" className="nav-text" activeClassName="active-component">Music</NavLink></li>
-            <li><NavLink to="/support" className="nav-text" activeClassName="active-component">Support</NavLink></li>
+            <li><NavLink to="/mac/" className="nav-text" activeClassName="active-component">Mac</NavLink></li>
+            <li><NavLink to="/ipad/" className="nav-text" activeClassName="active-component">iPad</NavLink></li>
+            <li><NavLink to="/iphone/" className="nav-text" activeClassName="active-component">iPhone</NavLink></li>
+            <li><NavLink to="/watch/" className="nav-text" activeClassName="active-component">Watch</NavLink></li>
+            <li><NavLink to="/tv/" className="nav-text" activeClassName="active-component">TV</NavLink></li>
+            <li><NavLink to="/music/" className="nav-text" activeClassName="active-component">Music</NavLink></li>
+            <li><NavLink to="/support/" className="nav-text" activeClassName="active-component">Support</NavLink></li>
           </div>
           
         </ul>
