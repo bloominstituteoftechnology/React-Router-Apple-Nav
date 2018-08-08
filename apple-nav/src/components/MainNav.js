@@ -6,7 +6,8 @@ import SubNav from './SubNav';
 
 
 const Nav = styled.div`
-;
+    
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -16,7 +17,7 @@ const Nav = styled.div`
     max-height: 48px;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    padding: 0 22px;
+    
 
 `
 
@@ -29,8 +30,10 @@ const LinkWrap = styled.div`
     margin: 0 auto;
 
     > a {
+        padding: 0 10px;
         >img {
             width: 16px;
+           
         }
     }
     

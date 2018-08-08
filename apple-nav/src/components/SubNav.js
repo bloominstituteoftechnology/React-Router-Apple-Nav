@@ -5,34 +5,36 @@ import {Link} from 'react-router-dom';
 
 const SubNavigation = styled.div`
     
-    display: block;
-    justify-content: space-between;
-    margin: 0;
-    background-color: #141414;
-    font-size: 14px;
-    height: 86px;
+    padding: 12px  0;
+    position: relative;
     width: 100%;
-
+    z-index: 9987;
+    background-color: #141414;
 `
 const NavigationLinks = styled.div`
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 980px;
+    height: 92px;
+`
 
-   
-        color: #fff;
+const NavLinks = styled.div`
+
+       > a { color: #fff;
         text-decoration: none;
         font-weight: 400;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         letter-spacing: -.01em;
         line-height: 3.14286;
         padding: 0 10px;
-        
         height: 44px;
-    
-
+       }
 `
+
+
+
 
 const getSub = (ID) => {
     const data = NavigationData;
@@ -56,11 +58,11 @@ const SubNav = (props) => {
             <SubNavigation>
             <NavigationLinks>
                 {subData.sub.map((subLink, index) => (
-                    <div key={index} className="nav-links">
+                    <NavLinks key={index}>
                         <Link to={`/${subLink.name}`} >
                         {subLink.name}
                         </Link>
-                    </div>
+                    </NavLinks>
                 ))}
             </NavigationLinks>
             </SubNavigation>
