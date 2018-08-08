@@ -1,91 +1,52 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
 import {Route, Link, NavLink} from 'react-router-dom'; 
-import NavWrapper from './NavWrapper'; 
-const subNav=[
-  {
-  id:0,
-  subTabs:[
-  "none"
-   ]},
-  {
-  id:1,
-  subTabs:[
-    "MacBook",
-    "MacBook Air",
-    "MacBook Pro",
-    "iMac", 
-    "Mac Pro", 
-    "Mac Mini", 
-    "Accessories", 
-    "High Sierra", 
-    "Compare",
-   ]},
-   {
-    id:2,
-    subTabs:[
-      "iPad Pro",
-      "iPad", 
-      "iPad mini 4", 
-      "iOS 11", 
-      "Accessories", 
-      "Compare",
-     ]},
-     {
-      id:3,
-      subTabs:[
-        "iPhone X",
-        "iPhone 8", 
-        "iPhone 7", 
-        "iPhone 6s", 
-        "iPhone SE", 
-        "iOS 11", 
-        "Accessories", 
-        "Compare",
-       ]},
-       {
-        id:4,
-        subTabs:[
-          "Apple Watch Series 3",
-          "Apple Watch Nike +",
-          "Apple Watch Hermes",
-          "Apple Watch Edition", 
-          "Apple Watch Series 1", 
-          "watchOs", 
-          "Bands", 
-          "Accessories", 
-          "Compare",
-         ]},
-         {
-          id:5,
-          subTabs:[
-            "Apple TV 4k",
-            "Apple TV",
-            "TV App",
-            "Accessories",  
-            "Compare",
-           ]},
-           {
-            id:6,
-            subTabs:[
-              "Apple Music",
-              "iTunes",
-              "HomePod",
-              "iPod Touch", 
-              "Music Accessories", 
-              "Gift Cards", 
-             ]},
-]
+import Nav from './Nav'; 
+import SubNav from './SubNav'; 
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navItems: ['Mac','iPad','iPhone','Watch','TV','Music','Support'],
+      products: {
+        Mac:['MacBook','MacBook Air','MacBook Pro','iMac','iMac Pro','Mac Pro','Mac mini'],
+        iPad:['iPad Pro','iPad','iPad mini 4'],
+        iPhone:['iPhone X','iPhone 8','iPhone 7','iPhone 6s','iPhone SE'],
+        Watch:['Apple Watch Series 3', 'Apple Watch Nike+', 'Apple Watch Hermes','Apple Watch Edition','Apple Watch Series 1'],
+        TV:['Apple TV 4K', 'Apple TV'],
+        Music:['Apple Music','iTunes','HomePod','iPod touch'],
+        Support:['Support','Communities','Contact']
+      },
+      currentPage:''
+    }
+  }
+  changePage = (id) =>{
+    this.setState({
+      currentPage: id
+    })
+  }
+  componentDidMount() {
+    
+  }
+  
+  
   render() {
     return (
-   <div>
-     <NavWrapper />
-     < Route/>
-   </div>
+      <div className="App">
+        <Nav  
+          changePage={this.changePage} 
+          items={this.state.navItems}
+          />
+      <div>
+        <Route 
+          exact  
+          path="/:id/" 
+          render={(props)=> <SubNav {...props} items={this.state.products}/>}
+          />
+      </div>
+      </div>
     );
   }
 }
-
-export default App;
+ export default App;
