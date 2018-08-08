@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const NavBarWrapper = styled.div`
 `;
@@ -11,24 +12,32 @@ const NavBar = styled.div`
     color: white;
     align-items: center;
 
-    h5:hover{
+    p:hover{
+        color: grey;
+    }
+`;
+
+const NavigationLink = styled(NavLink)`
+    color: white;
+    text-decoration: none;
+
+    &:hover{
         cursor: pointer;
         color: grey;
     }
 `;
 
-
 const Header = props => {
     return (
         <NavBarWrapper>
             <NavBar>
-                <span class="fab fa-apple"></span>
+                <p className="fab fa-apple"></p>
                 {props.links.map(link => (
-                    <p>{link.product}</p>
+                    <NavigationLink to={`/${link.product}`} activeClassName="selected">{link.product}</NavigationLink>
                 ))}
-                <p>Support</p>
-                <span class="fas fa-search"></span>
-                <span class="fas fa-shopping-bag"></span>
+                {/* <p>Support</p> */}
+                <p className="fas fa-search"></p>
+                <p className="fas fa-shopping-bag"></p>
             </NavBar>
         </NavBarWrapper>
     )
