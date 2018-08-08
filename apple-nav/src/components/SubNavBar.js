@@ -16,7 +16,7 @@ const SubNav = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 980px;
+  width: 100%;
   max-width: 980px;
 `;
 const SubLink = styled(Link)`
@@ -33,9 +33,15 @@ const SubLink = styled(Link)`
     padding-top: 3px;
     margin: 0;
     font-weight: 300;
+    text-align: center;
+    width: 100%;
     
   }
 `;
+const IconPic = styled.img`
+  width: auto;
+  height: 54px;
+`
 
 const SubNavBar = props => {
   let linkName = props.match.params.name;
@@ -49,7 +55,7 @@ const SubNavBar = props => {
         {props.links.length > 0 &&
           props.links
             .find(link => link.name === linkName)
-            .subLinks.map(link => <SubLink to={`/${link.name}`} color={font} >{link.img && <img src={link.img} />}<p>{link.name}</p></SubLink>)}
+            .subLinks.map(link => <SubLink to={`/${link.name}`} color={font} >{link.img && <IconPic src={link.img} />}<p>{link.name}</p></SubLink>)}
       </SubNav>
     </SubNavWrapper>
   );

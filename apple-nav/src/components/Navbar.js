@@ -16,8 +16,15 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 980px;
+  width: 100%;
   max-width: 980px;
+
+  p {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+  }
 `;
 const StyledLink = styled(NavLink)`
   color: white;
@@ -34,8 +41,16 @@ const Navbar = props => {
           <img src={Logo} />
         </Link>
         {props.links.map(link => (
-          <StyledLink to={`/${link.name}`} activeStyle={{color: 'rgb(211,211,211)'}}>{link.name}</StyledLink>
+          <StyledLink
+            to={`/${link.name}`}
+            activeStyle={{ color: "rgb(211,211,211)" }}
+          >
+            {link.name}
+          </StyledLink>
         ))}
+        <p> Support </p>
+        <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg" />
+        <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg" />
       </Nav>
     </NavWrapper>
   );

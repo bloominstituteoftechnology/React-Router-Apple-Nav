@@ -8,7 +8,7 @@ const ItemWrapper = styled.div`
   height: 52px;
 ` 
 const ItemHeader = styled.div`
-  width: 980px;
+  width: 100%;
   max-width: 980px;
   height: 100%;
   border-bottom: 1px solid black;
