@@ -37,9 +37,24 @@ class App extends Component {
    });
  }
 
- addPanelToCanvas = () => {
-   console.log("adding panel");
-   
+
+
+  // @params
+  // - canvas id,
+  // - panel color
+ addPanelToCanvas = (i, c) => {
+  //  console.log("adding panel", c);
+  let id = parseInt(i)
+   let data = this.state.canvasData.slice();
+  //  console.log(Array.isArray(data));
+   let index = data.findIndex((el)=>{
+     return el.id === id;
+   });
+   data[index].panels.push(c);
+   this.setState({
+     canvasData: data,
+   })
+   console.log(this.state.canvasData);
  }
 
   render() {

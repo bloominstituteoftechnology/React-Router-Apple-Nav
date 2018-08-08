@@ -14,19 +14,34 @@ class Canvas extends Component {
     constructor(props){
         super(props);
         this.state = {
-            paintLayers:[]
+            paintLayers:[],
+            zIndex: 1000,
         }
         console.log("canvas props",props);
-        
     }
 
-    pushPaintLayers = (layer) => {
+    componentDidUpdate(prevProps, prevState) {
+        console.log("updated props from Canvas",this.props);
+        
+        // let active = this.props.match.params.id;
+        // if (active !== prevState.activeId) {
+        //     this.setState({
+        //         activeId: active,
+        //     });
+        // }
+    }
 
+    incrZ = () => {
+        let z = this.state.zIndex;
+        console.log(typeof z);
+        
+        z=z+1;
+        this.setState({
+            zIndex: z
+        });
     }
 
     render(){
-        
-        
         return <NavLink 
             to={`/${this.props.cnv.id}`}
             onClick={() => this.props.getId(this.props.cnv.id)}
@@ -36,8 +51,8 @@ class Canvas extends Component {
                 }}>
                 
                 {
-                    this.state.paintLayers.map((panel)=>{
-                        return <ColorPanel panel={panel}/>
+                    this.props.cnv.panels.map((panel)=>{
+                        return <ColorPanel onClick={this.incrZ} incrZ={this.incrZ} zNdx={this.state.zIndex} panel={panel}/>
                     })
                 }
                 </NavLink>

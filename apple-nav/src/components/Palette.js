@@ -46,7 +46,7 @@ class Palette extends Component {
             <PaletteContainer>
                 {
                     this.state.swatchData.map((swatch)=>{
-                        return <Swatch key={swatch.color} swatch={swatch} canvasId={this.state.activeId}/>
+                        return <Swatch key={swatch.color} swatch={swatch} canvasId={this.state.activeId} addPanel={this.props.addPanel}/>
                     })
                 }
             </PaletteContainer>

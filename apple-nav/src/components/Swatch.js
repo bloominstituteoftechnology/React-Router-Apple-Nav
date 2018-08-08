@@ -31,6 +31,7 @@ class Swatch extends Component {
     render() {
         return (
             <SwatchContainer 
+                onClick={()=>{this.props.addPanel(this.props.canvasId, this.props.swatch.canvas)}}
                 style={{background: this.state.background}}>
             </SwatchContainer>
         )
