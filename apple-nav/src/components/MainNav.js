@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link, Route} from 'react-router-dom';
 import styled from 'styled-components';
-import SubNav from './SubNav';
+
 
 const Nav = styled.div`
 ;
@@ -66,7 +66,7 @@ class MainNav extends Component {
         return ( 
             <Nav>
                 <LinkWrap>
-                    <Link to="/" ><img src="" alt="logo"/></Link>
+                    <Link to="/" ><img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjVj5TOjNzcAhUPUK0KHVzpAJgQjRx6BAgBEAU&url=http%3A%2F%2Fwww.clker.com%2Fclipart-apple-logo-white-1.html&psig=AOvVaw1OYWAQnaaH9xpqg2Q1Jx0N&ust=1533771061566624" alt="logo"/></Link>
                     {this.state.mainNav.map((link, index) => (
                         <NavigationLinks key={index}>
                             <Link to={`/${link.name}`} >
@@ -77,8 +77,7 @@ class MainNav extends Component {
                 </LinkWrap>
                 <Nav>
                     <Route
-                        path="/:ID"
-                        render={(props) => <SubNav {...props} />}
+                        
                     />
                 </Nav>
             </Nav>
