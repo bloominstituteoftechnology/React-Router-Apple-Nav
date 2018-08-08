@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const SubNav = props => {
     console.log(props);
     return (
-        <div>
+        <div className="subNavWrap" >
             {props.subItems[props.match.params.salamander]}
         </div>
     )
