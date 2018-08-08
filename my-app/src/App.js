@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import SubNavBar from "./Components/SubNavBar";
 
+/// STEP ONE: we added the data of the items to the state as an object with array sub categories
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -29,23 +30,16 @@ class App extends React.Component {
           "Apple Watch Series 1"
         ],
         TV: ["Apple TV 4k", "Apple TV"],
-        Music: ["Apple Music", "iTunes", "HomePod", "iPod touch"]
+        Music: ["Apple Music", "iTunes", "HomePod", "iPod touch"],
         Support: ["Communities", "Contact Support"]
-      },
-      currentPage: ""
+      }
     };
   }
-
-  changePage = id => {
-    this.setState({
-      currentPage: id
-    });
-  };
 
   render() {
     return (
       <div className="App">
-        <Navbar changePage={this.changePage} items={this.state.navBar} />
+        <Navbar items={this.state.navBar} />
         <Route
           path="/:bananaurl"
           render={props => <SubNavBar {...props} items={this.state.products} />}
