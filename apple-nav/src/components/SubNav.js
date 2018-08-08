@@ -8,7 +8,7 @@ const SubNav = (props) => {
         return(
             <div className = "sub-nav">
                 {props.link.map(data => (
-                   <div>
+                   <div className = "sub-nav-link">
                     <img src = {data.icon} alt = {data.name} />
                     <span>{data.name}</span>
                    </div>
