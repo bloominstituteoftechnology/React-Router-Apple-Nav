@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
-import data from '../../data'
 import MacBook from './MacBook';
 import MacBookAir from './MacBookAir';
 import MacBookPro from './MacBookPro';
@@ -13,12 +12,8 @@ class MacMain extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      macData: {}
+      macData: props.data.mac,
     }
-  }
-
-  componentDidMount() {
-    this.setState({macData: data.mac})
   }
   
   render() {
@@ -45,7 +40,7 @@ class MacMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>MAC MAINNNNNNNN</h1>
+              <h1>{this.state.macData.info.someInfo}</h1>
             </div>
         }/>
      </div>

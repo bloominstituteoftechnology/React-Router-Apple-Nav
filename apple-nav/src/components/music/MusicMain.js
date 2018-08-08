@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
-import data from '../../data'
 import AppleMusic from './AppleMusic';
 import HomePod from './HomePod';
 import iPodTouch from './iPodTouch';
@@ -10,12 +9,8 @@ class MusicMain extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      macData: {}
+      musicData: props.data.music,
     }
-  }
-
-  componentDidMount() {
-    this.setState({macData: data.music})
   }
 
   render() {
@@ -36,7 +31,7 @@ class MusicMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>MUSIC MAINNNNNNNN</h1>
+              <h1>{this.state.musicData.info.someInfo}</h1>
             </div>
         }/>
      </div>

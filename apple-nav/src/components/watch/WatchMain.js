@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
-import data from '../../data'
 import AppleEdition from './AppleEdition';
 import Hermes from './Hermes';
 import NikePlus from './NikePlus';
@@ -11,12 +10,8 @@ class WatchMain extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      macData: {}
+      watchData: props.data.watch,
     }
-  }
-
-  componentDidMount() {
-    this.setState({macData: data.watch})
   }
 
   render() {
@@ -39,7 +34,7 @@ class WatchMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>WATCHHH MAINNNNNNNN</h1>
+              <h1>{this.state.watchData.info.someInfo}</h1>
             </div>
         }/>
      </div>

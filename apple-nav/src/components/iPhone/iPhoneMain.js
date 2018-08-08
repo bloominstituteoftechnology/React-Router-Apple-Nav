@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
-import data from '../../data'
 import iPhoneX from './iPhoneX';
 import iPhone8 from './iPhone8';
 import iPhone7 from './iPhone7';
@@ -11,12 +10,8 @@ class IPhoneMain extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      macData: {}
+      iphoneData: props.data.iphone,
     }
-  }
-
-  componentDidMount() {
-    this.setState({macData: data.iphone})
   }
 
   render() {
@@ -39,7 +34,7 @@ class IPhoneMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>IPHONE MAINNNNNNN</h1>
+              <h1>{this.state.iphoneData.info.someInfo}</h1>
             </div>
         }/>
      </div>

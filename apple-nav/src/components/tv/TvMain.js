@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
-import data from '../../data'
 import AppleTv from './AppleTv';
 import AppleTv4k from './AppleTv4k';
 import TvApp from './TvApp';
@@ -9,12 +8,8 @@ class TvMain extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      macData: {}
+      tvData: props.data.tv,
     }
-  }
-
-  componentDidMount() {
-    this.setState({macData: data.tv})
   }
 
   render() {
@@ -33,7 +28,7 @@ class TvMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>TVVV MAINNNNNNNN</h1>
+              <h1>{this.state.tvData.info.someInfo}</h1>
             </div>
         }/>
      </div>

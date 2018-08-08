@@ -14,13 +14,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      someData: {}
+      someData: data,
+      stuff: 'stufff'
     }
   }
 
-  componentDidMount() {
-    this.setState({someData: data })
-  }
+  // componentDidMount() {
+  //   this.setState({someData: data })
+  // }
 
   render() {
     return (
