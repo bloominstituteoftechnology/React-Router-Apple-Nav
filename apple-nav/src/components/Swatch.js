@@ -8,7 +8,8 @@ const SwatchContainer = styled.div`
     transform: skewX(20deg); 
     &:active{
         box-shadow:0px 0px 17px #fff;
-    }     
+    } 
+    border-radius: 0 0 5px 5px;    
 `;
 
 class Swatch extends Component {

@@ -9,6 +9,7 @@ const CanvasStyles = {
     height:'200px',
     background:'#fff',
     transform: 'skewX(-20deg)',
+    borderRadius: '5px 5px 0 0 ',   
 };
 
 class Canvas extends Component {
