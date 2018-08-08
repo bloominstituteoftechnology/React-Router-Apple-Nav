@@ -1,11 +1,11 @@
 import React from 'react';
 
-const iMacPro = () => {
+const IMacPro = (props) => {
   return (
     <div>
-      <h1>iMacProKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
 
-export default iMacPro;
+export default IMacPro;

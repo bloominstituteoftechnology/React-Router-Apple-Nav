@@ -15,10 +15,10 @@ class IPadMain extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/ipad`}>iPad</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/ipad-mini-4`}>iPad Mini 4</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/ipad-pro`}>iPad Pro</NavLink>
+        <nav className="sub-nav">
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/ipad`}>iPad</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/ipad-mini-4`}>iPad Mini 4</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/ipad-pro`}>iPad Pro</NavLink>
         </nav>
         <Route path={`${this.props.match.url}/ipad`} component={iPad}/>
         <Route path={`${this.props.match.url}/ipad-mini-4`} component={iPadMini4}/>
@@ -28,11 +28,11 @@ class IPadMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>{this.state.ipadData.info.someInfo}</h1>
+              <h1>{this.state.ipadData.info.title}</h1>
             </div>
         }/>
      </div>
-    );  
+    );
   }
 };
 

@@ -16,11 +16,11 @@ class MusicMain extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/apple-music`}>Apple Music</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/home-pod`}>Home Pod</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/ipod-touch`}>iPod Touch</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/itunes`}>iTunes</NavLink>
+        <nav className="sub-nav">
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/apple-music`}>Apple Music</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/home-pod`}>Home Pod</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/ipod-touch`}>iPod Touch</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/itunes`}>iTunes</NavLink>
         </nav>
         <Route path={`${this.props.match.url}/apple-music`} component={AppleMusic}/>
         <Route path={`${this.props.match.url}/home-pod`} component={HomePod}/>
@@ -31,7 +31,7 @@ class MusicMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>{this.state.musicData.info.someInfo}</h1>
+              <h1>{this.state.musicData.info.title}</h1>
             </div>
         }/>
      </div>

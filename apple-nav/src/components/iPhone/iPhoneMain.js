@@ -17,12 +17,12 @@ class IPhoneMain extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/iphone-x`}>iPhone X</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/iphone-8`}>iPhone 8</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/iphone-7`}>iPhone 7</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/iphone-6s`}>iPhone 6s</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/iphone-se`}>iPhone SE</NavLink>
+        <nav className="sub-nav">
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-x`}>iPhone X</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-8`}>iPhone 8</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-7`}>iPhone 7</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-6s`}>iPhone 6s</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-se`}>iPhone SE</NavLink>
         </nav>
         <Route path={`${this.props.match.url}/iphone-x`} component={iPhoneX}/>
         <Route path={`${this.props.match.url}/iphone-8`} component={iPhone8}/>
@@ -34,7 +34,7 @@ class IPhoneMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>{this.state.iphoneData.info.someInfo}</h1>
+              <h1>{this.state.iphoneData.info.title}</h1>
             </div>
         }/>
      </div>

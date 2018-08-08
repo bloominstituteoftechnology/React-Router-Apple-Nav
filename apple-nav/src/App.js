@@ -26,15 +26,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <nav>
+      <div className="main-container">
+        <nav className="main-nav">
           <NavLink to="/"><img src="#" alt="logo"/></NavLink>
-          <NavLink activeClassName="selected" to="/mac">Mac</NavLink>
-          <NavLink activeClassName="selected" to="/ipad">iPad</NavLink>
-          <NavLink activeClassName="selected" to="/iphone">iPhone</NavLink>
-          <NavLink activeClassName="selected" to="/watch">Watch</NavLink>
-          <NavLink activeClassName="selected" to="/tv">TV</NavLink>
-          <NavLink activeClassName="selected" to="/music">Music</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to="/mac">Mac</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to="/ipad">iPad</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to="/iphone">iPhone</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to="/watch">Watch</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to="/tv">TV</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to="/music">Music</NavLink>
         </nav>
         <Route exact path="/" render={props => <Home {...props} data={this.state.homeData} />} />
         <Route path="/mac" render={props => <MacMain {...props} data={this.state.mainData} />} />

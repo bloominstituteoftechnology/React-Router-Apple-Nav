@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MacMini = () => {
+const MacMini = (props) => {
   return (
     <div>
-      <h1>MacMiniKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };

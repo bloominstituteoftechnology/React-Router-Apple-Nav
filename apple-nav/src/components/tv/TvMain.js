@@ -15,10 +15,10 @@ class TvMain extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/apple-tv`}>Apple TV</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/apple-tv-4k`}>Apple TV 4k</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/tv-app`}>TV App</NavLink>
+        <nav className="sub-nav">
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/apple-tv`}>Apple TV</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/apple-tv-4k`}>Apple TV 4k</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/tv-app`}>TV App</NavLink>
         </nav>
         <Route path={`${this.props.match.url}/apple-tv`} component={AppleTv}/>
         <Route path={`${this.props.match.url}/apple-tv-4k`} component={AppleTv4k}/>
@@ -28,7 +28,7 @@ class TvMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>{this.state.tvData.info.someInfo}</h1>
+              <h1>{this.state.tvData.info.title}</h1>
             </div>
         }/>
      </div>

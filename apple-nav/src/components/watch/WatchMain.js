@@ -17,12 +17,12 @@ class WatchMain extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/apple-edition`}>Apple Edition</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/hermes`}>Hermes</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/nike-plus`}>Nike Plus</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/series1`}>Series 1</NavLink>
-          <NavLink activeClassName="selected" to={`${this.props.match.url}/series3`}>Series 3</NavLink>
+        <nav className="sub-nav">
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/apple-edition`}>Apple Edition</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/hermes`}>Hermes</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/nike-plus`}>Nike Plus</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/series1`}>Series 1</NavLink>
+          <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/series3`}>Series 3</NavLink>
         </nav>
         <Route path={`${this.props.match.url}/apple-edition`} component={AppleEdition}/>
         <Route path={`${this.props.match.url}/hermes`} component={Hermes}/>
@@ -34,7 +34,7 @@ class WatchMain extends React.Component {
   
         <Route exact path={this.props.match.url} render={() => 
             <div>
-              <h1>{this.state.watchData.info.someInfo}</h1>
+              <h1>{this.state.watchData.info.title}</h1>
             </div>
         }/>
      </div>

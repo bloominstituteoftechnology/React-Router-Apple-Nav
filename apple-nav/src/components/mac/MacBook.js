@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MacBook = () => {
+const MacBook = (props) => {
   return (
     <div>
-      <h1>mACbOOKKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
