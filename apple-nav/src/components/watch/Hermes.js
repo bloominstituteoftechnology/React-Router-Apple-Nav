@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Music = () => {
+const Hermes = () => {
   return (
     <div>
-      <h1>HelloMusic</h1>
+      <h1>HermesKK</h1>
     </div>
   );
 };
 
-export default Music;
+export default Hermes;

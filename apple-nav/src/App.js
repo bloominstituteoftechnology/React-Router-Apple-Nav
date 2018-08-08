@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Home from './Home';
-import iPad from './components/iPad/iPad';
-import iPhone from './components/iPhone/iPhone';
-import Mac from './components/mac/Mac';
-import Music from './components/music/Music';
-import Tv from './components/tv/Tv';
-import Watch from './components/watch/Watch';
+import iPadMain from './components/iPad/iPadMain';
+import iPhoneMain from './components/iPhone/iPhoneMain';
+import MacMain from './components/mac/MacMain';
+import MusicMain from './components/music/MusicMain';
+import TvMain from './components/tv/TvMain';
+import WatchMain from './components/watch/WatchMain';
 import './App.css';
 import {Route, NavLink} from 'react-router-dom';
 
@@ -23,12 +23,12 @@ class App extends Component {
           <NavLink activeClassName="selected" to="/music">Music</NavLink>
         </nav>
         <Route exact path="/" component={Home}/>
-        <Route path="/mac" component={Mac}/>
-        <Route path="/ipad" component={iPad}/>
-        <Route path="/iphone" component={iPhone}/>
-        <Route path="/watch" component={Watch}/>
-        <Route path="/tv" component={Tv}/>
-        <Route path="/Music" component={Music}/>
+        <Route path="/mac" component={MacMain}/>
+        <Route path="/ipad" component={iPadMain}/>
+        <Route path="/iphone" component={iPhoneMain}/>
+        <Route path="/watch" component={WatchMain}/>
+        <Route path="/tv" component={TvMain}/>
+        <Route path="/Music" component={MusicMain}/>
       </div>
     );
   }

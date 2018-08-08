@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Watch = () => {
+const TvApp = () => {
   return (
     <div>
-      <h1>HelloWatch</h1>
+      <h1>TvAppKK</h1>
     </div>
   );
 };
 
-export default Watch;
+export default TvApp;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Tv = () => {
+const iTunes = () => {
   return (
     <div>
-      <h1>HelloTV</h1>
+      <h1>iTunesKK</h1>
     </div>
   );
 };
 
-export default Tv;
+export default iTunes;

@@ -3,7 +3,7 @@ import React from 'react';
 const iPad = () => {
   return (
     <div>
-      <h1>HelloIpad</h1>
+      <h1>iPadKK</h1>
     </div>
   );
 };
