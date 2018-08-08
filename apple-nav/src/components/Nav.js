@@ -15,37 +15,37 @@ const NavBar = () => {
         <ul className = "navbar">
         <li>
           <NavLink exact activeClassName="activeNavButton" to = "/">
-            Home
+          <i class="fab fa-apple"></i>
           </NavLink>
         </li>  
         <li>
           <NavLink activeClassName="activeNavButton" to = "/mac">
-            Mac
+          <i class="fas fa-laptop">  mac</i>
           </NavLink>
         </li>  
         <li>
           <NavLink activeClassName="activeNavButton" to = "/ipad">
-            ipad
+          <i class="fas fa-tablet-alt">  ipad</i>
           </NavLink>
         </li>  
         <li>
           <NavLink activeClassName="activeNavButton" to = "/phone">
-            Phone
+          <i class="fas fa-mobile-alt">  phone</i>
           </NavLink>
         </li>  
         <li>
           <NavLink activeClassName="activeNavButton" to = "/watch">
-            Watch
+          <i class="far fa-clock"> watch</i>
           </NavLink>
         </li>  
         <li>
           <NavLink activeClassName="activeNavButton" to = "/tv">
-            TV
+          <i class="fas fa-tv"> TV</i>
           </NavLink>
         </li>  
         <li>
           <NavLink activeClassName="activeNavButton" to = "/music">
-            Music
+          <i class="fas fa-music"> music</i>
           </NavLink>
         </li>
       </ul>

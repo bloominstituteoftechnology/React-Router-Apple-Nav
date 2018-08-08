@@ -26,11 +26,24 @@ function Products() {
   );
 }
 
-function Product (props) {
-  console.log(props.match.params.productParam);
+function Product(props) {
+
   const param = props.match.params.id;
-  const product = products.find(product => product.id===param);
-  return <h1>product</h1>;
+  const product = products.find(product => product.id=== parseInt(param, 10));
+
+  return (
+    <h1>{product.name}</h1>
+  );
+}
+
+
+function Home() {
+  return (
+    <div>
+      <h1> Apple Products</h1>
+      <Link to="/products"> See All </Link>
+    </div>
+  );
 }
 
 
@@ -39,9 +52,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Link to = '/products'>Products</Link>
-        <Route path = '/people' component={Products} />
-        <Route path = '/people/:productParam' component={Product} />
+        <Route exact path = '/' component = {Home} />
+        <Route exact path = '/products' component={Products} />
+        <Route path = '/products/:id' component={Product} />
       </div>   
 
     );
