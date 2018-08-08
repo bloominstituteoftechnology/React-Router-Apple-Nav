@@ -13,7 +13,25 @@
   color: white; 
 }
 
-.nav-main a:hover {
-  color: grey; 
+.selected a {
+ color: grey; 
 }
+
+body {
+  background-color: lightgrey; 
+}
+
+.sub-navigation {
+  background-color: white; 
+  display: flex; 
+  justify-content: space-around; 
+  font-size: 14px; 
+}
+
+.sub-navigation p:hover {
+  color: blue; 
+  cursor: pointer; 
+}
+
+
 
