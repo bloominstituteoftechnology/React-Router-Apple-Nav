@@ -1,2 +1,19 @@
+.nav-main {
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 15px 8%; 
+  background-color:	#333333; 
+  font-size: 14px; 
+}
 
+.nav-main a {
+  text-decoration: none; 
+  color: white; 
+}
+
+.nav-main a:hover {
+  color: grey; 
+}
 
