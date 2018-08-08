@@ -27,12 +27,11 @@ class Mac extends Component {
     }
     render() {
         return (
-            <div className="mac-container">
-                This is Mac
+            <div className="mac-nav-container">
                 <ul>
                     {macItems.map(mac => (
                         <li key={mac.id}>
-                            <Link to={"/"}>{mac.item}</Link>
+                            <Link to={"/"} className="mac-link">{mac.item}</Link>
                         </li>
                     ))}
                 </ul>

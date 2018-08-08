@@ -12,7 +12,7 @@
 .App .nav-bar .nav-container {
   max-width: 1000px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0 auto;;
 }

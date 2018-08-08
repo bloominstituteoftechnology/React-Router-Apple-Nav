@@ -1,29 +1,29 @@
-.mac-nav-container {
-    background: #333333;
+.ipad-nav-container {
+    background: #F6F6F6;
 }
 
-.mac-nav-container ul{
-    max-width: 900px;
+.ipad-nav-container ul{
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 20px 0;
 }
 
-.mac-nav-container ul li {
+.ipad-nav-container ul li {
     color: black;
     list-style-type: none;
 
 }
 
-.mac-nav-container ul li .mac-link {
+.ipad-nav-container ul li .ipad-link {
     text-decoration: none;
     font-weight: lighter;
     font-size: 11px;
     letter-spacing: .5px;
-    color: white;
+    color: black;
 }
 
-.mac-nav-container ul li .mac-link:hover {
+.ipad-nav-container ul li .ipad-link:hover {
     color: #66BBFF;
 }
