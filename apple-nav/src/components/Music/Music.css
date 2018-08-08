@@ -1,0 +1,29 @@
+.music-nav-container {
+    background: #F6F6F6;
+}
+
+.music-nav-container ul{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.music-nav-container ul li {
+    color: black;
+    list-style-type: none;
+
+}
+
+.music-nav-container ul li .music-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: black;
+}
+
+.music-nav-container ul li .music-link:hover {
+    color: #66BBFF;
+}
