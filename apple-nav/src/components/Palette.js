@@ -8,6 +8,7 @@ import CanvasData from '../CanvasData.js';
 const PaletteContainer = styled.div`
     width:900px;
     height:200px;
+    margin-top:2%;
     display:flex;
     flex-flow: row;
     justify-content:space-between;
@@ -20,8 +21,6 @@ class Palette extends Component {
             swatchData: SwatchData,
             activeId: this.props.match.params.id,
         }
-        console.log("palette props", props);
-        
     }
 
     componentDidMount(){

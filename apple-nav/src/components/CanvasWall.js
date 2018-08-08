@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink, Route } from 'react-router-dom';
 import styled from 'styled-components';
-// import './App.css';
 import Canvas from './Canvas.js';
 import CanvasData from '../CanvasData.js';
 
@@ -19,8 +18,6 @@ class CanvasWall extends Component {
         this.state = {
             canvasData: CanvasData,
         }
-        console.log(props);
-        
     }
 
     render() {

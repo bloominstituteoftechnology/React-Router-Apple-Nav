@@ -8,6 +8,7 @@ const CanvasStyles = {
     width:'24%',
     height:'200px',
     background:'#fff',
+    transform: 'skewX(-20deg)',
 };
 
 class Canvas extends Component {
@@ -47,7 +48,7 @@ class Canvas extends Component {
             onClick={() => this.props.getId(this.props.cnv.id)}
                 style={CanvasStyles}
                 activeStyle={{
-                    border: 'solid 2px white'
+                    border: 'solid 4px white'
                 }}>
                 
                 {

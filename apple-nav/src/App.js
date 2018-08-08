@@ -9,7 +9,7 @@ import CanvasData from './CanvasData.js';
 const AppContainer = styled.div`
   width:900px;
   height:400px;
-  margin: 4% auto;
+  margin: 8% auto;
   
 `;
 
