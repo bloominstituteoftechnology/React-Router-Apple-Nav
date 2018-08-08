@@ -5,15 +5,16 @@
 .App .nav-bar {
   padding: 10px 0;
   margin: 0;
-  background: #333333;
+  background: black;
 }
 
 .App .nav-bar .nav-container {
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin: 0 auto;;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .App .nav-bar .nav-container li .nav-text {

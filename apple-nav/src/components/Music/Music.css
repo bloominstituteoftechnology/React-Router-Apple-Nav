@@ -3,7 +3,7 @@
 }
 
 .music-nav-container ul{
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -13,7 +13,9 @@
 .music-nav-container ul li {
     color: black;
     list-style-type: none;
-
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
 
 .music-nav-container ul li .music-link {
@@ -26,4 +28,15 @@
 
 .music-nav-container ul li .music-link:hover {
     color: #66BBFF;
+}
+
+.music-nav-container ul li .music-link .icon-container {
+    width: 40px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.music-nav-container ul li .music-link .icon-container img {
+    width: 100%;
+    height: auto;
 }
