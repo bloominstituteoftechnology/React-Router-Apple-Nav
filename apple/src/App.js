@@ -3,6 +3,7 @@ import './App.css';
 import dummyData from './dummy';
 import TopNav from './Components/TopNav';
 import SubNav from './Components/SubNav';
+import Content from  './Components/Content';
 import { Route } from 'react-router-dom';
 
 class App extends Component {
@@ -24,6 +25,11 @@ class App extends Component {
       render={props => (
         <SubNav {...props} data={this.state.data} />
       )}/>
+      <Route path ="/:name/:contentName"
+      render={ props => (
+        <Content {...props} data={this.state.data} />
+      )}/>
+
 
       </div>
     );

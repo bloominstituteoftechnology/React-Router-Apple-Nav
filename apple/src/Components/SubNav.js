@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const SubNavWrapperWrapper = styled.div`
 	padding: 10px 30px;
@@ -14,8 +15,17 @@ const SubNavWrapper = styled.div`
 	font-family: "Roboto", sans-serif;
 	font-size: 1.3rem;
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 1024px;
+	img{
+		display: block;
+	}
 `;
+
+const SubNavLinks = styled(NavLink)`
+	text-decoration: none;
+	color: inherit;
+`;
+
 
 const SubNav = props => {
 	let linkName = props.match.params.name;
@@ -31,7 +41,9 @@ const SubNav = props => {
 						.subLinks.map(ele => (
 							<div>
 								<img src={ele.img} alt="" />
-								<p>{ele.name}</p>
+								<SubNavLinks to={`/${linkName}/${ele.name}`}>
+									{ele.name}
+								</SubNavLinks>
 							</div>
 						))}
 			</SubNavWrapper>
