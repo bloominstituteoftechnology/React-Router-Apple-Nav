@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SubTab from './SubTab';
 
 const Products = styled.div`
     display: flex;
@@ -8,36 +9,22 @@ const Products = styled.div`
     text-decoration: none;
     height: 3rem;
     padding: 0 5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     background: #403C3B;
 `;
 
-const SubNav = props =>{
-    return(
-        <div>
-            <Products>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-laptop"></i>
-                <i className="fas fa-headphones"></i>
-                <i className="fab fa-apple"></i>
-                <i className="fas fa-tv"></i>
-            </Products>
-            <Products>
-                {props.products.map(product => (
-                    <div key={product.id}>
-                        {product.products}
-                    </div>
-                ))}
-            </Products>
-        </div>
+ const SubNav = (props) => {
+    const subTab = props.subTabs.find(
+        item => `${item.id}` === props.match.params.productId);
+    return (
+        <Products>
+            {subTab.links.map(item => (
+                <div key={item.id}>
+                    <SubTab link={item} />
+                </div>
+            ))}
+        </Products>
     )
 }
-
-
-export default SubNav;
+ export default SubNav;

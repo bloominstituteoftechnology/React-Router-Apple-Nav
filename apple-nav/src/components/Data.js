@@ -5,13 +5,11 @@ const data = [
     },
     {
         id: 2,
-        name: 'Mac',
-        products: ['MacBook', 'MacBook Air', 'MacBook Pro', 'iMac', 'iMac Pro New', 'Mac Pro', 'Mac Mini', 'Accesories', 'High Sierra', 'Compare']
+        name: 'Mac'
     },
     {
         id: 3,
-        name: 'iPad',
-        // products:['iPad Pro', 'iPad', 'iPad mini 4', 'iOS 11', 'Accessories', 'Compare']
+        name: 'iPad'
     },
     {
         id: 4,
@@ -19,30 +17,26 @@ const data = [
     },
     {
         id: 5,
-        name: 'MacBook'
-    },
-    {
-        id: 6,
         name: 'Watch'
     },
     {
-        id: 7,
+        id: 6,
         name: 'TV'
     },
     {
-        id: 8,
+        id: 7,
         name: 'Music'
     },
     {
-        id: 9,
+        id: 8,
         name: 'Support'
     },
     {
-        id: 10,
+        id: 9,
         name: 'Search'
     },
     {
-        id: 11,
+        id: 10,
         name: 'Store'
     }
 ]
