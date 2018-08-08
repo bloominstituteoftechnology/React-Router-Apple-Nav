@@ -1,10 +1,10 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
-import iPhoneX from './iPhoneX';
-import iPhone8 from './iPhone8';
-import iPhone7 from './iPhone7';
-import iPhone6s from './iPhone6s';
-import iPhoneSE from './iPhoneSE';
+import IPhoneX from './IPhoneX';
+import IPhone8 from './IPhone8';
+import IPhone7 from './IPhone7';
+import IPhone6s from './IPhone6s';
+import IPhoneSE from './IPhoneSE';
 
 class IPhoneMain extends React.Component {
   constructor(props) {
@@ -24,11 +24,11 @@ class IPhoneMain extends React.Component {
           <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-6s`}>iPhone 6s</NavLink>
           <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/iphone-se`}>iPhone SE</NavLink>
         </nav>
-        <Route path={`${this.props.match.url}/iphone-x`} component={iPhoneX}/>
-        <Route path={`${this.props.match.url}/iphone-8`} component={iPhone8}/>
-        <Route path={`${this.props.match.url}/iphone-7`} component={iPhone7}/>
-        <Route path={`${this.props.match.url}/iphone-6s`} component={iPhone6s}/>
-        <Route path={`${this.props.match.url}/iphone-se`} component={iPhoneSE}/>
+        <Route path={`${this.props.match.url}/iphone-x`} render={props => <IPhoneX {...props} data={this.state.iphoneData.subCategories.iphoneX} />} />
+        <Route path={`${this.props.match.url}/iphone-8`} render={props => <IPhone8 {...props} data={this.state.iphoneData.subCategories.iphone8} />} />
+        <Route path={`${this.props.match.url}/iphone-7`} render={props => <IPhone7 {...props} data={this.state.iphoneData.subCategories.iphone7} />} />
+        <Route path={`${this.props.match.url}/iphone-6s`} render={props => <IPhone6s {...props} data={this.state.iphoneData.subCategories.iphone6s} />} />
+        <Route path={`${this.props.match.url}/iphone-se`} render={props => <IPhoneSE {...props} data={this.state.iphoneData.subCategories.iphoneSE} />} />
         
         {/*~~~~~~*/}
   

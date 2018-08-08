@@ -1,11 +1,11 @@
 import React from 'react';
 
-const iPad = () => {
+const IPad = (props) => {
   return (
     <div>
-      <h1>iPadKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
 
-export default iPad;
+export default IPad;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const iTunes = () => {
+const ITunes = (props) => {
   return (
     <div>
-      <h1>iTunesKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
 
-export default iTunes;
+export default ITunes;

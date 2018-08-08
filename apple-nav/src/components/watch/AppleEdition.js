@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AppleEdition = () => {
+const AppleEdition = (props) => {
   return (
     <div>
-      <h1>AppleEditionKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };

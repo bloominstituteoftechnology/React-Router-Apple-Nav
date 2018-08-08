@@ -2,8 +2,8 @@ import React from 'react';
 import {Route, NavLink} from 'react-router-dom';
 import AppleMusic from './AppleMusic';
 import HomePod from './HomePod';
-import iPodTouch from './iPodTouch';
-import iTunes from './iTunes';
+import IPodTouch from './IPodTouch';
+import ITunes from './ITunes';
 
 class MusicMain extends React.Component {
   constructor(props) {
@@ -22,10 +22,10 @@ class MusicMain extends React.Component {
           <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/ipod-touch`}>iPod Touch</NavLink>
           <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/itunes`}>iTunes</NavLink>
         </nav>
-        <Route path={`${this.props.match.url}/apple-music`} component={AppleMusic}/>
-        <Route path={`${this.props.match.url}/home-pod`} component={HomePod}/>
-        <Route path={`${this.props.match.url}/ipod-touch`} component={iPodTouch}/>
-        <Route path={`${this.props.match.url}/itunes`} component={iTunes}/>
+        <Route path={`${this.props.match.url}/apple-music`} render={props => <AppleMusic {...props} data={this.state.musicData.subCategories.appleMusic} />} />
+        <Route path={`${this.props.match.url}/home-pod`} render={props => <HomePod {...props} data={this.state.musicData.subCategories.homePod} />} />
+        <Route path={`${this.props.match.url}/ipod-touch`} render={props => <IPodTouch {...props} data={this.state.musicData.subCategories.ipodTouch} />} />
+        <Route path={`${this.props.match.url}/itunes`} render={props => <ITunes {...props} data={this.state.musicData.subCategories.itunes} />} />
         
         {/*~~~~~~*/}
   

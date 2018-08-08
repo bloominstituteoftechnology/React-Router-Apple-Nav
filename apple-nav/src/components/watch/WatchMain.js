@@ -24,11 +24,11 @@ class WatchMain extends React.Component {
           <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/series1`}>Series 1</NavLink>
           <NavLink className="nav-item" activeClassName="selected" to={`${this.props.match.url}/series3`}>Series 3</NavLink>
         </nav>
-        <Route path={`${this.props.match.url}/apple-edition`} component={AppleEdition}/>
-        <Route path={`${this.props.match.url}/hermes`} component={Hermes}/>
-        <Route path={`${this.props.match.url}/nike-plus`} component={NikePlus}/>
-        <Route path={`${this.props.match.url}/series1`} component={Series1}/>
-        <Route path={`${this.props.match.url}/series3`} component={Series3}/>
+        <Route path={`${this.props.match.url}/apple-edition`} render={props => <AppleEdition {...props} data={this.state.watchData.subCategories.appleEdition} />} />
+        <Route path={`${this.props.match.url}/hermes`} render={props => <Hermes {...props} data={this.state.watchData.subCategories.hermes} />} />
+        <Route path={`${this.props.match.url}/nike-plus`} render={props => <NikePlus {...props} data={this.state.watchData.subCategories.nikePlus} />} />
+        <Route path={`${this.props.match.url}/series1`} render={props => <Series1 {...props} data={this.state.watchData.subCategories.series1} />} />
+        <Route path={`${this.props.match.url}/series3`} render={props => <Series3 {...props} data={this.state.watchData.subCategories.series3} />} />
         
         {/*~~~~~~*/}
   

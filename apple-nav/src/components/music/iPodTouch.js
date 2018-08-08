@@ -1,11 +1,11 @@
 import React from 'react';
 
-const iPodTouch = () => {
+const IPodTouch = (props) => {
   return (
     <div>
-      <h1>iPodTouchKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
 
-export default iPodTouch;
+export default IPodTouch;

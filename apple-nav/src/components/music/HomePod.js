@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HomePod = () => {
+const HomePod = (props) => {
   return (
     <div>
-      <h1>HomePodKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };

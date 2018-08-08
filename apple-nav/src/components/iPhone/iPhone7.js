@@ -1,11 +1,11 @@
 import React from 'react';
 
-const iPhone7 = () => {
+const IPhone7 = (props) => {
   return (
     <div>
-      <h1>iPhone7KK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
 
-export default iPhone7;
+export default IPhone7;

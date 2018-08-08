@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Series3 = () => {
+const Series3 = (props) => {
   return (
     <div>
-      <h1>Series3KK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };

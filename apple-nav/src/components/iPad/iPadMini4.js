@@ -1,11 +1,11 @@
 import React from 'react';
 
-const iPadMini4 = () => {
+const IPadMini4 = (props) => {
   return (
     <div>
-      <h1>iPadMini4KK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
 
-export default iPadMini4;
+export default IPadMini4;

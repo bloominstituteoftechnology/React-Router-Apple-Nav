@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Hermes = () => {
+const Hermes = (props) => {
   return (
     <div>
-      <h1>HermesKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };

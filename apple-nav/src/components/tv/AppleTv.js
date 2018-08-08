@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AppleTv = () => {
+const AppleTv = (props) => {
   return (
     <div>
-      <h1>AppleTvKK</h1>
+      <h1>{props.data.title}</h1>
     </div>
   );
 };
