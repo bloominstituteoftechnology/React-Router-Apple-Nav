@@ -1,0 +1,12 @@
+.mac-container {
+    border: 1px solid red;
+}
+
+.mac-container ul{
+    border: 1px solid blue;
+}
+
+.mac-container ul li {
+    border: 1px solid green;
+    color: black;
+}
