@@ -14,13 +14,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      someData: data,
-      stuff: 'stufff'
+      mainData: data,
+      homeData: 'Hello Home!',
     }
   }
 
+  // Does not work since router sends data at render, not at CDM? How do you handle APIs?
   // componentDidMount() {
-  //   this.setState({someData: data })
+  //   this.setState({mainData: data })
   // }
 
   render() {
@@ -35,13 +36,13 @@ class App extends Component {
           <NavLink activeClassName="selected" to="/tv">TV</NavLink>
           <NavLink activeClassName="selected" to="/music">Music</NavLink>
         </nav>
-        <Route exact path="/" render={props => <Home {...props} data={this.state.someData} />} />
-        <Route path="/mac" render={props => <MacMain {...props} data={this.state.someData} />} />
-        <Route path="/ipad" render={props => <IPadMain {...props} data={this.state.someData} />} />
-        <Route path="/iphone" render={props => <IPhoneMain {...props} data={this.state.someData} />} />
-        <Route path="/watch" render={props => <WatchMain {...props} data={this.state.someData} />} />
-        <Route path="/tv" render={props => <TvMain {...props} data={this.state.someData} />} />
-        <Route path="/Music" render={props => <MusicMain {...props} data={this.state.someData} />} />
+        <Route exact path="/" render={props => <Home {...props} data={this.state.homeData} />} />
+        <Route path="/mac" render={props => <MacMain {...props} data={this.state.mainData} />} />
+        <Route path="/ipad" render={props => <IPadMain {...props} data={this.state.mainData} />} />
+        <Route path="/iphone" render={props => <IPhoneMain {...props} data={this.state.mainData} />} />
+        <Route path="/watch" render={props => <WatchMain {...props} data={this.state.mainData} />} />
+        <Route path="/tv" render={props => <TvMain {...props} data={this.state.mainData} />} />
+        <Route path="/Music" render={props => <MusicMain {...props} data={this.state.mainData} />} />
       </div>
     );
   }
