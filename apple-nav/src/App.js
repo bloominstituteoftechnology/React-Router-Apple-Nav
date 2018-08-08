@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavWrap from './components/NavWrap';
+import { Route } from 'react-router-dom';
+
+import {mainLink} from './data';
 
 class App extends Component {
-  render() {
+  render() { console.log(mainLink.subLink)
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      
+      <Route path = '/' render = {props => <NavWrap {...props} link = {mainLink} />} />      
+      
     );
   }
 }
