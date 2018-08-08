@@ -7,6 +7,7 @@ import appleitems from "./data/appleitems";
 
 class App extends Component {
   render() {
+    // console.log(appleitems);
     return (
       <div className="App">
         <Route path="/" render={props => <NavWrapper {...props} appleitems={appleitems} />} />
