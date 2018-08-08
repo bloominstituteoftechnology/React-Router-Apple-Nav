@@ -7,6 +7,9 @@ import styled from 'styled-components';
 const SwatchContainer = styled.div`
     width:120px;
     height:196px;
+    &:active{
+        box-shadow:0px 0px 17px #fff;
+    }     
 `;
 
 class Swatch extends Component {
@@ -15,6 +18,8 @@ class Swatch extends Component {
         this.state = {
             background: '',
         }
+        console.log("swatch props ",props);
+        
     }
 
     componentDidMount(){
@@ -25,8 +30,8 @@ class Swatch extends Component {
 
     render() {
         return (
-            <SwatchContainer style={{background: this.state.background}}>
-        
+            <SwatchContainer 
+                style={{background: this.state.background}}>
             </SwatchContainer>
         )
     }

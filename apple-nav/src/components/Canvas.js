@@ -16,7 +16,7 @@ class Canvas extends Component {
         this.state = {
             paintLayers:[]
         }
-        console.log(props);
+        console.log("canvas props",props);
         
     }
 
@@ -25,9 +25,11 @@ class Canvas extends Component {
     }
 
     render(){
-        // return <div style={CanvasStyles}>Canvas</div>
+        
+        
         return <NavLink 
             to={`/${this.props.cnv.id}`}
+            onClick={() => this.props.getId(this.props.cnv.id)}
                 style={CanvasStyles}
                 activeStyle={{
                     border: 'solid 2px white'

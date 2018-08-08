@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink, Route } from 'react-router-dom';
 import styled from 'styled-components';
-// import './App.css';
 import Swatch from './Swatch.js';
 import SwatchData from '../SwatchData.js';
 import CanvasData from '../CanvasData.js';
@@ -19,24 +18,21 @@ class Palette extends Component {
         super(props);
         this.state = {
             swatchData: SwatchData,
-            activeId: null,
+            activeId: this.props.match.params.id,
         }
-        console.log("palette ",props.match.params);
+        console.log("palette props", props);
+        
     }
 
     componentDidMount(){
         let active =  this.props.match.params.id;
-        console.log("active", active);
         this.setState({
             activeId: active,
         });
+
     }
 
     componentDidUpdate(prevProps, prevState){
-        console.log(prevState.activeId);
-        
-        
-        console.log("active state", this.props.match.params.id);
         let active = this.props.match.params.id;
         if (active !== prevState.activeId){
             this.setState({
@@ -50,7 +46,7 @@ class Palette extends Component {
             <PaletteContainer>
                 {
                     this.state.swatchData.map((swatch)=>{
-                        return <Swatch key={swatch.color} swatch={swatch} />
+                        return <Swatch key={swatch.color} swatch={swatch} canvasId={this.state.activeId}/>
                     })
                 }
             </PaletteContainer>
