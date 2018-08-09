@@ -18,36 +18,12 @@ import musicaccesories from './img/music_accesories.png';
 import giftcards from './img/gift_cards.png';
 
 const musicItems = [
-    {
-        item: 'Apple Music',
-        id: 1,
-        icon: applemusic,
-    },
-    {
-        item: 'iTunes', 
-        id: 2,
-        icon: itunes,
-    },
-    {
-        item: 'HomePod', 
-        id: 3,
-        icon: homepod,
-    },
-    {
-        item: 'iPod Touch', 
-        id: 4,
-        icon: ipodtouch,
-    },
-    {
-        item: 'Music Accesories', 
-        id: 5,
-        icon: musicaccesories,
-    },
-    {
-        item: 'Gift Cards', 
-        id: 6,
-        icon: giftcards,
-    }
+    {item: 'Apple Music', id: 1, icon: applemusic,},
+    {item: 'iTunes', id: 2, icon: itunes,},
+    {item: 'HomePod', id: 3, icon: homepod,},
+    {item: 'iPod Touch', id: 4, icon: ipodtouch,},
+    {item: 'Music Accesories', id: 5, icon: musicaccesories,},
+    {item: 'Gift Cards', id: 6, icon: giftcards,}
 ]
 
 class Music extends Component {
@@ -55,23 +31,23 @@ class Music extends Component {
         super();
     }
     render() {
-        return (
-            <div className="music-nav-container">
-                <ul>
-                    {musicItems.map(item => (
-                        <li key={item.id}>
-                            <Link to={"/"} className="music-link">
-                                <div className="icon-container">
-                                    <img src={item.icon} alt='icon'/><br/>
-                                </div>
-                                {item.item}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        );
-    }
+      return (
+         <div className="music-nav-container">
+            <ul>
+               {musicItems.map(item => (
+                  <li key={item.id}>
+                     <Link to={"/"} className="music-link">
+                        <div className="icon-container">
+                           <img src={item.icon} alt='icon'/><br/>
+                        </div>
+                        {item.item}
+                     </Link>
+                  </li>
+               ))}
+            </ul>
+         </div>
+      );
+   }
 }
 
 export default Music;
