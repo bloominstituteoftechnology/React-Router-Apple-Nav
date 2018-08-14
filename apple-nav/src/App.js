@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Route } from "react-router-dom";
 import './App.css';
 
+import Nav from './Components/Nav';
+import SubNav from './Components/SubNav';
+
 const menuData = [
   {name: 'Mac',
   id: 1,
@@ -33,8 +36,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Nav />
+      <SubNav />
         <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">The Genius Bar</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
