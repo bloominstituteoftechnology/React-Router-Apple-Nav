@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 const NavWrapper = props => {
     return (
         <div className="nav-wrapper">
-            <Link exact to='/'></Link>
+            <Link exact to='/'><button className="homebtn"></button></Link>
+             {props.menu.map(nav => (<Nav nav={nav} />))}
         </div>
     )
 }

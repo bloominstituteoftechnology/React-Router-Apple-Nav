@@ -1,11 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Nav = props => {
     return(
-        <div className="all-categories">
-            return
-        </div>
+       <Link to={`/nav/${props.nav.subnav}`}>
+       <button className="nav-btn">{`${props.nav.subnav}`}</button>
+       </Link>
     )
 }
 
