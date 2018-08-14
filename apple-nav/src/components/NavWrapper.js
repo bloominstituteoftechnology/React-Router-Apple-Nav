@@ -1,7 +1,19 @@
-import React from 'react';
+import React from "react";
+import {Link} from 'react-router-dom';
+
+import "../App.css";
+
+import Nav from './Nav'
+import SubNav from './SubNav'
 
 const NavWrapper = () => {
-    return ( <h1>hi</h1> );
-}
- 
+  return (
+    <div className="margin-fix">
+      <Nav />
+      <SubNav />
+
+    </div>
+  );
+};
+
 export default NavWrapper;

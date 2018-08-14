@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const  = () => {
-    return (  );
-}
- 
-export default ;
+const SubNav = () => {
+  return (
+    <div className="sub-container">
+     
+    </div>
+  );
+};
+
+export default SubNav;
