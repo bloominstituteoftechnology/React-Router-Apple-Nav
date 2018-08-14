@@ -1,5 +1,7 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, NavLink} from 'react-router-dom';
+import  Nav from './Nav';
+
 
 class NavWrapper extends React.Component {
     constructor(){
@@ -11,7 +13,9 @@ class NavWrapper extends React.Component {
     
     render(){
         return(
-            <div>testing</div>
+            <NavLink exact activeClassName="activeButton" to="/">
+            <img src="./images/Apple-Logo.png/" alt="Apple Logo"/>
+            </NavLink>
         )
     }
 

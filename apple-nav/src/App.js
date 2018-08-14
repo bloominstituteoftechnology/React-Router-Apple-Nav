@@ -1,15 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import NavWrapper from './components/NavWrapper';
-import { Route } from 'react-router-dom';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Route } from "react-router-dom";
+import Nav from './components/Nav';
 
-class App extends Component {
+class NavWrapper extends Component {
+  constructor() {
+    super();
+    this.state = {
+
+    }
+  }
+  
+  
+  
   render() {
     return (
-        <Route><NavWrapper /></Route>
+      <Route>
+        <Nav />
+      </Route>
     );
   }
 }
 
-export default App;
+export default NavWrapper;
