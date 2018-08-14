@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = props => {
     return(
-        <div>
+        <div className="all-categories">
 
         </div>
     )
