@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 const NavWrapper = props => {
     return (
         <div className="nav-wrapper">
-            <Link extact to='/'>
-            </Link>
+            <Link exact to='/'></Link>
         </div>
     )
 }
