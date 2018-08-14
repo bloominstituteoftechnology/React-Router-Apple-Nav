@@ -1,7 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
 
-const Nav = () => {
+import SubNav from './SubNav'
+const Nav = (props) => {
     return ( 
         <div className="nav-container">
         <Link to="/"> <i class="fab fa-apple"></i> </Link>
@@ -13,6 +14,11 @@ const Nav = () => {
         <Link className="white-color" to="/music"> Music </Link>
         <i className="fas fa-search"></i>
         <i className="fas fa-shopping-bag"></i>
+         {/* <Route path="/:navProp" render={props => {
+            <SubNav {...props} />
+        } 
+         }
+          /> */}
         </div>
 
      );
