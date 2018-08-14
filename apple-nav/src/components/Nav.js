@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Nav = () => {
   return (
-    <React className="Fragment">
+    <React.Fragment className="navigation">
       <div className="nav-link">
         <NavLink exact activeClassName="activeButton" to="/">
           <img src="./images/Apple-Logo.png/" alt="Apple Logo" />
@@ -44,7 +44,7 @@ const Nav = () => {
           Support
         </NavLink>
       </div>
-    </React>
+    </React.Fragment>
   );
 };
 
