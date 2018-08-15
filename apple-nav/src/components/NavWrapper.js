@@ -8,9 +8,11 @@ const NavWrapper = () => {
       <ul>
         {navData.map(nav => {
           return (
+            <Link to={"/"}>
             <li key={nav.id}>
               <h4>{nav.subnav}</h4>
             </li>
+            </Link>
           );
         })}
       </ul>
