@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import './App.css';
+import './components/Nav.css';
+import './components/SubNav.css';
+import './components/Search.css';
 import Nav from './components/Nav';
 import Search from './components/Search';
 import SubNav from './components/SubNav';
-import Content from './components/Content';
-import categories from './data/navItems';
+import { categories } from './data/navItems';
 
 class App extends Component {
   render() {
@@ -26,14 +28,7 @@ class App extends Component {
                   />
                 )}
               />
-              <Route 
-                path='/search' 
-                render={props => (
-                  <Search {...props}
-                    categories = {categories}
-                  />
-                )}
-              />
+              <Route path='/search' component={Search} />
             </div>
             <div className='icon search'>
               <Link to='/search'>Search</Link>
@@ -50,14 +45,6 @@ class App extends Component {
         </header>
         <div className='body-container'>
           <Route exact path='/' component={Home} />
-          <Route 
-            path={'/navbar/:id/:prodID'}
-            render={props => (
-              <Content {...props}
-                categories = {categories}
-              />
-            )}
-          />
         </div>
       </div>
     );

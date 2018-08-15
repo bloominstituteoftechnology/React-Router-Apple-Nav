@@ -13,3 +13,19 @@ input {
     padding: 10px 0;
     border-radius: 4px;
 }
+
+.search-button {
+    width: 75px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #4285f4;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: white;
+    color: #4285f4;
+}
