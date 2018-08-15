@@ -37,9 +37,9 @@ class Nav extends Component {
       <ul>
         {NavMain.map(each => (
         <li key={NavMain.id}>
-                  <Link to={`/links/${NavMain.id}`}> 
-                  <h4>{NavMain.link}</h4>
-        </Link>
+          <Link to={`/links/${NavMain.id}`}> 
+                <h4>{NavMain.link}</h4>
+          </Link>
 
         </li>
     ))}
