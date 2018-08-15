@@ -3,7 +3,6 @@ import { Route } from "react-router-dom";
 // import './App.css';
 
 import NavWrapper from "./Components/NavWrapper";
-import Nav from "./Components/Nav";
 import SubNav from "./Components/SubNav";
 
 class App extends Component {
@@ -11,41 +10,36 @@ class App extends Component {
     super();
     this.state = {
       nav: [
-        {
-          subnav: "Mac",
-          navitems: [
-            {
-              name: "MacBook"
+        {subnav: 'Mac',
+           navitems:  [
+             {img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macbook_dark_large.svg",
+             name: 'MacBook'},
+             {img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookair_dark_large.svg",
+              name:'MacBook Air'},
+            {name: "MacBook Pro",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookpro_dark_large.svg"},
+            {name: "iMac",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_dark_large.svg"},
+            {name: "iMac Pro",
+             img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_pro_dark_large.svg"
             },
-            {
-              name: "MacBook Air"
+            {name: "Mac Pro",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macpro_dark_large.svg"
             },
-            {
-              name: "MacBook Pro"
+            {name: "Mac mini",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/macmini_dark_large.svg"
             },
-            {
-              name: "iMac"
+            {name: "Accessories",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_acc_dark_large.svg"
             },
-            {
-              name: "iMac Pro"
+            {name: "High Sierra",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_osx_dark_large.svg"
             },
-            {
-              name: "Mac Pro"
-            },
-            {
-              name: "Mac mini"
-            },
-            {
-              name: "Accessories"
-            },
-            {
-              name: "High Sierra"
-            },
-            {
-              name: "Compare"
+            {name: "Compare",
+            img:"https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_comp_dark_large.svg"
             }
-          ]
-        },
+           ]
+          },
         {
           subnav: "iPad",
           navitems: [
@@ -60,12 +54,12 @@ class App extends Component {
         {
           subnav: "iPhone",
           navitems: [
-            "iPad Pro",
-            "iPad",
-            "iPad mini 4",
-            "iOS 11",
-            "Accessories",
-            "Compare"
+            { name: "iP" },
+            { name: "iPad" },
+            { name: "iPad mini 4" },
+            { name: "iOS 11" },
+            { name: "Accessories" },
+            { name: "Compare" }
           ]
         },
         {
@@ -92,6 +86,10 @@ class App extends Component {
     return (
       <div className="App">
         <NavWrapper menu={this.state.nav} />
+        <Route
+          path="/nav/:subnav"
+          render={props => <SubNav {...props} nav={this.state.nav} />}
+        />
       </div>
     );
   }
