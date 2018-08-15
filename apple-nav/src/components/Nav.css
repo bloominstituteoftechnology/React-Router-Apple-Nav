@@ -1,0 +1,30 @@
+.inner-bar {
+  width: 874px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: black;
+  list-style: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+  display: flex;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+
+.inner-bar > li > a {
+    color: #4285f4;
+    text-decoration: none;
+    padding: 24px;
+    height: 16px;
+  }
+
+  .inner-bar > li > a.activeNavButton {
+    background-color: #4285f4;
+    color: black;
+  }
+

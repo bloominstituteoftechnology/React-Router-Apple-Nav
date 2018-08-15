@@ -1,21 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-
 function SubNav(props) {
-    const subMenu = subMenus.find(subMenu =>
-    subMenu.id === props.match.params.id);
+    const category = props.categories.find(category =>
+    category.id === props.match.params.id);
     return (
         <div className='sub-nav'>
             <ul className='sub-nav-items'>
-                {subMenu.items.map(item => (
-                <li className='sub-nav-item' key={subMenu.item}>
+                {props.category.products.map(product => (
+                <li className='sub-nav-item' key={product.prodID}>
                     <NavLink 
                         exact activeClassName='activeSubNavButton' 
-                        to={`/navbar/${subMenus.id}/${subMenu.item}`}
+                        to={`/navbar/${category.id}/${product.prodID}`}
                     >
-                    {subMenu.item}
+                    {product.name}
                     </NavLink>
                 </li>
                 ))}

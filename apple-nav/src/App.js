@@ -1,25 +1,62 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
-import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
 import Search from './components/Search';
 import SubNav from './components/SubNav';
 import Content from './components/Content';
-import subMenus from '../data/navItems';
+import categories from './data/navItems';
 
 class App extends Component {
   render() {
     return (
-      <div className='home-page'>
-        <div>
-          <Route path='/' component={NavWrapper} />
-        </div>
-        <div>
+      <div className='container'>
+        <header className='nav-wrapper'>
+          <div className='navbar'>
+            <div className='icon apple'>
+              <Link to='/'>Apple</Link>
+            </div>
+            <div className='inner-div'>
+              <Route 
+                path='/navbar' 
+                render={props => (
+                  <Nav {...props}
+                    categories = {categories} 
+                  />
+                )}
+              />
+              <Route 
+                path='/search' 
+                render={props => (
+                  <Search {...props}
+                    categories = {categories}
+                  />
+                )}
+              />
+            </div>
+            <div className='icon search'>
+              <Link to='/search'>Search</Link>
+            </div>
+          </div>
           <Route 
-            path='/navbar/:id/{subMenu.item}'
-            component={Content}
+            path={'/navbar/:id'} 
+            render={props => (
+              <SubNav {...props}
+                categories = {categories}
+              />
+            )}
+          />
+        </header>
+        <div className='body-container'>
+          <Route exact path='/' component={Home} />
+          <Route 
+            path={'/navbar/:id/:prodID'}
+            render={props => (
+              <Content {...props}
+                categories = {categories}
+              />
+            )}
           />
         </div>
       </div>
@@ -27,30 +64,13 @@ class App extends Component {
   }
 }
 
-function NavWrapper() {
+function Home() {
   return (
-    <div className='outer-shell'>
-      <header className='nav-wrapper'>
-        <div className='nav-bar'>
-          <div className='icon'>
-            <NavLink exact activeClassName='activeNavButton' to='/navbar'>
-              icon
-            </NavLink>
-          </div>
-          <div>  
-            <Route path='/navbar' component={Nav} />
-            <Route path='/search' component={Search} />
-          </div>
-          <div className='search'>
-            <NavLink activeClassName='activeNavButton' to='/search'>
-              Search
-            </NavLink>
-          </div>
-        </div>
-        <div className='sub-nav-bar'>
-          <Route path='/navbar/:id' component={SubNav} />
-        </div>
-      </header>
+    <div className='home-page'>
+      <h1>Apple Store</h1>
+      <button>
+        <Link to='/navbar'>Products</Link>
+      </button>
     </div>
   );
 }

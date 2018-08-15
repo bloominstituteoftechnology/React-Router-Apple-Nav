@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-function Nav() {
+function Nav(props) {
     return (
         <div className='inner-bar'>
             <ul className='nav-items'>
-                {subMenus.map(subMenu => (
-                <li className='nav-item' key={subMenus.id}>
-                    <NavLink activeClassName='activeNavButton' to={`/navbar/${subMenus.id}`}>
-                        {subMenus.name}
+                {props.categories.map(category => (
+                <li className='nav-item' key={category.id}>
+                    <NavLink activeClassName='activeNavButton' to={`/navbar/${category.id}`}>
+                        {category.name}
                     </NavLink>
                 </li>
                 ))}
