@@ -1,21 +1,15 @@
 import React from "react";
-import "../index.css";
-import navData from "./navData";
+import Nav from "./Nav";
 
-const NavWrapper = () => {
+const NavWrapper = props => {
   return (
     <div className="nav-wrapper">
-      <ul>
-        {navData.map(nav => {
-          return (
-            <Link to={"/"}>
-            <li key={nav.id}>
-              <h4>{nav.subnav}</h4>
-            </li>
-            </Link>
-          );
-        })}
-      </ul>
+      <Link exact to="/">
+        <button className="home-btn">Home</button>
+      </Link>
+      {props.nav.map(nav => (
+        <Nav nav={nav} />
+      ))}
     </div>
   );
 };

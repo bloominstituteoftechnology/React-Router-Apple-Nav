@@ -1,12 +1,12 @@
 import React from "react";
-import NavWrapper from "./NavWrapper";
-import SubNav from "./SubNav";
+import { Link } from "react-router-dom";
 
-const Nav = () => {
-    return (
-       
-        <SubNav />
-    );
-}
+const Nav = props => {
+  return (
+    <Link to={`/nav/${props.nav.subnav}`}>
+      <button className="nav-btn">{`${props.nav.subnav}`}</button>
+    </Link>
+  );
+};
 
 export default Nav;
