@@ -1,4 +1,4 @@
-const navData = [
+export default [
   {
     subnav: "Mac",
     navItems: [
@@ -12,7 +12,8 @@ const navData = [
       "Accessories",
       "High Sierra",
       "Compare"
-    ]
+    ],
+    id: 1
   },
 
   {
@@ -24,7 +25,8 @@ const navData = [
           "iOS 11",
           "Accessories",
           "Compare"
-      ]
+      ],
+      id: 2
   },
 
   
@@ -39,7 +41,8 @@ const navData = [
           "iOS 11",
           "Accessories",
           "Compare"
-      ]
+      ],
+      id: 3
   },
   
   {
@@ -55,7 +58,8 @@ const navData = [
           "Accessories",
           "Compare"
 
-      ]
+      ],
+      id: 4
   },
 
   {
@@ -66,7 +70,8 @@ const navData = [
           "TV App",
           "Accessories",
           "Compare"
-      ]
+      ],
+      id: 5
   },
 
   {
@@ -78,6 +83,7 @@ const navData = [
           "iPod touch",
           "Music Accessories",
           "Gift Cards"
-      ]
+      ],
+      id: 6
   }
 ];
