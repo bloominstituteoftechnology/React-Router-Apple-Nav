@@ -1,21 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-import navItems from '../../data';
-
-function Nav(props) {
+function Nav() {
     return (
-        <div className='navbar'>
+        <div className='inner-bar'>
             <ul className='nav-items'>
-                <li className='icon'>
-                    <NavLink exact activeClassName='activeNavButton' to='/nav'>
-                        icon
-                    </NavLink>
-                </li>
-                {props.nav.map(nav => (
-                <li className='nav-item' key={nav.id}>
-                    <NavLink activeClassName='activeNavButton' to={`/nav/${nav.id}`}>
-                        {nav.name}
+                {subMenus.map(subMenu => (
+                <li className='nav-item' key={subMenus.id}>
+                    <NavLink activeClassName='activeNavButton' to={`/navbar/${subMenus.id}`}>
+                        {subMenus.name}
                     </NavLink>
                 </li>
                 ))}
