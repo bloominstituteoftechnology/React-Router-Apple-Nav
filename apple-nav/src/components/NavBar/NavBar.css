@@ -1,11 +1,13 @@
 .nav-bar {
   display: flex;
-  justify-self: flex-start;
+  justify-items: space-around;
   background: black;
   height: 50px;
+  width: 70%;
+  margin: auto;
 }
 a {
-  margin: auto;
+  margin: auto 0;
   text-decoration: none;
   color: white;
   font-size: 14px;
