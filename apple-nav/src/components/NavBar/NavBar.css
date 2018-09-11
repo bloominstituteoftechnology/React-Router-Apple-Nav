@@ -1,0 +1,12 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  background: black;
+  height: 50px;
+}
+a {
+  margin: auto 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
