@@ -1,11 +1,11 @@
 .nav-bar {
   display: flex;
-  justify-content: center;
+  justify-self: flex-start;
   background: black;
   height: 50px;
 }
 a {
-  margin: auto 40px;
+  margin: auto;
   text-decoration: none;
   color: white;
   font-size: 14px;
@@ -13,4 +13,10 @@ a {
 a:hover {
   color: lightgray;
   transition: 0.3s;
+}
+
+.logo {
+  margin: 8px auto;
+  width: 30px;
+  height: 30px;
 }

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
+import Logo from './logo.png';
 export default class NavBar extends Component {
   render() {
     return (
       <div className="nav-bar">
+        <img className="logo" alt="apple logo" src={Logo} />
         <NavLink
           to="/mac"
           activeStyle={{
