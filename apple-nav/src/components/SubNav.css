@@ -1,8 +1,19 @@
 .sub-nav {
-    background: gray;
-    color: white;
+    background: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub-nav .sub-nav-item {
     margin: 10px;
+}
+
+.sub-nav .sub-nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-nav .sub-nav-item a:hover {
+    color: #bbb;
 }

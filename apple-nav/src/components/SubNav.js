@@ -1,5 +1,6 @@
 // React
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Styles
 import './SubNav.css';
@@ -33,7 +34,7 @@ class SubNav extends React.Component {
     render() {
         return (
             <div className = 'sub-nav'>
-                { this.state.subCats.map((subCat, i) => <span className = 'sub-nav-item' key = { i } >{ subCat }</span>) }
+                { this.state.subCats.map((subCat, i) => <span className = 'sub-nav-item' key = { i } ><Link to = { `/${ this.state.mainCat }/${ subCat }` }>{ subCat }</Link></span>) }
             </div>
         );
     }
