@@ -11,7 +11,7 @@ class App extends Component {
         name: "Mac"
       },
       {
-        name: "iPod"
+        name: "iPad"
       },
       {
         name: "iPhone"
