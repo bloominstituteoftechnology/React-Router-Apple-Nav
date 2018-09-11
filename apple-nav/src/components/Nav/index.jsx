@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 const Nav = props => {
   return(
-    <div>
-      navItem
-    </div>
+    <Link to={props.link.name} key={Math.random()}>
+    {props.link.name}
+  </Link>
   );
 };
 

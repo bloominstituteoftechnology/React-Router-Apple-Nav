@@ -1,19 +1,33 @@
-import React, { Component } from 'react';
-import NavWrapper from './components/NavWrapper';
+import React, { Component } from "react";
+import NavWrapper from "./components/NavWrapper";
 
 class App extends Component {
   state = {
     links: [
-      'link1',
-      'link2',
-      'link3',
-      'link4'
+      {
+        name: "Mac"
+      },
+      {
+        name: "iPod"
+      },
+      {
+        name: "iPhone"
+      },
+      {
+        name: "Watch"
+      },
+      {
+        name: "TV"
+      },
+      {
+        name: "Music"
+      }
     ]
-  }
+  };
   render() {
     return (
       <div className="App">
-      <NavWrapper links={this.state.links}/>
+        <NavWrapper links={this.state.links} />
       </div>
     );
   }
