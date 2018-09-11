@@ -17,7 +17,7 @@ const NavWrapper = (props) => {
     const navData = props.navData;
 
     return (
-        <div className = 'nav-wrapper'>
+        <div className = 'nav-wrapper' style = { props.location.pathname === '/' ? null : {backgroundColor: 'black'}}>
             <div className = 'main-nav'>
                 <span>
                     <Link to = '/'><img id = 'apple-logo' alt = 'apple logo' src = { appleLogo } /></Link>

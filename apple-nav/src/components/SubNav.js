@@ -32,9 +32,35 @@ class SubNav extends React.Component {
     }
 
     render() {
+        let inlineStyle = {};
+
+        switch(this.props.match.url) {
+            case '/Mac':
+                inlineStyle = {
+                    backgroundColor: '#141414'
+                };
+                break;
+            case '/iPad':
+                inlineStyle = {
+                    backgroundColor: '#141414',
+                }
+                break;
+            default:
+                inlineStyle = {
+                    backgroundColor: '#141414',
+                }
+        }
+
         return (
-            <div className = 'sub-nav'>
-                { this.state.subCats.map((subCat, i) => <span className = 'sub-nav-item' key = { i } ><Link to = { `/${ this.state.mainCat }/${ subCat }` }>{ subCat }</Link></span>) }
+            <div className = 'sub-nav' style = { inlineStyle }>
+                { this.state.subCats.map((subCat, i) => 
+                    <span className = 'sub-nav-item' key = { i } >
+                        <Link to = { `/${ this.state.mainCat }/${ subCat.name }` }>
+                            <i className = { subCat.glyph }></i>
+                            <p>{ subCat.name }</p>
+                        </Link>
+                    </span>
+                )}
             </div>
         );
     }

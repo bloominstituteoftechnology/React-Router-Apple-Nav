@@ -17,7 +17,7 @@ import './App.css';
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
+			<div className = 'App'>
 				<Route path = '/' render = { props => <NavWrapper {...props} navData = { navData } /> } />
 				<Route exact path = '/' component = { MainSection } />
 				<Route exact path = '/:mainCat' render = { props => <MainCatSection {...props} /> } />

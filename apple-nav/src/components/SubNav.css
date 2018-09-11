@@ -1,12 +1,11 @@
 .sub-nav {
-    background: #666;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sub-nav .sub-nav-item {
-    margin: 10px;
+    margin: 15px 20px 0 20px;
 }
 
 .sub-nav .sub-nav-item a {
@@ -16,4 +15,12 @@
 
 .sub-nav .sub-nav-item a:hover {
     color: #bbb;
+}
+
+.sub-nav .sub-nav-item a i {
+    font-size: 38px;
+}
+
+.sub-nav .sub-nav-item a p {
+    font-size: 14px;
 }
