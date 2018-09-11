@@ -7,7 +7,7 @@ import './MainSection.css';
 const MainSection = () => {
     return (
         <div className = 'main-section'>
-            Click on something.
+            This is the main section. Click on something.
         </div>
     );
 }

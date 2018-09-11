@@ -19,12 +19,14 @@ class ContentSection extends React.Component {
         });
     }
 
-    componentDidUpdate() {
-        if (this.state.subCat !== this.props.match.params.subCat) {
-            this.setState({ 
-                subCat: this.props.match.params.subCat
-            });
+    static getDerivedStateFromProps(props, state) {
+        if (props.match.params.subCat !== state.subCat) {
+            return {
+                subCat: props.match.params.subCat
+            };
         }
+
+        return null;
     }
 
     render() {
