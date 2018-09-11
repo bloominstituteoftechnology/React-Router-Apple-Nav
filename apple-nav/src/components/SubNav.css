@@ -1,0 +1,8 @@
+.sub-nav {
+    background: gray;
+    color: white;
+}
+
+.sub-nav .sub-nav-item {
+    margin: 10px;
+}

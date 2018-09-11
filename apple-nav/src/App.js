@@ -8,7 +8,7 @@ import navData from './nav-data';
 // Components
 import NavWrapper from './components/NavWrapper';
 
-// Styling
+// Styles
 import './App.css';
 
 class App extends Component {

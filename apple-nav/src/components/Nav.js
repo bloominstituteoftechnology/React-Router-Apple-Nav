@@ -10,7 +10,7 @@ const Nav = (props) => {
 
     return (
         <span className = 'nav'>
-            <Link to = { `/${mainCat}` }>
+            <Link to = { `/${ mainCat }` }>
                 { props.navItem.mainCat }
             </Link>
         </span>
