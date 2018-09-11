@@ -5,27 +5,57 @@ export default [
   },
   {
     name: "Mac",
-    url: "/Mac"
+    url: "/Mac",
+    subLinks: [
+      "Product #1",
+      "Product #2",
+      "Product #3"
+    ]
   },
   {
     name: "iPad",
-    url: "/iPad"
+    url: "/iPad",
+    subLinks: [
+      "Product #1",
+      "Product #2",
+      "Product #3"
+    ]
   },
   {
     name: "iPhone",
-    url: "/iPhone"
+    url: "/iPhone",
+    subLinks: [
+      "Product #1",
+      "Product #2",
+      "Product #3"
+    ]
   },
   {
     name: "Watch",
-    url: "/Watch"
+    url: "/Watch",
+    subLinks: [
+      "Product #1",
+      "Product #2",
+      "Product #3"
+    ]
   },
   {
     name: "TV",
-    url: "/TV"
+    url: "/TV",
+    subLinks: [
+      "Product #1",
+      "Product #2",
+      "Product #3"
+    ]
   },
   {
     name: "Music",
-    url: "/Music"
+    url: "/Music",
+    subLinks: [
+      "Product #1",
+      "Product #2",
+      "Product #3"
+    ]
   },
   {
     name: "Support",
