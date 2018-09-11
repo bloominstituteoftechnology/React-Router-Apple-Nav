@@ -11,7 +11,9 @@ class NavWrapper extends Component {
 	render() {
 		return (
 			<nav className="NavWrapper">
-				<Link to="/" className="home-button" />
+				<Link to="/" className="home-button">
+					AppleLogo
+				</Link>
 
 				{this.state.navLinks.map(link => (
 					<NavLink
