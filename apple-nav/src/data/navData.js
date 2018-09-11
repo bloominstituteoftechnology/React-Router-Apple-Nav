@@ -1,32 +1,42 @@
 export default [
   {
-    name: "Home"
+    name: "🍏",
+    url: "/"
   },
   {
-    name: "Mac"
+    name: "Mac",
+    url: "/Mac"
   },
   {
-    name: "iPad"
+    name: "iPad",
+    url: "/iPad"
   },
   {
-    name: "iPhone"
+    name: "iPhone",
+    url: "/iPhone"
   },
   {
-    name: "Watch"
+    name: "Watch",
+    url: "/Watch"
   },
   {
-    name: "TV"
+    name: "TV",
+    url: "/TV"
   },
   {
-    name: "Music"
+    name: "Music",
+    url: "/Music"
   },
   {
-    name: "Support"
+    name: "Support",
+    url: "/Support"
   },
   {
-    name: "Search"
+    name: "🔍",
+    url: "/Search"
   },
   {
-    name: "Bag"
+    name: "💰",
+    url: "/Bag"
   }
 ];

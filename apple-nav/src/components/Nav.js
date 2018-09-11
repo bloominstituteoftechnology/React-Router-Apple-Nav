@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Nav(props) {
   const navName = props.name;
   return (
-    <NavLink to={`/${props.link.name}`} activeClassName="activeNavButton">
+    <NavLink to={`${props.link.url}`} activeClassName="activeNavButton">
     {props.link.name}
 
     </NavLink>

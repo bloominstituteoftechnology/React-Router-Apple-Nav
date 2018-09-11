@@ -10,7 +10,7 @@ const navLinks = navData;
     <header>
     <nav>
       {navLinks.map(link => (
-        <Nav {...props} link={link}/>
+        <Nav {...props} key={link.url} link={link}/>
       ))}
     </nav>
     </header>
