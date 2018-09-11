@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 
 import NavWrapper from "./components/NavWrapper";
 import SubNav from "./components/SubNav";
+import "./App.css"
 
 class App extends Component {
   state = {
@@ -29,7 +30,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
+      <div className="wrapper">
         <NavWrapper links={this.state.links} />
         <Route path="/:name" render={props => <SubNav {...props} />} />
       </div>
