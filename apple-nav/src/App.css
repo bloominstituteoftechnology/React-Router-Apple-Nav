@@ -13,7 +13,7 @@ nav {
   align-content: center;
   margin: auto;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 900px;
   height: 45px;
 
 }
@@ -21,4 +21,9 @@ nav {
 nav > a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
+}
+
+nav > a:hover {
+  color: gray;
 }
