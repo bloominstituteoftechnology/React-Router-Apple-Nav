@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import { Route } from 'react-router-dom';
+
 import NavWrapper from "./components/NavWrapper";
+import SubNav from "./components/SubNav";
 
 class App extends Component {
   state = {
@@ -28,6 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavWrapper links={this.state.links} />
+        <Route path="/:name" render={props => <SubNav {...props} />} />
       </div>
     );
   }

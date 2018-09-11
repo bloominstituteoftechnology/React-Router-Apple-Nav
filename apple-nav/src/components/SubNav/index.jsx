@@ -1,30 +1,102 @@
 import React from 'react';
-import PropTypes from 'prop-tyles';
+import PropTypes from 'prop-types';
 
 const links = [
   {
     name: "Mac",
-    image: "apple.svg"
+    image: "apple.svg",
+    subNav: [
+      { name: "MacBook", image: "images/mac/macbook_dark_large.svg" },
+      { name: "MacBook Air", image: "images/mac/macbookair_dark_large.svg" },
+      { name: "MacBook Pro", image: "images/mac/macbookpro_dark_large.svg" },
+      { name: "iMac", image: "images/mac/imac_dark_large.svg" },
+      { name: "iMac Pro", image: "images/mac/imac_pro_dark_large.svg" },
+      { name: "Mac Pro", image: "images/mac/macpro_dark_large.svg" },
+      { name: "Mac mini", image: "images/mac/macmini_dark_large.svg" },
+      { name: "Accessories", image: "images/mac/mac_acc_dark_large.svg" },
+      { name: "High Sierra", image: "images/mac/mac_osx_dark_large.svg" },
+      { name: "Compare", image: "images/mac/mac_comp_dark_large.svg" }
+    ]
   },
   {
     name: "iPod",
-    image: "apple.svg"
+    image: "apple.svg",
+    subNav: [
+      { name: "MacBook", image: "images/mac/macbook_dark_large.svg" },
+      { name: "MacBook Air", image: "images/mac/macbookair_dark_large.svg" },
+      { name: "MacBook Pro", image: "images/mac/macbookpro_dark_large.svg" },
+      { name: "iMac", image: "images/mac/imac_dark_large.svg" },
+      { name: "iMac Pro", image: "images/mac/imac_pro_dark_large.svg" },
+      { name: "Mac Pro", image: "images/mac/macpro_dark_large.svg" },
+      { name: "Mac mini", image: "images/mac/macmini_dark_large.svg" },
+      { name: "Accessories", image: "images/mac/mac_acc_dark_large.svg" },
+      { name: "High Sierra", image: "images/mac/mac_osx_dark_large.svg" },
+      { name: "Compare", image: "images/mac/mac_comp_dark_large.svg" }
+    ]
   },
   {
     name: "iPhone",
-    image: "apple.svg"
+    image: "apple.svg",
+    subNav: [
+      { name: "MacBook", image: "images/mac/macbook_dark_large.svg" },
+      { name: "MacBook Air", image: "images/mac/macbookair_dark_large.svg" },
+      { name: "MacBook Pro", image: "images/mac/macbookpro_dark_large.svg" },
+      { name: "iMac", image: "images/mac/imac_dark_large.svg" },
+      { name: "iMac Pro", image: "images/mac/imac_pro_dark_large.svg" },
+      { name: "Mac Pro", image: "images/mac/macpro_dark_large.svg" },
+      { name: "Mac mini", image: "images/mac/macmini_dark_large.svg" },
+      { name: "Accessories", image: "images/mac/mac_acc_dark_large.svg" },
+      { name: "High Sierra", image: "images/mac/mac_osx_dark_large.svg" },
+      { name: "Compare", image: "images/mac/mac_comp_dark_large.svg" }
+    ]
   },
   {
     name: "Watch",
-    image: "apple.svg"
+    image: "apple.svg",
+    subNav: [
+      { name: "MacBook", image: "images/mac/macbook_dark_large.svg" },
+      { name: "MacBook Air", image: "images/mac/macbookair_dark_large.svg" },
+      { name: "MacBook Pro", image: "images/mac/macbookpro_dark_large.svg" },
+      { name: "iMac", image: "images/mac/imac_dark_large.svg" },
+      { name: "iMac Pro", image: "images/mac/imac_pro_dark_large.svg" },
+      { name: "Mac Pro", image: "images/mac/macpro_dark_large.svg" },
+      { name: "Mac mini", image: "images/mac/macmini_dark_large.svg" },
+      { name: "Accessories", image: "images/mac/mac_acc_dark_large.svg" },
+      { name: "High Sierra", image: "images/mac/mac_osx_dark_large.svg" },
+      { name: "Compare", image: "images/mac/mac_comp_dark_large.svg" }
+    ]
   },
   {
     name: "TV",
-    image: "apple.svg"
+    image: "apple.svg",
+    subNav: [
+      { name: "MacBook", image: "images/mac/macbook_dark_large.svg" },
+      { name: "MacBook Air", image: "images/mac/macbookair_dark_large.svg" },
+      { name: "MacBook Pro", image: "images/mac/macbookpro_dark_large.svg" },
+      { name: "iMac", image: "images/mac/imac_dark_large.svg" },
+      { name: "iMac Pro", image: "images/mac/imac_pro_dark_large.svg" },
+      { name: "Mac Pro", image: "images/mac/macpro_dark_large.svg" },
+      { name: "Mac mini", image: "images/mac/macmini_dark_large.svg" },
+      { name: "Accessories", image: "images/mac/mac_acc_dark_large.svg" },
+      { name: "High Sierra", image: "images/mac/mac_osx_dark_large.svg" },
+      { name: "Compare", image: "images/mac/mac_comp_dark_large.svg" }
+    ]
   },
   {
     name: "Music",
-    image: "apple.svg"
+    image: "apple.svg",
+    subNav: [
+      { name: "MacBook", image: "images/mac/macbook_dark_large.svg" },
+      { name: "MacBook Air", image: "images/mac/macbookair_dark_large.svg" },
+      { name: "MacBook Pro", image: "images/mac/macbookpro_dark_large.svg" },
+      { name: "iMac", image: "images/mac/imac_dark_large.svg" },
+      { name: "iMac Pro", image: "images/mac/imac_pro_dark_large.svg" },
+      { name: "Mac Pro", image: "images/mac/macpro_dark_large.svg" },
+      { name: "Mac mini", image: "images/mac/macmini_dark_large.svg" },
+      { name: "Accessories", image: "images/mac/mac_acc_dark_large.svg" },
+      { name: "High Sierra", image: "images/mac/mac_osx_dark_large.svg" },
+      { name: "Compare", image: "images/mac/mac_comp_dark_large.svg" }
+    ]
   }
 ]
 
@@ -48,8 +120,8 @@ const SubNav = props => {
 
 SubNav.propTypes = {
   link: PropTypes.shape({
-    name: string,
-    image: string
+    name: PropTypes.string,
+    image: PropTypes.string
   })
 };
 
