@@ -32,32 +32,48 @@ class SubNav extends React.Component {
     }
 
     render() {
-        let inlineStyle = {};
+        let subNavStyle = {};
+        let iElementStyle = {};
+        let pElementStyle = {};
 
         switch(this.props.match.url) {
-            case '/Mac':
-                inlineStyle = {
-                    backgroundColor: '#141414'
+            case '/iPad':
+            case '/iPhone':
+            case '/Music':
+                subNavStyle = {
+                    backgroundColor: '#F6F6F6'
+                };
+                iElementStyle = {
+                    color: 'black'
+                };
+                pElementStyle = {
+                    color: 'black'
                 };
                 break;
-            case '/iPad':
-                inlineStyle = {
-                    backgroundColor: '#141414',
-                }
+            case '/Watch':
+                subNavStyle = {
+                    backgroundColor: '#FAFAFA'
+                };
+                iElementStyle = {
+                    color: 'black'
+                };
+                pElementStyle = {
+                    color: 'black'
+                };
                 break;
             default:
-                inlineStyle = {
-                    backgroundColor: '#141414',
-                }
+                subNavStyle = {
+                    backgroundColor: '#141414'
+                };
         }
 
         return (
-            <div className = 'sub-nav' style = { inlineStyle }>
+            <div className = 'sub-nav' style = { subNavStyle }>
                 { this.state.subCats.map((subCat, i) => 
                     <span className = 'sub-nav-item' key = { i } >
                         <Link to = { `/${ this.state.mainCat }/${ subCat.name }` }>
-                            <i className = { subCat.glyph }></i>
-                            <p>{ subCat.name }</p>
+                            <i className = { subCat.glyph } style = { iElementStyle }></i>
+                            <p style = { pElementStyle }>{ subCat.name }</p>
                         </Link>
                     </span>
                 )}

@@ -14,7 +14,7 @@
 }
 
 .sub-nav .sub-nav-item a:hover {
-    color: #bbb;
+    opacity: 0.5;
 }
 
 .sub-nav .sub-nav-item a i {
@@ -23,4 +23,8 @@
 
 .sub-nav .sub-nav-item a p {
     font-size: 14px;
+}
+
+.sub-nav .sub-nav-item a p:hover {
+    opacity: 0.5;
 }
