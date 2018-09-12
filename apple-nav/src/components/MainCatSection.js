@@ -30,7 +30,7 @@ class MainCatSection extends React.Component {
     render() {
         return(
             <div className = 'main-cat-section'>
-                This is the { this.state.mainCat } section. Click on a { this.state.mainCat } product.
+                <h2>Welcome to the { this.state.mainCat } section. Click on a { this.state.mainCat } product.</h2>
             </div>
         );
     }

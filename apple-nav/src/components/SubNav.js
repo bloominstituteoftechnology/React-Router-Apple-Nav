@@ -11,14 +11,22 @@ class SubNav extends React.Component {
 
         this.state = {
             mainCat: '',
-            subCats: []
+            subCats: [],
+            stylingClasses: []
         };
     }
 
     componentDidMount() {
         this.setState({ 
             mainCat: this.props.match.params.mainCat,
-            subCats: this.props.navData.find(navDataItem => navDataItem.mainCat === this.props.match.params.mainCat).subCats
+            subCats: this.props.navData.find(navDataItem => navDataItem.mainCat === this.props.match.params.mainCat).subCats,
+            stylingClasses: ['fade-in-anim']
+        }, () => {
+            setTimeout(() => {
+                this.setState({
+                    stylingClasses: []
+                });
+            }, 2000);
         });
     }
 
@@ -26,7 +34,14 @@ class SubNav extends React.Component {
         if (this.state.mainCat !== this.props.match.params.mainCat) {
             this.setState({ 
                 mainCat: this.props.match.params.mainCat,
-                subCats: this.props.navData.find(navDataItem => navDataItem.mainCat === this.props.match.params.mainCat).subCats
+                subCats: this.props.navData.find(navDataItem => navDataItem.mainCat === this.props.match.params.mainCat).subCats,
+                stylingClasses: ['fade-in-anim']
+            }, () => {
+                setTimeout(() => {
+                    this.setState({
+                        stylingClasses: []
+                    });
+                }, 2000);
             });
         }
     }
@@ -70,7 +85,7 @@ class SubNav extends React.Component {
         return (
             <div className = 'sub-nav' style = { subNavStyle }>
                 { this.state.subCats.map((subCat, i) => 
-                    <span className = 'sub-nav-item' key = { i } >
+                    <span className = { `sub-nav-item ${ this.state.stylingClasses.join(' ') }` } key = { i } >
                         <Link to = { `/${ this.state.mainCat }/${ subCat.name }` }>
                             <i className = { subCat.glyph } style = { iElementStyle }></i>
                             <p style = { pElementStyle }>{ subCat.name }</p>

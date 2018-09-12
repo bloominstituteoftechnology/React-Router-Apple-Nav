@@ -7,7 +7,7 @@ import './MainSection.css';
 const MainSection = () => {
     return (
         <div className = 'main-section'>
-            This is the main section. Click on something.
+            <h2>Welcome to Apple! Click on something you're interested in.</h2>
         </div>
     );
 }
