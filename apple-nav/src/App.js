@@ -21,7 +21,7 @@ class App extends Component {
 				<Route path = '/' render = { props => <NavWrapper {...props} navData = { navData } /> } />
 				<Route exact path = '/' component = { MainSection } />
 				<Route exact path = '/:mainCat' render = { props => <MainCatSection {...props} /> } />
-				<Route path = '/:mainCat/:subCat' render = { props => <ContentSection {...props} /> } />
+				<Route path = '/:mainCat/:subCat' render = { props => <ContentSection {...props} navData = { navData } /> } />
 			</div>
 		);
 	}

@@ -9,20 +9,22 @@ class ContentSection extends React.Component {
         super(props);
 
         this.state = {
-            subCat: '',
+            subCat: {}
         };
     }
 
     componentDidMount() {
         this.setState({ 
-            subCat: this.props.match.params.subCat
+            subCat: this.props.match.params.subCat,
+            glyph: this.props.navData.find(navDataItem => navDataItem.mainCat === this.props.match.params.mainCat).subCats.find(subCat => subCat.name === this.props.match.params.subCat).glyph
         });
     }
 
     static getDerivedStateFromProps(props, state) {
         if (props.match.params.subCat !== state.subCat) {
             return {
-                subCat: props.match.params.subCat
+                subCat: props.match.params.subCat,
+                glyph: props.navData.find(navDataItem => navDataItem.mainCat === props.match.params.mainCat).subCats.find(subCat => subCat.name === props.match.params.subCat).glyph
             };
         }
 
@@ -32,7 +34,11 @@ class ContentSection extends React.Component {
     render() {
         return(
             <section className = 'content-section'>
-                Content for { this.state.subCat }
+    { this.state.subCat === 'Compare' ? <h2>{ this.state.subCat } different { this.props.match.params.mainCat } products!</h2> : this.state.subCat === 'Accessories' ? <h2>Look through { this.props.match.params.mainCat } { this.props.match.params.subCat }!</h2> : <h2>Introducing the new { this.state.subCat }!</h2> }
+
+                <div className = 'i-div'>
+                    <i className = { this.state.glyph }></i>
+                </div>
             </section>
         );
     }
