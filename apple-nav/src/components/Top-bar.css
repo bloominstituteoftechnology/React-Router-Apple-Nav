@@ -1,0 +1,27 @@
+.topBar{
+background:#262626;
+height:50px;
+}
+
+.topBar img {
+	height:100%;
+	width:50px;
+}
+
+.container {
+height:100%;
+display:flex;
+justify-content:space-between;
+width:70%;
+margin-left:15%;
+align-items:center;
+}
+
+.links {
+	text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+	color:#737373;
+}
