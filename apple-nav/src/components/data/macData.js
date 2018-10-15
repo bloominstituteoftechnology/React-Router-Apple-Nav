@@ -22,6 +22,3 @@ const macData = [
 ]
 
 export default macData;
-
-// {icon: '',
-//  name: ''},
