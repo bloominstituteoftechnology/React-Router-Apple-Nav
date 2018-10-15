@@ -31,13 +31,22 @@ i {
 .subnav {
   height: 120px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  justify-content: center;
   justify-items: center;
 }
 
 .mac {
   background: #141414;
+}
+
+.maccontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .product {
@@ -55,4 +64,5 @@ i {
 .product p {
   font-size: 11px;
   text-align: center;
+  color: white;
 } 

@@ -5,7 +5,9 @@ import Product from './Product';
 const Mac = () => {
     return (
         <div className="subnav mac">
-            {macData.map((product,i) => <Product key={i} product={product} />)}
+            <div className="maccontainer">
+                {macData.map((product,i) => <Product key={i} product={product} />)}
+            </div>
         </div>
     )
 }
