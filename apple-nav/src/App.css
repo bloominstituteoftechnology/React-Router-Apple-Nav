@@ -38,6 +38,12 @@ i {
 
 .mac {
   background: #141414;
+  color: white;
+}
+
+.ipad {
+  background: #f6f6f6;
+  color: #141414;
 }
 
 .maccontainer {
@@ -46,6 +52,15 @@ i {
   justify-content: space-evenly;
   justify-items: center;
   width: 60%;
+  margin: 0 auto;
+}
+
+.ipadcontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -64,5 +79,4 @@ i {
 .product p {
   font-size: 11px;
   text-align: center;
-  color: white;
 } 

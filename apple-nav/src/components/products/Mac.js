@@ -1,5 +1,5 @@
 import React from 'react';
-import macData from '../../data';
+import macData from '../data/macData';
 import Product from './Product';
 
 const Mac = () => {
