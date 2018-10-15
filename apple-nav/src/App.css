@@ -18,6 +18,7 @@ nav {
 a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
 }
 
 a:hover {
@@ -47,6 +48,11 @@ i {
 
 .ipad {
   background: #f6f6f6;
+  color: #141414;
+}
+
+.watch {
+  background: white;
   color: #141414;
 }
 
@@ -91,5 +97,6 @@ i {
 
 .product p {
   font-size: 11px;
+  width: 80px;
   text-align: center;
 } 
