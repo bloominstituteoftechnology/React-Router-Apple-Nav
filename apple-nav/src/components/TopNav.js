@@ -12,7 +12,7 @@ let TopNav = () => {
                 <Link to="/watch">Watch</Link>
                 <Link to="/tv">TV</Link>
                 <Link to="/music">Music</Link>
-                <Link to="/support">Support</Link>
+                <Link to="/">Support</Link>
                 <i className="fas fa-search"></i>
                 <i className="fas fa-shopping-bag"></i>
             </nav>

@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: lightgrey;
+}
+
 i {
   color: white;
 }
@@ -61,6 +65,15 @@ i {
   justify-content: space-evenly;
   justify-items: center;
   width: 40%;
+  margin: 0 auto;
+}
+
+.iphonecontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 50%;
   margin: 0 auto;
 }
 
