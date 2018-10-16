@@ -1,12 +1,12 @@
 import React from 'react';
-import watchData from '../data/watchData';
+import Data from '../data/data';
 import Product from './Product';
 
 const Watch = () => {
     return (
         <div className="subnav watch">
             <div className="iphonecontainer">
-                {watchData.map((product,i) => <Product key={i} product={product} />)}
+                {Data.watchData.map((product,i) => <Product key={i} product={product} />)}
             </div>
         </div>
     )

@@ -1,12 +1,12 @@
 import React from 'react';
-import ipadData from '../data/ipadData';
+import Data from '../data/data';
 import Product from './Product';
 
 const IPad = () => {
     return (
         <div className="subnav ipad">
             <div className="ipadcontainer">
-                {ipadData.map((product,i) => <Product key={i} product={product} />)}
+                {Data.ipadData.map((product,i) => <Product key={i} product={product} />)}
             </div>
         </div>
     )
