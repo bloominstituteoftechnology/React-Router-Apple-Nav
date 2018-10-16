@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import posed, { PoseGroup } from 'react-pose';
-import Data from './components/data';
 
-import './App.css';
-
+import Data from './Data';
 import TopNav from './components/TopNav';
 import Subnav from './components/Subnav';
+
+import './App.css';
 
 const RoutesContainer = posed.div({
   enter: {x: 0},

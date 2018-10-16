@@ -38,6 +38,7 @@ i {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
 }
 
 .product img {
