@@ -1,16 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Nav";
+
+const navLinks = ["Home", "iPad", "iPhone", "Watch", "TV", "Music", "Support"];
 
 const Nav = props => {
   return (
     <div className="nav-items">
-      <a href="#">Home</a>
-      <a href="#">iPad</a>
-      <a href="#">iPhone</a>
-      <a href="#">Watch</a>
-      <a href="#">TV</a>
-      <a href="#">Music</a>
-      <a href="#">Support</a>
+      {navLinks.map(link => {
+        return <NavLink to="/">{link}</NavLink>;
+      })}
     </div>
   );
 };
