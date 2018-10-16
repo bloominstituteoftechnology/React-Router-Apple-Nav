@@ -1,9 +1,7 @@
 import React from 'react';
 
-const NavWrapper => {
-  return (
-    <h1>Menu</h1>
-  )
-}
+const NavWrapper = () => {
+  return <div>This is the NavWrapper!</div>;
+};
 
 export default NavWrapper;
