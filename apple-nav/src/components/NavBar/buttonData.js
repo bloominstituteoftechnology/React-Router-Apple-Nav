@@ -1,42 +1,42 @@
 export default [
     {
-        id: 0,
+        id: "home",
         content: "Apple Icon"
     },
     {
-        id: 1,
+        id: "mac",
         content: "Mac"
     },
     {
-        id: 2,
+        id: "ipad",
         content: "iPad"
     },
     {
-        id: 3,
+        id: "iphone",
         content: "iPhone"
     },
     {
-        id: 4,
+        id: "watch",
         content: "Watch"
     },
     {
-        id: 5,
+        id: "tv",
         content: "TV"
     },
     {
-        id: 6,
+        id: "music",
         content: "Music"
     },
     {
-        id: 7,
+        id: "support",
         content: "Support"
     },
     {
-        id: 8,
+        id: "search",
         content: "Search"
     },
     {
-        id: 9,
+        id: "bag",
         content: "Bag"
     }
 ]
