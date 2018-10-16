@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import NavWrapper from './components/NavWrapper'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h2>Welcome to Apple-nav!</h2>
+        <NavWrapper />
       </div>
     );
   }
