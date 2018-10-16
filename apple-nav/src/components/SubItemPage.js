@@ -10,15 +10,22 @@ const SubItemPage = props => {
   ));
   console.log(items);
   const item =  items.find(thing => `${thing.name}` === props.match.params.subName);
-  console.log(props.match.params.subName);
-  console.log(item)
-
+  const parent = props.link.find(thing => `${thing.name}` === props.match.params.name);
+  let parentName = '';
+  parentName = parent.name;
+  console.log('are you my mother', parentName);
+  console.log('parent', props.match.params.name);
+  let dark = ( parentName === 'Mac' || parentName === 'TV');
+  let classes = 'sub-item-page ';
+  if (!dark) {
+  classes += 'light'
+}
 
   return(
-    <div className='sub-item-page'>
-      <h2>Sup</h2>
+    <div className={classes}>
+      <h2>{item.name}</h2>
       <img src={item.img} alt={item.name} />
-      <p>{item.name}</p>
+
     </div>
   )
 }
