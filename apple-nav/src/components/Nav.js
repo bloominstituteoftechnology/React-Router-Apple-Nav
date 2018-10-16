@@ -1,11 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
-
-
 
 const Nav = () => {
-    return <div>Hey</div>
-
+    return (
+        <nav>
+            <Link />
+        </nav>
+    )
 }
 
 export default Nav
