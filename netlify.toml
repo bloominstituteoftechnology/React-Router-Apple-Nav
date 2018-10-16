@@ -3,4 +3,4 @@
 
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "/index.html"
