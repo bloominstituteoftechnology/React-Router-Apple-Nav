@@ -7,7 +7,7 @@ const ItemPage = props => {
   return(
     <div className='item-wrapper'>
     <h1>{item.name}</h1>
-    <img src={item.img} alt={item.name} />
+    {/* <img src={item.img} alt={item.name} /> */}
     <h2>Yeah, it's pretty cool. Super expensive, though.</h2>
   </div>
   )

@@ -27,7 +27,7 @@ class App extends Component {
         <Route path='/' render={(props) => (<NavWrapper {...props} links={this.state.links} />)} />
         <Route exact path='/' component={Home} />
         <Route exact path='/:name' render={(props) => (<ItemPage {...props} />)} />
-        <Route path=':name/::name' component={SubItemPage} />
+        {/* <Route path=':name/:name' component={SubItemPage} /> */}
       </div>
     );
   }

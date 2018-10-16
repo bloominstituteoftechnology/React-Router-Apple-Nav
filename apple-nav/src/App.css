@@ -5,7 +5,7 @@ body {
 .App {
   text-align: center;
   background: #333333;
-  color: #efefef; 
+  color: #efefef;
 }
 
 .App-logo {
@@ -42,4 +42,25 @@ a {
   text-decoration: none;
   color: #efefef;
 
+}
+
+.sub-nav {
+  display: flex;
+  width: 100%;
+  font-size: 8px;
+  justify-content: center;
+}
+
+.sub-nav img {
+  width: 40px;
+  height: 40px;
+}
+
+.light {
+  background: #efefef;
+  color: black;
+}
+
+.light a {
+  color: #333333; 
 }
