@@ -121,17 +121,100 @@ export default [
   {
     id: 004,
     name: 'Watch',
-    items: []
+    items: [
+      {
+        id: 400,
+        name: 'Apple Watch Series 4'
+      },
+      {
+        id: 401,
+        name: 'Apple Watch Nike+'
+      },
+      {
+        id: 402,
+        name: 'Apple Watch Hermes'
+      },
+      {
+        id: 403,
+        name: 'Apple Watch Series 3'
+      },
+      {
+        id: 404,
+        name: 'Watch OS'
+      },
+      {
+        id: 405,
+        name: 'Bands'
+      },
+      {
+        id: 406,
+        name: 'Accessories'
+      },
+      {
+        id: 407,
+        name: 'Compare'
+      },
+    ]
   },
   {
     id: 005,
     name: 'TV',
-    items: []
+    items: [
+      {
+        id: 500,
+        name: 'Apple TV 4K'
+      },
+      {
+        id: 501,
+        name: 'Apple TV'
+      },
+      {
+        id: 502,
+        name: 'TV App'
+      },
+      {
+        id: 503,
+        name: 'Accessories'
+      },
+      {
+        id: 504,
+        name: 'Compare'
+      },
+    ]
   },
   {
     id: 006,
     name: 'Music',
-    items: []
+    items: [
+      {
+        id: 600,
+        name: 'Apple Music'
+      },
+      {
+        id: 601,
+        name: 'iTunes'
+      },
+      {
+        id: 602,
+        name: 'HomePod'
+      },
+      {
+        id: 603,
+        name: 'AirPods'
+      },
+      {
+        id: 604,
+        name: 'iPod touch'
+      },
+      {
+        id: 605,
+        name: 'Music Accessories'
+      },
+      {
+        id: 606,
+        name: 'Gift Cards'
+      },
+    ]
   },
   {
     id: 007,
