@@ -6,16 +6,16 @@ const Nav = props => {
   return (
     <nav className="Nav">
       <div className="NavWrapper">
-        <NavItem item={<ion-icon name="logo-apple" />} />
-        <NavItem item="Mac" />
-        <NavItem item="iPad" />
-        <NavItem item="iPhone" />
-        <NavItem item="Watch" />
-        <NavItem item="TV" />
-        <NavItem item="Music" />
-        <NavItem item="Support" />
-        <NavItem item={<ion-icon name="ios-search" />} />
-        <NavItem item={<ion-icon name="ios-briefcase" />} />
+        <NavItem item={<ion-icon name="logo-apple" link="mac" />} />
+        <NavItem item="Mac" link="mac" />
+        <NavItem item="iPad" link="ipad" />
+        <NavItem item="iPhone" link="iphone" />
+        <NavItem item="Watch" link="watch" />
+        <NavItem item="TV" link="tv" />
+        <NavItem item="Music" link="music" />
+        <NavItem item="Support" link="support" />
+        <NavItem item={<ion-icon name="ios-search" link="mac" />} />
+        <NavItem item={<ion-icon name="ios-briefcase" link="mac" />} />
       </div>
     </nav>
   );
