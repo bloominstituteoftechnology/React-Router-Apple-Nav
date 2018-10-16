@@ -1,0 +1,30 @@
+Image Link Locations
+
+global nav
+https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg
+https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg
+https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg
+
+
+mac
+https://www.apple.com/v/mac/home/ac/images/familybrowser/imac_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/imac_pro_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/mac_acc_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/mac_comp_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/mac_osx_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/macbook_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/macbookair_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/macbookpro_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/macmini_dark_large.svg
+https://www.apple.com/v/mac/home/ac/images/familybrowser/macpro_dark_large.svg
+
+
+ipad
+
+https://www.apple.com/v/ipad/home/ai/images/home/familybrowser/ipad_acc_large.svg
+https://www.apple.com/v/ipad/home/ai/images/home/familybrowser/ipad_comp_large.svg
+https://www.apple.com/v/ipad/home/ai/images/home/familybrowser/ipad_ios10_large.svg
+https://www.apple.com/v/ipad/home/ai/images/home/familybrowser/ipad_large.svg
+https://www.apple.com/v/ipad/home/ai/images/home/familybrowser/ipadmini_large.svg
+https://www.apple.com/v/ipad/home/ai/images/home/familybrowser/ipadpro_light_large.svg
+
