@@ -1,0 +1,35 @@
+.products {
+  background: #141414;
+  height: 92px;
+  padding: 12px 0;
+  display: flex;
+}
+
+.products-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-nav-item {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 0 18px;
+}
+
+.sub-nav-item:hover {
+  color: #579cd4;
+}
+
+.new {
+  color: #ea680e;
+  font-size: 10px;
+}
