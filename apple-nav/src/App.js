@@ -11,11 +11,12 @@ class App extends Component {
 
   render() {
     const { data } = this.state
+    const keys = Object.keys(data)
 
     return (
       <Fragment>
-        <Nav links={Object.keys(data)} />
-        <SubNav />
+        <Nav links={keys} />
+        {keys.map((key, i) => <SubNav key={i} links={data[key]} />)}
       </Fragment>
     )
   }
