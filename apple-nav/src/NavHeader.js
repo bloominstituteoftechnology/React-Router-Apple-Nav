@@ -8,13 +8,15 @@ class NavHeader extends React.Component {
   render() {
     return (
       <div className="nav-header">
-        <i class="fab fa-apple" />
+        <i className="fab fa-apple" />
         {this.props.categories.map(category => (
-          <span className="category">{category.categoryName}</span>
+          <span key={category.id} className="category">
+            {category.categoryName}
+          </span>
         ))}
         <span>Support</span>
-        <i class="fas fa-search" />
-        <i class="fas fa-shopping-bag" />
+        <i className="fas fa-search" />
+        <i className="fas fa-shopping-bag" />
       </div>
     );
   }

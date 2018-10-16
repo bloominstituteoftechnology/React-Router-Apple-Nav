@@ -12,4 +12,10 @@
 
 .nav-header * {
   padding: 15px;
+  font-size: 14px;
+}
+
+.nav-header .fa-apple {
+  font-size: 22px;
+  padding: 12px;
 }

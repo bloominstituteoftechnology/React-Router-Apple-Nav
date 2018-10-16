@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-// import { Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
+import SubNavHeader from "./SubNavHeader";
 import NavHeader from "./NavHeader";
 import Categories from "./Categories";
 
@@ -23,7 +24,12 @@ class App extends Component {
     return (
       <div className="App">
         <NavHeader categories={this.state.categories} />
-        {/* <Route exact path="/products/:id" component="" /> */}
+        <Route
+          path="/products/:id"
+          render={props => (
+            <SubNavHeader {...props} categories={this.state.categories} />
+          )}
+        />
       </div>
     );
   }
