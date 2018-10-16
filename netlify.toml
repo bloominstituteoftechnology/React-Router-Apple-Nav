@@ -9,3 +9,8 @@
   base    = "./apple-nav"
   publish = "./apple-nav/build"
   command = "yarn build"
+
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

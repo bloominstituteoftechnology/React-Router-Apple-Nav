@@ -18,24 +18,19 @@ class NavWrapper extends React.Component {
     if ((this.props.location.pathname.length > 1)){
       let name = this.props.location.pathname;
       name = name.substring(1);
-      console.log('hi', name);
       let current = navData.find(thing => `${thing.name}` === name);
-      console.log('current is', current)
       let currentArr = [];
       currentArr.push(current);
-      console.log('current is now', current);
       this.setState({
         activeLink: currentArr,
       })
 
 
     } else{
-      console.log('it has something', this.state.activeLink)
     }
   }
 
   selectLink = (event) => {
-    console.log('NW location', this.props.location.pathname);
     let clicked = event.target.innerHTML;
     let links = this.props.links;
     clicked = links.filter(link => (link.name === clicked))
@@ -51,7 +46,7 @@ class NavWrapper extends React.Component {
   }
 
   render(){
-console.log('navwrapper active', this.state.activeLink);
+
     return(
       <div className='nav-wrapper'>
         <Route path='/' render={(props) => (<Nav {...props} links={this.props.links} selectLink={this.selectLink} link={this.state.activeLink} deselectLink={this.deselectLink} isActive={this.state.isActive}/>)} />

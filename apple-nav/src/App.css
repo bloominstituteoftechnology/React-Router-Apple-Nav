@@ -37,6 +37,15 @@ body {
   }
 }
 
+.main-nav {
+  background: #1b1b1b;
+}
+
+.main-nav a {
+  font-size: 12px;
+}
+
+
 a {
   margin: 15px;
   text-decoration: none;
@@ -49,6 +58,7 @@ a {
   width: 100%;
   font-size: 8px;
   justify-content: center;
+  background: #333333;
 }
 
 .sub-nav img {
@@ -57,8 +67,8 @@ a {
 }
 
 .light {
-  background: #efefef;
-  color: black;
+  background: #f6f6f6;
+  color: #333333;
 }
 
 .light a {
