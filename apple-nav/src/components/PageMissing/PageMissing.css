@@ -5,3 +5,8 @@
     justify-content: center;
     align-items: center;
 }
+
+.page-missing-container .page-missing{
+    font-size: 4.8rem;
+    font-weight: bold;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SubButton from './SubButton';
+
 const SubNav = props => {
 
     if (!props.buttons.length) {
@@ -15,7 +17,9 @@ const SubNav = props => {
             return (
                 <div className="sub-nav-background">
                     <div className="sub-nav-container">
-                        {button.id} and {button.content}
+                        {(button.subNav) ? button.subNav.map((subButton) =>
+                            <SubButton subButton={subButton} />) :
+                            `${button.id} and ${button.content}`}
                     </div>
                 </div>
             );
