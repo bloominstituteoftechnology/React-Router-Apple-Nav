@@ -1,0 +1,19 @@
+.nav-wrapper {
+  background: #000;
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  align-content: center;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+}
