@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import {TopNavigation} from './Components/TopNavigation';
+import TopNavigation from './Components/TopNavigation';
 import './App.css';
 
 class App extends Component {
