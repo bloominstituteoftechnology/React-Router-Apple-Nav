@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import { Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import SubNav from './components/SubNav'
 
@@ -16,7 +17,18 @@ class App extends Component {
     return (
       <Fragment>
         <Nav links={keys} />
-        {keys.map((key, i) => <SubNav key={i} links={data[key]} odd={i % 2 === 0}/>)}
+        {keys.map((key, i) => (
+          <Route
+            key={i}
+            path={`/${key
+              .toLowerCase()
+              .split(' ')
+              .join('_')}`}
+            render={props => (
+              <SubNav {...props} links={data[key]} odd={i % 2 === 0} />
+            )}
+          />
+        ))}
       </Fragment>
     )
   }
