@@ -1,5 +1,10 @@
 .SubNav {
   background: #141414;
+  color: #efefef;
+}
+
+.SubNav a {
+  color: #efefef;
 }
 
 .SubNav-Wrapper {
@@ -12,7 +17,6 @@
 
 .SubNavItem,
 .SubNavItem:visited {
-  color: #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +28,7 @@
 .SubNav-Text {
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 2px;
+  margin-top: 7px;
 }
 
 .SubNavItem:hover {
@@ -35,4 +39,12 @@
   text-align: center;
   color: #f46c0e;
   font-size: 9px;
+}
+
+.light {
+  background: #f6f6f6;
+}
+
+.light a {
+  color: #141414;
 }

@@ -6,7 +6,7 @@ const Nav = props => {
   return (
     <nav className="Nav">
       <div className="NavWrapper">
-        <NavItem item={<ion-icon name="logo-apple" link="mac" />} />
+        <NavItem item={<ion-icon name="logo-apple" link="/" />} />
         <NavItem item="Mac" link="mac" />
         <NavItem item="iPad" link="ipad" />
         <NavItem item="iPhone" link="iphone" />

@@ -24,27 +24,33 @@ class App extends Component {
         <Nav />
         <Route
           path="/mac"
-          render={props => <SubNav data={this.state.macData} />}
+          render={props => <SubNav {...props} data={this.state.macData} />}
         />
         <Route
           path="/ipad"
-          render={props => <SubNav data={this.state.ipadData} />}
+          render={props => (
+            <SubNav {...props} data={this.state.ipadData} light />
+          )}
         />
         <Route
           path="/iphone"
-          render={props => <SubNav data={this.state.iphoneData} />}
+          render={props => <SubNav {...props} data={this.state.iphoneData} />}
         />
         <Route
           path="/watch"
-          render={props => <SubNav data={this.state.watchData} />}
+          render={props => (
+            <SubNav {...props} data={this.state.watchData} light />
+          )}
         />
         <Route
           path="/tv"
-          render={props => <SubNav data={this.state.tvData} />}
+          render={props => <SubNav {...props} data={this.state.tvData} />}
         />
         <Route
           path="/music"
-          render={props => <SubNav data={this.state.musicData} />}
+          render={props => (
+            <SubNav {...props} data={this.state.musicData} light />
+          )}
         />
       </div>
     );

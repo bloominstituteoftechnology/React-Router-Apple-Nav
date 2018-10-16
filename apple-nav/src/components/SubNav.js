@@ -1,9 +1,9 @@
 import React from 'react';
 import './SubNav.css';
 
-const SubNav = ({ data }) => {
+const SubNav = ({ data, light }) => {
   return (
-    <nav className="SubNav">
+    <nav className={light ? 'SubNav light' : 'SubNav'}>
       <div className="SubNav-Wrapper">
         {data.map(product => (
           <a href="/" className="SubNavItem">

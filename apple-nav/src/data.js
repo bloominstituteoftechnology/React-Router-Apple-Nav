@@ -64,19 +64,19 @@ const productData = [
   [
     {
       id: 0,
-      name: 'Ipad Pro',
+      name: 'iPad Pro',
       img: 'img/ipadpro_light_large.svg',
       new: false
     },
     {
       id: 1,
-      name: 'Ipad',
+      name: 'iPad',
       img: 'img/ipad_large.svg',
       new: true
     },
     {
       id: 2,
-      name: 'Ipad mini 4',
+      name: 'iPad mini 4',
       img: 'img/ipadmini_large.svg',
       new: false
     },

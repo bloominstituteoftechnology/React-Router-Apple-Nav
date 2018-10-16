@@ -27,3 +27,7 @@
 .NavItem:hover {
   color: #a5a5a5;
 }
+
+.active {
+  color: #a5a5a5 !important;
+}
