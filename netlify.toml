@@ -1,4 +1,6 @@
 [build]
   base = "apple-nav"
 
-/*  /index.html  200
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
