@@ -20,10 +20,7 @@ class App extends Component {
         {keys.map((key, i) => (
           <Route
             key={i}
-            path={`/${key
-              .toLowerCase()
-              .split(' ')
-              .join('_')}`}
+            path={`/${key.toLowerCase()}`}
             render={props => (
               <SubNav {...props} links={data[key]} odd={i % 2 === 0} />
             )}
