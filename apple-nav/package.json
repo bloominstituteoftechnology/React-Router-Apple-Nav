@@ -6,6 +6,7 @@
     "react": "^16.5.2",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.5.2",
+    "react-pose": "^3.3.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "react-transition-group": "^2.5.0"
