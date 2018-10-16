@@ -2,10 +2,11 @@ import React from "react";
 import Nav from "./Nav";
 import "./components.css";
 import data from '../data';
+// import SubNav from './SubNav';
 
 class NavWrapper extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       data: []
       //set a property to hold the results of filter.
@@ -14,7 +15,7 @@ class NavWrapper extends React.Component {
 
   componentDidMount() {
       this.setState({
-          data: data
+          data: data,
       })
   }
   
@@ -24,7 +25,7 @@ class NavWrapper extends React.Component {
       return (
           <div className="navWrapper">
             {this.state.data.map(navItem => (
-                <Nav key={navItem.name} navItem={navItem.name} />
+                <Nav key={navItem.name} navItem={navItem.name} selectLink={this.props.selectLink} />
             ))}
           </div>
       )

@@ -4,3 +4,15 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.productDiv img {
+    max-width: 30px;
+}
+
+.subNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
