@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Fragment>
         <Nav links={keys} />
-        {keys.map((key, i) => <SubNav key={i} links={data[key]} />)}
+        {keys.map((key, i) => <SubNav key={i} links={data[key]} odd={i % 2 === 0}/>)}
       </Fragment>
     )
   }
