@@ -1,6 +1,7 @@
 import React from 'react'
-import { Wrapper } from '../styles/Nav'
+import { Wrapper, NavItem } from '../styles/Nav'
 
-const Nav = () => <Wrapper>hi</Wrapper>
-
+const Nav = ({ links }) => (
+  <Wrapper>{links.map((link, i) => <NavItem key={i}>{link}</NavItem>)}</Wrapper>
+)
 export default Nav
