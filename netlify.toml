@@ -8,3 +8,8 @@
 [build]
   base    = "apple-nav/"
   publish = "apple-nav/build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
