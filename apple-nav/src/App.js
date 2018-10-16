@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
+import NavWrapper from './components/NavWrapper';
+import ItemPage from './components/ItemPage';
+import SubItemPage from './components/SubItemPage';
+import Home from './components/Home';
+import { navData } from './navData';
 import './App.css';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      links: [],
+    }
+  }
+    componentDidMount = () => {
+      this.setState({
+        links: navData,
+      })
+
+    }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route path='/' render={(props) => (<NavWrapper {...props} links={this.state.links} />)} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/:name' render={(props) => (<ItemPage {...props} />)} />
+        <Route path=':name/::name' component={SubItemPage} />
       </div>
     );
   }
