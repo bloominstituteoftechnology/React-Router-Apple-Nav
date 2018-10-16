@@ -37,7 +37,6 @@ const RoutesContainer = posed.div({
   });
 
 const Subnav = (props) => {
-    console.log('hello');
     return (
         <StyledSubnav color={props.color} background={props.background}>
             <PoseGroup>
