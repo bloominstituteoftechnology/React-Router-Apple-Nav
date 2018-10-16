@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Nav";
 
-const navLinks = ["Home", "iPad", "iPhone", "Watch", "TV", "Music", "Support"];
+const navLinks = ["Mac", "iPad", "iPhone", "Watch", "TV", "Music", "Support"];
 
 const Nav = props => {
   return (
