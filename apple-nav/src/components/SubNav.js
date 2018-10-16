@@ -10,8 +10,6 @@ let classes = 'sub-nav ';
 if (!dark) {
   classes += 'light'
 }
-
-
     return (
     <div className={classes}>
     {props.link.map(linkObj => (
@@ -26,7 +24,6 @@ if (!dark) {
         </NavLink>
       ))
     ))}
-    <Route path='${match.path}/:subName' component={SubItemPage} />
   </div>
     )
 }
