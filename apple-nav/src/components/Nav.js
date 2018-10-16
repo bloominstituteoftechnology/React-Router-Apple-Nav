@@ -11,6 +11,7 @@ class Nav extends React.Component {
 
   render() {
       return (
+        //Will render subset of navs need to cherry pick and grab the right data
           <div className="navItem">
             <Link to={`/${this.props.navItem}`}><h2>{this.props.navItem}</h2></Link>
           </div>

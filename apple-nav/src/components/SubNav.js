@@ -18,6 +18,7 @@ class SubNav extends React.Component {
 
   render() {
     return (
+      //Output the data.name and link to the correct component.
       <div className="entireNav">
       <NavWrapper />
         <div className="subNav">

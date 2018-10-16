@@ -8,6 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <Route exact path="/" component={NavWrapper} />
         <Route exact path="/:name" component={SubNav} />
       </div>
