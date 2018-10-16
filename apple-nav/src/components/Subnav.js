@@ -27,7 +27,7 @@ const RoutesContainer = posed.div({
         x: 0,
         opacity: 1,
         delay: 200,
-        ease: 'CircOut'
+        ease: 'CircInOut'
       },
       exit: {
         x: 50,
@@ -37,12 +37,13 @@ const RoutesContainer = posed.div({
   });
 
 const Subnav = (props) => {
+    console.log('hello');
     return (
         <StyledSubnav color={props.color} background={props.background}>
             <PoseGroup>
                 <RoutesContainer key={Date.now()}>
                         <StyledContainer width={props.width}>
-                            {props.data.map((product,i) => <Product key={i} product={product} />)}
+                            {props.data === null ? null : props.data.map((product,i) => <Product key={i} product={product} />)}
                         </StyledContainer>
                     </RoutesContainer>
                 </PoseGroup>
