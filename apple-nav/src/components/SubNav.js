@@ -6,7 +6,7 @@ const SubNav = ({ data, light }) => {
     <nav className={light ? 'SubNav light' : 'SubNav'}>
       <div className="SubNav-Wrapper">
         {data.map(product => (
-          <a href="/" className="SubNavItem">
+          <a href="/" className="SubNavItem" key={product.name}>
             <img src={product.img} alt={product.name} />
             <span className="SubNav-Text">{product.name}</span>
             <span

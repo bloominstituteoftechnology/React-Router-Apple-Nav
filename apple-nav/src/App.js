@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Home from './components/Home';
 import Nav from './components/Nav';
 import SubNav from './components/SubNav';
 import { Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
+        <Route exact path="/home" render={props => <Home {...props} />} />
         <Route
           path="/mac"
           render={props => <SubNav {...props} data={this.state.macData} />}

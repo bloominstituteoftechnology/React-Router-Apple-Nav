@@ -164,7 +164,7 @@ const productData = [
     },
     {
       id: 2,
-      name: 'Apple Watch Hermes',
+      name: 'Apple Watch Hermès',
       img: 'img/watch_nav_hermes_large.svg',
       new: true
     },
