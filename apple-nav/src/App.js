@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <AppContainer className="App">
-        <Route render={() => <MainNavContainer />} />
+        <Route path="/" render={() => <MainNavContainer />} />
       </AppContainer>
     );
   }
