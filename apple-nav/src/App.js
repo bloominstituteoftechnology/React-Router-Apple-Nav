@@ -16,16 +16,23 @@ class App extends Component {
 
     return (
       <Fragment>
-        <Nav links={keys} />
-        {keys.map((key, i) => (
-          <Route
-            key={i}
-            path={`/${key.toLowerCase()}`}
-            render={props => (
-              <SubNav {...props} links={data[key]} odd={i % 2 === 0} />
-            )}
-          />
-        ))}
+        <Route
+          path="/"
+          render={() => (
+            <Fragment>
+              <Nav links={keys} />
+              {keys.map((key, i) => (
+                <Route
+                  key={i}
+                  path={`/${key.toLowerCase()}`}
+                  render={props => (
+                    <SubNav {...props} links={data[key]} odd={i % 2 === 0} />
+                  )}
+                />
+              ))}
+            </Fragment>
+          )}
+        />
       </Fragment>
     )
   }
