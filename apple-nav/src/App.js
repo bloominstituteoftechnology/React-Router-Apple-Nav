@@ -5,7 +5,6 @@ import posed, { PoseGroup } from 'react-pose';
 import './App.css';
 
 import TopNav from './components/TopNav';
-import Home from './components/Home';
 import Mac from './components/products/Mac';
 import IPad from './components/products/iPad';
 import IPhone from './components/products/iPhone';
@@ -26,7 +25,7 @@ class App extends Component {
         <PoseGroup>
           <RoutesContainer key={Date.now()}>
             <Switch location={window.location}>
-              <Route exact path="/" component={Home}/>
+              <Route exact path="/" render={props => <div></div>}/>
               <Route path="/mac" component={Mac}/>
               <Route path="/ipad" component={IPad}/>
               <Route path="/iphone" component={IPhone}/>
