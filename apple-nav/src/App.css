@@ -33,56 +33,6 @@ i {
   font-size: 25px;
 }
 
-.subnav {
-  height: 120px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  justify-items: center;
-}
-
-.mac {
-  background: #141414;
-  color: white;
-}
-
-.ipad {
-  background: #f6f6f6;
-  color: #141414;
-}
-
-.watch {
-  background: white;
-  color: #141414;
-}
-
-.maccontainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  justify-items: center;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.ipadcontainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  justify-items: center;
-  width: 40%;
-  margin: 0 auto;
-}
-
-.iphonecontainer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  justify-items: center;
-  width: 50%;
-  margin: 0 auto;
-}
-
 .product {
   display: flex;
   flex-flow: column nowrap;

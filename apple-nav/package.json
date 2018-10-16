@@ -9,7 +9,8 @@
     "react-pose": "^3.3.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
-    "react-transition-group": "^2.5.0"
+    "react-transition-group": "^2.5.0",
+    "styled-components": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

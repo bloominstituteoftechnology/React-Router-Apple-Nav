@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import posed, { PoseGroup } from 'react-pose';
+import Data from './components/data';
 
 import './App.css';
 
 import TopNav from './components/TopNav';
-import Mac from './components/products/Mac';
-import IPad from './components/products/iPad';
-import IPhone from './components/products/iPhone';
-import Watch from './components/products/Watch';
-import TV from './components/products/TV';
-import Music from './components/products/Music';
+import Subnav from './components/Subnav';
 
 const RoutesContainer = posed.div({
   enter: {x: 0},
@@ -25,13 +21,19 @@ class App extends Component {
         <PoseGroup>
           <RoutesContainer key={Date.now()}>
             <Switch location={window.location}>
-              <Route exact path="/" render={props => <div></div>}/>
-              <Route path="/mac" component={Mac}/>
-              <Route path="/ipad" component={IPad}/>
-              <Route path="/iphone" component={IPhone}/>
-              <Route path="/watch" component={Watch}/>
-              <Route path="/tv" component={TV}/>
-              <Route path="/music" component={Music}/>
+              <Route exact path="/" render={props => <div {...props}></div>}/>
+
+              <Route path="/mac" render={props => <Subnav {...props} data={Data.macData} color={'#f6f6f6'} background={'#141414'} width={'60%'} />}/>
+              
+              <Route path="/ipad" render={props => <Subnav {...props} data={Data.ipadData} color={'#141414'} background={'#f6f6f6'} width={'40%'}/>}/>
+              
+              <Route path="/iphone" render={props => <Subnav {...props} data={Data.iphoneData} color={'#f6f6f6'} background={'#141414'} width={'50%'}/>}/>
+              
+              <Route path="/watch" render={props => <Subnav {...props} data={Data.watchData} color={'#141414'} background={'white'} width={'50%'}/>}/>
+              
+              <Route path="/tv" render={props => <Subnav {...props} data={Data.tvData} color={'#f6f6f6'} background={'#141414'} width={'40%'}/>}/>
+              
+              <Route path="/music" render={props => <Subnav {...props} data={Data.musicData} color={'#141414'} background={'#f6f6f6'} width={'50%'}/>}/>
             </Switch>
           </RoutesContainer>
         </PoseGroup>
