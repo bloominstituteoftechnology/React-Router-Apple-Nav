@@ -1,0 +1,102 @@
+header {
+    background: #323232;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    width: 69%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  a:hover {
+    color: lightgrey;
+  }
+
+  i {
+    color: white;
+  }
+
+  #apple {
+    font-size: 25px;
+  }
+
+  .subnav {
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .mac {
+    background: #141414;
+    color: white;
+  }
+
+  .ipad {
+    background: #f6f6f6;
+    color: #141414;
+  }
+
+  .watch {
+    background: white;
+    color: #141414;
+  }
+
+  .maccontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .ipadcontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .iphonecontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .product {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product img {
+    height: 54px;
+    width: auto;
+  }
+
+  .product p {
+    font-size: 11px;
+    width: 80px;
+    text-align: center;
+  }
