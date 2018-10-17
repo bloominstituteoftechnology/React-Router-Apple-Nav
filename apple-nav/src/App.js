@@ -25,7 +25,8 @@ class App extends Component {
       <div className="App">
         <NavHeader categories={this.state.categories} />
         <Route
-          path="/products/:id"
+          exact
+          path="/:categoryName"
           render={props => (
             <SubNavHeader {...props} categories={this.state.categories} />
           )}
