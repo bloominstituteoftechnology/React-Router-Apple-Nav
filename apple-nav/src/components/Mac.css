@@ -1,0 +1,22 @@
+.apple-product-container {
+  display: flex;
+  /* background: #141414; */
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+
+  height: 124px;
+  align-items: center;
+}
+
+.apple-product-container h2 {
+  font-size: 11px;
+  color: white;
+}
+.apple-product-wrapper {
+  background: #141414;
+}
+.apple-product-container img {
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+.nav-container {
+  display: flex;
+  max-width: 1024px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.nav-container h3 {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-container img {
+  cursor: pointer;
+  /* width: 36px;
+  height: 44px; */
+  align-self: flex;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  height: 48px;
+}
