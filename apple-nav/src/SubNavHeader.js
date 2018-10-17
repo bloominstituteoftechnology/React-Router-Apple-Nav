@@ -1,11 +1,15 @@
 import React from "react";
-import Categories from "./Categories";
 
 class SubNavHeader extends React.Component {
   render() {
-    const category = Categories.find(
+    const category = this.props.categories.find(
       item => item.categoryName === this.props.match.params.categoryName
     );
+
+    if (!this.props.categories.length || !category) {
+      return <h2>Loading data...</h2>;
+    }
+
     return (
       <div className="sub-nav-header">
         {category.subcategories.map(sub => (
