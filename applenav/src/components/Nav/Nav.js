@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, Route } from "react-router-dom";
 import "./Nav";
 
 const navLinks = ["Mac", "iPad", "iPhone", "Watch", "TV", "Music", "Support"];
@@ -15,18 +15,18 @@ const Nav = props => {
       </Link>
       {navLinks.map(link => {
         return (
-          <NavLink to="/" key={link}>
+          <NavLink to={`/${link}`} key={link}>
             {link}
           </NavLink>
         );
       })}
-      <Link to="/">
+      <Link to="/search">
         <img
           src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg"
           alt="search icon"
         />
       </Link>
-      <Link to="/">
+      <Link to="/bag">
         <img
           src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg"
           alt="shopping bag icon"

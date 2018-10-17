@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { mac, iPad, iPhone, watch, tv, music } from "./productdata";
+import { ipad } from "./productdata";
 
-class Products extends React.Component {
+class Ipad extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: mac
+      products: ipad
     };
   }
 
@@ -14,7 +14,7 @@ class Products extends React.Component {
 
   render() {
     return (
-      <div className="products-list">
+      <div className="products ipad">
         {this.state.products.map((item, index) => {
           return (
             <div className="product" key={index}>
@@ -31,4 +31,4 @@ class Products extends React.Component {
   }
 }
 
-export default Products;
+export default Ipad;
