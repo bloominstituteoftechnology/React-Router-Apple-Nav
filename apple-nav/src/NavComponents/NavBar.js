@@ -1,8 +1,10 @@
 import React from 'react';
 import Styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
 import appleLogo from '../Assets/apple-logo.png'
 
+/* Styled Components */
 const NavBarWrapper = Styled.nav`
     display: flex;
     align-items: center;
@@ -31,8 +33,8 @@ const StyledLink = Styled(Link)`
     text-decoration: none;
     padding-right: 100px;
     img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     };
 
     :last-child {
@@ -40,18 +42,28 @@ const StyledLink = Styled(Link)`
     }
 `;
 
+/* Menu Items to loop through */
+const menuItems = [
+    { id: "mac",    name: "Mac"     },
+    { id: "ipad",   name: "iPad"    },
+    { id: "iphone", name: "iPhone"  },
+    { id: "watch",  name: "Watch"   },
+    { id: "tv",     name: "TV"      },
+    { id: "music",  name: "Music"   },
+    { id: "support",name: "Support" }
+];
+
 const NavBar = (props) => {
+    console.log("menuitems: ", menuItems);
     return (
         <NavBarWrapper>
             <NavItems>
-                <StyledLink to="/"><img src={appleLogo}/></StyledLink>
-                <StyledLink to="/mac">Mac</StyledLink>
-                <StyledLink to="/ipad">iPad</StyledLink>
-                <StyledLink to="/iphone">iPhone</StyledLink>
-                <StyledLink to="/watch">Watch</StyledLink>
-                <StyledLink to="/tv">TV</StyledLink>
-                <StyledLink to="/music">Music</StyledLink>
-                <StyledLink to="/support">Support</StyledLink>
+                <StyledLink to="/"><img src={appleLogo} alt='Home'/></StyledLink>
+                {menuItems.map( (item, index) => {
+                    return (
+                        <StyledLink key={index} to={`/${item.id}`}>{item.name}</StyledLink>
+                    );
+                })}
             </NavItems>
         </NavBarWrapper>
     );
