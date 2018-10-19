@@ -1,8 +1,9 @@
 import React from 'react';
+import { FlexContainerWhite } from './Styles/Index';
 
 const Ipad = props => {
     return (
-        <div>
+        <FlexContainerWhite>
             <div>
                 <img src={require('../../img/ipad/ipadpro.png')} />
             </div>
@@ -21,7 +22,7 @@ const Ipad = props => {
             <div>
                 <img src={require('../../img/ipad/compare.png')} />
             </div>
-        </div>
+        </FlexContainerWhite>
     );
 };
 

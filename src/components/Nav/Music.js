@@ -1,8 +1,9 @@
 import React from 'react';
+import { FlexContainerWhite } from './Styles/Index';
 
 const Music = props => {
     return (
-        <div>
+        <FlexContainerWhite>
             <div>
                 <img src={require('../../img/music/music.png')} />
             </div>
@@ -24,7 +25,7 @@ const Music = props => {
             <div>
                 <img src={require('../../img/music/gift.png')} />
             </div>
-        </div>
+        </FlexContainerWhite>
     );
 };
 

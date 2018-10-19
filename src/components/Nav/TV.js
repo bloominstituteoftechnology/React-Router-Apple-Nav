@@ -1,8 +1,9 @@
 import React from 'react';
+import { FlexContainerBlack } from './Styles/Index';
 
 const TV = props => {
     return (
-        <div>
+        <FlexContainerBlack>
             <div>
                 <img src={require('../../img/tv/tv4k.png')} />
             </div>
@@ -18,7 +19,7 @@ const TV = props => {
             <div>
                 <img src={require('../../img/tv/compare.png')} />
             </div>
-        </div>
+        </FlexContainerBlack>
     );
 };
 

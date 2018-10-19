@@ -1,8 +1,9 @@
 import React from 'react';
+import { FlexContainerWhite } from './Styles/Index';
 
 const Watch = props => {
     return (
-        <div>
+        <FlexContainerWhite>
             <div>
                 <img src={require('../../img/watch/watch4.png')} />
             </div>
@@ -27,7 +28,7 @@ const Watch = props => {
             <div>
                 <img src={require('../../img/watch/compare.png')} />
             </div>
-        </div>
+        </FlexContainerWhite>
     );
 };
 
