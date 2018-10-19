@@ -1,12 +1,10 @@
-const data = [
-    {
-        id: 1,
-        name: 'Apple',
-        imgUrl: '../../images/apple-Logo.svg'
-    },
+export const data = [
+
     {
         id: 2,
-        name: 'Mac'
+        name: 'Mac',
+        imgUrl: './images/macbook_dark_large.svg'
+           
     },
     {
         id: 3,
@@ -32,15 +30,12 @@ const data = [
         id: 8,
         name: 'Support'
     },
-    {
-        id: 9,
-        name: 'Search'
-    },
-    {
-        id: 10,
-        name: 'Store',
-        imgUrl: '../../images/bag-img.svg'
-    }
+   
+   
 ]
 
-export default data;
+export const appleImgs = [
+    "./images/macbook_dark_large.svg",
+    "./images/macbookair_dark_large.svg"
+
+]
