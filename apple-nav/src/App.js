@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 
 import './App.css';
 import Nav from './components/Nav';
-import { navNames } from './AppData';
+import { navData } from './AppData';
 
 
 
@@ -11,13 +10,13 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      navNames: navNames
+      navData: navData
     }
   }
   render() {
     return (
       <div>
-        <Nav names={this.state.navNames}/>
+        <Nav navData={this.state.navData}/>
         {/* <div>
           
           <div>
