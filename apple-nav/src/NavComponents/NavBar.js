@@ -12,10 +12,8 @@ const NavBarWrapper = Styled.nav`
     min-width: 1024px;
     width: 100%;
     height: 48px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+
+
     background: rgba(0,0,0,0.8);
     font-size: 17px;
 `;
@@ -54,7 +52,7 @@ const menuItems = [
 ];
 
 const NavBar = (props) => {
-    console.log("menuitems: ", menuItems);
+    
     return (
         <NavBarWrapper>
             <NavItems>

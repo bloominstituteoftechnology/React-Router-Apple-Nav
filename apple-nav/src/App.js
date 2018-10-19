@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
 import './App.css';
 import NavBar from './NavComponents/NavBar';
+import NavDrawer from './NavComponents/NavDrawer';
 
 class App extends Component {
   constructor() {
@@ -13,12 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     Header
-      //   </header>
-      // </div>
-      <NavBar />
+      <i>
+        <Route path="/" component={NavBar} />
+        <Route path="/:id" component={NavDrawer} />
+      </i>
     );
   }
 }
