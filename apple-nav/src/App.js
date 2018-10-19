@@ -15,10 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      <i>
+      <>
         <Route path="/" component={NavBar} />
         <Route path="/:id" component={NavDrawer} />
-      </i>
+      </>
     );
   }
 }

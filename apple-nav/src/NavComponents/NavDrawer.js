@@ -1,6 +1,8 @@
 import React from 'react';
 import Styled from 'styled-components';
 
+import navExt from '../Assets/navExt';
+
 const DrawerWrapper = Styled.div`
 
     background: rgba(2,2,2,0.8);
@@ -15,17 +17,7 @@ const DrawerWrapper = Styled.div`
     justify-content: space-around;
 `;
 
-const navExt = [
-    { tab: "mac", name: "MacBook" },
-    { tab: "mac", name: "MacBook Air" },
-    { tab: "mac", name: "MacBook Pro" },
-    { tab: "ipad", name: "iPad 1" },
-    { tab: "ipad", name: "iPad 2" },
-    { tab: "ipad", name: "iPad 3" },
-    { tab: "ipad", name: "iPad 4" },
-    { tab: "ipad", name: "iPad 5" },
-    { tab: "ipad", name: "iPad 6" },
-];
+
 
 
 const NavDrawer = (props) => {
