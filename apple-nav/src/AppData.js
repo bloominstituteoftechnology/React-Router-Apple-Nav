@@ -4,16 +4,16 @@ export const navData = [
         id: 'mac',
         name: 'Mac',
         imgs: [
-            require('./iconImgs/mac/macbook.png'),
-            require('./iconImgs/mac/macbookair.png'),
-            require('./iconImgs/mac/macbookpro.png'),
-            require('./iconImgs/mac/imac.png'),
-            require('./iconImgs/mac/imacpro.png'),
-            require('./iconImgs/mac/macpro.png'),
-            require('./iconImgs/mac/macmini.png'),
-            require('./iconImgs/mac/accesories.png'),
-            require('./iconImgs/mac/mojave.png'),
-            require('./iconImgs/mac/compare.png')
+            {bottomPadding: 'px', alt: 'Macbook', imgPath: require('./iconImgs/mac/macbook.png')},
+            {bottomPadding: '21px', alt: 'MacbookAir', imgPath: require('./iconImgs/mac/macbookair.png')},
+            {bottomPadding: '21px', alt: 'MacbookPro', imgPath: require('./iconImgs/mac/macbookpro.png')},
+            {bottomPadding: '21px', alt: 'iMac', imgPath: require('./iconImgs/mac/imac.png')},
+            {bottomPadding: '21px', alt: 'iMacPro', imgPath: require('./iconImgs/mac/imacpro.png')},
+            {bottomPadding: '21px', alt: 'MacPro', imgPath: require('./iconImgs/mac/macpro.png')},
+            {bottomPadding: '21px', alt: 'MacMini', imgPath: require('./iconImgs/mac/macmini.png')},
+            {bottomPadding: '21px', alt: 'Accesories', imgPath: require('./iconImgs/mac/accesories.png')},
+            {bottomPadding: '21px', alt: 'Mojave', imgPath: require('./iconImgs/mac/mojave.png')},
+            {bottomPadding: '15px', alt: 'Compare', imgPath: require('./iconImgs/mac/compare.png')}
         ]
     },
 
@@ -21,12 +21,12 @@ export const navData = [
         id: 'ipad',
         name: 'iPad',
         imgs: [
-            require('./iconImgs/ipad/ipadpro.png'),
-            require('./iconImgs/ipad/ipad.png'),
-            require('./iconImgs/ipad/ipadmini4.png'),
-            require('./iconImgs/ipad/ios.png'),
-            require('./iconImgs/ipad/accesories.png'),
-            require('./iconImgs/ipad/compare.png')
+            {bottomPadding: '21px', alt: 'iPadPro', imgPath: require('./iconImgs/ipad/ipadpro.png')},
+            {bottomPadding: '21px', alt: 'iPad', imgPath: require('./iconImgs/ipad/ipad.png')},
+            {bottomPadding: '21px', alt: 'iPadMini14', imgPath: require('./iconImgs/ipad/ipadmini4.png')},
+            {bottomPadding: '21px', alt: 'iOS', imgPath: require('./iconImgs/ipad/ios.png')},
+            {bottomPadding: '21px', alt: 'Accesories', imgPath: require('./iconImgs/ipad/accesories.png')},
+            {bottomPadding: '21px', alt: 'Compare', imgPath: require('./iconImgs/ipad/compare.png')}
         ]
     },
 
@@ -34,14 +34,14 @@ export const navData = [
         id: 'iphone',
         name: 'iPhone',
         imgs: [
-            require('./iconImgs/iphone/iphonexs.png'),
-            require('./iconImgs/iphone/iphonexr.png'),
-            require('./iconImgs/iphone/iphone8.png'),
-            require('./iconImgs/iphone/iphone7.png'),
-            require('./iconImgs/iphone/ios12.png'),
-            require('./iconImgs/iphone/airpods.png'),
-            require('./iconImgs/iphone/accesories.png'),
-            require('./iconImgs/iphone/compare.png')
+            {bottomPadding: '21px', alt: 'iPhoneXS', imgPath: require('./iconImgs/iphone/iphonexs.png')},
+            {bottomPadding: '21px', alt: 'iPhoneXR', imgPath: require('./iconImgs/iphone/iphonexr.png')},
+            {bottomPadding: '21px', alt: 'iPhone8', imgPath: require('./iconImgs/iphone/iphone8.png')},
+            {bottomPadding: '21px', alt: 'iPhone7', imgPath: require('./iconImgs/iphone/iphone7.png')},
+            {bottomPadding: '21px', alt: 'iOS12', imgPath: require('./iconImgs/iphone/ios12.png')},
+            {bottomPadding: '21px', alt: 'AirPods', imgPath: require('./iconImgs/iphone/airpods.png')},
+            {bottomPadding: '21px', alt: 'Accesories', imgPath: require('./iconImgs/iphone/accesories.png')},
+            {bottomPadding: '21px', alt: 'Compare', imgPath: require('./iconImgs/iphone/compare.png')}
         ]
     },
 
@@ -49,14 +49,14 @@ export const navData = [
         id: 'watch',
         name: 'Watch',
         imgs: [
-            require('./iconImgs/watch/watch4.png'),
-            require('./iconImgs/watch/watchnike+.png'),
-            require('./iconImgs/watch/watchhermes.png'),
-            require('./iconImgs/watch/watch3.png'),
-            require('./iconImgs/watch/watchos.png'),
-            require('./iconImgs/watch/bands.png'),
-            require('./iconImgs/watch/accesories.png'),
-            require('./iconImgs/watch/compare.png')
+            {bottomPadding: '7px', alt: 'Watch4', imgPath: require('./iconImgs/watch/watch4.png')},
+            {bottomPadding: '7px', alt: 'WatchNike+', imgPath: require('./iconImgs/watch/watchnike+.png')},
+            {bottomPadding: '7px', alt: 'WatchHermes', imgPath: require('./iconImgs/watch/watchhermes.png')},
+            {bottomPadding: '7px', alt: 'Watch3', imgPath: require('./iconImgs/watch/watch3.png')},
+            {bottomPadding: '21px', alt: 'WatchOS', imgPath: require('./iconImgs/watch/watchos.png')},
+            {bottomPadding: '21px', alt: 'Bands', imgPath: require('./iconImgs/watch/bands.png')},
+            {bottomPadding: '21px', alt: 'Accesories', imgPath: require('./iconImgs/watch/accesories.png')},
+            {bottomPadding: '21px', alt: 'Compare', imgPath: require('./iconImgs/watch/compare.png')}
         ]
     },
 
@@ -64,11 +64,11 @@ export const navData = [
         id: 'tv',
         name: 'TV',
         imgs: [
-            require('./iconImgs/tv/tv4k.png'),
-            require('./iconImgs/tv/tv.png'),
-            require('./iconImgs/tv/app.png'),
-            require('./iconImgs/tv/accesories.png'),
-            require('./iconImgs/tv/compare.png')
+            {bottomPadding: '12px', alt: 'TV4K', imgPath: require('./iconImgs/tv/tv4k.png')},
+            {bottomPadding: '21px', alt: 'TV', imgPath: require('./iconImgs/tv/tv.png')},
+            {bottomPadding: '20px', alt: 'App', imgPath: require('./iconImgs/tv/app.png')},
+            {bottomPadding: '21px', alt: 'Accesories', imgPath: require('./iconImgs/tv/accesories.png')},
+            {bottomPadding: '11px', alt: 'Compare', imgPath: require('./iconImgs/tv/compare.png')}
         ]
     },
 
@@ -76,13 +76,13 @@ export const navData = [
         id: 'music',
         name: 'Music',
         imgs: [
-            require('./iconImgs/music/music.png'),
-            require('./iconImgs/music/itunes.png'),
-            require('./iconImgs/music/homepod.png'),
-            require('./iconImgs/music/airpods.png'),
-            require('./iconImgs/music/ipodtouch.png'),
-            require('./iconImgs/music/accesories.png'),
-            require('./iconImgs/music/gift.png')
+            {bottomPadding: '20px', alt: 'Music', imgPath: require('./iconImgs/music/music.png')},
+            {bottomPadding: '20px', alt: 'iTunes', imgPath: require('./iconImgs/music/itunes.png')},
+            {bottomPadding: '20px', alt: 'HomePod', imgPath: require('./iconImgs/music/homepod.png')},
+            {bottomPadding: '20px', alt: 'AirPods', imgPath: require('./iconImgs/music/airpods.png')},
+            {bottomPadding: '20px', alt: 'iPodTouch', imgPath: require('./iconImgs/music/ipodtouch.png')},
+            {bottomPadding: '20px', alt: 'Accesories', imgPath: require('./iconImgs/music/accesories.png')},
+            {bottomPadding: '20px', alt: 'Macbook', imgPath: require('./iconImgs/music/gift.png')}
         ]
     },
 ]

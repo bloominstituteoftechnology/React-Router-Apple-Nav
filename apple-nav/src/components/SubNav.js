@@ -1,13 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SubNavContainer = styled.div`
+    display: flex;
+    margin: 20px auto 10px auto;
+    color: white;
+    font-size: 1.2rem;
+`;
+
+const IconContainer = styled.img`
+    padding-bottom: ${props => props.paddingBottom};
+    margin: 0 5px;
+`;
 
 const SubNav = (props)=>{
     return (
-        <div>
+        <SubNavContainer>
             {props.data.imgs.map((img)=>{
-                // TODO: Find way to write alt prop
-                return <img key={img} src={img} alt="Test"></img>
+                console.log(img.bottomPadding);
+                return <IconContainer key={img.imgPath} src={img.imgPath} alt={img.alt} paddingBottom={img.bottomPadding}></IconContainer>
             })}
-        </div>
+        </SubNavContainer>
     )
 }
 

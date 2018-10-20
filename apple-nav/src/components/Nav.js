@@ -54,8 +54,6 @@ const SubNavBar = styled.div`
 `;
 
 const Nav = (props) =>{
-    const subBarName = props.location.pathname
-    console.log(subBarName);
     return (
         <NavContainer>
             <NavBar>
