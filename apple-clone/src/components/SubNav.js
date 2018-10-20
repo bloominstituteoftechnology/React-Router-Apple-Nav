@@ -34,25 +34,28 @@ const TextSpan = styled.span`
 `;
 
 const theme = {
-    bg: "#141414",
-  fg: "gray"
+  bg: "#141414",
+  fg: "white"
+};
+
+const invertTheme = {
+  bg: "#f6f6f6",
+  fg: "black"
 };
 
 const SubNav = ({ mac, bgcolor }) => {
   return (
-      <ThemeProvider theme={theme}>
-
-              <ANav theme={bgcolor ? { bg:'#f6f6f6' } :{bg:'#141414' } }>
+    <ThemeProvider theme={bgcolor ? invertTheme : theme}>
+      <ANav>
         {mac.map(product => (
           <NavWrapper>
             <NavLink to="/" className="subNav" key={product.id}>
               <img src={product.img} alt={product.name} />
-              <TextSpan theme={bgcolor ? {fg:"white"}: {fg:'black'}}>{product.name}</TextSpan>
+              <TextSpan>{product.name}</TextSpan>
             </NavLink>
           </NavWrapper>
         ))}
-              </ANav>
-
+      </ANav>
     </ThemeProvider>
   );
 };
