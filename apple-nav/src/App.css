@@ -30,3 +30,17 @@
     transform: rotate(360deg);
   }
 }
+
+a{
+  text-decoration:none;
+  color:white;
+  margin-right: 10px;
+}
+
+.fab {
+  margin-right:10px;
+}
+
+.fas {
+  margin-right:10px;
+}
