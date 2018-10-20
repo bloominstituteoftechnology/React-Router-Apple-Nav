@@ -45,6 +45,7 @@ const invertTheme = {
 
 const SubNav = ({ mac, bgcolor }) => {
   return (
+    <>
     <ThemeProvider theme={bgcolor ? invertTheme : theme}>
       <ANav>
         {mac.map(product => (
@@ -57,6 +58,8 @@ const SubNav = ({ mac, bgcolor }) => {
         ))}
       </ANav>
     </ThemeProvider>
+
+      </>
   );
 };
 

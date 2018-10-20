@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import { data, productData } from "./apple-data";
-import SubNav from './components/SubNav';
+import SubNav from "./components/SubNav";
 import Route from "react-router-dom/Route";
+import { Home } from "./components/home";
+
 
 class App extends Component {
   constructor() {
@@ -24,26 +26,37 @@ class App extends Component {
     });
   };
   render() {
+
     return (
       <div className="App">
         <Route
           path="/"
           render={props => <Nav {...props} data={this.state.data} />}
         />
-        <Route path="/Mac"
+        <Route exact path="/home"  component={Home} />
+        <Route
+          path="/Mac"
           render={props => <SubNav {...props} mac={this.state.mac} />}
         />
-        <Route path="/ipad"
+        <Route
+          path="/ipad"
           render={props => <SubNav {...props} mac={this.state.ipad} bgcolor />}
         />
-        <Route path="/iphone"
+        <Route
+          path="/iphone"
           render={props => <SubNav {...props} mac={this.state.iphone} />}
-        /> <Route path="/watch"
+        />{" "}
+        <Route
+          path="/watch"
           render={props => <SubNav {...props} mac={this.state.watch} bgcolor />}
-        /> <Route path="/tv"
+        />{" "}
+        <Route
+          path="/tv"
           render={props => <SubNav {...props} mac={this.state.tv} />}
-        /> <Route path="/music"
-          render={props => <SubNav {...props} mac={this.state.music} bgcolor/>}
+        />{" "}
+        <Route
+          path="/music"
+          render={props => <SubNav {...props} mac={this.state.music} bgcolor />}
         />
       </div>
     );
