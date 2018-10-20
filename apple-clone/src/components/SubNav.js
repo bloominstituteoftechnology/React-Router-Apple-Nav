@@ -21,6 +21,11 @@ const NavWrapper = styled.div`
     display: flex;
     flex-direction: column;
     text-decoration: none;
+     font-size:14px;
+  }
+  .New {
+    font-size: 10px;
+    color: orangered;
   }
   a {
     text-decoration: none;
@@ -30,7 +35,7 @@ const NavWrapper = styled.div`
 
 const TextSpan = styled.span`
   text-align: center;
-  margin-top: 7px;
+
 `;
 
 const theme = {
@@ -52,7 +57,13 @@ const SubNav = ({ mac, bgcolor }) => {
           <NavWrapper>
             <NavLink to="/" className="subNav" key={product.id}>
               <img src={product.img} alt={product.name} />
-              <TextSpan>{product.name}</TextSpan>
+                <TextSpan>{product.name}</TextSpan>
+                <TextSpan
+                  className="New"
+                  style={!product.new ? { visibility: 'hidden' } : null}
+                >
+                  New
+            </TextSpan>
             </NavLink>
           </NavWrapper>
         ))}
