@@ -13,6 +13,27 @@
   color: white; 
 }
 
+.nav-main .selected {
+  color: grey; 
+}
+
+.sub-navigation {
+  padding: 15px 4%;
+}
+
+.sub-nav-item a {
+  text-decoration: none; 
+  color: black; 
+}
+
+.sub-nav-item a:hover {
+  color: blue; 
+}
+
+.sub-nav-item .sub-selected {
+  color: blue; 
+}
+
 .selected a {
  color: grey; 
 }
@@ -32,4 +53,3 @@ body {
   color: blue; 
   cursor: pointer; 
 }
-

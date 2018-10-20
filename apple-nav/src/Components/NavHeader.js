@@ -1,9 +1,9 @@
 import React from 'react'; 
 import Nav from './Nav'; 
 
- const navItems = ["Mac", "Ipad", "Iphone", "Watch", "TV", "Music", "Support" ]
+const navItems = ["Mac","Ipad", "Iphone", "Watch", "TV", "Music", "Support" ]
 
- const NavHeader = props => {
+const NavHeader = props => {
     return(
         <div className = "nav-main">
         <img src = {require('../icon-apple.png')} width = "20px" height = "20px"/>
@@ -12,4 +12,4 @@ import Nav from './Nav';
     )
 }
 
- export default NavHeader;
+export default NavHeader; 
