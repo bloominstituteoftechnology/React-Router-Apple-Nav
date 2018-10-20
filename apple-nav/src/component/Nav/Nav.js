@@ -16,7 +16,7 @@ class Nav extends Component {
       <div className="nav-item support">Support</div>
       <div className="button" id="magnify"></div> 
       <div className="button" id="clipboard"></div>
-     <SubNav></SubNav>
+    
       
       </div>
     );
