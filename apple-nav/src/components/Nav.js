@@ -18,6 +18,11 @@ const NavBar = styled.div`
     width: 100%;
     height: 40px;
     margin: 0 auto;
+
+    img{
+        width: 18px;
+        height: 18px;
+    }
 `;
 
 const NavLink = styled.div`
@@ -45,6 +50,9 @@ const SubNavBar = styled.div`
     display: flex;
     align-items: flex-end;
 
+    // TODO: center sub nav under main nav
+
+    ${(props)=>props.path === '/' ?  `display: none` : null}
     ${(props)=>props.path === '/mac' ?  `background-color: #141414` : null}
     ${(props)=>props.path === '/ipad' ?  `background-color: #f6f6f6` : null}
     ${(props)=>props.path === '/iphone' ?  `background-color: #141414` : null}
@@ -57,8 +65,8 @@ const Nav = (props) =>{
     return (
         <NavContainer>
             <NavBar>
-                {props.navData.map((data)=>{
-                    return <NavItem key={data.id} id={data.id} name={data.name}/>
+                {props.navData.map((data, index)=>{
+                    return (index !== 0 ? <NavItem key={data.id} id={data.id} name={data.name}/> : <Link to="/"><img src={props.navData[0].name} alt="Apple Icon"></img></Link>)
                 })}
             </NavBar>
             <SubNavBar path={props.location.pathname}>

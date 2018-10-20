@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const SubNavContainer = styled.div`
     display: flex;
+    jusity-content: center;
     margin: 20px auto 10px auto;
     color: white;
     font-size: 1.2rem;

@@ -1,6 +1,12 @@
 
 export const navData = [
     {
+        id: '',
+        name: require('./iconImgs/apple.png'),
+        imgs: []
+    },
+
+    {
         id: 'mac',
         name: 'Mac',
         imgs: [
