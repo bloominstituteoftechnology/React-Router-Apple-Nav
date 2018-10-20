@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import applelogo from "../images/apple-Logo.svg";
-import applebag from "../images/bag-img.svg";
+import applelogo from "./img/apple-Logo.svg";
+import applebag from "./img/bag-img.svg";
 import PropTypes from "prop-types";
 // import SubNav from './SubNav';
 
