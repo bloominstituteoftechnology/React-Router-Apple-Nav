@@ -1,32 +1,108 @@
 .App {
-  text-align: center;
+
+  /* text-align: center; */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+html {
+  font-size: 65.2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-wrapper {
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  align-content: space-between;
+  width: 100%;
+  border: 2px solid green;
+ 
+}
+.nav-item {
+color: white;
+background-color: black;
+display: inline-block;
+padding-left: 10px;
+padding-right: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+div.button {
+  background-image: url("./component/Images/sample.png");
+  height: 30px;
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div#apple {
+  width: 32px;
+  margin-left: 10px;
+  background-position: 214px 44px;
+
+}
+
+div#magnify {
+  width: 32px;
+ /*  margin-left: 10px; */
+  background-position: 214px 44px;
+
+}
+
+div#clipboard {
+  width: 32px;
+  margin-left: 10px;
+  background-position: 214px 44px;
+}
+
+div#mac-book  {
+
+
+}
+
+div#mac-air  {
+
+  
+}
+
+div#mac-book-pro  {
+
+  
+}
+
+div#imac  {
+
+  
+}
+
+div#imac-pro  {
+
+  
+}
+
+div#mac-pro  {
+
+  
+}
+
+div#mac-mini  {
+
+  
+}
+
+div#mac-accessories  {
+
+  
+}
+
+div#mac-sierra  {
+
+  
+}
+div#mac-compare  {
+
+  
 }
