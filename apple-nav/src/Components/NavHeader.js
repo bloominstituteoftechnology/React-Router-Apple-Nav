@@ -6,6 +6,7 @@ import Nav from './Nav';
  const NavHeader = props => {
     return(
         <div className = "nav-main">
+        <img src = {require('../icon-apple.png')} width = "20px" height = "20px"/>
           {navItems.map((item, index) =>  <Nav key = {index} name = {item} /> )}
         </div>
     )
