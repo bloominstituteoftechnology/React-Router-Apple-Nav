@@ -10,10 +10,10 @@
 
 ## Project
 
-* Use _create-react-app_ to make an application, name it `apple-nav`.
-* You'll need to build out a few components here. Some variation of a `NavWrapper` component which will be your navigation header.
-* You'll need a reusable `Nav` component that you can turn into a navigation link for each parent category.
-* Lastly you're going to need some sort of `SubNav` component, that will be reusable and display your sub-navigation links for each category.
+* [x] Use _create-react-app_ to make an application, name it `apple-nav`.
+* [x] You'll need to build out a few components here. Some variation of a `NavWrapper` component which will be your navigation header.
+* [x] You'll need a reusable `Nav` component that you can turn into a navigation link for each parent category.
+* [x] Lastly you're going to need some sort of `SubNav` component, that will be reusable and display your sub-navigation links for each category.
 
 ### Stretch Problem
 
