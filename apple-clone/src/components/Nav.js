@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import applelogo from "../images/apple-Logo.svg";
 import applebag from "../images/bag-img.svg";
 import PropTypes from "prop-types";
+// import SubNav from './SubNav';
 
 
 const AppleNav = styled.div`
@@ -23,19 +24,29 @@ const AppleNav = styled.div`
 const Nav = props => {
   return (
     <AppleNav>
-      <img src={applelogo} alt="apple" />
+      <NavLink to="/">
+        <img src={applelogo} alt="apple" />
+      </NavLink>
       {props.data.map(product => (
         <NavLink
-          to={`/${product.id}/`}
+          to={`/${product.name}/`}
           style={{ textDecoration: "none", color: "white" }}
           key={product.id}
         >
           {product.name}
-        
+
         </NavLink>
-        
+
       ))}
-      <img src={applebag} alt="apple" />
+      <NavLink to="/search">
+        <img
+          src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg"
+          alt="search icon"
+        />
+      </NavLink>
+      <NavLink to='/store'>
+        <img src={applebag} alt="store" />
+      </NavLink>
     </AppleNav>
   );
 };
