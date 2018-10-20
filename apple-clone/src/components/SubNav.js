@@ -1,27 +1,30 @@
 import React from "react";
-import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 
 const ANav = styled.div`
   display: flex;
   align-items: center;
-  background: #141414;
   color: #efefef;
   heigh: 48%;
   padding: 10px;
   width: 100%;
   text-decoration: none;
+
+  background: ${props => props.theme.bg};
 `;
+
 const NavWrapper = styled.div`
-margin: 0 auto;
+  margin: 0 auto;
   .subNav {
     display: flex;
     flex-direction: column;
     text-decoration: none;
   }
   a {
-      color:white;
     text-decoration: none;
+    color: ${props => props.theme.fg};
   }
 `;
 
@@ -30,18 +33,27 @@ const TextSpan = styled.span`
   margin-top: 7px;
 `;
 
-const SubNav = ({ mac }) => {
+const theme = {
+    bg: "#141414",
+  fg: "gray"
+};
+
+const SubNav = ({ mac, bgcolor }) => {
   return (
-    <ANav>
-      {mac.map(product => (
-        <NavWrapper>
-          <NavLink to="/" className="subNav" key={product.id}>
-            <img src={product.img} alt={product.name} />
-            <TextSpan>{product.name}</TextSpan>
-          </NavLink>
-        </NavWrapper>
-      ))}
-    </ANav>
+      <ThemeProvider theme={theme}>
+
+              <ANav theme={bgcolor ? { bg:'#f6f6f6' } :{bg:'#141414' } }>
+        {mac.map(product => (
+          <NavWrapper>
+            <NavLink to="/" className="subNav" key={product.id}>
+              <img src={product.img} alt={product.name} />
+              <TextSpan theme={bgcolor ? {fg:"white"}: {fg:'black'}}>{product.name}</TextSpan>
+            </NavLink>
+          </NavWrapper>
+        ))}
+              </ANav>
+
+    </ThemeProvider>
   );
 };
 

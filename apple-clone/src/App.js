@@ -34,16 +34,16 @@ class App extends Component {
           render={props => <SubNav {...props} mac={this.state.mac} />}
         />
         <Route path="/ipad"
-          render={props => <SubNav {...props} mac={this.state.ipad} />}
+          render={props => <SubNav {...props} mac={this.state.ipad} bgcolor />}
         />
         <Route path="/iphone"
           render={props => <SubNav {...props} mac={this.state.iphone} />}
         /> <Route path="/watch"
-          render={props => <SubNav {...props} mac={this.state.watch} />}
+          render={props => <SubNav {...props} mac={this.state.watch} bgcolor />}
         /> <Route path="/tv"
           render={props => <SubNav {...props} mac={this.state.tv} />}
         /> <Route path="/music"
-          render={props => <SubNav {...props} mac={this.state.music} />}
+          render={props => <SubNav {...props} mac={this.state.music} bgcolor/>}
         />
       </div>
     );
