@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const SubMenuContainer = styled.div`
-    background-color: #141414;
+    background-color: ${props => props.backgroundColor};
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,11 +10,15 @@ const SubMenuContainer = styled.div`
 `
 
 class SubMenu extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <SubMenuContainer>
+            <SubMenuContainer backgroundColor={this.props.backgroundColor}>
                 {this.props.options.map(item => { 
-                    return (<img src={item}/>)
+                    return (<img src={item} />)
                 })}
             </SubMenuContainer>
         );

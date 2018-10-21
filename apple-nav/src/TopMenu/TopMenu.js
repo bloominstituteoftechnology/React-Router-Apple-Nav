@@ -18,6 +18,7 @@ const Icon = styled.i`
 
 const TopMenuOption = styled.span`
     color: white;
+    text-decoration: none;
 `
 
 class TopMenu extends React.Component {
@@ -30,8 +31,12 @@ class TopMenu extends React.Component {
         <Link to={`/macmenu`}>
             <TopMenuOption>Mac</TopMenuOption>
         </Link>
-        <TopMenuOption>iPad</TopMenuOption>
-        <TopMenuOption>iPhone</TopMenuOption>
+        <Link to={`/ipadmenu`}>
+            <TopMenuOption>iPad</TopMenuOption>
+        </Link>
+        <Link to={`/iphonemenu`}>
+            <TopMenuOption>iPhone</TopMenuOption>
+        </Link>
         <TopMenuOption>Watch</TopMenuOption>
         <TopMenuOption>TV</TopMenuOption>
         <TopMenuOption>Music</TopMenuOption>
