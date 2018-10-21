@@ -19,6 +19,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <img src='../Assets/macbook_dark_large.svg' />
         </header>
       </div>
     );
