@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
 import './App.css';
 import TopMenu from './TopMenu/TopMenu.js';
+import SubMenu from './SubMenu/SubMenu.js';
+import MacMenuOptions from './MacMenu/MacMenuOptions.js'
+
 
 class App extends Component {
   render() {
     return (
       <div>
-        <TopMenu />
+        <Route path='/' component={TopMenu}/>
+        <Route path='/macmenu' render={(props) => <SubMenu options={MacMenuOptions} {...props}/>}/>
       </div>
     );
   }

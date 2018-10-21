@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const TopMenuContainer = styled.div`
     box-sizing: border-box;
@@ -23,8 +24,12 @@ class TopMenu extends React.Component {
   render() {
     return (
       <TopMenuContainer>
-        <Icon className="fab fa-apple fa-2x"/>
-        <TopMenuOption>Mac</TopMenuOption>
+        <Link to={`/`}>
+            <Icon className="fab fa-apple fa-2x"/>
+        </Link>
+        <Link to={`/macmenu`}>
+            <TopMenuOption>Mac</TopMenuOption>
+        </Link>
         <TopMenuOption>iPad</TopMenuOption>
         <TopMenuOption>iPhone</TopMenuOption>
         <TopMenuOption>Watch</TopMenuOption>
