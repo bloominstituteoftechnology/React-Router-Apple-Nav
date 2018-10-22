@@ -7,42 +7,11 @@ import Iphone from './iphone';
 import Watch from "./watch";
 import Tv from './tv';
 import Music from "./music";
-import styled from 'styled-components';
 import Support from './support';
 import logo from '../logo.png'
-
-
-const Container = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-margin:0 auto;
-width:100;
-max-width:960px;
-border:1px dotted darkgrey;
-`;
-
-const Header = styled.div`
-width:100%;
-display:flex;
-flex-direction:row;
-justify-content:space-around;
-`
-
-const Main = styled.div`
-width:100%;
-height:40px
-background-color:#000;
-`
-
-const Logo = styled.img`
-width: 24px;
-height: 24px;
-position: relative;
-top: 5px;
-`
-
+import bag from '../bag.png';
+import search from '../search.png';
+import { Container, Header, Main, Img,  } from'./style'
 
 class Nav extends Component {
   constructor(props){
@@ -54,16 +23,12 @@ class Nav extends Component {
     return this.keyCount++;
   }
 
-  // capitalize = string =>{
-  //   return string.charAt(0).toUpperCase() + string.slice(1);
-  // }
-
   render() {
     return (
       <Main>
         <Container>
           <Header>
-          <Logo src={logo} alt="logo"/>
+          <Img src={logo} alt="logo" size={24} height={24}/>
           {this.props.navlists.map((item) =>{
             return(
               <NavLink exact to={`/${item}/`}>
@@ -71,9 +36,11 @@ class Nav extends Component {
               </NavLink>
             ); 
           })}
+           <Img src={search} alt="bag" size={18} height={18}/>
+           <Img src={bag} alt="bag" size={21} height={21}/>
           </Header>
-          <Route exact path='/mac/' component={Mac}/>
-          <Route exact path='/ipad/' component={Ipad}/>
+          <Route exact path='/mac/' render={(props)=> <Mac {...props} macLists={this.props.macLists}/>}/>
+          <Route exact path='/ipad/'render={(props)=> <Ipad {...props} ipadLists={this.props.ipadLists}/>}/>
           <Route exact path='/iphone/' component={Iphone}/>
           <Route exact path='/watch/' component={Watch}/>
           <Route exact path='/tv/' component={Tv}/>
