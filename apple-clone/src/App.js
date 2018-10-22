@@ -33,7 +33,7 @@ class App extends Component {
           path="/"
           render={props => <Nav {...props} data={this.state.data} />}
         />
-        <Route exact path="/home"  component={Home} />
+        <Route path="/home"  component={Home} />
         <Route
           path="/Mac"
           render={props => <SubNav {...props} mac={this.state.mac} />}

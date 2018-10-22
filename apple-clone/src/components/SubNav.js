@@ -54,7 +54,7 @@ const SubNav = ({ mac, bgcolor }) => {
     <ThemeProvider theme={bgcolor ? invertTheme : theme}>
       <ANav>
         {mac.map(product => (
-          <NavWrapper>
+          <NavWrapper key={product.id + product.name}>
             <NavLink to="/" className="subNav" key={product.id}>
               <img src={product.img} alt={product.name} />
                 <TextSpan>{product.name}</TextSpan>

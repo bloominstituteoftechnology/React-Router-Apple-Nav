@@ -23,7 +23,7 @@ const AppleNav = styled.div`
 const Nav = props => {
   return (
     <AppleNav>
-      <NavLink extact to="/home">
+      <NavLink  to="/home">
         <img src={applelogo} alt="apple" />
       </NavLink>
       {props.data.map(product => (
