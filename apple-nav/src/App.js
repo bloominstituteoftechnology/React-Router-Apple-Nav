@@ -3,19 +3,21 @@ import { Route } from 'react-router-dom';
 import { navData, subNavData } from './navData';
 
 import NavWrapper from './Navigation/NavWrapper';
-import SubNav from './Navigation/SubNav';
+import SubNavWrapper from './SubNavigation/SubNavWrapper';
 
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      nav: 'none',
+      nav: '',
       subnav: [],
     };
   }
 
   componentDidMount() {
+    const nav = window.location.pathname.replace(/\//,'');
     this.setState({
+      nav,
       subnav: subNavData
     });
   }
@@ -39,7 +41,7 @@ export default class App extends Component {
           exact
           path="/:nav"
           render={props => (
-            <SubNav {...props} subnav={this.filterSubNav()} />
+            <SubNavWrapper {...props} subnav={this.filterSubNav()} />
           )} />
       </>
     );
