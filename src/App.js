@@ -10,13 +10,15 @@ import Music from './components/Music';
 import Support from './components/Support';
 import './App.css';
 
+
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <nav className='navigation'>
             <div className="nav-button">Apple Logo</div>
-            <Link to="/mac">Mac</Link>
+            <Link to="/mac" style={{ textDecoration: 'none', color: 'white'}}>Mac</Link>
             <Link to="/ipad">iPad</Link>
             <Link to="/iphone">iPhone</Link>
             <Link to="/watch">Watch</Link>

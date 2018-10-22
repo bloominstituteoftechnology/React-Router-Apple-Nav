@@ -19,6 +19,11 @@
   /* border: 1px solid green; */
 }
 
+.navigation Link {
+  text-decoration: none;
+  color: white;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
