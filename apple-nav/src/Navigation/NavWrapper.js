@@ -5,7 +5,7 @@ import Nav from './Nav';
 
 const NavWrapper = props => {
   return (
-    <>
+    <header>
       {/* apple logo/home page here */}
       {props.navData.map(nav => (
         <NavLink to={`/${nav.toLowerCase()}`}>
@@ -14,7 +14,7 @@ const NavWrapper = props => {
       ))}
       {/* search overlay component here */}
       {/* shopping bag dropdown */}
-    </>
+    </header>
   );
 }
 

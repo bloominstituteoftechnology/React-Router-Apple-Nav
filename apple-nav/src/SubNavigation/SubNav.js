@@ -2,13 +2,15 @@ import React from 'react';
 
 const SubNav = props => {
   return(
-    <>
-    <img src={props.subnav.img} />
-    {props.subnav.subname}
+    <div className="subnav">
+    <img src={props.subnav.img} alt={props.subnav.subname}/>
+    <span className="subnav-text">{props.subnav.subname}</span>
     {' '}
-    {props.subnav.new ? `${props.subnav.new}` : null}
-    </>
+    <span className="subnav-new">{props.subnav.new ? `New` : null}</span>
+    </div>
   );
 }
 
 export default SubNav;
+
+// #f46c0e

@@ -5,6 +5,8 @@ import { navData, subNavData } from './navData';
 import NavWrapper from './Navigation/NavWrapper';
 import SubNavWrapper from './SubNavigation/SubNavWrapper';
 
+import './App.css';
+
 export default class App extends Component {
   constructor() {
     super();
@@ -35,7 +37,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <>
+      <div className="app-container">
         <NavWrapper navData={navData} selectNav={this.selectNav} />
         <Route
           exact
@@ -43,7 +45,7 @@ export default class App extends Component {
           render={props => (
             <SubNavWrapper {...props} subnav={this.filterSubNav()} />
           )} />
-      </>
+      </div>
     );
   }
 }

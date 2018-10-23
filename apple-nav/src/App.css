@@ -1,32 +1,110 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+html {
+  font-size: 62.5%;
+  background-color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav {
+  margin: 14px 30px;
+}
+
+.subnav-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #141414;
+}
+
+.subnav {
+  align-items: center;
+  color: #FFFFFF;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  font-size: 1.6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.subnav:hover {
+  color: #66bbff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subnav-text {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.subnav-new {
+  color: #f46c0e;
+  font-size: 1.1rem;
+  margin-top: 2px;
 }
