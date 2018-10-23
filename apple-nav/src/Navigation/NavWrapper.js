@@ -6,14 +6,20 @@ import Nav from './Nav';
 const NavWrapper = props => {
   return (
     <header>
-      {/* apple logo/home page here */}
+      <NavLink to="/">
+        <img src="/images/logo/image_large.svg" />
+      </NavLink>
       {props.navData.map(nav => (
         <NavLink to={`/${nav.toLowerCase()}`}>
           <Nav nav={nav} selectNav={props.selectNav} />
         </NavLink>
       ))}
-      {/* search overlay component here */}
-      {/* shopping bag dropdown */}
+      <NavLink to="/search">
+        <img src="/images/search/image_large.svg" />
+      </NavLink>
+      <NavLink to="/shop">
+        <img src="/images/bag/image_large.svg" />
+      </NavLink>
     </header>
   );
 }
