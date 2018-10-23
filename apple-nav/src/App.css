@@ -57,6 +57,7 @@ html {
 }
 
 .app-container {
+  position: relative;
   margin: 0 auto;
   width: 100%;
 }
@@ -64,8 +65,10 @@ html {
 header {
   background-color: #000000;
   display: flex;
-  justify-content: center;
   font-size: 1.6rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 980px;
 }
 
 header a {
@@ -74,14 +77,17 @@ header a {
 }
 
 .nav {
-  margin: 14px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
 }
 
 .subnav-container {
+  background-color: #141414;
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #141414;
 }
 
 .subnav {
@@ -90,8 +96,8 @@ header a {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  padding: 15px;
   font-size: 1.6rem;
+  padding: 15px;
 }
 
 .subnav:hover {

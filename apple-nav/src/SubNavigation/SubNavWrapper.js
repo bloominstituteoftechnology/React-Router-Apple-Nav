@@ -10,11 +10,3 @@ const SubNavWrapper = props => {
 }
 
 export default SubNavWrapper;
-
-
-// {props.subnav.map(subnav => (
-//   <Route path="/:nav"
-//       render={props => (
-//             <SubNav {...props} subnav={subnav} />
-//       )} />
-//       ))}

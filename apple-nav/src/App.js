@@ -38,7 +38,11 @@ export default class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <NavWrapper navData={navData} selectNav={this.selectNav} />
+        <Route
+          path="/"
+          render={props => (
+            <NavWrapper {...props} navData={navData} selectNav={this.selectNav} />
+          )} />
         <Route
           exact
           path="/:nav"
