@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route} from 'react-router-dom';
 import NavWrapper from './NavWrapper';
 
-class App extends Component {
+export default class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      tabs: ['ipad', 'iphone', 'mac', 'music', 'tv', 'watch'],
+      ipad: ['./img/ipad/accesories.png', './img/ipad/compare.png', './img/ipad/ios.png', './img/ipad/ipad.png', './img/ipad/ipadmini4.png', './img/ipad/ipadpro.png'],
+    }
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <NavWrapper/>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route path='/' render={(props)=> <NavWrapper {...props} tabs={this.state.tabs} ipad={this.state.ipad}/>} />
       </div>
     );
   }
 }
 
-export default App;
