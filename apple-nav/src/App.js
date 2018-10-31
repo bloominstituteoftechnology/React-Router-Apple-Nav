@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Route } from 'react-router-dom';
+
 import NavWrapper from './NavStuff/NavWrapper.js';
 import MacBook from './img/mac/macbook.png';
 import MacBookPro from './img/mac/macbookpro.png';
@@ -44,14 +46,6 @@ import Homepod from './img/music/homepod.png';
 import iPodTouch from './img/music/homepod.png';
 import iTunes from './img/music/itunes.png';
 import music from './img/music/music.png';
-
-
-
-
-
-
-
-
 
 class App extends Component {
   constructor(){
@@ -210,9 +204,12 @@ class App extends Component {
   render() {
     return (
       <div>
-      <NavWrapper MacBook={MacBook}>
+        
+      <Route path="/" render={(props)=>(
+        <NavWrapper {...props} productTypes={this.state.productTypes}/>
+      )}/>
 
-      </NavWrapper>
+
 
       </div>
     );
