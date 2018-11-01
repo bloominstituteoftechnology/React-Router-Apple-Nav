@@ -45,6 +45,7 @@ import Gift from './img/music/gift.png';
 import Homepod from './img/music/homepod.png';
 import iPodTouch from './img/music/homepod.png';
 import iTunes from './img/music/itunes.png';
+import AirPodsMusic from './img/music/airpods.png'
 import music from './img/music/music.png';
 
 class App extends Component {
@@ -53,6 +54,7 @@ class App extends Component {
     this.state={
       productTypes:[
         {name: 'Mac',
+        isLight:false,
          types: [
            {typeName: 'MacBook',
            img: MacBook,
@@ -89,6 +91,7 @@ class App extends Component {
 
 
         {name: 'iPhone',
+        isLight:false,
         types: [
           {typeName: 'iPhone Xs',
           img:iPhoneAccesories
@@ -119,6 +122,7 @@ class App extends Component {
        },
 
       {name: 'Watch',
+      isLight:true,
       types: [
         {typeName: 'Apple Watch Series 4',
         img:Watch4
@@ -149,6 +153,7 @@ class App extends Component {
      },
 
      {name: 'TV',
+     isLight:false,
      types: [
        {typeName: 'Apple TV 4K',
        img:Tv4k
@@ -170,6 +175,7 @@ class App extends Component {
     },
 
     {name: 'Music',
+    isLight: true,
     types: [
       {typeName: 'Apple Music',
       img:music
@@ -181,7 +187,7 @@ class App extends Component {
       img:Homepod
       },
       {typeName: 'AirPods',
-      img:Airpods
+      img:AirPodsMusic
       },
       {typeName: 'iPod touch',
       img:iPodTouch
