@@ -1,4 +1,4 @@
-# React Router Apple Nav - Stretch Assignment
+# React Router Apple Nav - Stretch Assignment .
 
 * Lets build out an navigation app that mimics `Apple's Slick Navigation` from their marketing website. At this point you have all the knowledge you'll need to be able to complete this stretch assignment.
 
@@ -19,6 +19,6 @@
 
 * Once you are finished with the Navigation and SubNavigation components you'll be able to look into ways to extend this application by adding some smooth transitions. Look into [this article](https://hackernoon.com/animated-page-transitions-with-react-router-4-reacttransitiongroup-and-animated-1ca17bd97a1a) for an example of how this can be achieved.
 
-This example shows the sub-navigation for the `/mac` route.
+This example shows the sub-navigation for the `/mac` route. .
 
 ![Sample Navigation](images/sample.png)
