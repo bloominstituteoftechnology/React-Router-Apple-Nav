@@ -9,10 +9,42 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 2% 1%;
-  
+  max-height: 100px;
 }
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  color: lightslategrey;
+}
+
+.sub-nav {
+  background-color: white;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1% 0 5%;
+}
+
+.sub-nav a {
+  color: black;
+}
+
+img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.img-container {
+  height: 50px;
+  width: auto;
+}
+
+.img-container p {
+  margin: 0;
 }
 
