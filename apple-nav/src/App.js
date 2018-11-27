@@ -23,7 +23,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="navbar-wrapper">
-          <NavBar data={data} />
+          <NavBar data={this.state.data} />
         </div>
         <div className="subnav-wrapper">
           {
