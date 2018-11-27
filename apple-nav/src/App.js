@@ -27,7 +27,6 @@ class App extends React.Component {
           <NavBar data={data} />
         </div>
         <div className="subnav-wrapper">
-          <Route exact path='/' component={Home} />
           {
             this.state.data.map(link => <Route key={link.id} path={`/${link.name.toLowerCase()}`} render={props => (
               <SubNav {...props} link={link}/>
