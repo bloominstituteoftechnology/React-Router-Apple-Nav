@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TopNav />
+        <TopNav data={data} />
       </div>
     );
   }

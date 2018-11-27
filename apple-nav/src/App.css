@@ -1,4 +1,20 @@
 .App {
-  max-width: 1024px;
   margin: 0 auto;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.top-nav {
+  /* max-width: 1024px; */
+  background: black;
+  color: white;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

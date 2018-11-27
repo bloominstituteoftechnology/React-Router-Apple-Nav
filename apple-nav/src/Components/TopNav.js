@@ -5,17 +5,11 @@ const TopNav = props => {
   return (
     <div className="top-nav">
       <NavLink exact to="/">
-        Apple logo
+        <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg" />
       </NavLink>
-      <NavLink to="/">Mac</NavLink>
-      <NavLink to="/">iPad</NavLink>
-      <NavLink to="/">iPhone</NavLink>
-      <NavLink to="/">Watch</NavLink>
-      <NavLink to="/">TV</NavLink>
-      <NavLink to="/">Music</NavLink>
-      <NavLink to="/">Support</NavLink>
-      <NavLink to="/">Search</NavLink>
-      <NavLink to="/">Bag</NavLink>
+      {props.data.map(item => (
+        <NavLink to="/">{item.category}</NavLink>
+      ))}
     </div>
   );
 };
