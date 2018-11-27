@@ -1,10 +1,10 @@
 const Data = [
 	{
-		name: '/',
+		name: 'home',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_small.svg'
 	},
 	{
-		name: '/mac',
+		name: 'mac',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/mac/image_small.svg',
 		subLinks: [
 			{
@@ -60,7 +60,7 @@ const Data = [
 		]
 	},
 	{
-		name: '/ipad',
+		name: 'ipad',
 		image:'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/ipad/image_small.svg',
 		subLinks: [
 			{
@@ -96,7 +96,7 @@ const Data = [
 		]
 	},
 	{
-		name: '/iphone',
+		name: 'iphone',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/iphone/image_small.svg',
 		subLinks: [
 			{
@@ -142,7 +142,7 @@ const Data = [
 		]
 	},
 	{
-		name: '/watch',
+		name: 'watch',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/watch/image_small.svg',
 		subLinks: [
 			{
@@ -193,7 +193,7 @@ const Data = [
 		]
 	},
 	{
-		name: '/tv',
+		name: 'tv',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/tv/image_small.svg',
 		subLinks: [
 			{
@@ -223,7 +223,7 @@ const Data = [
 			}
 		]
 	},
-	{	name: '/music',
+	{	name: 'music',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/music/image_small.svg',
 		subLinks: [
 			{
@@ -259,11 +259,11 @@ const Data = [
 		]
 	},
 	{
-		name: '/support',
+		name: 'support',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/support/image_small.svg'
 	},
 	{
-		name: '/bag',
+		name: 'bag',
 		image: 'https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_small.svg'
 	}
 ];

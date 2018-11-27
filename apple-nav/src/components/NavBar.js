@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
-import NavLinks from './NavLink';
+import NavLinks from './NavLinks';
 import SubNav from './SubNav';
 
 const Header = styled.header `
@@ -18,13 +18,13 @@ const NavBar = (props) => {
 return (
     <React.Fragment>
     <Header>
-        <NavLinks list={props.list} />
+        <NavLinks list={props.list} handleClick={props.handleClick} />
     </Header>
     
     <Route
-    path={'/:name'} 
+    path={'/:category'} 
     render={({match})=> 
-        <SubNav {...props} sublinks={props.list.slice(1,7).map(category => category.subLinks)} />}
+        <SubNav {...props} list={props.list} match={match}/>}
     />
     
     </React.Fragment>

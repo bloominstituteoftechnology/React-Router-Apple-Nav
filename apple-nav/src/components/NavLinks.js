@@ -3,10 +3,11 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const NavLinks = (props) => {
+	
 	return (
 		<React.Fragment>
 			{props.list.map((links, index) => (
-				<NavLink to={links.name} activeStyle={{ opacity: 0.5 }} key={index}>
+				<NavLink to={`/${links.name}`} activeStyle={{opacity: .5}} onClick={props.handleClick} key={index}>
 					<img src={links.image} alt={links.name}/>
 				</NavLink>
 			))}

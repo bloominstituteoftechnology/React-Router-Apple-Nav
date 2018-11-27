@@ -34,12 +34,16 @@ class App extends Component {
       data: Data
     })
   }
+
+  handleClick = (event) =>{
+    
+  }
   render() {
     return (
     <React.Fragment>
       <GlobalStyle />
         <AppContainer>
-          <NavBar list={this.state.data} />
+          <NavBar list={this.state.data} handleClick={this.handleClick}/>
         </AppContainer>
    </React.Fragment>  
     );
