@@ -1,37 +1,45 @@
 import React, { Component } from 'react';
 import '../index.css';
-import { NavLink } from 'react-router-dom';
+import Nav from './Nav';
+import SubNav from './SubNav';
 
 class NavWrapper extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        currentNav: null
+      };
+    }
+
+    changeNav = event => {
+        console.log('from changenav...', event.target)
+        this.setState({
+            currentNav: event.target
+        })
+    }
+
     render() {
+        console.log('from navwrapper render', this.state.currentNav)
         return (
             <div className='navWrapper-container'>
-                <NavLink to='/'>
-                    <i className="fab fa-apple"></i>
-                </NavLink>
+                {/* {this.props.data.map((product, index) => (
+                    <Nav 
+                        product={product}
+                        key={index}
+                    />
+                ))} */}
+                <Nav 
+                    product={this.props.data}
+                    changeNav={this.changeNav}
+                />
                 <div>
-                    Mac
-                </div>
-                <div>
-                    iPad
-                </div>
-                <div>
-                    iPhone
-                </div>
-                <div>
-                    Watch
-                </div>
-                <div>
-                    TV
-                </div>
-                <div>
-                    Music
-                </div>
-                <div>
-                    <i className="fas fa-search"></i>
-                </div>
-                <div>
-                    <i className="fas fa-shopping-bag"></i>
+                    {this.props.data.map((product, index) => (
+                        <SubNav 
+                            product={product}
+                            subLinks={product.subLinks}
+                            key={index}
+                        />
+                    ))}
                 </div>
             </div>
         );
@@ -39,5 +47,3 @@ class NavWrapper extends Component {
 }
 
 export default NavWrapper;
-
-

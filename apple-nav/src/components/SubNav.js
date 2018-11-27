@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import '../index.css';
 
-class SubNav extends Component {
-    render() {
+const SubNav = props => {
+        // console.log('from subnav', props.product.name)
+        // console.log('from subnav props.product.subLinks', props.subLinks)
         return (
             <div className='subNav-container'>
-                <div className="icon">
+                {/* <div className="icon">
                     <i className="fas fa-laptop"></i>
                     MacBook
                 </div>
@@ -26,13 +27,19 @@ class SubNav extends Component {
                     iMac Pro
                 </div>
                 <div className="icon">
-                    <i class="fas fa-headphones-alt"></i>
+                    <i className="fas fa-headphones-alt"></i>
                     Accessories
-                </div>
+                </div> */}
+                {/* {props.product.name.subLinks} */}
+                {props.subLinks.map((link, index) => (
+                    <img 
+                        src={link.img}
+                        key={index}
+                    />
+                ))}
             </div>
         );
     }
-}
 
 export default SubNav;
 
