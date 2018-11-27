@@ -25,7 +25,7 @@ class App extends React.Component {
           }
         </div>
         <div className="giftcard-wrapper">
-          Gift Card
+          Get a $50 Apple Store Gift Card when you buy Apple Watch Series 3 today. <span>Shop ></span>
         </div>
       </div>
     );

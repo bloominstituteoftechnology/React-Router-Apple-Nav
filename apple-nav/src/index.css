@@ -7,10 +7,11 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 a {
@@ -19,8 +20,8 @@ a {
 }
 
 .navbar-wrapper {
-  background-color: black;
-  padding: 1rem 0;
+  background-color:#333333;
+  padding: 1.4rem 0;
 }
 
 .navbar {
@@ -30,6 +31,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar a:hover {
+  color: gray;
 }
 
 .subnav-wrapper {
@@ -48,13 +52,18 @@ a {
 
 .subnav a{
   margin: 0 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .giftcard-wrapper {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
-  background-color: black;
+  background-color: #222222;
   padding: 1rem;
+}
+
+.giftcard-wrapper span {
+  color: aqua;
+  margin-left: 1rem;
 }
