@@ -13,13 +13,20 @@ class App extends React.Component {
   render() { 
     return (
       <div className="app">
-        <NavBar data={data} />
-        <Route exact path='/' component={Home} />
-        {
-          data.map(link => <Route key={link.id} path={`/${link.name.toLowerCase()}`} render={props => (
-            <SubNav {...props} link={link}/>
-          )} />)
-        }
+        <div className="navbar-wrapper">
+          <NavBar data={data} />
+        </div>
+        <div className="subnav-wrapper">
+          <Route exact path='/' component={Home} />
+          {
+            data.map(link => <Route key={link.id} path={`/${link.name.toLowerCase()}`} render={props => (
+              <SubNav {...props} link={link}/>
+            )} />)
+          }
+        </div>
+        <div className="giftcard-wrapper">
+          Gift Card
+        </div>
       </div>
     );
   }
