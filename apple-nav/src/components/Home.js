@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { data } from "../data";
+import data from "../data";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       </NavLink>
 
       {data.map(item => (
-        <NavLink to={`/${item.name}`} key={item.id}>
+        <NavLink to={`/${item.name}`} key={item.name}>
           {item.name}
         </NavLink>
       ))}
