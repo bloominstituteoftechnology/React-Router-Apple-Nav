@@ -10,6 +10,16 @@ import SubNav from './components/SubNav';
 import data from './data';
 
 class App extends React.Component {
+  state = {
+    data: [],
+  }
+
+  componentDidMount() {
+    this.setState({
+      data: data,
+    })
+  }
+
   render() { 
     return (
       <div className="app">
@@ -19,7 +29,7 @@ class App extends React.Component {
         <div className="subnav-wrapper">
           <Route exact path='/' component={Home} />
           {
-            data.map(link => <Route key={link.id} path={`/${link.name.toLowerCase()}`} render={props => (
+            this.state.data.map(link => <Route key={link.id} path={`/${link.name.toLowerCase()}`} render={props => (
               <SubNav {...props} link={link}/>
             )} />)
           }

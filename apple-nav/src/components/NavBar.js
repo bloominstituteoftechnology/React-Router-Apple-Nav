@@ -10,7 +10,19 @@ const NavBar = ({data}) => {
           if (link.name === 'Home') {
             return (
               <NavLink key={link.id} to={`/${link.name.toLowerCase()}`}>
-                <img src="https://www.apple.com/v/ipad/home/ak/images/overview/ase/apple-gift-card__ck1hmbc30a2q_large_2x.png" alt={link.name}/>
+              <i class="fab fa-apple"></i>
+              </NavLink>)
+          }
+          if (link.name === 'Search') {
+            return (
+              <NavLink key={link.id} to={`/${link.name.toLowerCase()}`}>
+              <i class="fas fa-search"></i>
+              </NavLink>)
+          }
+          if (link.name === 'Shop') {
+            return (
+              <NavLink key={link.id} to={`/${link.name.toLowerCase()}`}>
+              <i class="fas fa-shopping-bag"></i>
               </NavLink>)
           }
           return <NavLink key={link.id} to={`/${link.name.toLowerCase()}`}>{link.name}</NavLink>

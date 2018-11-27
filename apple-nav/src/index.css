@@ -21,7 +21,7 @@ a {
 
 .navbar-wrapper {
   background-color:#333333;
-  padding: 1.4rem 0;
+  padding: 1rem 0;
 }
 
 .navbar {
@@ -40,6 +40,10 @@ a {
   color: gray;
 }
 
+.navbar .fa-apple {
+  font-size: 2.2rem;
+}
+
 .subnav-wrapper {
   background-color: white;
   padding: 2rem;
@@ -51,7 +55,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.subnav img {
+  max-height: 6rem;
 }
 
 .subnav a {
