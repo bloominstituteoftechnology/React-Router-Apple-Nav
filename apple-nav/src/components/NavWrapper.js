@@ -37,7 +37,7 @@ const NavWrapper = props => {
           render={props => <SubNav {...props} subLinks={d.subLinks} />}
         />
       ))}
-      <h2>The Same Stuff As The Other Guys, But Twice As Expensive!</h2>
+      <h2>The Same Stuff, But Twice As Expensive!</h2>
     </div>
   );
 };

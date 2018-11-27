@@ -10,6 +10,10 @@ const StyledSubNav = styled.div`
   //flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media(max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const SubItem = styled.div`
