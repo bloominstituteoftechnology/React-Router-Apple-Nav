@@ -33,12 +33,21 @@ const NavigationWrapper = styled.div`
   }
 `;
 
+const StyledImg = styled.img`
+  transition: all 0.3s ease-in;
+  padding-top: 4px;
+
+  &:hover {
+    opacity: 0.4;
+  }
+`;
+
 export default function Nav(props) {
   return (
     <NavigationWrapper>
       <div>
         <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-          <img
+          <StyledImg
             src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg"
             alt="apple logo"
           />
@@ -50,13 +59,13 @@ export default function Nav(props) {
         ))}
         <StyledLink to="/">Support</StyledLink>
         <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-          <img
+          <StyledImg
             src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg"
             alt="search icon"
           />
         </StyledLink>
         <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-          <img
+          <StyledImg
             src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg"
             alt="shopping bag"
           />
