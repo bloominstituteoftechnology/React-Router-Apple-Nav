@@ -67,8 +67,6 @@ const LinkText = styled(Link)`
  ********************************************* Component *******************************************
  **************************************************************************************************/
 const Nav = props => {
-  console.log(props.linkSelected);
-  console.log(props.macLink);
   return (
     <DivWrapper>
       <ul>

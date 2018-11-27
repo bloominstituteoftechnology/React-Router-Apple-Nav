@@ -61,6 +61,7 @@ class App extends Component {
 
   selectLink = link => {
     localStorage.setItem('linkSelected', link);
+    this.setState({ linkSelected: link });
   };
 
   render() {
