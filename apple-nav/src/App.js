@@ -4,7 +4,6 @@ import { Route } from 'react-router-dom';
 
 // Importing components
 import NavBar from './components/NavBar';
-import Home from './components/Home';
 import SubNav from './components/SubNav';
 
 import data from './data';
