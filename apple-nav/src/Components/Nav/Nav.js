@@ -53,7 +53,7 @@ const LinkText = styled(Link)`
   display: inline-block;
   padding: 0 10px;
   height: 44px;
-  opacity: 1;
+  opacity: ${props => (props.isselected === 'true' ? 0.65 : 1)};
   background: no-repeat;
   text-decoration: none;
   white-space: nowrap;
@@ -67,34 +67,81 @@ const LinkText = styled(Link)`
  ********************************************* Component *******************************************
  **************************************************************************************************/
 const Nav = props => {
+  console.log(props.linkSelected);
+  console.log(props.macLink);
   return (
     <DivWrapper>
       <ul>
         <li>
-          <Link to={props.homeLink}>
+          <Link
+            onClick={() => props.selectLink(props.homeLink)}
+            to={props.homeLink}
+          >
             <Apple />
           </Link>
         </li>
         <li>
-          <LinkText to={props.macLink}>Mac</LinkText>
+          <LinkText
+            to={props.macLink}
+            onClick={() => props.selectLink(props.macLink)}
+            isselected={(props.linkSelected === props.macLink).toString()}
+          >
+            Mac
+          </LinkText>
         </li>
         <li>
-          <LinkText to={props.iPadLink}>iPad</LinkText>
+          <LinkText
+            to={props.iPadLink}
+            onClick={() => props.selectLink(props.iPadLink)}
+            isselected={(props.linkSelected === props.iPadLink).toString()}
+          >
+            iPad
+          </LinkText>
         </li>
         <li>
-          <LinkText to={props.iPhoneLink}>iPhone</LinkText>
+          <LinkText
+            to={props.iPhoneLink}
+            onClick={() => props.selectLink(props.iPhoneLink)}
+            isselected={(props.linkSelected === props.iPhoneLink).toString()}
+          >
+            iPhone
+          </LinkText>
         </li>
         <li>
-          <LinkText to={props.watchLink}>Watch</LinkText>
+          <LinkText
+            to={props.watchLink}
+            onClick={() => props.selectLink(props.watchLink)}
+            isselected={(props.linkSelected === props.watchLink).toString()}
+          >
+            Watch
+          </LinkText>
         </li>
         <li>
-          <LinkText to={props.tvLink}>TV</LinkText>
+          <LinkText
+            to={props.tvLink}
+            onClick={() => props.selectLink(props.tvLink)}
+            isselected={(props.linkSelected === props.tvLink).toString()}
+          >
+            TV
+          </LinkText>
         </li>
         <li>
-          <LinkText to={props.musicLink}>Music</LinkText>
+          <LinkText
+            to={props.musicLink}
+            onClick={() => props.selectLink(props.musicLink)}
+            isselected={(props.linkSelected === props.musicLink).toString()}
+          >
+            Music
+          </LinkText>
         </li>
         <li>
-          <LinkText to={props.supportLink}>Support</LinkText>
+          <LinkText
+            to={props.supportLink}
+            onClick={() => props.selectLink(props.supportLink)}
+            isselected={(props.linkSelected === props.supportLink).toString()}
+          >
+            Support
+          </LinkText>
         </li>
         <li>
           <SearchGlass />

@@ -66,7 +66,7 @@ class App extends Component {
   render() {
     return (
       <DivApp>
-        <NavWrapper {...this.state} />
+        <NavWrapper {...this.state} selectLink={this.selectLink} />
         <Route exact path={this.state.homeLink} component={Home} />
         <Route exact path={this.state.macLink} component={Mac} />
         <Route exact path={this.state.iPadLink} component={IPad} />
