@@ -4,16 +4,16 @@
 }
 
 nav {
-  background-color: black;
+  background-color: #303030;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2% 1%;
+  padding: 1%;
   max-height: 100px;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #B6B6B6;
 }
 
 a:hover {
@@ -21,8 +21,8 @@ a:hover {
 }
 
 .sub-nav {
-  background-color: white;
-  color: black;
+  background-color: #FAFAFA;
+  color: #303030;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@ a:hover {
 }
 
 .sub-nav a {
-  color: black;
+  color: #303030;
 }
 
 img {
@@ -44,7 +44,11 @@ img {
   width: auto;
 }
 
-.img-container p {
-  margin: 0;
+.sub-heading {
+  margin: 10% 0;
+}
+
+.sub-heading:hover {
+  color: blue;
 }
 

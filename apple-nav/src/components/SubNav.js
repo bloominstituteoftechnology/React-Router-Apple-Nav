@@ -4,7 +4,6 @@ import { data } from "../data";
 
 const SubNav = props => {
   const name = data.find(item => `${item.name}` === props.match.params.name);
-  console.log(name);
   return (
     <nav className="sub-nav">
       {name.children.map(item => (
@@ -12,7 +11,7 @@ const SubNav = props => {
           <div className="img-container">
             <img src={item.img} alt={item.name} />
           </div>
-          <p>{item.name}</p>
+          <p className="sub-heading">{item.name}</p>
         </NavLink>
       ))}
     </nav>
