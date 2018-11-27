@@ -5,7 +5,9 @@ function MainContent() {
     return (
 
     <div className="main-content">
-
+        <Route exact path='/'
+            component={()=>
+            (<p>Welcome!</p>)} />
 
         <Route exact path='/myComps/' 
             component={()=>

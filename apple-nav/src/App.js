@@ -7,11 +7,16 @@ import MyPhones from './components/myPhones/MyPhones';
 import MyPads from './components/myPads/MyPads';
 import MainContent from './components/mainContent/MainContent';
 
+
 class App extends Component {
   render() {
     return (
       <div className="App">
+
         <header className='header-wrapper'>
+        <div className='home-btn'>
+          <NavLink exact to='/'>Home</NavLink>
+        </div>
           <div className="top-header">
             <NavLink to='/myComps' >myComps</NavLink>
             <NavLink to='/myPhones' >myPhones</NavLink>
