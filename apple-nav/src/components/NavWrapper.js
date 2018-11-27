@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
 import SubNav from './SubNav';
-import { Route } from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
 const StyledNavWrapper = styled.div`
   width: 100%;
@@ -12,25 +12,25 @@ const StyledNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  position: fixed;
 `;
-        //<Nav name={d.name} subLinks={d.subLinks} />
+//<Nav name={d.name} subLinks={d.subLinks} />
 
 const NavWrapper = props => {
   return (
     <div>
-    {props.data.map(d => (
-        <Route path={`/${d.name}`}
+      <StyledNavWrapper>
+        {props.data.map(d => (
+          <Nav key={d.name} name={d.name} subLinks={d.subLinks} />
+        ))}
+      </StyledNavWrapper>
+      {props.data.map(d => (
+        <Route key={d.name}
+          path={`/${d.name}`}
           render={props => <SubNav {...props} subLinks={d.subLinks} />}
         />
-    ))}
-    <StyledNavWrapper>
-      {props.data.map(d => (
-        <Nav name={d.name} subLinks={d.subLinks} />
       ))}
-    </StyledNavWrapper>
-  </div>
-  )
-}
+    </div>
+  );
+};
 
 export default NavWrapper;
