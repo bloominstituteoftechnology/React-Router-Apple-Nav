@@ -5,6 +5,10 @@ import {NavLink} from 'react-router-dom';
 const StyledNav = styled(NavLink)`
   color: white;
   text-decoration: none;
+
+  &.active {
+    color: gray;
+  }
 `;
 
 const Nav = props => {

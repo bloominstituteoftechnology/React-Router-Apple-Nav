@@ -2,25 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSubNav = styled.div`
-  max-width: 50%;
+  max-width: 70%;
   padding: 10px;
-  background-color: #black;
+  //background-color: black;
   color: black;
-  border: 1px solid red;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-
-  & img {
-    max-width: 20%;
-    height: auto;
-  }
 `;
 
 const SubItem = styled.div`
   display: flex;
   flex-direction: column;
+  & img {
+    max-height: 3rem;
+    height: auto;
+  }
 `;
 
 const SubNav = props => {
