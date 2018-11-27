@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const StyledLink = styled(NavLink)`
-  padding: 14px;
+  /* padding: 14px; */
   transition: all 0.2s ease-in;
   color: white;
   text-decoration: none;
@@ -19,16 +19,6 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const Icon = styled.i`
-  color: #f6f6f6;
-  font-size: 16px;
-
-  &:hover {
-    cursor: pointer;
-    color: #b7b7b7;
-  }
-`;
-
 const NavigationWrapper = styled.div`
   color: #f6f6f6;
   background: #333333;
@@ -39,6 +29,7 @@ const NavigationWrapper = styled.div`
     justify-content: space-around;
     max-width: 1000px;
     margin: 0 auto;
+    align-items: center;
   }
 `;
 
@@ -47,7 +38,10 @@ export default function Nav(props) {
     <NavigationWrapper>
       <div>
         <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-          <Icon className="fab fa-apple" />
+          <img
+            src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg"
+            alt="apple logo"
+          />
         </StyledLink>
         {props.names.map((name, i) => (
           <StyledLink to={`/${name.name}`} key={name.name + i}>
@@ -56,10 +50,16 @@ export default function Nav(props) {
         ))}
         <StyledLink to="/">Support</StyledLink>
         <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-          <Icon className="fas fa-search" />
+          <img
+            src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg"
+            alt="search icon"
+          />
         </StyledLink>
         <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-          <Icon className="fas fa-shopping-bag" />
+          <img
+            src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg"
+            alt="shopping bag"
+          />
         </StyledLink>
       </div>
     </NavigationWrapper>

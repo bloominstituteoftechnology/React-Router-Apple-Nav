@@ -19,6 +19,7 @@ const ProductContainer = styled.div`
 
   & > img {
     padding: 0 15px;
+    height: 55px;
   }
 
   & > p {

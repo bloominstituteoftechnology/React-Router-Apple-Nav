@@ -60,10 +60,15 @@ const DummyData = [
       {
         name: "iPad Pro",
         img:
-          "https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadpro_light_large.svg"
+          "https://www.apple.com/v/ipad/home/ak/images/chapternav/ipadpro_light__fic9xqb4rq62_large.svg"
       },
       {
-        name: "iPad",
+        name: 'iPad Pro 10.5"',
+        img:
+          "https://www.apple.com/v/ipad/home/ak/images/chapternav/ipadpro_10_5_light__cdnzsjo3mhsi_large.svg"
+      },
+      {
+        name: 'iPad 9.7"',
         img:
           "https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_large.svg"
       },
@@ -73,9 +78,19 @@ const DummyData = [
           "https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadmini_large.svg"
       },
       {
-        name: "iOS 11",
+        name: "iOS 12",
         img:
           "https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_ios10_large.svg"
+      },
+      {
+        name: "Apple Pencil",
+        img:
+          "https://www.apple.com/v/ipad/home/ak/images/chapternav/apple_pencil_light__bz8n8cqdvcia_large.svg"
+      },
+      {
+        name: "Smart Keyboard",
+        img:
+          "https://www.apple.com/v/ipad/home/ak/images/chapternav/keyboard_light__f6gmbmwm4i6a_large.svg"
       },
       {
         name: "Accessories",
@@ -85,7 +100,7 @@ const DummyData = [
       {
         name: "compare",
         img:
-          "https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_comp_large.svg"
+          "https://www.apple.com/v/ipad/home/ak/images/chapternav/ipad_comp_light__btey5qm4uaoi_large.svg"
       }
     ]
   },
@@ -93,44 +108,44 @@ const DummyData = [
     name: "iPhone",
     subLinks: [
       {
-        name: "iPhone X",
+        name: "iPhone Xs",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphonex_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/iphonexs_dark_large.svg"
+      },
+      {
+        name: "iPhone XR",
+        img:
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/iphonexr_dark_large.svg"
       },
       {
         name: "iPhone 8",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphone8_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/iphone8_dark_large.svg"
       },
       {
         name: "iPhone 7",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphone7_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/iphone7_dark_large.svg"
       },
       {
-        name: "iPhone 6s",
+        name: "iOS 12",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphone6s_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/ios_dark_large.svg"
       },
       {
-        name: "iPhone SE",
+        name: "AirPods",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphonese_large.svg"
-      },
-      {
-        name: "iOS 11",
-        img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_ios_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/airpods_dark_large.svg"
       },
       {
         name: "Accessories",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_acc_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/accessories_dark_large.svg"
       },
       {
         name: "Compare",
         img:
-          "https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_comp_large.svg"
+          "https://www.apple.com/v/iphone/home/y/images/chapternav/compare_dark_large.svg"
       }
     ]
   },
@@ -138,7 +153,7 @@ const DummyData = [
     name: "Watch",
     subLinks: [
       {
-        name: "Apple Watch Series 3",
+        name: "Apple Watch Series 4",
         img:
           "https://www.apple.com/v/watch/home/i/images/watch_nav_series_2_large.svg"
       },
@@ -153,14 +168,9 @@ const DummyData = [
           "https://www.apple.com/v/watch/home/i/images/watch_nav_hermes_large.svg"
       },
       {
-        name: "Apple Watch Edition",
+        name: "Apple Watch Series 3",
         img:
           "https://www.apple.com/v/watch/home/i/images/watch_nav_edition_large.svg"
-      },
-      {
-        name: "Apple Watch Series 1",
-        img:
-          "https://www.apple.com/v/watch/home/i/images/watch_nav_series_1_large.svg"
       },
       {
         name: "watchOS",
@@ -205,7 +215,7 @@ const DummyData = [
       {
         name: "Accessories",
         img:
-          "https://www.apple.com/v/tv/home/d/images/home/tvapp_dark_large.svg"
+          "https://www.apple.com/v/tv/home/e/images/home/accessories_dark_large.svg"
       },
       {
         name: "Compare",
@@ -231,6 +241,11 @@ const DummyData = [
         name: "HomePod",
         img:
           "https://www.apple.com/v/music/g/images/overview/icons/homepod_icon_large.svg"
+      },
+      {
+        name: "AirPod",
+        img:
+          "https://www.apple.com/v/music/h/images/overview/icons/airpods_icon_large.svg"
       },
       {
         name: "iPod touch",
