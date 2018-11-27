@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavigationWrapper = styled.div`
   color: #f6f6f6;
@@ -16,9 +16,12 @@ const NavigationWrapper = styled.div`
     & > a {
       padding: 14px;
       transition: all 0.2s ease-in;
+      color: white;
+      text-decoration: none;
     }
 
-    & > a:hover {
+    & > a:hover,
+    & > a > i:hover {
       cursor: pointer;
       color: #b7b7b7;
     }
@@ -39,22 +42,36 @@ export default class NavWrapper extends Component {
     return (
       <NavigationWrapper>
         <div>
-          <Link to="/">
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
             <Icon className="fab fa-apple" />
-          </Link>
-          <a>Mac</a>
-          <a>iPad</a>
-          <a>iPhone</a>
-          <a>Watch</a>
-          <a>TV</a>
-          <a>Music</a>
-          <a>Support</a>
-          <Link to="/">
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            Mac
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            iPad
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            iPhone
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            Watch
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            TV
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            Music
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
+            Support
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
             <Icon className="fas fa-search" />
-          </Link>
-          <Link to="/">
+          </NavLink>
+          <NavLink to="/" activeClassName="nav-active" className="nav-link">
             <Icon className="fas fa-shopping-bag" />
-          </Link>
+          </NavLink>
         </div>
       </NavigationWrapper>
     );
