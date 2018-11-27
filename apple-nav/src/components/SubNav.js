@@ -1,9 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import data from "../data";
 
 const SubNav = props => {
-  const name = data.find(item => `${item.name}` === props.match.params.name);
+  console.log(props);
+  const name = props.data.find(
+    item => `${item.name}` === props.match.params.name
+  );
+  console.log(name);
   return (
     <nav className="sub-nav">
       {name.subLinks.map(item => (

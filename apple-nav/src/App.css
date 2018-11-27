@@ -11,6 +11,15 @@ nav {
   padding: 1%;
   max-height: 100px;
 }
+.main-nav-item {
+  color: #B6B6B6;
+  cursor: pointer;
+}
+
+.main-nav-item:hover {
+  color: #78AEDE;
+}
+
 a {
   text-decoration: none;
   color: #B6B6B6;

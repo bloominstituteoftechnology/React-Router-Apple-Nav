@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import data from "../data";
+// import data from "../data";
 
-const Home = () => {
+const Home = props => {
   return (
     <nav>
       <NavLink to="/">
@@ -12,10 +12,14 @@ const Home = () => {
         />
       </NavLink>
 
-      {data.map(item => (
-        <NavLink to={`/${item.name}`} key={item.name}>
+      {props.data.map(item => (
+        <div
+          key={item.name}
+          className="main-nav-item"
+          onClick={() => props.history.push(`/${item.name}`)}
+        >
           {item.name}
-        </NavLink>
+        </div>
       ))}
     </nav>
   );
