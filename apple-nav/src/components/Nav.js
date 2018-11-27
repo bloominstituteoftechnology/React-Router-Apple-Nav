@@ -13,6 +13,10 @@ const StyledLink = styled(NavLink)`
     cursor: pointer;
     color: #b7b7b7;
   }
+
+  &.active {
+    color: #b7b7b7;
+  }
 `;
 
 const Icon = styled.i`
@@ -61,18 +65,3 @@ export default function Nav(props) {
     </NavigationWrapper>
   );
 }
-
-/*{" "}
-      <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-        <Icon className="fab fa-apple" />
-      </StyledLink>
-      {props.names.map(name => (
-        <div key={name.name}>{name.name}</div>
-      ))}
-      <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-        <Icon className="fas fa-search" />
-      </StyledLink>
-      <StyledLink to="/" activeClassName="nav-active" className="nav-link">
-        <Icon className="fas fa-shopping-bag" />
-      </StyledLink>{" "}
-      */
