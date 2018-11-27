@@ -48,7 +48,7 @@ const data = [
           "https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_osx_dark_large.svg"
       },
       {
-        name: "compare",
+        name: "Compare",
         img:
           "https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_comp_dark_large.svg"
       }
