@@ -10,43 +10,53 @@ const data = [
     sublinks: [
       {
         id:0,
-        name: 'MacBook'
+        name: 'MacBook',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbook_dark_large.svg',
       },
       {
         id:1,
-        name: 'MacBook Air'
+        name: 'MacBook Air',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookair_dark_large.svg',
       },
       {
         id:2,
-        name: 'MacBook Pro'
+        name: 'MacBook Pro',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macbookpro_dark_large.svg',
       },
       {
         id:3,
-        name: 'iMac'
+        name: 'iMac',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_dark_large.svg',
       },
       {
         id:4,
-        name: 'iMac Pro'
+        name: 'iMac Pro',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/imac_pro_dark_large.svg',
       },
       {
         id:5,
-        name: 'Mac Pro'
+        name: 'Mac Pro',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macpro_dark_large.svg',
       },
       {
         id:6,
-        name: 'Mac mini'
+        name: 'Mac mini',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/macmini_dark_large.svg',
       },
       {
         id:7,
-        name: 'Accessories'
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_acc_dark_large.svg',
       },
       {
         id:8,
-        name: 'Mojave'
+        name: 'Mojave',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_osx_dark_large.svg',
       },
       {
         id:9,
-        name: 'Compare'
+        name: 'Compare',
+        img: 'https://www.apple.com/v/mac/home/ab/images/familybrowser/mac_comp_dark_large.svg',
       },
     ]
   },
@@ -56,39 +66,48 @@ const data = [
     sublinks: [
       {
         id:0,
-        name: 'iPad Pro'
+        name: 'iPad Pro',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadpro_light_large.svg',
       },
       {
         id:1,
-        name: 'iPad Pro 10.5"'
+        name: 'iPad Pro 10.5"',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_large.svg',
       },
       {
         id:2,
-        name: 'iPad 9.7"'
+        name: 'iPad 9.7"',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadmini_large.svg',
       },
       {
         id:3,
-        name: 'iPad mini 4'
+        name: 'iPad mini 4',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipadmini_large.svg',
       },
       {
         id:4,
-        name: 'iOS 12'
+        name: 'iOS 12',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_ios10_large.svg',
       },
       {
         id:5,
-        name: 'Apple Pencil'
+        name: 'Apple Pencil',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_acc_large.svg',
       },
       {
         id:6,
-        name: 'Smart Keyboard'
+        name: 'Smart Keyboard',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_acc_large.svg'
       },
       {
         id:7,
-        name: 'Accessories'
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_acc_large.svg'
       },
       {
         id:8,
-        name: 'Compare'
+        name: 'Compare',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_comp_large.svg',
       },
     ]
   },
@@ -98,35 +117,42 @@ const data = [
     sublinks: [
       {
         id: 0,
-        name: 'iPhone Xs'
+        name: 'iPhone Xs',img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphonex_large.svg',
       },
       {
         id: 1,
-        name: 'iPhone XR'
+        name: 'iPhone XR',
+        img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphonex_large.svg',
       },
       {
         id: 2,
-        name: 'iPhone 8'
+        name: 'iPhone 8',
+        img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone8_large.svg'
       },
       {
         id: 3,
-        name: 'iPhone 7'
+        name: 'iPhone 7',
+        img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphonese_large.svg',
       },
       {
         id: 4,
-        name: 'iOS 12'
+        name: 'iOS 12',
+        img: 'https://www.apple.com/v/ipad/home/ah/images/home/familybrowser/ipad_comp_large.svg',
       },
       {
         id: 5,
-        name: 'AirPods'
+        name: 'AirPods',
+        img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_ios_large.svg',
       },
       {
         id: 6,
-        name: 'Accessories'
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_acc_large.svg',
       },
       {
         id: 7,
-        name: 'Compare'
+        name: 'Compare',
+        img: 'https://www.apple.com/v/iphone/home/x/images/chapternav/iphone_comp_large.svg',
       },
     ]
   },
@@ -136,35 +162,43 @@ const data = [
     sublinks: [
       {
         id: 0,
-        name: 'Apple Watch Series 4'
+        name: 'Apple Watch Series 4',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_series_2_large.svg',
       },
       {
         id: 1,
-        name: 'Apple Watch Nike+'
+        name: 'Apple Watch Nike+',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_nike_large.svg',
       },
       {
         id: 2,
-        name: 'Apple Watch Hermes'
+        name: 'Apple Watch Hermes',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_hermes_large.svg',
       },
       {
         id: 3,
-        name: 'Apple Watch Series 3'
+        name: 'Apple Watch Series 3',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_series_1_large.svg'
       },
       {
         id: 4,
-        name: 'watchOS'
+        name: 'watchOS',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_watch_os_large.svg'
       },
       {
         id: 5,
-        name: 'Bands'
+        name: 'Bands',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_bands_large.svg'
       },
       {
         id: 6,
-        name: 'Accessories'
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_accessories_large.svg'
       },
       {
         id: 7,
-        name: 'Compare'
+        name: 'Compare',
+        img: 'https://www.apple.com/v/watch/home/i/images/watch_nav_compare_large.svg'
       },
     ]
   },
@@ -174,23 +208,28 @@ const data = [
     sublinks: [
       {
         id: 0,
-        name: 'Apple TV 4K'
+        name: 'Apple TV 4K',
+        img: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
       },
       {
         id: 1,
-        name: 'Apple TV'
+        name: 'Apple TV',
+        img: 'https://www.apple.com/v/tv/home/d/images/home/apple_tv_dark_large.svg',
       },
       {
         id: 2,
-        name: 'TV App'
+        name: 'TV App',
+        img: 'https://www.apple.com/v/tv/home/d/images/home/tvapp_dark_large.svg',
       },
       {
         id: 3,
-        name: 'Accessories'
+        name: 'Accessories',
+        img: 'https://www.apple.com/v/tv/home/d/images/home/tvapp_dark_large.svg',
       },
       {
         id: 4,
-        name: 'Compare'
+        name: 'Compare',
+        img: 'https://www.apple.com/v/tv/home/d/images/home/compare_dark_large.svg',
       },
     ]
   },
@@ -200,31 +239,38 @@ const data = [
     sublinks: [
       {
         id: 0,
-        name: 'Apple Music'
+        name: 'Apple Music',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/apple_music_large.svg',
       },
       {
         id: 1,
-        name: 'iTunes'
+        name: 'iTunes',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/itunes_large.svg',
       },
       {
         id: 2,
-        name: 'HomePod'
+        name: 'HomePod',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/homepod_icon_large.svg',
       },
       {
         id: 3,
-        name: 'AirPods'
+        name: 'AirPods',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/homepod_icon_large.svg',
       },
       {
         id: 4,
-        name: 'iPod touch'
+        name: 'iPod touch',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/ipod_touch_light_large.svg',
       },
       {
         id: 5,
-        name: 'Music Accessories'
+        name: 'Music Accessories',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/accessories_large.svg',
       },
       {
         id: 6,
-        name: 'Gift Cards'
+        name: 'Gift Cards',
+        img: 'https://www.apple.com/v/music/g/images/overview/icons/gift_cards_large.svg'
       },
     ]
   },

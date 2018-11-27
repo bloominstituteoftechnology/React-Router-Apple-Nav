@@ -36,9 +36,13 @@ a {
   color: gray;
 }
 
+.navbar a.active {
+  color: gray;
+}
+
 .subnav-wrapper {
   background-color: white;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .subnav {
@@ -50,20 +54,35 @@ a {
 
 }
 
-.subnav a{
+.subnav a {
   margin: 0 1.5rem;
   font-size: 1.1rem;
+  text-align: center;
+}
+
+.subnav a:hover {
+  color: #6bf;
 }
 
 .giftcard-wrapper {
-  text-align: center;
   font-size: 1.2rem;
   color: white;
   background-color: #222222;
-  padding: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.giftcard-wrapper p {
+  margin-left: 1rem;
+}
+
+.giftcard-wrapper img {
+  width: 4.2rem;
 }
 
 .giftcard-wrapper span {
-  color: aqua;
+  color: #6bf;
   margin-left: 1rem;
 }
