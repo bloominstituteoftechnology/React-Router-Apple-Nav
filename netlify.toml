@@ -1,0 +1,13 @@
+[Settings]
+ID = "39586d60-4c6a-4d08-8b9c-46edc5736304"
+
+# Settings in the [build] context are global and are applied to all contexts unless otherwise overridden by more specific contexts.  
+
+[build]
+  # This is the directory to change to before starting a build.
+  base    = "apple-nav/"
+  # NOTE: This is where we will look for package.json/.nvmrc/etc, not root.
+  # This is the directory that you are publishing from (relative to root of your repo)
+  publish = "apple-nav/build/"
+  # This will be your default build command
+  command = "yarn build"
