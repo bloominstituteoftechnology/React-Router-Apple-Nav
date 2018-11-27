@@ -62,7 +62,7 @@ html {
 
 .navigation {
   width: 100%;
-  background-color: black;
+  background-color: #333333;
 }
 
 .navigation .nav-links {
@@ -85,12 +85,12 @@ html {
 
 .sub-nav {
   width: 100%;
-  background-color: lightgray;
+  background-color: #F6F6F6;
 }
 
 .sub-nav .sub-nav-links {
-  width: 75%;
-  padding: 20px 0;
+  width: 90%;
+  padding: 25px 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -100,5 +100,60 @@ html {
 
 .sub-nav .sub-nav-links a {
   text-decoration: none;
-  color: black;
+  color: #333333;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .fas{
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .mac-pro {
+  font-size: 3.5rem;
+  transform: scale(1, 1.5);
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .mac-mini {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  transform: scale(2, 1);
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .macos-circle {
+  background-color: #333333;
+  color: #F6F6F6;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .circle-mac {
+  padding-top: 7px;
+  font-size: 1rem;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .circle-os {
+  font-size: 2rem;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .compare-laptop {
+  position: absolute;
+  top: 15px;
+  left: -12px;
+  font-size: 3rem;
+  background-color: #F6F6F6;
+}
+
+.sub-nav .sub-nav-links .sub-nav-link .compare {
+  z-index: 10;
 }
