@@ -21,7 +21,6 @@ const DivMac = styled.div`
 const Mac = props => {
   return (
     <div>
-      <NavWrapper />
       <DivMac>
         <h1>This is the Mac Component</h1>
       </DivMac>

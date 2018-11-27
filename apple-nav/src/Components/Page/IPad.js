@@ -21,7 +21,6 @@ const DivIPad = styled.div`
 const IPad = props => {
   return (
     <div>
-      <NavWrapper />
       <DivIPad>
         <h1>This is the IPad Component</h1>
       </DivIPad>

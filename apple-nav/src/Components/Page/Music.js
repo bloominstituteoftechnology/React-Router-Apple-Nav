@@ -21,7 +21,6 @@ const DivMusic = styled.div`
 const Music = props => {
   return (
     <div>
-      <NavWrapper />
       <DivMusic>
         <h1>This is the Music Component</h1>
       </DivMusic>

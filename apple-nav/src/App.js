@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import styled from 'styled-components';
+import NavWrapper from './Components/Nav/NavWrapper';
 import Home from './Components/Page/Home';
 import Mac from './Components/Page/Mac';
 import IPad from './Components/Page/IPad';
@@ -33,17 +34,47 @@ const DivApp = styled.div`
  ********************************************* Component *******************************************
  **************************************************************************************************/
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      homeLink: '/',
+      macLink: '/mac',
+      iPadLink: '/ipad',
+      iPhoneLink: '/iphone',
+      watchLink: '/watch',
+      tvLink: '/tv',
+      musicLink: '/music',
+      supportLink: '/support',
+      linkSelected: '/'
+    };
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem('linkSelected')) {
+      this.setState({
+        linkSelected: localStorage.getItem('linkSelected')
+      });
+    } else {
+      localStorage.setItem('linkSelected', this.homeLink);
+    }
+  }
+
+  selectLink = link => {
+    localStorage.setItem('linkSelected', link);
+  };
+
   render() {
     return (
       <DivApp>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/mac' component={Mac} />
-        <Route exact path='/ipad' component={IPad} />
-        <Route exact path='/iphone' component={IPhone} />
-        <Route exact path='/watch' component={Watch} />
-        <Route exact path='/tv' component={TV} />
-        <Route exact path='/music' component={Music} />
-        <Route exact path='/support' component={Support} />
+        <NavWrapper {...this.state} />
+        <Route exact path={this.state.homeLink} component={Home} />
+        <Route exact path={this.state.macLink} component={Mac} />
+        <Route exact path={this.state.iPadLink} component={IPad} />
+        <Route exact path={this.state.iPhoneLink} component={IPhone} />
+        <Route exact path={this.state.watchLink} component={Watch} />
+        <Route exact path={this.state.tvLink} component={TV} />
+        <Route exact path={this.state.musicLink} component={Music} />
+        <Route exact path={this.state.supportLink} component={Support} />
       </DivApp>
     );
   }

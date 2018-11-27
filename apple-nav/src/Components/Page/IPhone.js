@@ -21,7 +21,6 @@ const DivIPhone = styled.div`
 const IPhone = props => {
   return (
     <div>
-      <NavWrapper />
       <DivIPhone>
         <h1>This is the IPhone Component</h1>
       </DivIPhone>

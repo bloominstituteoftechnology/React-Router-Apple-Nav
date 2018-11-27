@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Apple from './CustomNavItemComponents/Apple';
@@ -40,28 +40,28 @@ const DivWrapper = styled.div`
   }
 `;
 
-const MainNavItemsStyle = {
-  fontSize: '14px',
-  lineHeight: '3.14286',
-  fontWeight: '400',
-  letterSpacing: '-.01em',
-  fontFamily:
-    '"SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif',
-  color: '#fff',
-  position: 'relative',
-  zIndex: '1',
-  display: 'inline-block',
-  padding: '0 10px',
-  height: '44px',
-  opacity: '1',
-  background: 'no-repeat',
-  textDecoration: 'none',
-  whiteSpace: 'nowrap',
-  webkitTransition: 'opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)',
-  transition: 'opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)',
-  webkitTapHighlightColor: 'transparent',
-  outlineOffset: '-7px'
-};
+const LinkText = styled(Link)`
+  font-size: 14px;
+  line-height: 3.14286;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue',
+    'Helvetica', 'Arial', sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 10px;
+  height: 44px;
+  opacity: 1;
+  background: no-repeat;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: -7px;
+`;
 
 /***************************************************************************************************
  ********************************************* Component *******************************************
@@ -71,44 +71,30 @@ const Nav = props => {
     <DivWrapper>
       <ul>
         <li>
-          <Link to='/'>
+          <Link to={props.homeLink}>
             <Apple />
           </Link>
         </li>
         <li>
-          <Link to='/mac' style={MainNavItemsStyle}>
-            Mac
-          </Link>
+          <LinkText to={props.macLink}>Mac</LinkText>
         </li>
         <li>
-          <Link to='/ipad' style={MainNavItemsStyle}>
-            iPad
-          </Link>
+          <LinkText to={props.iPadLink}>iPad</LinkText>
         </li>
         <li>
-          <Link to='/iphone' style={MainNavItemsStyle}>
-            iPhone
-          </Link>
+          <LinkText to={props.iPhoneLink}>iPhone</LinkText>
         </li>
         <li>
-          <Link to='/watch' style={MainNavItemsStyle}>
-            Watch
-          </Link>
+          <LinkText to={props.watchLink}>Watch</LinkText>
         </li>
         <li>
-          <Link to='/tv' style={MainNavItemsStyle}>
-            TV
-          </Link>
+          <LinkText to={props.tvLink}>TV</LinkText>
         </li>
         <li>
-          <Link to='/music' style={MainNavItemsStyle}>
-            Music
-          </Link>
+          <LinkText to={props.musicLink}>Music</LinkText>
         </li>
         <li>
-          <Link to='/Support' style={MainNavItemsStyle}>
-            Support
-          </Link>
+          <LinkText to={props.supportLink}>Support</LinkText>
         </li>
         <li>
           <SearchGlass />

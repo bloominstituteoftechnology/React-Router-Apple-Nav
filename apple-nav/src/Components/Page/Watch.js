@@ -21,7 +21,6 @@ const DivWatch = styled.div`
 const Watch = props => {
   return (
     <div>
-      <NavWrapper />
       <DivWatch>
         <h1>This is the Watch Component</h1>
       </DivWatch>

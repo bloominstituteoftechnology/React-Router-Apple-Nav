@@ -21,7 +21,6 @@ const DivSupport = styled.div`
 const Support = props => {
   return (
     <div>
-      <NavWrapper />
       <DivSupport>
         <h1>This is the Support Component</h1>
       </DivSupport>

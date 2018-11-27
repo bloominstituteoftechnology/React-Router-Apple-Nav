@@ -21,7 +21,6 @@ const DivTv = styled.div`
 const TV = props => {
   return (
     <div>
-      <NavWrapper />
       <DivTv>
         <h1>This is the TV Component</h1>
       </DivTv>

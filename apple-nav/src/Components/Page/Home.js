@@ -21,7 +21,6 @@ const DivHome = styled.div`
 const Home = props => {
   return (
     <div>
-      <NavWrapper />
       <DivHome>
         <h1>This is the Home Component</h1>
       </DivHome>
