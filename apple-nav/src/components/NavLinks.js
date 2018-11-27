@@ -11,7 +11,7 @@ export default class HeadLinks extends Component {
   render() {console.log(this.props.links)
     return (
       <div className="Links">
-        <nav className="headLinks">
+        <nav className="nav-links headLinks">
         {this.props.links.map((link,index) => (
           <HeadLink key={index} link={link} />
         ))}

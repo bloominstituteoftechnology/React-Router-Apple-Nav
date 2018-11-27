@@ -33,25 +33,67 @@
 
 .navBar a{
   color: white;
+} 
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #efefef;
+
 }
-.headLinks{
-  background-color: darkslategray;
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(53, 53, 53);
+  padding: 20px;
+
+}
+.subLinks {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  margin:0 auto;
+
+}
+
+
+
+.nav-links a {
+  text-decoration: none;
+  
   color: white;
-  width: 40%;
-  margin: 0 auto;
-  padding: 20px;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  font-weight: bold;
+  margin-right: 8px;
 }
-.subLinks{
-  background-color: darkolivegreen;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.subLinks a {
+  color: black;
+}
+.nav-links a:last-of-type {
+  margin-right: 0;
+}
+
+.headLinks a.active {
+  color: rgb(160, 160, 160);
+}
+.subTab{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.subTab img{
+  height: 55px;
+}
+#Mac, #TV {
+  background: black;
+}
+#Mac a, #TV a{
+  color: white;
 }
