@@ -12,14 +12,14 @@ class NavWrapper extends Component {
     }
 
     changeNav = event => {
-        console.log('from changenav...', event.target)
+        // console.log('from changenav...', event.target)
         this.setState({
-            currentNav: event.target
+            currentNav: event.target.value
         })
     }
 
     render() {
-        console.log('from navwrapper render', this.state.currentNav)
+        // console.log('from navwrapper render', this.state.currentNav)
         return (
             <div className='navWrapper-container'>
                 {/* {this.props.data.map((product, index) => (
@@ -37,6 +37,7 @@ class NavWrapper extends Component {
                         <SubNav 
                             product={product}
                             subLinks={product.subLinks}
+                            currentNav={this.state.currentNav}
                             key={index}
                         />
                     ))}

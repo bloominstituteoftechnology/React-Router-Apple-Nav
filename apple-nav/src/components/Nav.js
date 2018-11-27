@@ -42,9 +42,9 @@ const Nav = props => {
                 </NavLink>
 
                 {props.product.map((e, index) => (
-                    <div onClick={props.changeNav} key={index} value={e.name}>
+                    <button onClick={props.changeNav} key={index} value={e.name} >
                         {e.name}
-                    </div>
+                    </button>
                 ))}
 
                 <div>
