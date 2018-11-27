@@ -1,10 +1,16 @@
 import React from 'react';
 
-export default function NavBar() {
+import Nav from './Nav';
+
+export default function NavBar({data}) {
 
   return (
 
-    <div></div>
+    <div className='navbar'>
+
+      {data.map(navItem => <Nav data={navItem} />)}
+
+    </div>
 
   );
 
