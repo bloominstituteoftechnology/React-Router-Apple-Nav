@@ -31,31 +31,60 @@ const DivApp = styled.div`
 `;
 
 /***************************************************************************************************
+ ********************************************* Variables *******************************************
+ **************************************************************************************************/
+const urlLinks = {
+  home: '/',
+  mac: '/mac',
+  iPad: '/ipad',
+  iPhone: '/iphone',
+  watch: '/watch',
+  tv: '/tv',
+  music: '/music',
+  support: '/support'
+};
+
+const navItems = {
+  apple: 'apple',
+  mac: 'mac',
+  iPad: 'ipad',
+  iPhone: 'iphone',
+  watch: 'watch',
+  tv: 'tv',
+  music: 'music',
+  support: 'support'
+};
+
+/***************************************************************************************************
  ********************************************* Component *******************************************
  **************************************************************************************************/
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      homeLink: '/',
-      macLink: '/mac',
-      iPadLink: '/ipad',
-      iPhoneLink: '/iphone',
-      watchLink: '/watch',
-      tvLink: '/tv',
-      musicLink: '/music',
-      supportLink: '/support',
-      linkSelected: '/'
+      linkSelected: urlLinks.home,
+      navItemSelected: navItems.apple,
+      subNavItemSelected: ''
     };
   }
 
   componentDidMount() {
+    // linkSelected
     if (localStorage.getItem('linkSelected')) {
       this.setState({
         linkSelected: localStorage.getItem('linkSelected')
       });
     } else {
-      localStorage.setItem('linkSelected', this.homeLink);
+      localStorage.setItem('linkSelected', urlLinks.home);
+    }
+
+    // navItemSelected
+    if (localStorage.getItem('navItem')) {
+      this.setState({
+        navItemSelected: localStorage.getItem('navItem')
+      });
+    } else {
+      localStorage.setItem('navItem', navItems.apple);
     }
   }
 
@@ -64,18 +93,29 @@ class App extends Component {
     this.setState({ linkSelected: link });
   };
 
+  selectNavItemAndLink = (link, navItem) => {
+    localStorage.setItem('navItem', navItem);
+    this.selectLink(link);
+    this.setState({ navItemSelected: navItem });
+  };
+
   render() {
     return (
       <DivApp>
-        <NavWrapper {...this.state} selectLink={this.selectLink} />
-        <Route exact path={this.state.homeLink} component={Home} />
-        <Route exact path={this.state.macLink} component={Mac} />
-        <Route exact path={this.state.iPadLink} component={IPad} />
-        <Route exact path={this.state.iPhoneLink} component={IPhone} />
-        <Route exact path={this.state.watchLink} component={Watch} />
-        <Route exact path={this.state.tvLink} component={TV} />
-        <Route exact path={this.state.musicLink} component={Music} />
-        <Route exact path={this.state.supportLink} component={Support} />
+        <NavWrapper
+          {...this.state}
+          urlLinks={urlLinks}
+          navItems={navItems}
+          selectNavItemAndLink={this.selectNavItemAndLink}
+        />
+        <Route exact path={urlLinks.home} component={Home} />
+        <Route exact path={urlLinks.mac} component={Mac} />
+        <Route exact path={urlLinks.iPad} component={IPad} />
+        <Route exact path={urlLinks.iPhone} component={IPhone} />
+        <Route exact path={urlLinks.watch} component={Watch} />
+        <Route exact path={urlLinks.tv} component={TV} />
+        <Route exact path={urlLinks.music} component={Music} />
+        <Route exact path={urlLinks.support} component={Support} />
       </DivApp>
     );
   }

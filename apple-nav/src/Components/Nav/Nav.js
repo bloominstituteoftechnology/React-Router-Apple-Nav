@@ -72,71 +72,113 @@ const Nav = props => {
       <ul>
         <li>
           <Link
-            onClick={() => props.selectLink(props.homeLink)}
-            to={props.homeLink}
+            to={props.urlLinks.home}
+            onClick={() =>
+              props.selectNavItemAndLink(
+                props.urlLinks.home,
+                props.navItems.apple
+              )
+            }
           >
             <Apple />
           </Link>
         </li>
         <li>
           <LinkText
-            to={props.macLink}
-            onClick={() => props.selectLink(props.macLink)}
-            isselected={(props.linkSelected === props.macLink).toString()}
+            to={props.urlLinks.mac}
+            onClick={() =>
+              props.selectNavItemAndLink(props.urlLinks.mac, props.navItems.mac)
+            }
+            isselected={(props.linkSelected === props.urlLinks.mac).toString()}
           >
             Mac
           </LinkText>
         </li>
         <li>
           <LinkText
-            to={props.iPadLink}
-            onClick={() => props.selectLink(props.iPadLink)}
-            isselected={(props.linkSelected === props.iPadLink).toString()}
+            to={props.urlLinks.iPad}
+            onClick={() =>
+              props.selectNavItemAndLink(
+                props.urlLinks.iPad,
+                props.navItems.iPad
+              )
+            }
+            isselected={(props.linkSelected === props.urlLinks.iPad).toString()}
           >
             iPad
           </LinkText>
         </li>
         <li>
           <LinkText
-            to={props.iPhoneLink}
-            onClick={() => props.selectLink(props.iPhoneLink)}
-            isselected={(props.linkSelected === props.iPhoneLink).toString()}
+            to={props.urlLinks.iPhone}
+            onClick={() =>
+              props.selectNavItemAndLink(
+                props.urlLinks.iPhone,
+                props.navItems.iPhone
+              )
+            }
+            isselected={(
+              props.linkSelected === props.urlLinks.iPhone
+            ).toString()}
           >
             iPhone
           </LinkText>
         </li>
         <li>
           <LinkText
-            to={props.watchLink}
-            onClick={() => props.selectLink(props.watchLink)}
-            isselected={(props.linkSelected === props.watchLink).toString()}
+            to={props.urlLinks.watch}
+            onClick={() =>
+              props.selectNavItemAndLink(
+                props.urlLinks.watch,
+                props.navItems.watch
+              )
+            }
+            isselected={(
+              props.linkSelected === props.urlLinks.watch
+            ).toString()}
           >
             Watch
           </LinkText>
         </li>
         <li>
           <LinkText
-            to={props.tvLink}
-            onClick={() => props.selectLink(props.tvLink)}
-            isselected={(props.linkSelected === props.tvLink).toString()}
+            to={props.urlLinks.tv}
+            onClick={() =>
+              props.selectNavItemAndLink(props.urlLinks.tv, props.navItems.tv)
+            }
+            isselected={(props.linkSelected === props.urlLinks.tv).toString()}
           >
             TV
           </LinkText>
         </li>
         <li>
           <LinkText
-            to={props.musicLink}
-            onClick={() => props.selectLink(props.musicLink)}
-            isselected={(props.linkSelected === props.musicLink).toString()}
+            to={props.urlLinks.music}
+            onClick={() =>
+              props.selectNavItemAndLink(
+                props.urlLinks.music,
+                props.navItems.music
+              )
+            }
+            isselected={(
+              props.linkSelected === props.urlLinks.music
+            ).toString()}
           >
             Music
           </LinkText>
         </li>
         <li>
           <LinkText
-            to={props.supportLink}
-            onClick={() => props.selectLink(props.supportLink)}
-            isselected={(props.linkSelected === props.supportLink).toString()}
+            to={props.urlLinks.support}
+            onClick={() =>
+              props.selectNavItemAndLink(
+                props.urlLinks.support,
+                props.navItems.support
+              )
+            }
+            isselected={(
+              props.linkSelected === props.urlLinks.support
+            ).toString()}
           >
             Support
           </LinkText>

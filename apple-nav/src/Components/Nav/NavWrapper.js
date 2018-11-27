@@ -28,7 +28,7 @@ const DivWrapper = styled.div`
 const NavWrapper = props => {
   return (
     <DivWrapper>
-      <Nav {...props} selectLink={props.selectLink} />
+      <Nav {...props} />
     </DivWrapper>
   );
 };
