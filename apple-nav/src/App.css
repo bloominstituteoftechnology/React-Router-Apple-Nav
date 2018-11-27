@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-  color: lightslategrey;
+  color: #78AEDE;
 }
 
 .sub-nav {
@@ -50,5 +50,9 @@ img {
 
 .sub-heading:hover {
   color: #78AEDE;
+}
+
+.active {
+  color: white;
 }
 

@@ -4,7 +4,6 @@ import data from "../data";
 
 const SubNav = props => {
   const name = data.find(item => `${item.name}` === props.match.params.name);
-  console.log(name);
   return (
     <nav className="sub-nav">
       {name.subLinks.map(item => (
