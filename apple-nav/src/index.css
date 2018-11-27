@@ -26,27 +26,36 @@ code {
   color: white;
 }
 
-.mac-pro {
-  font-weight: 900;
-}
-
 .subNav-container {
   display: flex;
-  width: 100%;
+  width: 58.4%;
+  position: absolute;
   justify-content: space-between;
   padding: 2%;
-  background-color: #2D2D2D;
-  color: white;
+  background-color: grey;
+  /* color: white; */
   font-size: 1.6rem;
+  font-weight: bolder;
 }
 
-.icon {
+.subNav-container img {
+  padding: 2.7% 0%;
+}
+
+/* .icon {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   line-height: 50px;
-}
+} */
 
 .icon .fas {
   font-size: 4rem;
+}
+
+button {
+  background-color: #333333;
+  color: white;
+  border: 0;
+  font-size: 1.2rem;
 }

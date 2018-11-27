@@ -32,7 +32,7 @@ class NavWrapper extends Component {
                     product={this.props.data}
                     changeNav={this.changeNav}
                 />
-                <div>
+                <div className="subnav-wrapper">
                     {this.props.data.map((product, index) => (
                         <SubNav 
                             product={product}
