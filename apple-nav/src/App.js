@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
 
+import { Route } from "react-router-dom";
 import data from "./data";
 import Home from "./components/Home";
 import SubNav from "./components/SubNav";
@@ -14,9 +14,6 @@ class App extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   this.setState({ data: data });
-  // }
   render() {
     return (
       <div className="App">
@@ -28,6 +25,7 @@ class App extends Component {
           path="/:name"
           render={props => <SubNav {...props} data={this.state.data} />}
         />
+
         <h1>
           Welcome to Pretend Apple Nav Homepage!
           <br />
