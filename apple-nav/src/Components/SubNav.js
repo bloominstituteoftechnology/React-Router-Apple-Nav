@@ -10,7 +10,7 @@ const SubNav = props => {
   console.log(products);
 
   return (
-    <div className={`sub-nav`}>
+    <div className={`sub-nav ${category.style}`}>
       {products.map(product => (
         <div className="product-info" key={product.id}>
           <img src={product.imgUrl} />
