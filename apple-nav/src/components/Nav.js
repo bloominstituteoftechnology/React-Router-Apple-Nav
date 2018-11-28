@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const StyledLink = styled(NavLink)`
-  /* padding: 14px; */
   transition: all 0.2s ease-in;
   color: white;
   text-decoration: none;
@@ -46,7 +45,7 @@ export default function Nav(props) {
   return (
     <NavigationWrapper>
       <div>
-        <StyledLink to="/" activeClassName="nav-active" className="nav-link">
+        <StyledLink to="/" className="nav-link">
           <StyledImg
             src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg"
             alt="apple logo"
@@ -57,14 +56,14 @@ export default function Nav(props) {
             {name.name}
           </StyledLink>
         ))}
-        <StyledLink to="/">Support</StyledLink>
-        <StyledLink to="/" activeClassName="nav-active" className="nav-link">
+        <StyledLink to="/product">Support</StyledLink>
+        <StyledLink to="/" className="nav-link">
           <StyledImg
             src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg"
             alt="search icon"
           />
         </StyledLink>
-        <StyledLink to="/" activeClassName="nav-active" className="nav-link">
+        <StyledLink to="/" className="nav-link">
           <StyledImg
             src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg"
             alt="shopping bag"
