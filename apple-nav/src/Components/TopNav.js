@@ -8,7 +8,9 @@ const TopNav = props => {
         <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg" />
       </NavLink>
       {props.data.map(item => (
-        <NavLink to="/">{item.category}</NavLink>
+        <NavLink to={`/${item.category.toLowerCase()}`} key={item.category}>
+          {item.category}
+        </NavLink>
       ))}
 
       <NavLink exact to="/" className="search-icon">

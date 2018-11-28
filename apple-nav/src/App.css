@@ -30,3 +30,34 @@ a:visited {
 .bag-icon {
   margin-top: 6px;
 }
+
+.sub-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 10px 15% 15px;
+  background: whitesmoke;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-info img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.product-info h4 {
+  font-size: 1.4rem;
+}
+
+.product-info p {
+  font-size: 1.2rem;
+  color: coral;
+}
+
+.dark {
+  background: #141414;
+  color: white;
+}

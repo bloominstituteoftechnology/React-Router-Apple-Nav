@@ -5,6 +5,7 @@ import data from "./data";
 
 import "./App.css";
 import TopNav from "./Components/TopNav";
+import SubNav from "./Components/SubNav";
 
 class App extends Component {
   constructor() {
@@ -15,13 +16,21 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log(data);
     this.setState({ data: data });
   }
 
   render() {
     return (
       <div className="App">
-        <TopNav data={data} />
+        <TopNav data={this.state.data} />
+
+        {this.state.data.length && (
+          <Route
+            path="/:category"
+            render={props => <SubNav {...props} items={this.state.data} />}
+          />
+        )}
       </div>
     );
   }

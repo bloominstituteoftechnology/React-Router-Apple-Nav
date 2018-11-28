@@ -1,6 +1,8 @@
 export default [
   {
     category: "Mac",
+    style: "normal",
+    id: 0,
     products: [
       {
         name: "MacBook",
@@ -67,6 +69,8 @@ export default [
 
   {
     category: "iPad",
+    style: "normal",
+    id: 1,
     products: [
       {
         name: "iPad Pro",
@@ -127,6 +131,8 @@ export default [
 
   {
     category: "iPhone",
+    style: "dark",
+    id: 2,
     products: [
       {
         name: "iPhone Xs",
@@ -181,24 +187,26 @@ export default [
 
   {
     category: "Watch",
+    style: "normal",
+    id: 3,
     products: [
       {
         name: "Apple Watch Series 4",
         imgUrl:
           "https://www.apple.com/v/watch/home/l/images/watch_nav_series_2_large.svg",
-        detail: ""
+        detail: "New"
       },
       {
         name: "Apple Watch Nike+",
         imgUrl:
           "https://www.apple.com/v/watch/home/l/images/watch_nav_nike_large.svg",
-        detail: ""
+        detail: "New"
       },
       {
         name: "Apple Watch Hermes",
         imgUrl:
           "https://www.apple.com/v/watch/home/l/images/watch_nav_hermes_large.svg",
-        detail: ""
+        detail: "New"
       },
       {
         name: "Apple Watch Series 3",
@@ -235,6 +243,8 @@ export default [
 
   {
     category: "TV",
+    style: "dark",
+    id: 4,
     products: [
       {
         name: "Apple TV 4K",
@@ -271,6 +281,8 @@ export default [
 
   {
     category: "Music",
+    style: "normal",
+    id: 5,
     products: [
       {
         name: "Apple Music",
@@ -318,6 +330,9 @@ export default [
   },
 
   {
-    category: "Support"
+    category: "Support",
+    style: "normal",
+    id: 6,
+    products: []
   }
 ];
