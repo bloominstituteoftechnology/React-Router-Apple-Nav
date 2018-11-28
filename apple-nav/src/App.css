@@ -71,6 +71,11 @@ a.active {
 .main-content {
   margin-top: 100px;
   color: lightgray;
+  position: relative;
+}
+
+.main-content p {
+  margin: 0;
 }
 
 .fade-appear {
@@ -114,7 +119,7 @@ a.active {
 
 .page-content.fade-exit {
   position: absolute;
-  top: 224px;
+  top: 0;
   display: flex;
   justify-content: center;
   width: 100%;

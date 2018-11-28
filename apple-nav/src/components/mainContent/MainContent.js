@@ -38,35 +38,35 @@ function MainContent(props) {
 
         <Route exact path='/myPhones/' 
             component={()=>
-            (<p>myPhones are Awesome! Select one to learn more!</p>)}/>
+            (<p className="page-content">myPhones are Awesome! Select one to learn more!</p>)}/>
         <Route path='/myPhones/myPhone10x'
             component={()=>
-            (<p>myPhone 10x is X-Treme!!!</p>)}/>
+            (<p className="page-content">myPhone 10x is X-Treme!!!</p>)}/>
         <Route path='/myPhones/myPhone10y'
             component={()=>
-            (<p>myPhone 10y? <br/> Y-Not!?</p>)}/>
+            (<p className="page-content">myPhone 10y? <br/> Y-Not!?</p>)}/>
         <Route path='/myPhones/myPhoneVIII'
             component={()=>
-            (<p>myPhone VIII is Grrrrreat!</p>)}/>
+            (<p className="page-content">myPhone VIII is Grrrrreat!</p>)}/>
         <Route path='/myPhones/myPhoneVII'
             component={()=>
-            (<p>myPhone VII is a slice of heaven!</p>)}/>
+            (<p className="page-content">myPhone VII is a slice of heaven!</p>)}/>
 
         <Route exact path='/myPads/' 
             component={()=>
-            (<p>myPads are Awesome! Select one to learn more!</p>)}/>
+            (<p className="page-content">myPads are Awesome! Select one to learn more!</p>)}/>
         <Route path='/myPads/myPadSuper'
             component={()=>
-            (<p>myPad Super is Super Duper!!!</p>)}/>
+            (<p className="page-content">myPad Super is Super Duper!!!</p>)}/>
         <Route path='/myPads/myPad'
             component={()=>
-            (<p>myPad is pretty Rad!</p>)}/>
+            (<p className="page-content">myPad is pretty Rad!</p>)}/>
         <Route path='/myPads/myPadTiny'
             component={()=>
-            (<p>myPad Tiny. <br/> Good things come in small packages!</p>)}/>
+            (<p className="page-content">myPad Tiny. <br/> Good things come in small packages!</p>)}/>
         <Route path='/myPads/accessories'
             component={()=>
-            (<p>BUY STUFF!</p>)}/>
+            (<p className="page-content">BUY STUFF!</p>)}/>
 
 
                 </Switch>
