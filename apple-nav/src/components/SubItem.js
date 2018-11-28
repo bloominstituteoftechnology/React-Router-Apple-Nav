@@ -6,6 +6,7 @@ const SubItem = props => {
   let subItemObj = props.data.find(
     selected => selected.name === currentLocation
   );
+
   const realSubItem = subItemObj.subLinks.find(
     selected => selected.name === subItemName
   );
