@@ -137,11 +137,11 @@ const DummyData = [
   {
     name: "Watch",
     subLinks: [
-      {
-        name: "Apple Watch Series 3",
-        img:
-          "https://www.apple.com/v/watch/home/i/images/watch_nav_series_2_large.svg"
-      },
+      //   {
+      //     name: "Apple Watch Series 3",
+      //     img:
+      //       "https://www.apple.com/v/watch/home/i/images/watch_nav_series_2_large.svg"
+      //   },
       {
         name: "Apple Watch Nike+",
         img:
@@ -157,11 +157,11 @@ const DummyData = [
         img:
           "https://www.apple.com/v/watch/home/i/images/watch_nav_edition_large.svg"
       },
-      {
-        name: "Apple Watch Series 1",
-        img:
-          "https://www.apple.com/v/watch/home/i/images/watch_nav_series_1_large.svg"
-      },
+      //   {
+      //     name: "Apple Watch Series 1",
+      //     img:
+      //       "https://www.apple.com/v/watch/home/i/images/watch_nav_series_1_large.svg"
+      //   },
       {
         name: "watchOS",
         img:

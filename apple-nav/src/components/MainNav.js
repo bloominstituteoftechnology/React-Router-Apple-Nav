@@ -5,7 +5,9 @@ const MainNav = props => {
   return (
     <nav className="main-nav">
       {props.data.map((item, i) => (
-        <Link to={`/${i}`}>{item.name}</Link>
+        <Link to={`/${item.name}`} key={i}>
+          {item.name}
+        </Link>
       ))}
     </nav>
   );

@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const SubNav = props => {
   const itemName = props.match.params.itemName;
-  const subData = props.data[itemName];
-  console.log(props.data);
+  const selected = props.data.find(selected => selected.name === itemName);
+
   return (
     <div className="sub-nav">
-      {subData.subLinks.map(item => (
-        <Link to={`/`} key={item.name}>
+      {selected.subLinks.map(item => (
+        <Link
+          to={`/${itemName}/${item.name.split(" ").join("-")}`}
+          key={item.name}
+        >
           <img src={item.img} alt={item.name} />
           <div>{item.name}</div>
         </Link>

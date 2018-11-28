@@ -4,6 +4,7 @@ import "./App.css";
 import MainNav from "./components/MainNav";
 import SubNav from "./components/SubNav";
 import DummyData from "./data";
+import SubItem from "./components/SubItem";
 class App extends Component {
   constructor() {
     super();
@@ -21,6 +22,10 @@ class App extends Component {
         <Route
           path="/:itemName"
           render={props => <SubNav {...props} data={this.state.data} />}
+        />
+        <Route
+          path="/:itemName/:subItem"
+          render={props => <SubItem {...props} data={this.state.data} />}
         />
       </div>
     );
