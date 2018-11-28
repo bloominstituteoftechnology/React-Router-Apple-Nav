@@ -1,11 +1,15 @@
 import React from "react";
+import { Route } from "react-router-dom";
+import "../../App.css";
+import { NavLink } from "react-router-dom";
 
-const NavWrapper = () => {
+function NavWrapper(props) {
   return (
-    <div className="nav-wrapper">
-      <p>Hello</p>
-    </div>
+    <NavLink exact to={`/${props.link.name}`} className="nav-links">
+      {props.link.name}
+      <Route path={`/${props.link.name}`} render={() => props.link.name} />
+    </NavLink>
   );
-};
+}
 
 export default NavWrapper;

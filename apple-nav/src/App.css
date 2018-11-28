@@ -1,0 +1,17 @@
+ header {
+     background-color: #323232;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #323232;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+ 
+ .nav-links {
+     color: #fff;
+     text-decoration: none;
+ }

@@ -1,5 +1,3 @@
-import React from "react";
-
 const DummyData = [
   {
     name: "Mac",
@@ -248,27 +246,6 @@ const DummyData = [
         name: "Gift Cards",
         img:
           "https://www.apple.com/v/music/g/images/overview/icons/gift_cards_large.svg"
-      }
-    ]
-  },
-
-  {
-    name: "header-logo",
-    logos: [
-      {
-        name: "apple-logo",
-        img:
-          " https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg"
-      },
-      {
-        name: "looking-glass",
-        img:
-          "https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg"
-      },
-      {
-        name: "shooping-bag",
-        img:
-          "https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg"
       }
     ]
   }
