@@ -16,7 +16,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.location, this.props.location.pathname);
     return (
       <div className="App">
         <Route
@@ -51,34 +50,3 @@ class App extends Component {
 }
 
 export default withRouter(App);
-
-{
-  /* <TransitionGroup>
-  <CSSTransition
-    key={this.props.location.pathname}
-    timeout={500}
-    classNames="fade"
-  >
-    <Switch location={this.props.location}>
-      <Route
-        exact
-        path="/"
-        component={() => (
-          <div className="page">
-            <h1>Home</h1>
-          </div>
-        )}
-      />
-      <Route
-        exact
-        path="/about"
-        component={() => (
-          <div className="page">
-            <h1>About</h1>
-          </div>
-        )}
-      />
-    </Switch>
-  </CSSTransition>
-</TransitionGroup>; */
-}

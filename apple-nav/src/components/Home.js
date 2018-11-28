@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Home = props => {
-  console.log(props.data);
   return (
     <nav>
       <NavLink to="/">

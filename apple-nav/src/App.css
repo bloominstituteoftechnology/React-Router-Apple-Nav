@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.main-nav, nav {
+nav {
   background-color: #303030;
   display: flex;
   justify-content: space-around;
