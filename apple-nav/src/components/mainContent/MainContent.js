@@ -1,29 +1,39 @@
 import React from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { CSSTransition,TransitionGroup } from 'react-transition-group';
 
-function MainContent() {
+function MainContent(props) {
     return (
 
+
+
     <div className="main-content">
+         <TransitionGroup>
+            <CSSTransition
+              key={props.location.pathname}
+              timeout={500}
+              classNames="fade"
+            >
+              <Switch location={props.location}>
+
         <Route exact path='/'
             component={()=>
-            (<p>Welcome!</p>)} />
-
+            (<p className="page-content">Welcome!</p>)} />
         <Route exact path='/myComps/' 
             component={()=>
-            (<p>myComps are Awesome! Select one to learn more!</p>)}/>
+            (<p className="page-content">myComps are Awesome! Select one to learn more!</p>)}/>
         <Route path='/myComps/myBookWind'
             component={()=>
-            (<p>myBook Wind is Awesome!</p>)}/>
+            (<p className="page-content">myBook Wind is Awesome!</p>)}/>
         <Route path='/myComps/myBookSuper'
             component={()=>
-            (<p>myBook Super is Super Awesome!</p>)}/>
+            (<p className="page-content">myBook Super is Super Awesome!</p>)}/>
         <Route path='/myComps/myMac'
             component={()=>
-            (<p>myMac is Pretty Great!</p>)}/>
+            (<p className="page-content">myMac is Pretty Great!</p>)}/>
         <Route path='/myComps/myBook'
             component={()=>
-            (<p>myBook is some Good Stuff!</p>)}/>
+            (<p className="page-content">myBook is some Good Stuff!</p>)}/>
 
 
         <Route exact path='/myPhones/' 
@@ -57,8 +67,13 @@ function MainContent() {
         <Route path='/myPads/accessories'
             component={()=>
             (<p>BUY STUFF!</p>)}/>
+
+
+                </Switch>
+            </CSSTransition>
+        </TransitionGroup>
     </div>
     )
 }
 
-export default MainContent;
+export default withRouter(MainContent);

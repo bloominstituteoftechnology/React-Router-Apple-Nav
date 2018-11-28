@@ -73,7 +73,7 @@ a.active {
   color: lightgray;
 }
 
-/* .fade-appear {
+.fade-appear {
   opacity: 0;
   z-index: 1;
 }
@@ -82,7 +82,7 @@ a.active {
   opacity: 1;
   transition: opacity 600ms linear;
 }
-
+/* 
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -108,30 +108,33 @@ a.active {
 
 
 
-.main-content {
+.page-content {
   transition: all 0.5s;
 }
 
-.main-content.fade-exit {
+.page-content.fade-exit {
   position: absolute;
-  top: 124px;
+  top: 224px;
   display: flex;
   justify-content: center;
   width: 100%;
+  /* margin-top: 100px; */
 }
 
-.main-content.fade-enter {
+.page-content.fade-enter {
   opacity: 0;
+  /* display: none; */
 }
 
-.main-content-fade-enter-active {
+.page-content-fade-enter-active {
+  opacity: 1;
+  /* display: flex; */
+}
+
+.page-content.fade-exit {
   opacity: 1;
 }
 
-.main-content.fade-exit {
-  opacity: 1;
-}
-
-.main-content.fade-exit-active {
+.page-content.fade-exit-active {
   opacity: 0;
 }

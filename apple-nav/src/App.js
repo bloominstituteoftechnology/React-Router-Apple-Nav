@@ -34,28 +34,28 @@ class App extends Component {
           </div>
           </header>
 
-
-          <TransitionGroup>
+          
+          {/* <TransitionGroup>
             <CSSTransition
               key={this.props.location.pathname}
               timeout={500}
               classNames="fade"
               >
               <Switch location={this.props.location}>
-              <MainContent />
+                <MainContent />
               </Switch>
             </CSSTransition>
-          </TransitionGroup>
+          </TransitionGroup> */}
 
 
-          {/* <CSSTransition
+          <CSSTransition
             in={true}
             appear={true}
             timeout={600}
             classNames="fade"
             >
             <MainContent />
-          </CSSTransition> */}
+          </CSSTransition>
 
 
       </div>
@@ -63,4 +63,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);
+export default App;
