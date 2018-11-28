@@ -4,23 +4,28 @@ import { Route } from 'react-router-dom';
 import MainNavigation from './components/MainNavigation';
 import SubNavigation from './components/SubNavigation';
 
-import MacData from './components/Mac/MacData';
+import AppleData from './components/Data/AppleData';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      macData: MacData,
+      data: [],
     }
   }
+
+  componentDidMount() {
+    this.setState({ data: AppleData});
+  }
+
 
   render() {
     return (
       <div className="App">
-        <MainNavigation />
+        <MainNavigation data={this.state.data}/>
         <Route 
-          exact path='/'
-          render={props => <SubNavigation {...props} data={this.state.macData}/>}
+          exact path='/:dataName'
+          render={props => <SubNavigation {...props} data={this.state.data}/>}
         />
       </div>
     );

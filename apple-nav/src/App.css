@@ -88,6 +88,11 @@ html {
   background-color: #F6F6F6;
 }
 
+.dark {
+  background-color: #141414;
+}
+
+
 .sub-nav .sub-nav-links {
   width: 90%;
   padding: 20px 0;
@@ -101,6 +106,11 @@ html {
 .sub-nav .sub-nav-links a {
   text-decoration: none;
   color: #333333;
+}
+
+.sub-nav .dark-links a {
+  text-decoration: none;
+  color: #F6F6F6;
 }
 
 .sub-nav .sub-nav-links .sub-nav-link {
