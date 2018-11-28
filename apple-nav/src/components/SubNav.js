@@ -8,7 +8,7 @@ const SubNav = props => {
   );
   console.log(name);
   return (
-    <nav className="sub-nav">
+    <nav className="sub-nav page">
       {name.subLinks.map(item => (
         <NavLink to={`/${name.name}/${item.name}`} key={item.name}>
           <div className="img-container">

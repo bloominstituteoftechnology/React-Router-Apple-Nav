@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-nav {
+.main-nav, nav {
   background-color: #303030;
   display: flex;
   justify-content: space-around;
@@ -63,5 +63,41 @@ img {
 
 .active {
   color: white;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.page {
+  transition: all 1.5s;
+}
+
+
+
+.page.fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+}
+
+.page.fade-exit {
+  opacity: 1;
+}
+
+.page.fade-exit-active {
+  opacity: 0;
+}
+.page.fade-exit {
+  position: absolute;
+  top: 0;
 }
 
