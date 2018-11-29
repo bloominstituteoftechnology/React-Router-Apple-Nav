@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MainNav from './components/mainNav';
 import SubMenu from './components/subMenu';
+import ProductPage from './components/productpage';
 import { Link, NavLink, Route } from 'react-router-dom';
 
 import dumData from './dummyData';
@@ -42,6 +43,12 @@ class App extends Component {
           <div className='subheader'>
             <div className='subMenu'>
                 <Route path={`/:id`} render={props => <SubMenu {...props} sub={this.state.appleData}/>} />
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <Route path={`/:id/:prod`} component={ProductPage} />
             </div>
           </div>
           

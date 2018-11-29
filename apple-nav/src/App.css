@@ -51,6 +51,15 @@ nav {
   background-color: #141414;
   display: flex;
   justify-content: space-between;
-  /* text-decoration: none;
-  color: #ffffff; */
+  text-decoration: none;
+  /* color: #ffffff; */
+}
+
+.products-content {
+  background-color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* width: 1024px; */
+  /* margin: 0 auto; */
 }
