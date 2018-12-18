@@ -25,6 +25,14 @@ import IOS12LightImg from './iphone/ios-12.svg';
 import AirpodsImg from './iphone/airpods.svg';
 import IphoneAccessoriesImg from './iphone/iphone-accessories.svg';
 import IphoneCompareImg from './iphone/iphone-compare.svg';
+import WatchSeries4Img from './watch/watch-series-4.svg';
+import WatchNikePlusImg from './watch/watch-nike+.svg';
+import WatchHermesImg from './watch/watch-hermes.svg';
+import WatchSeries3Img from './watch/watch-series-3.svg';
+import WatchOSImg from './watch/watch-os.svg';
+import WatchBandsImg from './watch/watch-bands.svg';
+import WatchAccessoriesImg from './watch/watch-accessories.svg';
+import WatchCompareImg from './watch/watch-compare.svg';
 
 
 const data = [
@@ -189,6 +197,54 @@ const data = [
         name: 'Compare',
         img: IphoneCompareImg,
         route: 'iphone-compare',
+    },
+    {
+        type: 'watch',
+        name: 'Apple Watch Series 4',
+        img: WatchSeries4Img,
+        route: 'apple-watch-series-4',
+    },
+    {
+        type: 'watch',
+        name: 'Apple Watch Nike+',
+        img: WatchNikePlusImg,
+        route: 'apple-watch-nike',
+    },
+    {
+        type: 'watch',
+        name: 'Apple Watch Hermès',
+        img: WatchHermesImg,
+        route: 'apple-watch-hermes',
+    },
+    {
+        type: 'watch',
+        name: 'Apple Watch Series 3',
+        img: WatchSeries3Img,
+        route: 'apple-watch-series-3',
+    },
+    {
+        type: 'watch',
+        name: 'watchOS',
+        img: WatchOSImg,
+        route: 'watch-os',
+    },
+    {
+        type: 'watch',
+        name: 'Bands',
+        img: WatchBandsImg,
+        route: 'apple-watch-bands',
+    },
+    {
+        type: 'watch',
+        name: 'Accessories',
+        img: WatchAccessoriesImg,
+        route: 'apple-watch-accessories',
+    },
+    {
+        type: 'watch',
+        name: 'Compare',
+        img: WatchCompareImg,
+        route: 'apple-watch-compare',
     },
 ];
 
