@@ -9,6 +9,10 @@ export default class SubItem extends React.Component {
             appear: true,
         };
     }
+    componentDidMount(){
+        const img = new Image();
+        img.src = this.props.device.img;
+    }
     render(){
         return (
             <CSSTransition
