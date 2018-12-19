@@ -10,7 +10,6 @@ class App extends React.Component {
       <div>
         <Route path="/" render={props => <NavBar {...props} />} />
         <Route path="/:type/:device?" component={SubNav} />
-        <Route path="/:device" component={Content} />
       </div>
 
     );
