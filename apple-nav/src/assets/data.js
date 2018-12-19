@@ -33,6 +33,17 @@ import WatchOSImg from './watch/watch-os.svg';
 import WatchBandsImg from './watch/watch-bands.svg';
 import WatchAccessoriesImg from './watch/watch-accessories.svg';
 import WatchCompareImg from './watch/watch-compare.svg';
+import AppleTVImg from './tv/apple-tv.svg';
+import TVAppImg from './tv/tv-app.svg';
+import TVAccessoriesImg from './tv/tv-accessories.svg';
+import TVCompareImg from './tv/tv-compare.svg';
+import AppleMusicImg from './music/apple-music.svg';
+import ITunesImg from './music/itunes.svg';
+import HomepodImg from './music/homepod.svg';
+import AirpodsBlackImg from './music/airpods-black.svg';
+import IPodTouchImg from './music/ipod-touch.svg';
+import MusicAccessoriesImg from './music/music-accessories.svg';
+import GiftCardsImg from './music/gift-cards.svg';
 
 
 const data = [
@@ -245,6 +256,78 @@ const data = [
         name: 'Compare',
         img: WatchCompareImg,
         route: 'apple-watch-compare',
+    },
+    {
+        type: 'tv',
+        name: 'Apple TV 4K',
+        img: AppleTVImg,
+        route: 'apple-tv-4k',
+    },
+    {
+        type: 'tv',
+        name: 'Apple TV',
+        img: AppleTVImg,
+        route: 'apple-tv',
+    },
+    {
+        type: 'tv',
+        name: 'TV App',
+        img: TVAppImg,
+        route: 'tv-app',
+    },
+    {
+        type: 'tv',
+        name: 'Accessories',
+        img: TVAccessoriesImg,
+        route: 'tv-accessories',
+    },
+    {
+        type: 'tv',
+        name: 'Compare',
+        img: TVCompareImg,
+        route: 'tv-compare',
+    },
+    {
+        type: 'music',
+        name: 'Apple Music',
+        img: AppleMusicImg,
+        route: 'apple-music',
+    },
+    {
+        type: 'music',
+        name: 'iTunes',
+        img: ITunesImg,
+        route: 'itunes',
+    },
+    {
+        type: 'music',
+        name: 'HomePod',
+        img: HomepodImg,
+        route: 'homepod',
+    },
+    {
+        type: 'music',
+        name: 'AirPods',
+        img: AirpodsBlackImg,
+        route: 'airpods',
+    },
+    {
+        type: 'music',
+        name: 'iPod Touch',
+        img: IPodTouchImg,
+        route: 'ipod-touch',
+    },
+    {
+        type: 'music',
+        name: 'Music Accessories',
+        img: MusicAccessoriesImg,
+        route: 'music-accessories',
+    },
+    {
+        type: 'music',
+        name: 'Gift Cards',
+        img: GiftCardsImg,
+        route: 'gift-cards',
     },
 ];
 
