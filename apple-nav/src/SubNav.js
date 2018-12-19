@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import SubItem from './SubItem';
 import styled from 'styled-components';
 import data from './assets/data';
 
 const Bar = styled.section`
     width: 100%;
-    margin-top: 10px;
+    padding-top: 10px;
 
     > div {
         width: 70%;
@@ -30,13 +30,18 @@ const Bar = styled.section`
             max-height: 60px;
         }
     }
-
-    .active {
-        color: #0070c9;
-    }
     .new-text {
         color: #ef5602;
         font-size: 0.9rem;
+    }
+    .slide-appear {
+        opacity: 0;
+        transform: translateX(75px);
+    }
+    .slide-appear.slide-appear-active {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 500ms ease, transform 300ms ease;
     }
 `;
 
@@ -83,19 +88,12 @@ class SubNav extends React.Component {
     render(){
         return (
             this.props.match.params.type === 'support' ? null :
-            <Bar>
+            <Bar style={this.props.match.params.type === 'iphone' ||
+                this.props.match.params.type === 'tv' ? {background: '#141414'} : {background: '#F6F6F6'}}>
                 <div>
-                    {this.state.cards === null ? 
+                    {!this.state.cards.length ? 
                     null :
-                    this.state.cards.map(device => (
-                        <Link to={`/${device.type}/${device.route}`} key={device.route}>
-                            <div>
-                                <img draggable={false} src={device.img} alt={device.name} />
-                                <h4>{device.name}</h4>
-                                {device.new ? <span className="new-text">New</span> : null}
-                            </div>  
-                        </Link>
-                    ))}
+                    this.state.cards.map(device => <SubItem key={device.type + device.route} device={device} />)}
                 </div>
             </Bar>
         );
