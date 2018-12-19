@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import data from './assets/data';
 
@@ -20,7 +20,7 @@ const Bar = styled.section`
     a {
         color: #222;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
 
         &:hover {
             color: #0070c9
@@ -33,6 +33,10 @@ const Bar = styled.section`
 
     .active {
         color: #0070c9;
+    }
+    .new-text {
+        color: #ef5602;
+        font-size: 0.9rem;
     }
 `;
 
@@ -78,17 +82,19 @@ class SubNav extends React.Component {
     }
     render(){
         return (
+            this.props.match.params.type === 'support' ? null :
             <Bar>
                 <div>
                     {this.state.cards === null ? 
-                    <div></div> :
+                    null :
                     this.state.cards.map(device => (
-                        <NavLink to={`/${device.type}/${device.route}`} key={device.route}>
+                        <Link to={`/${device.type}/${device.route}`} key={device.route}>
                             <div>
                                 <img draggable={false} src={device.img} alt={device.name} />
-                                <h4>{device.name}</h4>  
+                                <h4>{device.name}</h4>
+                                {device.new ? <span className="new-text">New</span> : null}
                             </div>  
-                        </NavLink>
+                        </Link>
                     ))}
                 </div>
             </Bar>

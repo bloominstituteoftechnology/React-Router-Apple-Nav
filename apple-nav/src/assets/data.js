@@ -58,6 +58,7 @@ const data = [
         name: 'MacBook Air',
         img: MacbookAirImg,
         route: 'macbook-air',
+        new: true,
     },
     {
         type: 'mac',
@@ -88,6 +89,7 @@ const data = [
         name: 'Mac mini',
         img: MacMiniImg,
         route: 'mac-mini',
+        new: true,
     },
     {
         type: 'mac',
@@ -112,6 +114,7 @@ const data = [
         name: 'iPad Pro',
         img: IpadProImg,
         route: 'ipad-pro',
+        new: true,
     },
     {
         type: 'ipad',
@@ -166,12 +169,14 @@ const data = [
         name: 'iPhone Xs',
         img: IphoneXSImg,
         route: 'iphone-xs',
+        new: true,
     },
     {
         type: 'iphone',
         name: 'iPhone XR',
         img: IphoneXRImg,
         route: 'iphone-xr',
+        new: true,
     },
     {
         type: 'iphone',
@@ -214,18 +219,21 @@ const data = [
         name: 'Apple Watch Series 4',
         img: WatchSeries4Img,
         route: 'apple-watch-series-4',
+        new: true,
     },
     {
         type: 'watch',
         name: 'Apple Watch Nike+',
         img: WatchNikePlusImg,
         route: 'apple-watch-nike',
+        new: true,
     },
     {
         type: 'watch',
         name: 'Apple Watch Hermès',
         img: WatchHermesImg,
         route: 'apple-watch-hermes',
+        new: true,
     },
     {
         type: 'watch',

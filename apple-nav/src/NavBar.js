@@ -19,7 +19,7 @@ const Bar = styled.section`
     a {
         color: #FFFFFF;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 300;
 
         &:hover {
