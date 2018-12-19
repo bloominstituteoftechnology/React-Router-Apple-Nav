@@ -6,7 +6,10 @@ import SubNav from './SubNav';
 
 class App extends React.Component {
   componentDidMount(){ // Attempting to preload images into cache for quicker access when SubNav mounts.  Better way?
-    data.forEach(x => new Image().src = x.img);
+    data.forEach(x => {
+      const preload = new Image();
+      preload.src = x.img;
+    });
   }
   render() {
     return (
