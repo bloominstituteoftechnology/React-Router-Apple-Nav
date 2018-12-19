@@ -45,7 +45,6 @@ import IPodTouchImg from './music/ipod-touch.svg';
 import MusicAccessoriesImg from './music/music-accessories.svg';
 import GiftCardsImg from './music/gift-cards.svg';
 
-
 const data = [
     {
         type: 'mac',
