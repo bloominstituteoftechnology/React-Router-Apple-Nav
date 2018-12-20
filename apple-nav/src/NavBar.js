@@ -11,6 +11,7 @@ const NavContainer = styled.section`
 const Bar = styled.section`
     height: 100%;
     width: 75%;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

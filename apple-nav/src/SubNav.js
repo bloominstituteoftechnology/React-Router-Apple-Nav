@@ -9,6 +9,7 @@ const Bar = styled.section`
 
     > div {
         width: 70%;
+        max-width: 900px;
         height: 100px;
         margin: 0 auto;
         display: flex
@@ -23,7 +24,7 @@ const Bar = styled.section`
         font-size: 1.1rem;
 
         &:hover {
-            color: #0070c9
+            color: #0070c9;
         }
         img {
             user-select: none;
@@ -89,7 +90,7 @@ class SubNav extends React.Component {
         return (
             this.props.match.params.type === 'support' ? null :
             <Bar style={this.props.match.params.type === 'iphone' ||
-                this.props.match.params.type === 'tv' ? {background: '#141414'} : {background: '#F6F6F6'}}>
+                this.props.match.params.type === 'tv' ? {background: '#141414'} : {background: '#F6F6F6'}}> {/* Inline styling is preventing CSS hover */}
                 <div>
                     {!this.state.cards.length ? 
                     null :
