@@ -1,20 +1,23 @@
 import React from 'react';
 import MainTab from './mainTab.js';
-import {Route} from 'react-router-dom';
-import {SubTab} from './subTab.js';
+import {Link} from 'react-router-dom';
+import './navBar.scss';
 
 const NavBar = props => {
-  return props.data.map(mainTab => {
-    return (
-      <div key={mainTab.name}>
-        <MainTab tab={mainTab.name} />
-        <Route
-          path="/:mainTab"
-          render={props => <SubTab {...props} name={mainTab.name} />}
-        />
-      </div>
-    );
-  });
+  return (
+    <div className="navBar">
+      <Link to="/">
+        <i className="fab fa-apple" />
+      </Link>
+      {props.data.map(mainTab => {
+        return (
+          <div key={mainTab.name}>
+            <MainTab tab={mainTab.name} />
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default NavBar;

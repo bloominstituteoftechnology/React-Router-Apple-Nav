@@ -1,0 +1,12 @@
+.navBar {
+  padding: 8px 0;
+  width: 100%;
+  display: flex;
+  background-color: #333;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .fab {
+    color: white;
+  }
+}
