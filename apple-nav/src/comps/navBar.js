@@ -2,6 +2,7 @@ import React from 'react';
 import MainTab from './mainTab.js';
 import {Link} from 'react-router-dom';
 import './navBar.scss';
+import {TweenLite, CSSPlugin} from 'gsap/all';
 
 const NavBar = props => {
   return (
@@ -9,10 +10,10 @@ const NavBar = props => {
       <Link to="/">
         <i className="fab fa-apple" />
       </Link>
-      {props.data.map(mainTab => {
+      {props.data.map((mainTab, index) => {
         return (
-          <div key={mainTab.name}>
-            <MainTab tab={mainTab.name} />
+          <div key={mainTab.name} className="mT">
+            <MainTab {...props} tab={mainTab.name} />
           </div>
         );
       })}

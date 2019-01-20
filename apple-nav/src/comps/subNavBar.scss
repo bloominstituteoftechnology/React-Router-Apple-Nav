@@ -1,7 +1,17 @@
-.subNavBar {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.subNav {
+  width: 100%;
   background-color: lightgray;
+
+  .subNavBar {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    .subTabCont {
+      text-align: center;
+    }
+  }
 }
