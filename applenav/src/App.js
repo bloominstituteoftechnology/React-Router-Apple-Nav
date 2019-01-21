@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import NavWrapper from './components/NavWrapper';
 import styled from 'styled-components';
+import Iphone from './components/Iphone';
 
 const StyledNavWrapper = styled(NavWrapper)`
 
@@ -47,7 +48,7 @@ class App extends Component {
         <Route exact path="/" />
         <Route path="/mac"/>
         <Route path="/ipad"/>
-        <Route path="/iphone"/>
+        <Route path="/iphone" component={Iphone}/>
         <Route path="/watch"/>
         <Route path="/tv"/>
         <Route path="/music"/>
