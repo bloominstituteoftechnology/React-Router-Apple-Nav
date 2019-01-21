@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Nav = (props) => {
     return (
-        <Link to={`/${props.page}`}>
-        {props.text}
+        <Link className={props.className} to={`/${props.page}`}>
+        { props.text ? props.text : <img src={props.image} />}
         </Link>
     )
 }
