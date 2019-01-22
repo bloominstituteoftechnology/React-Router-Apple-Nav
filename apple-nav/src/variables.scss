@@ -1,0 +1,17 @@
+:root {
+  /* Font assignments */
+  $body-font-family: "Calibri";
+  $heading-font-family: "Roboto";
+
+  /* Color assignments */
+  $header-img: $black;
+  $user-post-border-color: $lightgrey;
+  $post-timestamp-font-color: $silver;
+  $comment-option-font-color: $grey;
+
+  /* Color values */
+  $black: #000000;
+  $lightgrey: #d3d3d3;
+  $silver: #c0c0c0;
+  $grey: #808080;
+}
