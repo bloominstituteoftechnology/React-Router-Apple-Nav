@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif 
+}
+
+.NavWrapper {
+  background-color: grey;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.SubNavWrapper {
+  background-color: white;
+  padding: 20px 15%;
+  color: black;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
