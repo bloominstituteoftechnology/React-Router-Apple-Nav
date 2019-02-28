@@ -3,6 +3,7 @@ import DummyData from "./dummyData";
 import Nav from "./Nav";
 import { Route } from "react-router-dom";
 import SubNav from "./SubNav";
+import Product from "./Product";
 
 export default class NavWrapper extends Component {
   constructor() {
@@ -27,6 +28,7 @@ export default class NavWrapper extends Component {
           path="/:name"
           render={props => <SubNav {...props} names={this.state.names} />}
         />
+        <Route path="/product" component={Product} />
       </Fragment>
     );
   }
