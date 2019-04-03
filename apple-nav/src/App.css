@@ -176,6 +176,14 @@ body {
 	display: flex;
 }
 
+.Mac,
+.TV,
+.Mac h3,
+.TV h3 {
+	background: black;
+	color: white;
+}
+
 .sub-item {
 	display: flex;
 	justify-content: space-around;
@@ -183,6 +191,10 @@ body {
 	width: 75%;
 	height: 110px;
 	margin: 0 auto;
+}
+
+.sub-item a {
+	text-align: center;
 }
 
 .sub-item h3 {

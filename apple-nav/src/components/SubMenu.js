@@ -7,7 +7,7 @@ const SubMenu = (props) => {
 	console.log(menu);
 
 	return (
-		<div className="sub-menu">
+		<div className={`sub-menu ${menu.name}`}>
 			<SubItem subLinks={menu.subLinks} />
 		</div>
 	);
