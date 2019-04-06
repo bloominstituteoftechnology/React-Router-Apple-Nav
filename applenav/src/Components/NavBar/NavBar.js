@@ -1,20 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './NavBar.css';
-import { Nav, NavItem, NavLink } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import SubNav from './SubNav';
+import { Link, Route } from 'react-router-dom';
 
 const NavBar = props => {
   // console.log(props.data[2].name); // Why doesn't this work?
   return (
     <nav id="nav" className="main-nav">
-        {props.data.map(item => (
-          <div>
-            <Link to={`/${item.name}`} key={item.id}>
-              {item.name}
-            </Link>
-          </div>
-        ))}
-      </nav>
+      {props.data.map(item => (
+        <div key={item.name}>
+          <Link to={`/${item.name}`} key={item.id}>
+            {item.name}
+          </Link>
+          <Route
+            path={`/${item.name}`}
+            render={props => ( !item.subNav ? null :
+              <SubNav {...props} subNavData={item.subNav} />
+            )}
+          />
+        </div>
+      ))}
+    </nav>
   );
 };
 

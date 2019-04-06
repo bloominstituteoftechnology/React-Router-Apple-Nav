@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './NavBar.css';
-import { Nav, NavItem, NavLink } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import SubItem from './SubItem';
 
-const NavBar = props => {
-  console.log(props);
+const SubNav = props => {
+  if (props) {
+    console.log(props);
+  } else {
+    console.log('not ready');
+  }
   return (
-    <nav id="nav" className="main-nav">
-        {props.data.map(item => (
-          <div>
-            <Link to={`/${item.name}`} key={item.id}>
-              {item.name}
-            </Link>
-          </div>
-        ))}
-      </nav>
+    <nav id="sub" className="sub-nav">
+      {props.subNavData.length && props.subNavData.map(item => (
+        <div>
+          <Link to={`/Mac/${item.name}`} key={item.id}>
+            {item.name}
+          </Link>
+          <SubItem subNav={item.subNav} />
+        </div>
+      ))}
+    </nav>
   );
 };
 
-export default NavBar;
+export default SubNav;

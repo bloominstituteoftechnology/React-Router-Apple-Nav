@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Nav, NavItem, NavLink } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
+import SubNav from './Components/NavBar/SubNav';
 import data from './data';
 
 class App extends Component {
@@ -25,6 +25,11 @@ class App extends Component {
           path="/"
           render={props => <NavBar {...props} data={this.state.navData} />}
         />
+
+        {/* <Route
+          path={this.state.navData.name}
+          render={props => <SubNav {...props} data={this.state.navData} />}
+        /> */}
       </div>
     );
   }
