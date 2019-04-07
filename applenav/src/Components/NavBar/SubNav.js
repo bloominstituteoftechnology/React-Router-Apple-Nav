@@ -1,25 +1,25 @@
 import React from 'react';
 import './NavBar.css';
-import { Link } from 'react-router-dom';
-import SubItem from './SubItem';
+import { Link, Route } from 'react-router-dom';
+import SubNavContent from '../../Components/SubNavContent/SubNavContent';
 
 const SubNav = props => {
-  if (props) {
-    console.log(props);
-  } else {
-    console.log('not ready');
-  }
+  const activeItem = props.subNavData.find(item => props.match.params.id === item.name);
+
   return (
-    <nav id="sub" className="sub-nav">
-      {props.subNavData.length && props.subNavData.map(item => (
-        <div>
-          <Link to={`/Mac/${item.name}`} key={item.id}>
-            {item.name}
+    <div>
+      <nav id="sub" className="sub-nav">
+        {activeItem.subNav && activeItem.subNav.map(subItem => (
+          <Link to={`/${subItem.name}`} key={subItem.name} >
+            {subItem.name}
           </Link>
-          <SubItem subNav={item.subNav} />
-        </div>
-      ))}
-    </nav>
+        ))}
+      </nav>
+      <Route
+        path={`/${props.match.params.id}/:id`}
+        render={props => <SubNavContent /> }
+      />
+    </div>
   );
 };
 

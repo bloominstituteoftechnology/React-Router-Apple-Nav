@@ -4,23 +4,25 @@ import SubNav from './SubNav';
 import { Link, Route } from 'react-router-dom';
 
 const NavBar = props => {
-  // console.log(props.data[2].name); // Why doesn't this work?
+  const propData = props.data;
+  console.log(props.match.params.id); 
   return (
-    <nav id="nav" className="main-nav">
-      {props.data.map(item => (
-        <div key={item.name}>
-          <Link to={`/${item.name}`} key={item.id}>
-            {item.name}
-          </Link>
-          <Route
-            path={`/${item.name}`}
-            render={props => ( !item.subNav ? null :
-              <SubNav {...props} subNavData={item.subNav} />
-            )}
-          />
-        </div>
-      ))}
-    </nav>
+    <div>
+      <nav id="nav" className="main-nav">
+        {propData.map(item => (
+          <div key={item.name}>
+            <Link to={`/${item.name}`} key={item.id}>
+              {item.name}
+            </Link>
+          </div>
+        ))}
+      </nav>
+      
+      {props.data.length && <Route
+        exact path={`/:id`}
+        render={props => <SubNav {...props} subNavData={propData} /> }
+      />}
+    </div>
   );
 };
 
