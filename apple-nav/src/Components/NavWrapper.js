@@ -1,27 +1,16 @@
-import React, { Component } from 'react';
-import Nav from './Nav';
-import './nav.css';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    NavLink
-  } from "react-router-dom";
+import React, { Component } from "react";
+import Nav from "./Nav";
 
-export default class NavWrapper extends Component {
-    
-    render() {
-        return(
-            <div className="nav-wrap">
-                <Nav />
-                <Nav />
-                <Nav />
-                <Nav />
-                <Nav />
-                <Nav />
-                <Nav />
-            </div>
-        );
-    }
-
+class NavWrapper extends Component {
+  render() {
+    return (
+      <div>
+        {this.props.navs.map(nav => (
+          <Nav nav={nav} handleClick={() => this.props.handleClick(nav)} />
+        ))}
+      </div>
+    );
+  }
 }
+
+export default NavWrapper;

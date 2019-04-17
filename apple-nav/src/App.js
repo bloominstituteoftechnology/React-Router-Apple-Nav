@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import NavWrapper from "./Components/NavWrapper";
-import SubNav from "./Components/SubNav";
+import NavWrapper from "./components/NavWrapper";
+import SubNav from "./components/SubNav";
+
+const NavList = ["Mac", "iPad", "iPhone", "Watch", "TV", "Music", "Support"];
 
 class App extends Component {
   constructor() {
@@ -18,7 +20,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavWrapper />
+        <NavWrapper navs={NavList} handleClick={this.handleClick} />
+        <SubNav />
       </div>
     );
   }

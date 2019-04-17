@@ -1,12 +1,13 @@
-import React from 'react';
-import './nav.css';
+import React, { Component } from 'react';
 
-const Nav = () => {
+class Nav extends Component {
+  render() {
     return (
-        <div className="nav-buttons">
-            nav
-        </div>
+      <div onClick={this.props.handleClick}>
+        {this.props.nav}
+      </div>
     );
-};
+  }
+}
 
 export default Nav;
