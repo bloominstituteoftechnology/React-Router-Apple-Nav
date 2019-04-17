@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Nav extends Component {
   render() {
     return (
-      <div onClick={this.props.handleClick}>
-        {this.props.nav}
-      </div>
+      <Link to={`/${this.props.category.toLowerCase()}`}>
+        {this.props.category}
+      </Link>
     );
   }
 }

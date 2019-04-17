@@ -1,12 +1,21 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
 
+const styles = {
+  main: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },  
+}
+
 class NavWrapper extends Component {
   render() {
+    console.log("imProps", this.props)
     return (
-      <div>
-        {this.props.navs.map(nav => (
-          <Nav nav={nav} handleClick={() => this.props.handleClick(nav)} />
+      <div style={styles.main}>
+        {this.props.categories.map(category => (
+          <Nav key={category} category={category} />
         ))}
       </div>
     );
