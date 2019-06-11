@@ -14,10 +14,7 @@ const NavBar = styled.div`
   font-size: 0.9rem;
   height: 44px;
   padding: 0 25px;
-`;
-
-const AppleLogo = styled.div`
-  background-image: url("./assets/images/apple-logo.svg");
+  font-weight: light;
 `;
 
 const NavWrapper = props => {
@@ -31,20 +28,20 @@ const NavWrapper = props => {
       </Link>
 
       {props.navLinks.map(link => {
-        return (
-          <NavLink to="/mac">
-            <Nav key={link.id} link={link} />
-          </NavLink>
-        );
+        return <Nav key={link.id} link={link} />;
       })}
-      <img
-        src="https://www.apple.com/ac/globalnav/4/en_US//images/globalnav/search/image_large.svg"
-        alt=""
-      />
-      <img
-        src="https://www.apple.com/ac/globalnav/4/en_US//images/globalnav/bag/image_large.svg"
-        alt=""
-      />
+      <a href="#">
+        <img
+          src="https://www.apple.com/ac/globalnav/4/en_US//images/globalnav/search/image_large.svg"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          src="https://www.apple.com/ac/globalnav/4/en_US//images/globalnav/bag/image_large.svg"
+          alt=""
+        />
+      </a>
     </NavBar>
   );
 };

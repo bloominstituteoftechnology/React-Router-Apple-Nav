@@ -2,3 +2,24 @@ a {
   text-decoration: none;
   color: white;
 }
+
+div .f img {
+  width: 21px;
+}
+
+div .g img {
+  width: 28px;
+}
+
+div .i img {
+  width: 48px;
+}
+
+.active {
+  opacity: 0.55;
+}
+
+a:hover {
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}

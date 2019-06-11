@@ -27,7 +27,12 @@ class App extends React.Component {
         <FullWidthNav>
           <NavWrapper navLinks={this.state.navLinks} />
         </FullWidthNav>
-        <Route path="/mac" component={MacLinks} />
+        <Route
+          path="/Mac"
+          render={props => (
+            <MacLinks navLinks={this.state.navLinks} {...props} />
+          )}
+        />
         <Route path="/" component={Home} />
       </div>
     );
