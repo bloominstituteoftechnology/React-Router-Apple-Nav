@@ -10,7 +10,9 @@ import {
   Watch,
   Television,
   Music,
-  Support
+  Support,
+  Cart,
+  Search
 } from "./Components/NavComponents";
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
         <Route path="/music" component={Music} />
         <Route path="/support" component={Support} />
         {/* Search and Cart modals */}
-        {/* <Route path="/search" component={Search} />
-        <Route path="/cart" component={Cart} />  */}
+        <Route path="/search" component={Search} />
+        <Route path="/cart" component={Cart} />
       </header>
     </div>
   );

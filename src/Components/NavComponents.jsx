@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const SubNavLinkLight = styled.a`
@@ -331,5 +330,13 @@ export function Music() {
 }
 
 export function Support() {
+  return <div></div>;
+}
+
+export function Search() {
+  return <div></div>;
+}
+
+export function Cart() {
   return <div></div>;
 }
