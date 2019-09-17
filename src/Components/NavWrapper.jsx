@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const NavContainer = styled.nav`
+  position: absolute;
   width: 100%
   display: flex;
   background: black;
@@ -23,31 +24,45 @@ function NavWrapper() {
     //
     <NavContainer>
       <Nav>
-        <Link to="/">
+        <Link className="navLink" to="/">
           <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg" />
         </Link>
 
-        <Link to="/mac">Mac</Link>
+        <Link className="navLink" to="/mac">
+          Mac
+        </Link>
 
-        <Link to="/ipad">iPad</Link>
+        <Link className="navLink" to="/ipad">
+          iPad
+        </Link>
 
-        <Link to="/iphone">iPhone</Link>
+        <Link className="navLink" to="/iphone">
+          iPhone
+        </Link>
 
-        <Link to="/watch">Watch</Link>
+        <Link className="navLink" to="/watch">
+          Watch
+        </Link>
 
-        <Link to="/tv">TV</Link>
+        <Link className="navLink" to="/tv">
+          TV
+        </Link>
 
-        <Link to="/music">Music</Link>
+        <Link className="navLink" to="/music">
+          Music
+        </Link>
 
-        <Link to="/support">Support</Link>
+        <Link className="navLink" to="/support">
+          Support
+        </Link>
 
         {/* Search and Cart modals*/}
 
-        <Link to="/search">
+        <Link className="navLink" to="/search">
           <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg" />
         </Link>
 
-        <Link to="/cart">
+        <Link className="navLink" to="/cart">
           <img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg" />
         </Link>
       </Nav>
