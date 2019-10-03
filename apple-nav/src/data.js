@@ -1,4 +1,4 @@
-const appleOb= {
+const appleObj= {
     MacObj: {
         MacBookAir: {
             Name: 'MacBook Air',
@@ -142,62 +142,82 @@ const appleOb= {
         },
     },
     WatchObj: {
-        iPadOS: {
-            Name: 'iPadOS',
+        AppleWatchSeries5: {
+            Name: 'Apple Watch Series 5',
             src: '',
             isNew: true,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        AppleWatchNike: {
+            Name: 'Apple Watch Nike',
             src: '',
             isNew: true,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        AppleWatchHermes: {
+            Name: 'Apple Watch Hermès',
             src: '',
             isNew: true,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        AppleWatchEdition: {
+            Name: 'Apple Watch Edition',
             src: '',
             isNew: true,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        AppleWatchSeries3: {
+            Name: 'Apple Watch Series 3',
             src: '',
-            isNew: true,
+            isNew: false,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        Compare: {
+            Name: 'Compare',
             src: '',
-            isNew: true,
+            isNew: false,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        Bands: {
+            Name: 'bands',
             src: '',
-            isNew: true,
+            isNew: false,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        Accessories: {
+            Name: 'Accessories',
             src: '',
-            isNew: true,
+            isNew: false,
         },
-        iPadOS: {
-            Name: 'iPadOS',
+        WatchOS: {
+            Name: 'WatchOS',
             src: '',
-            isNew: true,
-        },
-        iPadOS: {
-            Name: 'iPadOS',
-            src: '',
-            isNew: true,
+            isNew: false,
         },
     },
     TVObj: {
-        iPadOS: {
-            Name: 'iPadOS',
+        AppleTVApp: {
+            Name: 'Apple TV app',
             src: '',
             isNew: true,
+        },
+        AppleTVPlus: {
+            Name: 'Apple TV+',
+            src: '',
+            isNew: true,
+        },
+        AppleTV4k: {
+            Name: 'Apple TV 4k',
+            src: '',
+            isNew: false,
+        },
+        AppleTVHD: {
+            Name: 'Apple TV HD',
+            src: '',
+            isNew: false,
+        },
+        AirPlay: {
+            Name: 'AirPlay',
+            src: '',
+            isNew: false,
+        },
+        Accessories: {
+            Name: 'Accessories',
+            src: '',
+            isNew: false,
         },
     },
     MusicObj: {
@@ -206,3 +226,5 @@ const appleOb= {
     SupportObj: {
 
     }
+}
+export default appleObj;
