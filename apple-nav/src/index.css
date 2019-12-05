@@ -1,0 +1,28 @@
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+ .switch-wrapper {
+   position: relative;
+ }
+
+ .switch-wrapper > div {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+ }
