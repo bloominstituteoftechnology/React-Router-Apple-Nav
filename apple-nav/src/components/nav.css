@@ -1,0 +1,13 @@
+.apple-ripoff{
+    width: 100%;
+    height: 44px;
+    background-color: #313131;
+}
+
+  .navSection {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
