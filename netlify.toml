@@ -1,0 +1,7 @@
+[build]
+
+base = "apple-nav/"
+
+publish="apple-nav/build/"
+
+command="yarn build"

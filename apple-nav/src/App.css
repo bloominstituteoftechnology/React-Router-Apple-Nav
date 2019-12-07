@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  background-color: #303030;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+  max-height: 100px;
+}
+.main-nav-item {
+  color: #B6B6B6;
+  cursor: pointer;
+}
+
+.main-nav-item:hover {
+  color: #78AEDE;
+}
+
+a {
+  text-decoration: none;
+  color: #B6B6B6;
+}
+
+a:hover {
+  color: #78AEDE;
+}
+
+.sub-nav {
+  background-color: #FAFAFA;
+  color: #303030;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1% 0 5%;
+}
+
+.sub-nav a {
+  color: #303030;
+}
+
+img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.img-container {
+  height: 50px;
+  width: auto;
+}
+
+.sub-heading {
+  margin: 10% 0;
+}
+
+.sub-heading:hover {
+  color: #78AEDE;
+}
+
+.active {
+  color: white;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.page {
+  transition: all 1.5s;
+}
+
+
+
+.page.fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+}
+
+.page.fade-exit {
+  opacity: 1;
+}
+
+.page.fade-exit-active {
+  opacity: 0;
+}
+.page.fade-exit {
+  position: absolute;
+  top: 0;
+}
+
