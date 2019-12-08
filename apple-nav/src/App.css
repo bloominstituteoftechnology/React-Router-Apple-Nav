@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #323232;
+}
+
+.mainLinks {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 10%; */
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.nav-icons-right img {
+  margin: 0 20px;
+}
+
+.subheader {
+  background-color: #141414;
+  /* border: 1px solid red; */
+}
+
+.subMenu {
+  color: #ffffff;
+  text-decoration: none;
+  max-width: 1024px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.subMenuNav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #ffffff;
+  /* border: 1px solid green; */
+}
+
+.subItems {
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  /* color: #ffffff; */
+}
+
+.products-content {
+  background-color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* width: 1024px; */
+  /* margin: 0 auto; */
+}
