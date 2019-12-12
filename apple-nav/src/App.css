@@ -1,0 +1,53 @@
+header {
+  background: #323232;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  width: 69%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+i {
+  color: white;
+}
+
+#apple {
+  font-size: 25px;
+}
+
+.product {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.product img {
+  height: 54px;
+  width: auto;
+}
+
+.product p {
+  font-size: 11px;
+  width: 80px;
+  text-align: center;
+} 
