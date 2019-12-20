@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.subNavDiv {
+  display: flex;
+  background: #141414;
+}
+
+.subNavDiv p {
+  color: white;
+  margin: 10px auto;
+  font-size: 12px;
+}
+
+.productDiv {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.subNavDivLight {
+  display: flex;
+  background: #F6F6F6;
+}
+
+.subNavDivLight p {
+  color: black;
+  margin: 10px auto;
+  font-size: 12px;
+}
+
+.productDivLight {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.iPhoneImg {
+  width: 100%;
+  height: 50px;
+}
+
+.productDivTV {
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.productDivWatch {
+  display: flex;
+  margin: 0 auto;
+  width: 55%;
+  justify-content: space-between;
+}
