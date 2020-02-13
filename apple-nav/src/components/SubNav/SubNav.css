@@ -1,0 +1,11 @@
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
