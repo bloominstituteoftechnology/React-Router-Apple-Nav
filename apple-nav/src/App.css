@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.nav-header {
+  background: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-header * {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.nav-header .fa-apple {
+  font-size: 22px;
+  padding: 12px;
+}
+
+.sub-nav-header {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-nav-header * {
+  padding: 0 10px 5px;
+  font-size: 12px;
+}
+
+.sub-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sub-category img {
+  width: 30px;
+}
