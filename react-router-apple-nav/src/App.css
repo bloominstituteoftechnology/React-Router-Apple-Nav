@@ -1,0 +1,17 @@
+.menuSlide-appear {
+    transform: translateY(-92vh)
+}
+
+.menuSlide-appear.menuSlide-appear-active {
+    transform: translateY(0vh);
+    transition:  500ms linear;
+}
+
+.menuSlide-leave {
+    transform: translateY(0vh)
+}
+
+.menuSlide-leave.menuSlide-leave-active {
+    transform: translateY(-92vh);
+    transition: 500ms linear;
+}
