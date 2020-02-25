@@ -23,7 +23,7 @@ function App() {
           component={Home}
         />
 
-      <Route path="/mac">
+      <Route exact path="/mac">
           <Mac />
       </Route>
 

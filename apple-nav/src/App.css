@@ -12,3 +12,12 @@ i {
 .search {
   padding: 0.8rem 2.5rem;
 }
+
+.maclinks {
+  color: #2c2c2c;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
