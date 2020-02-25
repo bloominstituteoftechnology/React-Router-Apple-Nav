@@ -71,17 +71,5 @@ export default [
         "Music Accessories",
         "Gift Cards"
         ]
-    },
-    {
-        name: "TV",
-        id: "tv",
-        products: [
-        "Apple TV+",
-        "Apple TV app",
-        "Apple TV 4K",
-        "Apple TV HD",
-        "AirPlay",
-        "Accessories"
-        ]
     }
 ]
