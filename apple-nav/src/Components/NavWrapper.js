@@ -20,15 +20,15 @@ const NavWrapper = () => {
         <NavBar>
             <NavHodor>
                 <NavLink to="/" className="links"><i class="fab fa-apple"></i></NavLink>
-                <NavLink to="/" className="links">Mac</NavLink>
-                <NavLink to="/" className="links">iPad</NavLink>
-                <NavLink to="/" className="links">iPhone</NavLink>
-                <NavLink to="/" className="links">Watch</NavLink>
-                <NavLink to="/" className="links">TV</NavLink>
-                <NavLink to="/" className="links">Music</NavLink>
-                <NavLink to="/" className="links">Support</NavLink>
-                <NavLink to="/" className="links"><i class="fas fa-search"></i></NavLink>
-                <NavLink to="/" className="links"><i class="fas fa-shopping-bag"></i></NavLink>
+                <NavLink to="/mac" className="links">Mac</NavLink>
+                <NavLink to="/ipad" className="links">iPad</NavLink>
+                <NavLink to="/iphone" className="links">iPhone</NavLink>
+                <NavLink to="/watch" className="links">Watch</NavLink>
+                <NavLink to="/tv" className="links">TV</NavLink>
+                <NavLink to="/music" className="links">Music</NavLink>
+                <NavLink to="/support" className="links">Support</NavLink>
+                <i class="fas fa-search search"></i>
+                <i class="fas fa-shopping-bag search"></i>
             </NavHodor>
         </NavBar>
     );
