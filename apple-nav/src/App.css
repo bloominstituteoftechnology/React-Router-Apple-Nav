@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
+  font-size: 62.5%;
 }
 
 .logo {
@@ -16,13 +17,36 @@
   align-items: center;
   padding: 16px 0;
   border-bottom: 1px solid #CECECE;
+  font-size: 1.6rem;
+}
+
+.main-nav p {
+  font-size: 1.6rem;
 }
 
 .main-nav a {
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
 
 .main-nav a:active {
   font-weight: bold;
+}
+
+.subnav {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #1e1e1e;
+}
+
+.subnav p {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
 }

@@ -61,7 +61,7 @@ export default [
     },
     {
         name: "Music",
-        id: "tv",
+        id: "music",
         subnav: [
         "Apple Music",
         "AirPods Prop",
