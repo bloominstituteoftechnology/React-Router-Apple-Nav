@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {NavLink} from "react-router-dom";
+import {NavLink, Route} from "react-router-dom";
 import Macmain from "../images/macmain.jpg";
 import Macbookair from "../images/macbookair.png";
 import M13 from "../images/macbookpro13.png";
@@ -13,6 +13,7 @@ import Compare from "../images/compare.png";
 import ProDisp from "../images/prodisplayxdr.png";
 import Accessor from "../images/accessories.png";
 import Catalina from "../images/catalina.png";
+import MacbookAir from "./Macs/MacbookAir";
 
 const MacNav = styled.div `
     background-color: #f9f9fa;
@@ -77,6 +78,12 @@ const Mac = () => {
                 </NavLink>
             </MacNav>
             <MacImg src={Macmain}></MacImg>
+
+
+            <Route path="/mac/macbook-air">
+                <MacbookAir />
+            </Route>
+
         </div>
     );
 };
