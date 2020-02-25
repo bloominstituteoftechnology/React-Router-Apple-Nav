@@ -79,11 +79,6 @@ const Mac = () => {
             </MacNav>
             <MacImg src={Macmain}></MacImg>
 
-
-            <Route path="/mac/macbook-air">
-                <MacbookAir />
-            </Route>
-
         </div>
     );
 };

@@ -4,6 +4,7 @@ import Airimg from "../../images/macbookair.jpg";
 
 const AirImg = styled.img `
     min-width: 100%;
+    max-width: 100%;
     height: auto;
 `;
 

@@ -7,7 +7,6 @@ const MainContent = styled.div `
     flex-direction: column;
     justiffy-content: center;
     align-items: center;
-    min-height: 1000px;
 `;
 
 const Image = styled.img `

@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Imac from "../../images/imac.jpg";
+import Cat from "../../images/catalina.jpg";
 
-const Imacimg = styled.img `
+const Catimg = styled.img `
     min-width: 100%;
     max-width: 100%;
     height: auto;
 `;
 
-const Imacpage = () => {
+const Catalina = () => {
     return (
         <div>
-            <Imacimg src={Imac}></Imacimg>
+            <Catimg src={Cat}></Catimg>
         </div>
     );
 };
 
-export default Imacpage;
+export default Catalina;

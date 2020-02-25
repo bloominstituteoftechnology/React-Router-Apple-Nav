@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Imac from "../../images/imac.jpg";
+import ProD from "../../images/prodisp.jpg";
 
-const Imacimg = styled.img `
+const Prodimg = styled.img `
     min-width: 100%;
     max-width: 100%;
     height: auto;
 `;
 
-const Imacpage = () => {
+const Prodisplay = () => {
     return (
         <div>
-            <Imacimg src={Imac}></Imacimg>
+            <Prodimg src={ProD}></Prodimg>
         </div>
     );
 };
 
-export default Imacpage;
+export default Prodisplay;

@@ -4,6 +4,7 @@ import Pro16 from "../../images/pro16.jpg";
 
 const Pro16img = styled.img `
     min-width: 100%;
+    max-width: 100%;
     height: auto;
 `;
 

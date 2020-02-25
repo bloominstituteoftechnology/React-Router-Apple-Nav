@@ -13,6 +13,7 @@ const NavHodor= styled.div `
     justify-content: space-between;
     widht: 80%;
     color: white;
+    margin: 0;
 `;
 
 const NavWrapper = () => {

@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Imac from "../../images/imac.jpg";
+import MacP from "../../images/macpro.jpg";
 
-const Imacimg = styled.img `
+const Macproimg = styled.img `
     min-width: 100%;
     max-width: 100%;
     height: auto;
 `;
 
-const Imacpage = () => {
+const Macpro = () => {
     return (
         <div>
-            <Imacimg src={Imac}></Imacimg>
+            <Macproimg src={MacP}></Macproimg>
         </div>
     );
 };
 
-export default Imacpage;
+export default Macpro;

@@ -13,7 +13,14 @@ import Support from "./Components/Support";
 import MacbookAir from "./Components/Macs/MacbookAir";
 import Pro13page from "./Components/Macs/Pro13";
 import Pro16page from "./Components/Macs/pro16";
-import Imacpage from "./Components/Macs/imac"
+import Imacpage from "./Components/Macs/imac";
+import Imacpro from "./Components/Macs/imacpro";
+import Macpro from "./Components/Macs/macpro";
+import Macmini from "./Components/Macs/macmini";
+import Compare from "./Components/Macs/compare";
+import Prodisplay from "./Components/Macs/prodisp";
+import Accessories from "./Components/Macs/accessories";
+import Catalina from "./Components/Macs/catalina";
 
 function App() {
   return (
@@ -69,6 +76,34 @@ function App() {
 
       <Route path="/mac/imac">
         <Imacpage />
+      </Route>
+
+      <Route path="/mac/imac-pro">
+        <Imacpro />
+      </Route>
+
+      <Route path="/mac/mac-pro">
+        <Macpro />
+      </Route>
+
+      <Route path="/mac/mac-mini">
+        <Macmini />
+      </Route>
+
+      <Route path="/mac/compare">
+        <Compare />
+      </Route>
+
+      <Route path="/mac/pro-display-xdr">
+        <Prodisplay />
+      </Route>
+
+      <Route path="/mac/accessories">
+        <Accessories />
+      </Route>
+
+      <Route path="/mac/catalina">
+        <Catalina />
       </Route>
 
     </div>

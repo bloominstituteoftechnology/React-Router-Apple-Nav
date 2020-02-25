@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Imac from "../../images/imac.jpg";
+import Acc from "../../images/accessories.jpg";
 
-const Imacimg = styled.img `
+const Accimg = styled.img `
     min-width: 100%;
     max-width: 100%;
     height: auto;
 `;
 
-const Imacpage = () => {
+const Accessories = () => {
     return (
         <div>
-            <Imacimg src={Imac}></Imacimg>
+            <Accimg src={Acc}></Accimg>
         </div>
     );
 };
 
-export default Imacpage;
+export default Accessories;

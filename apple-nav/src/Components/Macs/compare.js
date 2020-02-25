@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Imac from "../../images/imac.jpg";
+import Comp from "../../images/compare.jpg";
 
-const Imacimg = styled.img `
+const Compimg = styled.img `
     min-width: 100%;
     max-width: 100%;
     height: auto;
 `;
 
-const Imacpage = () => {
+const Compare = () => {
     return (
         <div>
-            <Imacimg src={Imac}></Imacimg>
+            <Compimg src={Comp}></Compimg>
         </div>
     );
 };
 
-export default Imacpage;
+export default Compare;

@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import Imac from "../../images/imac.jpg";
+import Macm from "../../images/macmini.jpg";
 
-const Imacimg = styled.img `
+const Macminiimg = styled.img `
     min-width: 100%;
     max-width: 100%;
     height: auto;
 `;
 
-const Imacpage = () => {
+const Macmini = () => {
     return (
         <div>
-            <Imacimg src={Imac}></Imacimg>
+            <Macminiimg src={Macm}></Macminiimg>
         </div>
     );
 };
 
-export default Imacpage;
+export default Macmini;

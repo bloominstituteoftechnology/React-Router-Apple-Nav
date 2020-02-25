@@ -4,6 +4,7 @@ import Pro13 from "../../images/pro13.jpg";
 
 const Pro13img = styled.img `
     min-width: 100%;
+    max-width: 100%;
     height: auto;
 `;
 
