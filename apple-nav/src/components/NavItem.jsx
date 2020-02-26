@@ -6,7 +6,7 @@ const NavItem = props => {
 
   return (
     <Route to='/:id'>
-      <div>{name}</div>
+      <Link to={`/${id}`}>{name}</Link>
     </Route>
   );
 };
