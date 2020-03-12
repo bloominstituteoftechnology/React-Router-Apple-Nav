@@ -1,0 +1,24 @@
+.App {
+  width: 100%;
+  font-size: 1.7rem;
+}
+
+.App .navWrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20%;
+  background-color: #313131;
+  color: #ccc;
+}
+
+.App .navWrapper a {
+  color: #ccc;
+}
+
+
+.App .subNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10%;
+  background-color: #ccc;
+}
