@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: black;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,
+body {
+	box-sizing: border-box;
+}
+/* styles start here  */
+
+.App {
+	max-width: 100%;
+	/* border: 1px solid red; */
+}
+
+.nav-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	background: rgb(37, 37, 37);
+	/* border: 1px solid red; */
+}
+
+.nav-item {
+	background: rgb(37, 37, 37);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	width: 90%;
+	height: 40px;
+	/* border: 1px solid red; */
+}
+
+.nav-item h2 {
+	color: rgb(216, 216, 216);
+	font-size: 0.9rem;
+}
+
+.nav-item h2:hover {
+	color: rgb(161, 161, 161);
+}
+
+.sub-menu {
+	background: rgb(240, 240, 240);
+	display: flex;
+}
+
+.Mac,
+.TV,
+.Mac h3,
+.TV h3 {
+	background: black;
+	color: white;
+}
+
+.sub-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 75%;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.sub-item a {
+	text-align: center;
+}
+
+.sub-item h3 {
+	font-size: 0.8rem;
+	padding: 5px;
+}
+
+.sub-item h3:hover {
+	color: rgb(0, 153, 255);
+}
