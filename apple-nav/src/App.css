@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+  background: #282c34;
+  height: 100vh;
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.header-wrapper {
+  width: 100%;
+  z-index: 3;
+  height: 140px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+
+.top-header, .sub-header, .home-btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.top-header {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+a:visited {
+  color: gray;
+}
+
+a.active {
+  text-decoration: underline;
+  color: lightgray;
+}
+
+.main-content {
+  margin-top: 100px;
+  color: lightgray;
+  position: relative;
+}
+
+.main-content p {
+  margin: 0;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+/* 
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms linear 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 600ms linear 300ms;
+}
+
+.fade-exit-done {
+  opacity: 0;
+} */
+
+
+
+.page-content {
+  transition: all 0.5s;
+}
+
+.page-content.fade-exit {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* margin-top: 100px; */
+}
+
+.page-content.fade-enter {
+  opacity: 0;
+  /* display: none; */
+}
+
+.page-content-fade-enter-active {
+  opacity: 1;
+  /* display: flex; */
+}
+
+.page-content.fade-exit {
+  opacity: 1;
+}
+
+.page-content.fade-exit-active {
+  opacity: 0;
+}
