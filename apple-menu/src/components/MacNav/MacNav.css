@@ -1,0 +1,8 @@
+li {
+  list-style-type: none;
+  margin: 2%;
+}
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
