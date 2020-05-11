@@ -1,0 +1,28 @@
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  color: whitesmoke;
+  -webkit-padding-start: none;
+}
+
+.subnav-header {
+  margin-top: 30px;
+  background: grey;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
