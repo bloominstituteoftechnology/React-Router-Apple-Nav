@@ -1,0 +1,12 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="28" height="54" viewBox="0 0 28 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>homepod_icon_dark_large</title>
+  <ellipse class="cls-1" cx="14" cy="17.912" rx="7.123" ry="0.685"/>
+  <path class="cls-1" d="M22.187,18.13c-.159.46-1.207,1.151-8.187,1.151S5.972,18.59,5.813,18.13A7.021,7.021,0,0,0,0,25.021v18a7.021,7.021,0,0,0,5.84,6.9C6.084,50.373,7.355,51,14,51s7.916-.627,8.16-1.084a7.021,7.021,0,0,0,5.84-6.9v-18A7.021,7.021,0,0,0,22.187,18.13Z"/>
+</svg>
