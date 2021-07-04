@@ -1,0 +1,42 @@
+.mac-nav-container {
+    background: black;
+}
+
+.mac-nav-container ul{
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.mac-nav-container ul li {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.mac-nav-container ul li .mac-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.mac-nav-container ul li .mac-link:hover {
+    color: #66BBFF;
+}
+
+.mac-nav-container ul li .mac-link .icon-container {
+    width: 60px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mac-nav-container ul li .mac-link .icon-container img {
+    width: 100%;
+    height: auto;
+}

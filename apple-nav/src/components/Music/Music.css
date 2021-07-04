@@ -1,0 +1,42 @@
+.music-nav-container {
+    background: #F6F6F6;
+}
+
+.music-nav-container ul{
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.music-nav-container ul li {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.music-nav-container ul li .music-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: black;
+}
+
+.music-nav-container ul li .music-link:hover {
+    color: #66BBFF;
+}
+
+.music-nav-container ul li .music-link .icon-container {
+    width: 40px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.music-nav-container ul li .music-link .icon-container img {
+    width: 100%;
+    height: auto;
+}

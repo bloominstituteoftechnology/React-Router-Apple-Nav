@@ -1,0 +1,42 @@
+.tv-nav-container {
+    background: black;
+}
+
+.tv-nav-container ul{
+    max-width: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.tv-nav-container ul li {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.tv-nav-container ul li .tv-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.tv-nav-container ul li .tv-link:hover {
+    color: #66BBFF;
+}
+
+.tv-nav-container ul li .tv-link .icon-container {
+    width: 40px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.tv-nav-container ul li .tv-link .icon-container img {
+    width: 100%;
+    height: auto;
+}

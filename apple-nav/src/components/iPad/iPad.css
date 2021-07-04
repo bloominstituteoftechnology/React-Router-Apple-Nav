@@ -1,0 +1,29 @@
+.ipad-nav-container {
+    background: #F6F6F6;
+}
+
+.ipad-nav-container ul{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.ipad-nav-container ul li {
+    color: black;
+    list-style-type: none;
+
+}
+
+.ipad-nav-container ul li .ipad-link {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: black;
+}
+
+.ipad-nav-container ul li .ipad-link:hover {
+    color: #66BBFF;
+}
