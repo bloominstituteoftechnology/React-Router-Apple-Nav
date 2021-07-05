@@ -1,0 +1,153 @@
+.series-3 {
+    padding-left: 0;
+    padding-right: 9px;
+    line-height: 1.2;
+}
+
+.series-3 img {
+    width: 25px;
+    height: 54px;
+}
+
+.nike {
+    padding: 0 9px;
+    line-height: 1.2;
+}
+
+.nike img {
+    width: 25px;
+    height: 54px;
+}
+
+.hermes {
+    padding: 0 9px;
+    line-height: 1.2;
+}
+
+.hermes img{
+    width: 37px;
+    height: 54px;
+}
+
+.watch-edition {
+    padding: 0 9px;
+    line-height: 1.2;
+}
+
+.watch-edition img {
+    width: 25px;
+    height: 54px;
+}
+
+.series-1 {
+    padding: 0 9px;
+    line-height: 1.2;
+}
+
+.series-1 img {
+    width: 25px;
+    height: 54px;
+}
+
+.watchos {
+    padding: 0 26px;
+    line-height: 1.2;
+}
+
+.watchos img {
+    width: 44px;
+    height: 54px;
+    background-size: 44px 54px;
+}
+
+.bands {
+    padding: 0 15px;
+    line-height: 1.2;
+}
+
+.bands img {
+    width: 17px;
+    height: 54px;
+}
+
+.watch-accessories {
+    padding: 0 26px;
+    line-height: 1.2;
+}
+
+.watch-accessories img {
+    width: 52px;
+    height: 54px;
+}
+
+.watch-compare {
+    padding-right: 0;
+    padding-left: 5px;
+    line-height: 1.2;
+}
+
+.watch-compare img {
+    width: 71px;
+    height: 54px;
+}
+
+/* END OF WATCHES */
+
+.apple-4k {
+    padding-left: 4px;
+    padding-right: 20px;
+}
+
+.apple-tv {
+    padding: 0 20px;
+}
+
+.tv-app {
+    padding: 0 20px;
+}
+
+.tv-accessories {
+    padding: 0 20px;
+}
+
+.tv-compare {
+    padding-left: 20px;
+    padding-right: 4px;
+}
+
+/* END OF TV */
+
+.apple-music {
+    padding-left: 8px;
+    padding-right: 20px;
+}
+
+.itunes {
+    padding-left: 20px;
+    padding-right: 26px;
+}
+
+.homepod {
+    padding-right: 45px;
+    padding-left: 20px;
+}
+
+.ipod-touch {
+    padding-left: 0;
+    padding-right: 35px;
+}
+
+.music-accessories {
+    padding-left: 3px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+.music-accessories span {
+    max-width: none;
+}
+
+.music-gift-cards {
+    padding-left: 14px;
+    padding-right: 3px;
+}
