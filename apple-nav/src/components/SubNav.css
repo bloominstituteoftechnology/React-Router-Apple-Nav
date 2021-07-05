@@ -1,0 +1,21 @@
+.SubNav {
+    background-color: lightgray;
+    height: 45px;
+    display: flex;
+    align-content: center;
+}
+
+.SubNav__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+    font-size: .8em;
+}
+
+.SubNav__ul li {
+    padding: 0 10px;
+}
