@@ -1,0 +1,15 @@
+.submenu {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background: #141414;
+}
+
+.subtext {
+font-size: 80%;
+color: white;
+}
+
+.subitem {
+    margin: 1%;
+}

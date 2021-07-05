@@ -1,0 +1,32 @@
+ .App {
+  text-align: center;
+}
+
+.navbtn {
+  margin: 0 3%;
+  background: #333333;
+  border: solid #333333 1px;
+  color: white;
+}
+
+.navwrapper {
+  background: #333333;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20%;
+}
+
+img {
+  background: #33333300;
+}
+
+.homebtn {
+  background: #333333;
+  height: 40px;
+  border: none;
+  margin-top: 15%;
+}
+
