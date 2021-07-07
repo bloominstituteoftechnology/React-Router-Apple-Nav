@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.NavBar a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.Submenu {
+  display: flex;
+  justify-content: center;
+  background-color: dimgray;
+}
+
+.Submenu-enter{
+  background-color: cyan;
+}
+
+.Submenu__link {
+  color: white;
+  padding: 25px 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
