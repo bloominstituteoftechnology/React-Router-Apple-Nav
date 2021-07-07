@@ -1,0 +1,58 @@
+.nav-main {
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 15px 8%; 
+  background-color:	#333333; 
+  font-size: 14px; 
+}
+
+.nav-main a {
+  text-decoration: none; 
+  color: white; 
+}
+
+.nav-main .selected {
+  color: grey; 
+}
+
+.sub-navigation {
+  padding: 15px 4%;
+}
+
+.sub-nav-item a {
+  text-decoration: none; 
+  color: black; 
+}
+
+.sub-nav-item a:hover {
+  color: blue; 
+}
+
+.sub-nav-item .sub-selected {
+  color: blue; 
+}
+
+.selected a {
+ color: grey; 
+}
+
+body {
+  background-color: lightgrey; 
+}
+
+.sub-navigation {
+  background-color: white; 
+  display: flex; 
+  justify-content: space-around; 
+  font-size: 14px; 
+}
+
+.sub-navigation p:hover {
+  color: blue; 
+  cursor: pointer; 
+}
+
+
+
