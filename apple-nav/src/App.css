@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #323232;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.navbar-container {
+  background: black;
+  height: 100%;
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbartabs {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbartabs a{
+  text-decoration: none;  
+  color: #fff;
+  font-size: 14px;
+
+}.navbartabs a.activeNavButton {
+  color: #A5A5A5;
+}
+
+.subnavtabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subnav-link {
+  display: inline-block;
+  padding: 0 18px;
+}
+
+.subnav-img {
+  height: 54px;
+}
+
+.subnav-name {
+  margin: 0;
+  color:  #fff;
+  font-size: 11px;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
