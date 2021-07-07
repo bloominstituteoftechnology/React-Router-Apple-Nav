@@ -1,0 +1,41 @@
+.app{
+  max-width: 1200px;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center; 
+  margin: 0;
+  width: 100%;
+  min-width: 1024px;
+  height: 48px;
+  max-height: 44px;
+  background: rgba(0,0,0,0.8);
+  font-size: 17px;
+
+
+}
+
+.navbar .navlink{
+  font-size: 14px;
+  line-height: 3.14286;
+  font-weight: 200;
+  letter-spacing: -.01em;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: whitesmoke;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 40px;
+  height: 44px;
+  opacity: 1;
+  background: no-repeat;
+  text-decoration: none;
+  white-space: nowrap;
+
+}
