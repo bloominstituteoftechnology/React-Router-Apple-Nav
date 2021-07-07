@@ -21,3 +21,4 @@
 This example shows the sub-navigation for the `/mac` route.
 
 ![Sample Navigation](images/sample.png)
+ 
