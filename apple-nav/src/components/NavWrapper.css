@@ -1,0 +1,23 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.headerItem {
+  text-decoration: none;
+  color: white;
+}
+
+.activeHeaderItem {
+  color: gray;
+}
+
+.content {
+  padding-top: 30px;
+}
