@@ -1,0 +1,39 @@
+.main-container {
+  text-align: center;
+  background-color: #EEE;
+  width: 95%;
+  margin: auto;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10px;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1B1B1B;
+  padding: 20px;
+}
+
+.nav-item {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.selected {
+  color: orange;
+}
