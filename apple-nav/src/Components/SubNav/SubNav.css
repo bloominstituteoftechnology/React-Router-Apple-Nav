@@ -1,0 +1,11 @@
+.subNavHeader {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+    padding: 0 5rem;
+}
+
+.subNavHeader div {
+    margin: auto;
+}
