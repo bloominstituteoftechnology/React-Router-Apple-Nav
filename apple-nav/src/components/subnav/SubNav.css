@@ -1,0 +1,17 @@
+.subNavWrapper {
+  color: black;
+  background: grey;
+}
+.subNavWrapper ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productCardSubLink a {
+  text-align: center;
+}
+
+.productCardSubLink li {
+  color: white;
+}
