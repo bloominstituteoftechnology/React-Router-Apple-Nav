@@ -1,0 +1,17 @@
+.App{
+  width:100%; 
+}
+.navbarContainer{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-content: center; 
+  width: 880px; 
+  margin: auto; 
+}
+.subContainer{
+  display:flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: auto; 
+}
