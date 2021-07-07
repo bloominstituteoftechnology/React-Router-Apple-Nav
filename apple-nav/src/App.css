@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #323232;
+  height: 45px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin: auto;
+  justify-content: space-between;
+  max-width: 900px;
+  height: 45px;
+
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav > a:hover {
+  color: gray;
+}
