@@ -1,0 +1,12 @@
+.nav-wrap {
+    background: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons {
+    color: white;
+    padding: 0 25px;
+}
