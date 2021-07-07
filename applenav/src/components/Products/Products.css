@@ -1,0 +1,54 @@
+.products {
+  height: 92px;
+  padding: 12px 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.mac,
+.iphone,
+.tv {
+  background: #141414;
+}
+
+.ipad,
+.music {
+  background: #f6f6f6;
+}
+
+.ipad .product div,
+.watch .product div,
+.music .product div {
+  color: black;
+}
+
+.watch {
+  background: #fff;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-nav-item {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 0 18px;
+}
+
+.product .sub-nav-item:hover div {
+  color: #579cd4;
+}
+
+.new {
+  color: #ea680e;
+  font-size: 10px;
+}
+
+img {
+  max-height: 54px;
+}

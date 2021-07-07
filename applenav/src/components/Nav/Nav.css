@@ -1,0 +1,32 @@
+.nav-wrapper {
+  background: #323232;
+  /* width: 100%; */
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  align-content: center;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  line-height: 44px;
+  height: 100%;
+  font-size: 14px;
+}
+
+.nav-items a:hover {
+  transform: translateY(1px);
+  transition: 0.3s;
+}
+
+.nav-items .active {
+  color: #777;
+}
