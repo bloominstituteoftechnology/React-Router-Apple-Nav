@@ -1,0 +1,15 @@
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.content-section .i-div {
+    width: 100%;
+}
+
+.content-section .i-div i {
+    font-size: 200px;
+}

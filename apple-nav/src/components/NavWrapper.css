@@ -1,0 +1,27 @@
+.nav-wrapper {
+    background: #323232;
+    color: white;
+}
+
+.nav-wrapper .main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .nav-wrapper .main-nav a {
+     color: white;
+     text-decoration: none;
+ }
+
+ .nav-wrapper .main-nav a:hover {
+     color: gray;
+ }
+
+ .nav-wrapper .main-nav #apple-logo {
+     height: 32px;
+ }
+
+ .nav-wrapper .main-nav #apple-logo:hover {
+     opacity: .5;
+ }

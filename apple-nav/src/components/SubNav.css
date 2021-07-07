@@ -1,0 +1,42 @@
+@keyframes fade-in-anim {
+    from {left: 100px; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+
+.fade-in-anim {
+    position: relative;
+    animation-name: fade-in-anim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-nav .sub-nav-item {
+    margin: 15px 20px 0 20px;
+}
+
+.sub-nav .sub-nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-nav .sub-nav-item a:hover {
+    opacity: 0.5;
+}
+
+.sub-nav .sub-nav-item a i {
+    font-size: 38px;
+}
+
+.sub-nav .sub-nav-item a p {
+    font-size: 14px;
+}
+
+.sub-nav .sub-nav-item a p:hover {
+    opacity: 0.5;
+}
