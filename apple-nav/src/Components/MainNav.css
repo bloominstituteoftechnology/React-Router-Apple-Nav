@@ -1,0 +1,54 @@
+.nav {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #000;
+    font-size: 14px;
+    max-height: 44px;
+    min-width: 1024px;
+}
+
+.nav__links-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 1024px;
+    max-width: 980px;
+    max-height: 44px;
+    margin: 0 auto;    
+}
+
+.nav__links {    
+    padding: 0 22px;
+    min-height: 32px;
+}
+
+.dark {
+    background-color: #141414;
+    color: white;
+}
+
+.light {
+    background:rgba(242,242,242,0.7);
+    color: black;
+}
+
+
+
+.subNav {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 12px;
+    padding: 12px 0;
+    max-height: 86px;
+    min-width: 1024px;
+}
+
+.nav__links-item {
+    margin-bottom: 10px;
+}
