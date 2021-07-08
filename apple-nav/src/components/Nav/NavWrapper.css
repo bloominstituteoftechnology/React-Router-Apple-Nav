@@ -1,0 +1,27 @@
+.Nav {
+  background-color: black;
+  color: white;
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.SubNav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Nav--item {
+  text-decoration: none;
+  grid-area: content;
+  color: white;
+}
+
+.Nav--item:visited {
+  color: white;
+}
+
+.Nav--item:hover {
+  color: gray;
+}
