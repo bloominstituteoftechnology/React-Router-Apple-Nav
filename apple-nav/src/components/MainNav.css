@@ -1,0 +1,36 @@
+.MainNav {
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* .App {
+    width: 100%;
+} */
+
+.MainNav__wrapper {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MainNav__link {
+    font-size: 12px;
+    color: #fff;
+    padding: 0px 0px 25px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link { 
+    width: 15px;
+    height: 15px;
+}
+
