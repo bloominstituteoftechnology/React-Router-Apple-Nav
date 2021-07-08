@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.nav {
+  background: #333333;
+}
+
+.subNav {
+  background: #F6F6F6
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  height: 64px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar > li > a {
+  color: #EFEFEF;
+  text-decoration: none;
+  padding: 24px;
+  height: 16px;
+}
+
+.activeNav {
+  background-color: #636363;
+  color: white;
+}
+
+.fa-apple{
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-search{
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-shopping-bag{
+  color: #ffffff;
+  font-size: 25px;
+}
